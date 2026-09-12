@@ -1,0 +1,24 @@
+{
+  "status": "imported_not_independently_recomputed_here",
+  "source_repository": "uskutsav-cpu/selfdual-5form-invariants",
+  "source_ref": "stress-flow/classification-through-degree12@3ed32805b38ce34216b34888f6539e3538e90fb9",
+  "scope": "analytic polynomial interactions through five-form degree 12; scalar stress generators in the predecessor implementation; fixed predecessor conventions",
+  "degrees": [
+    {"degree": 4, "full_dim": 1, "static_stress_dim": 1, "dynamic_reachable_dim": 1, "quotient_dim": 0, "new_forcing_dim": 1},
+    {"degree": 6, "full_dim": 2, "static_stress_dim": 1, "dynamic_reachable_dim": 1, "quotient_dim": 1, "new_forcing_dim": 1},
+    {"degree": 8, "full_dim": 7, "static_stress_dim": 2, "dynamic_reachable_dim": 3, "quotient_dim": 4, "new_forcing_dim": 3},
+    {"degree": 10, "full_dim": 14, "static_stress_dim": 2, "dynamic_reachable_dim": 11, "quotient_dim": 3, "new_forcing_dim": 5},
+    {"degree": 12, "full_dim": 72, "static_stress_dim": 4, "dynamic_reachable_dim": 67, "quotient_dim": 5, "new_forcing_dim": 21}
+  ],
+  "sextic_transport": {
+    "status": "imported",
+    "equation_in_predecessor_normalization": "dq6/dlambda = 40*a(lambda)*q6",
+    "safe_interpretation": "transported, never created from q6=0"
+  },
+  "warnings": [
+    "Static stress span is not the dynamic reachable space.",
+    "Seed augmentation is not generalized-generator augmentation.",
+    "Polynomial scope does not automatically include conformal/nonanalytic models.",
+    "Degree-12 Tr(M^6) static rank is certified upstream but its full rational atlas coordinates were not certified in the imported source state."
+  ]
+}

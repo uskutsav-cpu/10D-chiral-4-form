@@ -1,0 +1,5 @@
+{
+  "prime": 101,
+  "ambient_dim": 4,
+  "reachable_rows": [[1, 0, 1, 0], [0, 1, 0, 1]]
+}
