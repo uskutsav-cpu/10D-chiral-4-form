@@ -38,7 +38,7 @@ The current source project reports the following exact/provisional Paper-2 basel
 | 10 | 14 | 2 | 11 | 3 |
 | 12 | 72 | 4 | 67 | 5 |
 
-These numbers are **imported claims until independently frozen and revalidated in this repository**. The machine-readable record is `data/baseline/paper2_baseline.json`.
+These numbers are **imported claims and have not independently been recomputed in this repository yet**; they remain provisional here until frozen and revalidated. The machine-readable record is `data/baseline/paper2_baseline.json`.
 
 The conceptual surprise is that nonlinear closure is dramatically larger than the static stress algebra: at degree 12 it reaches **67/72** invariant directions despite a static stress span of only **4**.
 
