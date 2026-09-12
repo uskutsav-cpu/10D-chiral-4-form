@@ -15,9 +15,18 @@ def main():
         type=Path,
         default=Path("verification/degree10/obstruction_certificate.json"),
     )
+    p.add_argument(
+        "--degree10-model",
+        type=Path,
+        default=Path("verification/degree10/rational_model.json"),
+    )
     args = p.parse_args()
     result = import_predecessor_certificates(
-        args.source, args.existing, args.output, args.obstruction
+        args.source,
+        args.existing,
+        args.output,
+        args.obstruction,
+        args.degree10_model,
     )
     print(json.dumps(result, indent=2))
 
