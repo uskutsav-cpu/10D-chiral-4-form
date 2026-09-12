@@ -4,7 +4,7 @@ title: "Stress-Flow Orbits and Obstructions for 10D Chiral 4-Forms"
 type: software
 authors:
   - family-names: "Kumar"
-    given-names: "Utsav"
+    given-names: "Utsav Sunil"
 repository-code: "https://github.com/uskutsav-cpu/10D-chiral-4-form"
 license: "NOASSERTION"
-version: 0.1.0
+version: 0.2.0

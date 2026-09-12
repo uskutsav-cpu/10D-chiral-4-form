@@ -1,0 +1,11 @@
+{
+  "alternative_pure_stress_flow": "UNRESOLVED; reproduction does not exclude another generator",
+  "conformal_homogeneity_verified": true,
+  "correction": "I12*b**4/(144*I4**2) + I8*b**2*(1 - 24*b**2/7)/(288*I4)",
+  "patch": "I4 != 0; r^2=I4",
+  "real_branch": "not selected; algebraic calculation only",
+  "source": "arXiv:2509.14351v2 equations (3.12)-(3.16)",
+  "status": "published_identity_reproduction_not_new_reachability_result",
+  "stress_square": "I12*b**4/(144*I4**2) + I4*b**4/196 - I4*b**2/336 + I4/2304 - I8*b**4/(84*I4) + I8*b**2/(288*I4)",
+  "stress_square_identity_verified": true
+}

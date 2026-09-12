@@ -1,25 +1,19 @@
 #!/usr/bin/env python3
-"""Research driver placeholder for *genuine* generalized-flow generators.
-
-This command intentionally refuses to equate seed augmentation with generator
-augmentation.  Physics-specific forcing rows must be supplied by the upstream
-stress-tensor engine before a completion claim can be produced.
-"""
-
-from __future__ import annotations
-
-import argparse
+"""Run genuine f(tau,S) evaluations using an explicit experiment config."""
+from pathlib import Path
+import argparse,json
+from chiral4form.pipeline import run
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--declare-generator", action="append", default=[])
-    parser.parse_args()
-    raise SystemExit(
-        "NOT YET IMPLEMENTED: generator augmentation requires metric/stress variation "
-        "of each declared S_i. Seed augmentation is not accepted as a substitute."
-    )
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--config',type=Path,default=Path('configs/degree8_completion.json'))
+    parser.add_argument('--output',type=Path,default=Path('runs/degree8-generalized'))
+    parser.add_argument('--source',type=Path)
+    args=parser.parse_args()
+    config=json.loads(args.config.read_text())
+    if not config.get('extras'):
+        parser.error('configuration must declare actual extra scalar generators')
+    run(config,Path.cwd(),args.output,args.source)
 
-
-if __name__ == "__main__":
-    main()
+if __name__=='__main__':main()

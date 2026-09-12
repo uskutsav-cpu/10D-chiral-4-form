@@ -1,0 +1,763 @@
+{
+  "coefficient_height_bound": 500,
+  "coefficient_status": "bounded_rational_candidate_with_unused_prime_validation_not_symbolic_physics_proof",
+  "coefficients_reconstructed": 20,
+  "coordinate_ids": [
+    "I4_1",
+    "I6_1",
+    "I6_2",
+    "I8_1",
+    "I8_2",
+    "I8_3",
+    "I8_4",
+    "I8_5",
+    "I8_6",
+    "I4_1^2"
+  ],
+  "fields": {
+    "tr1": [
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "20",
+            "powers": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tr1*tr1": [
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "400",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr1*tr2": [
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr2": [
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "2",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "16",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "-96",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "-8",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr2*tr2": [
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "4",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr3": [
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "32/3",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "12",
+            "powers": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr4": [
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": null,
+        "terms": []
+      }
+    ]
+  },
+  "fit_primes": [
+    30011,
+    30013
+  ],
+  "generator_catalogue": [
+    {
+      "factors": [
+        "tr1"
+      ],
+      "id": "tr1",
+      "leading_degree": 4
+    },
+    {
+      "factors": [
+        "tr2"
+      ],
+      "id": "tr2",
+      "leading_degree": 4
+    },
+    {
+      "factors": [
+        "tr3"
+      ],
+      "id": "tr3",
+      "leading_degree": 6
+    },
+    {
+      "factors": [
+        "tr4"
+      ],
+      "id": "tr4",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "tr1",
+        "tr1"
+      ],
+      "id": "tr1*tr1",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "tr1",
+        "tr2"
+      ],
+      "id": "tr1*tr2",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "tr2",
+        "tr2"
+      ],
+      "id": "tr2*tr2",
+      "leading_degree": 8
+    }
+  ],
+  "holdout_prime": 30029,
+  "schema": 1
+}

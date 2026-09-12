@@ -1,0 +1,213 @@
+{
+  "base_commit": "0dedbebd6090017b67ab9999e3d25a1896264e19",
+  "created_utc": "2026-09-12T01:42:27.391197+00:00",
+  "editable_install": "passed --no-deps --no-build-isolation",
+  "engine_fingerprint": "41ebd58e533f16902c4813f87c26fcf41087634dfd9e053f5d49d0ef191c0b8d",
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "pytest": "9.0.2",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "experiments": {
+    "degree6": {
+      "fit_counts": [
+        4,
+        4,
+        4
+      ],
+      "holdouts_per_prime": [
+        2,
+        2,
+        2
+      ],
+      "hull_ranks": [
+        2,
+        2,
+        2
+      ],
+      "lie_rank_lower_bounds": [
+        2,
+        2,
+        2
+      ],
+      "primes": [
+        30011,
+        30013,
+        30029
+      ],
+      "state": "completed_declared_computations"
+    },
+    "degree8": {
+      "fit_counts": [
+        9,
+        9,
+        9
+      ],
+      "holdouts_per_prime": [
+        2,
+        2,
+        2
+      ],
+      "hull_ranks": [
+        5,
+        5,
+        5
+      ],
+      "lie_rank_lower_bounds": [
+        4,
+        4,
+        4
+      ],
+      "primes": [
+        30011,
+        30013,
+        30029
+      ],
+      "state": "completed_declared_computations"
+    },
+    "generalized8": {
+      "fit_counts": [
+        9,
+        9,
+        9
+      ],
+      "holdouts_per_prime": [
+        2,
+        2,
+        2
+      ],
+      "hull_ranks": [
+        10,
+        10,
+        10
+      ],
+      "lie_rank_lower_bounds": [
+        10,
+        10,
+        10
+      ],
+      "primes": [
+        30011,
+        30013,
+        30029
+      ],
+      "state": "completed_declared_computations"
+    },
+    "map_proof": {
+      "arithmetic_verification": true,
+      "certificate_hash": "53f82d39cbed38d089cc7fba124f7d7f0fca31228cc2d4db9bbea88ed1afe73f",
+      "identity_rows_per_sample": 21,
+      "integer_residual_bound": 7142400000000000000000000000,
+      "modulus_product": 22103549239860743913244869498289,
+      "prime_count": 7,
+      "samples": 63,
+      "status": "bounded_integer_residual_certificate_conditional_on_external_Hilbert_bounds_and_HLS_conventions"
+    }
+  },
+  "file_hashes": {
+    "verification/completion8_exact.json": "33685ea3920efaa4132674981c3164a42f44cff7a5845d0f3aab08391a98f9c8",
+    "verification/completion8_finite_search.json": "1698ed1796198880e59a546844cda403aec6efa7ac187c1226d792b26e989d6b",
+    "verification/degree6/analysis_prime30011.json": "e00867466c797ed87e1e71cada43108b4ec2dc9a67c7b6ca257954e0b35621bc",
+    "verification/degree6/analysis_prime30013.json": "a4e843c256369000c086fded4f537e607d514ba4d3ea760f8523cb6f5def4644",
+    "verification/degree6/analysis_prime30029.json": "cce6590127a976112d57237fd64a508ffe79d4a887c6e2690924d9bc08db95ca",
+    "verification/degree6/configuration.json": "9038054f5ac649c155659a57fc79ee2671429a4dcd31d8ee951320fdddbde9c0",
+    "verification/degree6/degree8_reduced_model.json": "e680a64f42ff7661eed44189c82e322819eb081d954834d161e8be810c398c7b",
+    "verification/degree6/environment.json": "4f035ebc9a6cd8a35f0a698ea154d1e23dd6c3336d60766b9224beb832b0a1dc",
+    "verification/degree6/execution_plan.json": "82af8522aab04c30c90bee011ad7d71464ef12d86bcdc27d3ce9f4a863be5809",
+    "verification/degree6/fields_prime30011.json": "0a5cfab048c442170c656d63419693fb83c3d7c074a3a757dafadde6327d2a1a",
+    "verification/degree6/fields_prime30013.json": "26ea97159b38dbf468537318c83ea81c9c73ae0940da0b4d6fe74be2e85eb43c",
+    "verification/degree6/fields_prime30029.json": "6281a9f58c3c05d36144d8c6507aef1752f3db303a86e9c20f2605ad24eb657a",
+    "verification/degree6/fit_degree4_prime30011.json": "0420bc687c60a1d2f221ad3abe3b01e1342fe28674ce98cbe48a3e3e0cb1d6c3",
+    "verification/degree6/fit_degree4_prime30013.json": "63e0d6579c805d84438939fa4ee819032c7987a73b6d0aacd9e4634fec320b84",
+    "verification/degree6/fit_degree4_prime30029.json": "48d13b509ae56a4ec5cc9bf96a46966be610e8159e6f65637f8aa6c121aee302",
+    "verification/degree6/fit_degree6_prime30011.json": "d2fc2c3bea3ee5e66055c8337cf1cd6a0b58f9a8ba3e74d9c1556e5a3a7bf299",
+    "verification/degree6/fit_degree6_prime30013.json": "a2420594eb452fa4c8209351701dbd64654ffe101616456a7e1b3ce0ed0da1dd",
+    "verification/degree6/fit_degree6_prime30029.json": "aea8eaa1ff1a36917609c6e1fa8e2bdb3abf7ee9aa003be8ffa07168d0f53089",
+    "verification/degree6/modmax_known_identity.json": "edf99b9a2125399c1b6661334a7a7373046f40965a66179f7f98ca17381c010d",
+    "verification/degree6/registry.json": "d0c4695abf14db56acf8d4b0e2c2bdf9bd34d63c643b7c903fed218dc7516968",
+    "verification/degree6/sextic_derivation.json": "bde926a55468853d3c9e8506e74e8f83ce74399a79a07cfffa91cc4e2c06a2dd",
+    "verification/degree6/source_manifest.json": "ceb6b0177f44df6f64e3c6feb4660c0d6ece82925972925442cd5888a454f9fa",
+    "verification/degree6/status.json": "3bc2f6d3555254660d6ffd1c21047c9685660d0c369464ffb0509bb0ab3417fb",
+    "verification/degree6/summary.json": "d8a1e9c999d094c64b0047afb71ca52b51a34d7ecacf7148150db732eab01ef2",
+    "verification/degree8/analysis_prime30011.json": "d5289fbd8e28aa7424f56cfd509b2b6b060c227350159ca9afe5c3505c373db3",
+    "verification/degree8/analysis_prime30013.json": "51520384d03e24fc698d7cbc49b24304e3f39005c7ca0fc6a5ecae37cbb1ca0b",
+    "verification/degree8/analysis_prime30029.json": "4f5c9944f6522238d7502bf71150f5d92a8e5d42b3362e53e3aa4513f595ed41",
+    "verification/degree8/configuration.json": "f0006bbef24cefeca4a7a5c9aa6c4794bfb68ff86a5f6ad04ecdd727e9fe3e55",
+    "verification/degree8/degree8_reduced_model.json": "e680a64f42ff7661eed44189c82e322819eb081d954834d161e8be810c398c7b",
+    "verification/degree8/environment.json": "4f035ebc9a6cd8a35f0a698ea154d1e23dd6c3336d60766b9224beb832b0a1dc",
+    "verification/degree8/execution_plan.json": "b848d03c57ce6cc12c2c841a688275ffbb86fc9e7f7a8d09295e57d52ab51b5a",
+    "verification/degree8/fields_prime30011.json": "7da829289df8206d2981cab65ac79d3abc92157275f9469cc4cfc760b705ea32",
+    "verification/degree8/fields_prime30013.json": "b9ae030738f85f3093a60796f5972af77ef826877b494214de48791cf014ea48",
+    "verification/degree8/fields_prime30029.json": "d64d86c5b8e5550a99f9eb992cfe96ca3c4fefdfa83726f53bc63edb78c00524",
+    "verification/degree8/fit_degree4_prime30011.json": "7486a13e56dc12400f3ee139624ab48125743989e35b2c17d8b3e67258b795c6",
+    "verification/degree8/fit_degree4_prime30013.json": "ef2fffc135acc4cf196136a98e7d379079f4876b3348374ba8ea126b913e2c8c",
+    "verification/degree8/fit_degree4_prime30029.json": "0c4d8a355b2cbcdd6fbb3000ad4d2d21cbef37b8c213a369cda6e1f2f6d06852",
+    "verification/degree8/fit_degree6_prime30011.json": "a7360a0c498f6062cc845a19b580374222f046fcd86c4da0f0027b432306dfff",
+    "verification/degree8/fit_degree6_prime30013.json": "f24958de48cb743bf24dd0ba56e3ff8c42a80924efa6ccb019d856ff49d7599f",
+    "verification/degree8/fit_degree6_prime30029.json": "8d7e2e3fcd7729db9cc8d737a805246f20f70c044c9ace2c3093de3c67f9c190",
+    "verification/degree8/fit_degree8_prime30011.json": "9d38b6dc7ce09b769b745f25d3bef60de851c0b637738033e3992e7d8c704860",
+    "verification/degree8/fit_degree8_prime30013.json": "4b28b63341567fc2416131a8d315fdadb739694c7b4b3f316a7ee1b810a714dd",
+    "verification/degree8/fit_degree8_prime30029.json": "dc9e79c68ab33f98d2c7da52a6edab689aa9dac431f4b506769447137250f26f",
+    "verification/degree8/modmax_known_identity.json": "edf99b9a2125399c1b6661334a7a7373046f40965a66179f7f98ca17381c010d",
+    "verification/degree8/registry.json": "d0c4695abf14db56acf8d4b0e2c2bdf9bd34d63c643b7c903fed218dc7516968",
+    "verification/degree8/sextic_derivation.json": "bde926a55468853d3c9e8506e74e8f83ce74399a79a07cfffa91cc4e2c06a2dd",
+    "verification/degree8/source_manifest.json": "ceb6b0177f44df6f64e3c6feb4660c0d6ece82925972925442cd5888a454f9fa",
+    "verification/degree8/status.json": "e4ebdc7aba6ed73b3548cd1d84100e0555882b1d1ff8b5a2fff4fbbeb3e407d1",
+    "verification/degree8/summary.json": "af955b45b0a9398e73778de136cab2d34fe67c3329787e2b2df2f88f2149a4e2",
+    "verification/degree8_orbit_exact.json": "e680a64f42ff7661eed44189c82e322819eb081d954834d161e8be810c398c7b",
+    "verification/degree8_rational_candidate.json": "9d379ef602db32f5a42da7413a110d5df8faec45da21471f808d81ce40b86b80",
+    "verification/generalized8/analysis_prime30011.json": "78dc3b3364d40dc71d524bc65e59fcea12a122b90fcae718d522f23b49b64268",
+    "verification/generalized8/analysis_prime30013.json": "bea8e7ab6d3c3da7315d6e9f6a2a87fd1000dd16a347f484fe1be71bf55cd70e",
+    "verification/generalized8/analysis_prime30029.json": "0300075b4fdfe66b6a82af781748951f1865b108ce0b911c5dde0afac3e7c98e",
+    "verification/generalized8/configuration.json": "b98bcc1fa40eb39f48afe606f853ae85f4eed99646206a18c7b114b9a7b861b3",
+    "verification/generalized8/degree8_reduced_model.json": "e680a64f42ff7661eed44189c82e322819eb081d954834d161e8be810c398c7b",
+    "verification/generalized8/environment.json": "4f035ebc9a6cd8a35f0a698ea154d1e23dd6c3336d60766b9224beb832b0a1dc",
+    "verification/generalized8/execution_plan.json": "b848d03c57ce6cc12c2c841a688275ffbb86fc9e7f7a8d09295e57d52ab51b5a",
+    "verification/generalized8/fields_prime30011.json": "9a58cbff4670834cf821fc90591beeeddc32fd6cd4b6c7f97d297e341e82c9ce",
+    "verification/generalized8/fields_prime30013.json": "50c76b3f802db1e03f90e9118cb988e8ba81382c5f855c3f1e95afaf4f57755d",
+    "verification/generalized8/fields_prime30029.json": "1b0e55ecce7c58d58e6927a597d4d295ef8d6b4ca84b0672e3fdc37516ca246d",
+    "verification/generalized8/fit_degree4_prime30011.json": "7486a13e56dc12400f3ee139624ab48125743989e35b2c17d8b3e67258b795c6",
+    "verification/generalized8/fit_degree4_prime30013.json": "ef2fffc135acc4cf196136a98e7d379079f4876b3348374ba8ea126b913e2c8c",
+    "verification/generalized8/fit_degree4_prime30029.json": "0c4d8a355b2cbcdd6fbb3000ad4d2d21cbef37b8c213a369cda6e1f2f6d06852",
+    "verification/generalized8/fit_degree6_prime30011.json": "49f3cdd9ea22ed668a81f9d1120f3d797c4139a0b01af2840ed898048ce72a67",
+    "verification/generalized8/fit_degree6_prime30013.json": "65ff623c64c68fb28ad9c6efff81e2977aa70281f37bdc8d953bf6836d6a6126",
+    "verification/generalized8/fit_degree6_prime30029.json": "6afb449c2736b5b7334794d5f46f430633a0ef90c76e1302481f553c8230bcdf",
+    "verification/generalized8/fit_degree8_prime30011.json": "6f3dc838324d8f7f5e2963036b401c542a1177f2247a53dbf5240d67c473cc24",
+    "verification/generalized8/fit_degree8_prime30013.json": "f19684abc8583e076d983b04cb66001b0a1f775c95f4a391de811306b8322dfa",
+    "verification/generalized8/fit_degree8_prime30029.json": "783a28ccc0a967503047f25ff4c9bac270e7f9c12b56d6f2c9f80d732f09ac02",
+    "verification/generalized8/modmax_known_identity.json": "edf99b9a2125399c1b6661334a7a7373046f40965a66179f7f98ca17381c010d",
+    "verification/generalized8/registry.json": "d0c4695abf14db56acf8d4b0e2c2bdf9bd34d63c643b7c903fed218dc7516968",
+    "verification/generalized8/sextic_derivation.json": "bde926a55468853d3c9e8506e74e8f83ce74399a79a07cfffa91cc4e2c06a2dd",
+    "verification/generalized8/source_manifest.json": "ceb6b0177f44df6f64e3c6feb4660c0d6ece82925972925442cd5888a454f9fa",
+    "verification/generalized8/status.json": "66b91c062c3c4f1d20ebb11efd51536f2aa879057e830319b8cb22ddb8eaf8cc",
+    "verification/generalized8/summary.json": "41019391d6eb07442a73ecc191835093c87c41aa4972dfb5cc8b5471a9fa1313",
+    "verification/map8/map_certificate.json": "80934475581b4a7314fae4d771994e51545aefa8df0ff486ca9913a4c881d3ec",
+    "verification/map8/summary.json": "c09eb005940f0507384e0c0bf1ed856d46fd15d295c25578de77fd682d93a0c7",
+    "verification/modmax_known_identity.json": "edf99b9a2125399c1b6661334a7a7373046f40965a66179f7f98ca17381c010d",
+    "verification/release/editable-install.log": "2900d52bb9e38cb581201b5450ab838da46759591ec0c7c85f622dc2809e7c74",
+    "verification/release/make-verify.log": "44d4b01bc8e420f4663a74aeba7f34c1073cf7956d5aa9eb568b138c59079dce",
+    "verification/sextic_exact.json": "bde926a55468853d3c9e8506e74e8f83ce74399a79a07cfffa91cc4e2c06a2dd"
+  },
+  "not_completed": [
+    "Full predecessor test-suite rerun",
+    "Full degree-ten/twelve physical map and nonlinear orbit reclassification",
+    "Independent external Hilbert-series computation",
+    "Alternative pure-stress ModMax reachability",
+    "All-orders classification",
+    "Global minimality over unrestricted extra scalars",
+    "Remote GitHub Actions matrix"
+  ],
+  "release": "0.2.0",
+  "remote_actions": "No remote write or push performed in this release session.",
+  "schema": 1,
+  "shell_syntax": "passed run_research.sh and cluster.slurm",
+  "source_lines": 2636,
+  "source_modules": 30,
+  "unit_and_integration_tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 make verify",
+    "failed": 0,
+    "passed": 142
+  }
+}

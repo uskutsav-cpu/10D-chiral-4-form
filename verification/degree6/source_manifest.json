@@ -1,0 +1,12 @@
+{
+  "fixture_sha256": "e79a015fd02618b2de35343f8d3eb9c41fe8186a708fd3f6e7035f0bef8bf4d0",
+  "metadata": {
+    "comment": "The nine graph definitions were read directly through the GitHub connector; this is a curated extract, not the complete upstream file.",
+    "source_commit": "3ed32805b38ce34216b34888f6539e3538e90fb9",
+    "source_git_blob": "9ecc3d3a61722eadd31fcfb272e46b5f4969426f",
+    "source_path": "results/10d_order8.json",
+    "source_repository": "uskutsav-cpu/selfdual-5form-invariants",
+    "status": "curated_source_excerpt_not_recomputed_claim"
+  },
+  "status": "bundled_curated_excerpt_not_full_upstream_snapshot"
+}

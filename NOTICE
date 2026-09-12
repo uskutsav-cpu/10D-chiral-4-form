@@ -1,0 +1,13 @@
+# Attribution and scope
+
+This repository was prepared for Utsav Sunil Kumar using AI-assisted coding.
+The generated code and tests require human scientific review; passing tests
+are not peer review. No institutional affiliation or publication acceptance is
+implied. No new project-wide software license has been selected here.
+
+The original foundation Git history is retained. The low-degree graph formulas
+are an attributed excerpt of the user's predecessor repository at the pinned
+commit recorded in the fixture. The upstream Python implementation is not
+vendored or silently executed. HLS stress formulas and invariant-theory inputs
+are cited in docs/LITERATURE.md. Existing mathematical constructions are not
+claimed as inventions of this implementation.

@@ -1,0 +1,155 @@
+{
+  "coordinate_ids": [
+    "I4_1",
+    "I6_1",
+    "I6_2",
+    "I8_1",
+    "I8_2",
+    "I8_3",
+    "I8_4",
+    "I8_5",
+    "I8_6",
+    "I4_1^2"
+  ],
+  "external_inputs": [
+    "HLS (2.33),(3.3) and the stated graph-basis identities",
+    "independent tensor fitting checks the map on finite samples, not all fields"
+  ],
+  "ideal_tangency": {
+    "all_tangent": true,
+    "domain": "QQ",
+    "groebner_basis": [
+      "c0**3 + c4/16",
+      "c2",
+      "c5",
+      "c6",
+      "c7",
+      "c8"
+    ],
+    "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ",
+    "not_an_all_orders_field_theory_theorem": true,
+    "remainders": {
+      "tr1": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "tr1*tr1": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "tr1*tr2": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "tr2": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "tr2*tr2": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "tr3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "tr4": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "status": "exact_finite_model_ideal_tangency"
+  },
+  "interpretation_warning": "five-dimensional linear hull is not a five-dimensional orbit",
+  "lie_rank_through_depth_3": 4,
+  "linear_hull_rank": 5,
+  "nonlinear_obstruction": "c_I8_2 + 16*c_I4_1^3",
+  "nonzero_control_minor": "256/3 on (c4,c6J,c8_1,c8_product)",
+  "not_established": [
+    "priority/novelty",
+    "degree-ten or degree-twelve orbit classification",
+    "conformal/nonanalytic reachability",
+    "causality or unitary physical admissibility"
+  ],
+  "orbit_constraints": [
+    "c_I6_2=0",
+    "c_I8_3=0",
+    "c_I8_4=0",
+    "c_I8_5=0",
+    "c_I8_6=0",
+    "c_I8_2=-16*c_I4_1^3"
+  ],
+  "proof_scope": "finite degree-eight polynomial model, signed independent scalar controls, free seed",
+  "reduced_model_orbit_dimension": 4,
+  "status": "exact_QQ_reduced_model_result_conditional_on_physics_basis_map",
+  "sufficiency_witness": {
+    "endpoint": [
+      "2",
+      "3/7",
+      "0",
+      "5",
+      "-128",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-11/13"
+    ],
+    "stages": [
+      {
+        "amount": "1",
+        "generator": "tr2"
+      },
+      {
+        "amount": "9/224",
+        "generator": "tr3"
+      },
+      {
+        "amount": "-49/3",
+        "generator": "tr4"
+      },
+      {
+        "amount": "9671/4368",
+        "generator": "tr2*tr2"
+      }
+    ]
+  },
+  "transport_checks": {
+    "tr1": true,
+    "tr1*tr1": true,
+    "tr1*tr2": true,
+    "tr2": true,
+    "tr2*tr2": true,
+    "tr3": true,
+    "tr4": true
+  },
+  "transport_equation": "dOmega8/dlambda = 60*u_tr1(lambda)*Omega8"
+}

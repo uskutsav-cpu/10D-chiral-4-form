@@ -1,0 +1,14 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///mnt/data/paper2_work/repo
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: chiral4form
+  Building editable for chiral4form (pyproject.toml): started
+  Building editable for chiral4form (pyproject.toml): finished with status 'done'
+  Created wheel for chiral4form: filename=chiral4form-0.2.0-0.editable-py3-none-any.whl size=5259 sha256=bc70fc6b5f32497dfdb2dd97ff9995bd6fea02986535b51df2f72f25a5490391
+  Stored in directory: /tmp/pip-ephem-wheel-cache-rpdlm4ju/wheels/32/fa/20/67de471e4b1d6d74d3aedf82979514980afb84b927930d9a8c
+Successfully built chiral4form
+Installing collected packages: chiral4form
+Successfully installed chiral4form-0.2.0

@@ -1,35 +1,32 @@
-# Claim Ledger
+# Claim ledger — executable release
 
-Statuses:
-- **IMPORTED** — reported by the predecessor repository; not independently recomputed here yet.
-- **REPRODUCED** — independently reproduced in this repository under the same declared assumptions.
-- **ESTABLISHED** — analytic/exact proof or exact certificate plus scope audit.
-- **CONJECTURE** — supported but unproved.
-- **OPEN** — target only.
+`EXACT CONDITIONAL` means exact algebra/certificates with explicitly named
+physics or invariant-theory inputs. It does not mean those inputs were
+independently derived, nor that novelty was established.
 
-| ID | Claim | Status | Required evidence before publication |
+| ID | Claim | Status | Evidence / restriction |
 |---|---|---|---|
-| C01 | Full graded dimensions through degree 12 are `(1,2,7,14,72)` | IMPORTED | frozen source hashes + independent atlas verification |
-| C02 | Static stress dimensions through degree 12 are `(1,1,2,2,4)` | IMPORTED | exact stress-row rank certificates |
-| C03 | Free-seed dynamic reachable dimensions are `(1,1,3,11,67)` | IMPORTED | exact closure certificates on fresh primes/seeds; characteristic-zero scope stated |
-| C04 | Quotient dimensions are `(0,1,4,3,5)` | IMPORTED | follows only after C01 and C03 are certified in the same spaces |
-| C05 | Sextic `K6` is transported but not created from `q6=0` | IMPORTED | analytic generator-exhaustion proof + exact regression |
-| C06 | `q6_dot = 40 a(lambda) q6` in pinned normalization | IMPORTED | convention derivation + symbolic projection + numerical cross-check |
-| C07 | A five-direction **seed** augmentation closes through degree 8 | IMPORTED | preserve wording: seed result only |
-| C08 | The same five directions form a minimal generalized **generator** set | OPEN | genuine `f(T,S_i,lambda)` closure + removal minimality |
-| C09 | `Q8` has a compact intrinsic tensor/representation characterization | OPEN | explicit tensor basis or dual invariant functionals |
-| C10 | `Q10,Q12` admit basis-independent annihilator certificates | OPEN | exact dual-space certificates |
-| C11 | The 10D ModMax-like model is pure-stress reachable | OPEN | explicit generator reconstruction OR falsified by obstruction |
-| C12 | The 10D ModMax-like model is pure-stress obstructed | OPEN | explicit nonzero intrinsic obstruction OR falsified by reconstruction |
-| C13 | A finite all-orders obstruction module controls reachability | CONJECTURE | proof or sharply delimited theorem |
-| C14 | Dynamic near-saturation persists at degree 14 | OPEN | independent degree-14 probe |
+| C01 | Ambient dimensions through degree 12 `(1,2,7,14,72)` | EXTERNAL / IMPORTED | Only the degree-4/6/8 evaluation map is certified in this release |
+| C02 | Static stress dimensions `(1,1,2,2,4)` | IMPORTED | Not a nonlinear orbit dimension |
+| C03 | Legacy closure dimensions `(1,1,3,11,67)` | IMPORTED; ORBIT INTERPRETATION WITHDRAWN | Linear hull projections are not independent orbit dimensions |
+| C04 | Legacy quotient dimensions `(0,1,4,3,5)` | IMPORTED LINEAR DATA ONLY | Do not call this a nonlinear orbit quotient |
+| C05 | Sextic coupling obstruction is transported homogeneously | EXACT CONDITIONAL | `sextic.py`, HLS hypotheses and map certificate |
+| C06 | `q6_dot=40 u_tr1 q6` | EXACT CONDITIONAL | `q6=(125/3)c_I6_2`; not `K6(F)=0` |
+| C07 | Prior five-direction seed augmentation | IMPORTED | Seed statement only; no generator implication |
+| C08 | Those five extras complete the degree-eight generalized-generator model | REFUTED IN DECLARED MODEL | Omega8 survives; exact model has rank nine rather than ten |
+| C09 | `Omega8=b2+16a^3`, with `Omega8_dot=60u_tr1 Omega8` | EXACT CONDITIONAL | Bounded degree-eight map certificate and exact polynomial derivation |
+| C10 | Degree-eight free-seed orbit is four-dimensional, its linear hull five-dimensional | EXACT CONDITIONAL | Six invariant constraints plus four explicit control segments |
+| C11 | Six named homogeneous extras complete degree eight and are necessary within that catalogue | EXACT CONDITIONAL | Nonzero ten-control minor; one surviving obstruction for each omission |
+| C12 | Six is the minimum over arbitrary additional scalars | OPEN / NOT CLAIMED | Different homogeneous or inhomogeneous catalogues require new analysis |
+| C13 | Degree-ten/twelve nonlinear orbit and completion classification | OPEN | Importer, evaluator, fitting and analysis interfaces exist; full computation not claimed |
+| C14 | Pure-stress ModMax reachability or obstruction | OPEN | Only published square-root/stress identities are reproduced |
+| C15 | Finite all-orders obstruction ideal | CONJECTURAL PROGRAM | No all-orders equivalence is asserted |
+| C16 | Priority/novelty of the new finite-model results | UNREVIEWED | Requires targeted literature and mentor review |
 
-## Forbidden shortcuts
+## No shortcuts
 
-The manuscript must not:
-- call C03 an all-orders result;
-- infer C08 from C07;
-- call an arbitrary graph complement “intrinsic”;
-- call modular equality a characteristic-zero equality without an upper-bound/lift argument;
-- describe `K6` as absent from every pure-stress trajectory;
-- apply polynomial theorems directly to nonanalytic conformal models without a localization argument.
+Do not replace a nonlinear orbit by a span of coefficient rows. Do not infer
+an upper bound from agreeing modular ranks. Do not treat a bounded rational
+candidate plus a holdout as a symbolic identity. Do not infer generator
+minimality from seed augmentation or arbitrary graph pivot removal. Do not
+apply polynomial zero-field theorems to ModMax without a new argument.

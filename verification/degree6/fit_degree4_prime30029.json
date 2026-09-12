@@ -1,0 +1,104 @@
+{
+  "all_holdouts_passed": true,
+  "basis_evaluations": [
+    [
+      17870
+    ],
+    [
+      8681
+    ],
+    [
+      21049
+    ],
+    [
+      11337
+    ],
+    [
+      19540
+    ],
+    [
+      1611
+    ]
+  ],
+  "basis_ids": [
+    "I4_1"
+  ],
+  "coefficient_row_span_certificate": {
+    "ambient_dim": 1,
+    "annihilators": [],
+    "interpretation": "supplied_row_span_only",
+    "minor_determinant": 20,
+    "pivot_columns": [
+      0
+    ],
+    "pivot_rows": [
+      0
+    ],
+    "prime": 30029,
+    "quotient_dim": 0,
+    "reachable_rank": 1
+  },
+  "coordinates": [
+    {
+      "generator": "tr1",
+      "monomial": [
+        "I4_1"
+      ],
+      "row": [
+        20
+      ]
+    },
+    {
+      "generator": "tr2",
+      "monomial": [],
+      "row": [
+        2
+      ]
+    }
+  ],
+  "degree": 4,
+  "fit_seed_indices": [
+    0
+  ],
+  "holdout_seed_indices": [
+    4,
+    5
+  ],
+  "identity_proof_status": "finite_field_fit_and_disjoint_holdout_not_symbolic",
+  "interpretation": "sample_validated_coefficients_not_a_nonlinear_reachable_set",
+  "prime": 30029,
+  "sample_seeds": [
+    2026091201,
+    2026091202,
+    2026091203,
+    2026091204,
+    2026091205,
+    2026091206
+  ],
+  "target_evaluations": [
+    [
+      27081,
+      5711
+    ],
+    [
+      23475,
+      17362
+    ],
+    [
+      574,
+      12069
+    ],
+    [
+      16537,
+      22674
+    ],
+    [
+      423,
+      9051
+    ],
+    [
+      2191,
+      3222
+    ]
+  ]
+}

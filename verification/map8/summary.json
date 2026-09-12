@@ -1,0 +1,10 @@
+{
+  "arithmetic_verification": true,
+  "certificate_hash": "53f82d39cbed38d089cc7fba124f7d7f0fca31228cc2d4db9bbea88ed1afe73f",
+  "identity_rows_per_sample": 21,
+  "integer_residual_bound": 7142400000000000000000000000,
+  "modulus_product": 22103549239860743913244869498289,
+  "prime_count": 7,
+  "samples": 63,
+  "status": "bounded_integer_residual_certificate_conditional_on_external_Hilbert_bounds_and_HLS_conventions"
+}

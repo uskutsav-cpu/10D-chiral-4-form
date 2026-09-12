@@ -1,0 +1,182 @@
+{
+  "all_holdouts_passed": true,
+  "basis_evaluations": [
+    [
+      10064,
+      17252
+    ],
+    [
+      16958,
+      22752
+    ],
+    [
+      6360,
+      14948
+    ],
+    [
+      17325,
+      4886
+    ],
+    [
+      25595,
+      17272
+    ],
+    [
+      19343,
+      17991
+    ],
+    [
+      14622,
+      28140
+    ],
+    [
+      18334,
+      11698
+    ],
+    [
+      10384,
+      22502
+    ],
+    [
+      4056,
+      25533
+    ],
+    [
+      6160,
+      15964
+    ]
+  ],
+  "basis_ids": [
+    "I6_1",
+    "I6_2"
+  ],
+  "coefficient_row_span_certificate": {
+    "ambient_dim": 2,
+    "annihilators": [],
+    "interpretation": "supplied_row_span_only",
+    "minor_determinant": 1600,
+    "pivot_columns": [
+      0,
+      1
+    ],
+    "pivot_rows": [
+      0,
+      1
+    ],
+    "prime": 30029,
+    "quotient_dim": 0,
+    "reachable_rank": 2
+  },
+  "coordinates": [
+    {
+      "generator": "tr1",
+      "monomial": [
+        "I6_1"
+      ],
+      "row": [
+        40,
+        0
+      ]
+    },
+    {
+      "generator": "tr1",
+      "monomial": [
+        "I6_2"
+      ],
+      "row": [
+        0,
+        40
+      ]
+    },
+    {
+      "generator": "tr3",
+      "monomial": [],
+      "row": [
+        20030,
+        0
+      ]
+    }
+  ],
+  "degree": 6,
+  "fit_seed_indices": [
+    0,
+    1
+  ],
+  "holdout_seed_indices": [
+    9,
+    10
+  ],
+  "identity_proof_status": "finite_field_fit_and_disjoint_holdout_not_symbolic",
+  "interpretation": "sample_validated_coefficients_not_a_nonlinear_reachable_set",
+  "prime": 30029,
+  "sample_seeds": [
+    2026091201,
+    2026091202,
+    2026091203,
+    2026091204,
+    2026091205,
+    2026091206,
+    2026091207,
+    2026091208,
+    2026091209,
+    2026091210,
+    2026091211
+  ],
+  "target_evaluations": [
+    [
+      12183,
+      29442,
+      27272
+    ],
+    [
+      17682,
+      9210,
+      10721
+    ],
+    [
+      14168,
+      27369,
+      7782
+    ],
+    [
+      2333,
+      15266,
+      4626
+    ],
+    [
+      2814,
+      213,
+      12762
+    ],
+    [
+      22995,
+      28973,
+      6132
+    ],
+    [
+      14329,
+      14527,
+      5823
+    ],
+    [
+      12664,
+      17485,
+      5379
+    ],
+    [
+      24983,
+      29239,
+      10666
+    ],
+    [
+      12095,
+      334,
+      13235
+    ],
+    [
+      6168,
+      7951,
+      25668
+    ]
+  ]
+}

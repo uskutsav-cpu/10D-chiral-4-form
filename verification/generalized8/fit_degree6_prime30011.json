@@ -1,0 +1,201 @@
+{
+  "all_holdouts_passed": true,
+  "basis_evaluations": [
+    [
+      28737,
+      11996
+    ],
+    [
+      21963,
+      4884
+    ],
+    [
+      28358,
+      7476
+    ],
+    [
+      4845,
+      26102
+    ],
+    [
+      4997,
+      3118
+    ],
+    [
+      19506,
+      27059
+    ],
+    [
+      28097,
+      18759
+    ],
+    [
+      2281,
+      20415
+    ],
+    [
+      29357,
+      15289
+    ],
+    [
+      2583,
+      19805
+    ],
+    [
+      7634,
+      24181
+    ]
+  ],
+  "basis_ids": [
+    "I6_1",
+    "I6_2"
+  ],
+  "coefficient_row_span_certificate": {
+    "ambient_dim": 2,
+    "annihilators": [],
+    "interpretation": "supplied_row_span_only",
+    "minor_determinant": 29971,
+    "pivot_columns": [
+      0,
+      1
+    ],
+    "pivot_rows": [
+      0,
+      1
+    ],
+    "prime": 30011,
+    "quotient_dim": 0,
+    "reachable_rank": 2
+  },
+  "coordinates": [
+    {
+      "generator": "S:I6_2",
+      "monomial": [],
+      "row": [
+        0,
+        1
+      ]
+    },
+    {
+      "generator": "tr1",
+      "monomial": [
+        "I6_1"
+      ],
+      "row": [
+        40,
+        0
+      ]
+    },
+    {
+      "generator": "tr1",
+      "monomial": [
+        "I6_2"
+      ],
+      "row": [
+        0,
+        40
+      ]
+    },
+    {
+      "generator": "tr3",
+      "monomial": [],
+      "row": [
+        20018,
+        0
+      ]
+    }
+  ],
+  "degree": 6,
+  "fit_seed_indices": [
+    0,
+    1
+  ],
+  "holdout_seed_indices": [
+    9,
+    10
+  ],
+  "identity_proof_status": "finite_field_fit_and_disjoint_holdout_not_symbolic",
+  "interpretation": "sample_validated_coefficients_not_a_nonlinear_reachable_set",
+  "prime": 30011,
+  "sample_seeds": [
+    2026091201,
+    2026091202,
+    2026091203,
+    2026091204,
+    2026091205,
+    2026091206,
+    2026091207,
+    2026091208,
+    2026091209,
+    2026091210,
+    2026091211
+  ],
+  "target_evaluations": [
+    [
+      11996,
+      9062,
+      29675,
+      6418
+    ],
+    [
+      4884,
+      8201,
+      15294,
+      24195
+    ],
+    [
+      7476,
+      23913,
+      28941,
+      12379
+    ],
+    [
+      26102,
+      13734,
+      23706,
+      21669
+    ],
+    [
+      3118,
+      19814,
+      4676,
+      3283
+    ],
+    [
+      27059,
+      29965,
+      1964,
+      27998
+    ],
+    [
+      18759,
+      13473,
+      85,
+      9595
+    ],
+    [
+      20415,
+      1207,
+      6303,
+      14327
+    ],
+    [
+      15289,
+      3851,
+      11340,
+      23035
+    ],
+    [
+      19805,
+      13287,
+      11914,
+      27552
+    ],
+    [
+      24181,
+      5250,
+      6888,
+      1400
+    ]
+  ]
+}

@@ -10,3 +10,9 @@ dist/
 work/
 tmp/
 results/generated/
+.cache/
+runs/
+results/
+.coverage
+htmlcov/
+coverage.xml

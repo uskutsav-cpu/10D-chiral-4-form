@@ -1,0 +1,580 @@
+{
+  "degree": 8,
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "higher_degree_imported_dimensions_reproved": false,
+  "prime_reports": [
+    {
+      "basis_ranks": {
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {
+        "independent_analytic_degree8_map": true
+      },
+      "finite_depth_lie_rank": {
+        "completed_depth": 3,
+        "history": [
+          {
+            "depth": 1,
+            "fields_visited": 7,
+            "rank": 4
+          },
+          {
+            "depth": 2,
+            "fields_visited": 23,
+            "rank": 4
+          },
+          {
+            "depth": 3,
+            "fields_visited": 49,
+            "rank": 4
+          }
+        ],
+        "interpretation": "finite_depth_lie_rank_lower_bound",
+        "not_a_global_orbit_classification": true,
+        "rank": 4,
+        "terminated": "depth_or_bracket_exhaustion",
+        "witnesses": [
+          {
+            "value": [
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "3"
+          },
+          {
+            "value": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4"
+            ],
+            "word": "4"
+          },
+          {
+            "value": [
+              "0",
+              "20018",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "5"
+          },
+          {
+            "value": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "6"
+          }
+        ]
+      },
+      "fit_count": 9,
+      "holdouts": 2,
+      "hull_projection_ranks": {
+        "4": 1,
+        "6": 1,
+        "8": 3
+      },
+      "linear_invariant_hull": {
+        "basis": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "domain": "GF(30011)",
+        "history": [
+          {
+            "iteration": 0,
+            "rank": 4
+          },
+          {
+            "iteration": 1,
+            "rank": 5
+          },
+          {
+            "iteration": 2,
+            "rank": 5
+          }
+        ],
+        "interpretation": "minimal_linear_flow_invariant_hull_not_orbit",
+        "rank": 5,
+        "stabilized": true
+      },
+      "prime": 30011
+    },
+    {
+      "basis_ranks": {
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {
+        "independent_analytic_degree8_map": true
+      },
+      "finite_depth_lie_rank": {
+        "completed_depth": 3,
+        "history": [
+          {
+            "depth": 1,
+            "fields_visited": 7,
+            "rank": 4
+          },
+          {
+            "depth": 2,
+            "fields_visited": 23,
+            "rank": 4
+          },
+          {
+            "depth": 3,
+            "fields_visited": 49,
+            "rank": 4
+          }
+        ],
+        "interpretation": "finite_depth_lie_rank_lower_bound",
+        "not_a_global_orbit_classification": true,
+        "rank": 4,
+        "terminated": "depth_or_bracket_exhaustion",
+        "witnesses": [
+          {
+            "value": [
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "3"
+          },
+          {
+            "value": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4"
+            ],
+            "word": "4"
+          },
+          {
+            "value": [
+              "0",
+              "10015",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "5"
+          },
+          {
+            "value": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "6"
+          }
+        ]
+      },
+      "fit_count": 9,
+      "holdouts": 2,
+      "hull_projection_ranks": {
+        "4": 1,
+        "6": 1,
+        "8": 3
+      },
+      "linear_invariant_hull": {
+        "basis": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "domain": "GF(30013)",
+        "history": [
+          {
+            "iteration": 0,
+            "rank": 4
+          },
+          {
+            "iteration": 1,
+            "rank": 5
+          },
+          {
+            "iteration": 2,
+            "rank": 5
+          }
+        ],
+        "interpretation": "minimal_linear_flow_invariant_hull_not_orbit",
+        "rank": 5,
+        "stabilized": true
+      },
+      "prime": 30013
+    },
+    {
+      "basis_ranks": {
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {
+        "independent_analytic_degree8_map": true
+      },
+      "finite_depth_lie_rank": {
+        "completed_depth": 3,
+        "history": [
+          {
+            "depth": 1,
+            "fields_visited": 7,
+            "rank": 4
+          },
+          {
+            "depth": 2,
+            "fields_visited": 23,
+            "rank": 4
+          },
+          {
+            "depth": 3,
+            "fields_visited": 49,
+            "rank": 4
+          }
+        ],
+        "interpretation": "finite_depth_lie_rank_lower_bound",
+        "not_a_global_orbit_classification": true,
+        "rank": 4,
+        "terminated": "depth_or_bracket_exhaustion",
+        "witnesses": [
+          {
+            "value": [
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "3"
+          },
+          {
+            "value": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4"
+            ],
+            "word": "4"
+          },
+          {
+            "value": [
+              "0",
+              "20030",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "5"
+          },
+          {
+            "value": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "word": "6"
+          }
+        ]
+      },
+      "fit_count": 9,
+      "holdouts": 2,
+      "hull_projection_ranks": {
+        "4": 1,
+        "6": 1,
+        "8": 3
+      },
+      "linear_invariant_hull": {
+        "basis": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "domain": "GF(30029)",
+        "history": [
+          {
+            "iteration": 0,
+            "rank": 4
+          },
+          {
+            "iteration": 1,
+            "rank": 5
+          },
+          {
+            "iteration": 2,
+            "rank": 5
+          }
+        ],
+        "interpretation": "minimal_linear_flow_invariant_hull_not_orbit",
+        "rank": 5,
+        "stabilized": true
+      },
+      "prime": 30029
+    }
+  ],
+  "run_fingerprint": "8d4fb5e7cbb833d3e84dea4a345f448e47bb3f9f1b889c835b21536d61354c51",
+  "schema": 1,
+  "source_status": "bundled_curated_excerpt_not_full_upstream_snapshot",
+  "state": "completed_declared_computations",
+  "warnings": [
+    "Linear invariant hull is not the nonlinear reachable set.",
+    "Finite-field fits and held-out samples are not symbolic identities over QQ.",
+    "The degree-eight analytic orbit report is conditional on its physics-to-basis map.",
+    "ModMax output reproduces published algebra; alternative pure-stress reachability remains open."
+  ]
+}

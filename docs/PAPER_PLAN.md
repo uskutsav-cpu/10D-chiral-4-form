@@ -1,36 +1,39 @@
-# Manuscript Plan
+# Updated manuscript plan
 
-## Working title
+**Working title:** Nonlinear Orbit Obstructions for Ten-Dimensional Chiral
+Four-Form Stress Flows.
 
-**Stress-Flow Orbits and Obstructions for Ten-Dimensional Chiral Four-Forms**
+The earlier foundation plan treated a graded linear closure quotient as a full
+reachability classification. The degree-eight calculation shows that this is
+not justified. The core paper should now make this distinction explicit.
 
-## Central narrative
+## Demonstrated finite-model story
 
-Static stress counting badly underestimates what nonlinear feedback can generate, but the resulting dynamic closure is still not universal. The physically meaningful object is the stress-flow reachable distribution and its intrinsic quotient.
+1. Define derivative-free analytic interactions, polynomial scalar stress
+   generators, coupling controls, free seed, and field-degree truncation.
+2. Give a reproducible map from 10D self-dual tensors to the polynomial vector
+   fields, with the HLS conventions and external invariant counts cited.
+3. Establish sextic homogeneous transport, and the nonlinear octic relative
+   invariant `Omega8=b2+16*a^3`.
+4. Prove the four-dimensional free-seed orbit by an invariant graph and an
+   explicit four-segment construction. Contrast it with the five-dimensional
+   linear hull; do not interpret the latter as the orbit.
+5. Give genuine generalized-flow completion within the six-element homogeneous
+   catalogue. State the exact catalogue scope, removal obstructions, and the
+   counterexample to the old five-extra claim.
+6. Discuss higher-degree and nonanalytic extensions honestly as open items.
 
-## Proposed structure
+## Expansion before submission
 
-1. **Introduction** — HLS open problem and lower-dimensional contrast.
-2. **Invariant coordinates** — brief interface to Paper 1; no re-derivation of the atlas.
-3. **Formal reachability** — definitions of static span, forcing, seed closure, arbitrary seed, and generalized generators.
-4. **Static versus dynamic closure** — exact dimension table through degree 12.
-5. **Intrinsic sextic obstruction** — analytic `K6` transport theorem.
-6. **Higher obstruction spaces** — `Q8`, `Q10`, `Q12` via annihilators and intrinsic tensors.
-7. **Minimal generalized flow** — genuine generator augmentation and minimality scope.
-8. **Conformal localization and ModMax-like sector** — decisive reachability/obstruction test.
-9. **All-orders structure** — theorem if achieved; otherwise sharply delimited conjecture plus degree-14 evidence.
-10. **Discussion** — why D=10 is neither lower-dimensional universal nor naively tiny in its stress-generated sector.
+Degree-ten/twelve full orbit calculations, an intrinsic reformulation of the
+nonlinear ideal under alternative invariant coordinates, and a genuine conformal
+application could strengthen the paper. None is supplied by relabelling imported
+rank tables. ModMax reproduction is prior-work validation, not a new reachability
+result. Publication venue and novelty require expert judgement; no venue or
+acceptance guarantee is encoded in the software.
 
-## Minimum submission package
+## Author review gates
 
-Required:
-- Phases 0–3 complete;
-- at least one intrinsic higher-degree obstruction beyond `K6`, or a robust annihilator formulation;
-- ModMax/conformal test complete;
-- all coefficients convention-checked;
-- fresh-prime/seed validation;
-- no unresolved mismatch between manuscript numbers and machine artifacts.
-
-## Venue positioning
-
-A rigorous finite-degree classification with intrinsic theorem and physical application is naturally in the JHEP/PRD mathematical-physics range. A genuine all-orders criterion with a crisp conformal consequence may justify a higher-visibility strategy, but venue ambition must not inflate the claims.
+All tensor conventions, the physical interpretation of the auxiliary potential,
+external Hilbert inputs, scope of signed controls, and novelty must be reviewed.
+The files in `manuscript/` are a results draft, not an approved manuscript.

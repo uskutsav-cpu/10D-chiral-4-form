@@ -1,0 +1,53 @@
+python3 -m compileall -q src scripts tests
+python3 -m pytest -q
+........................................................................ [ 50%]
+......................................................................   [100%]
+142 passed in 3.92s
+python3 scripts/validate_baseline.py
+status: imported_not_independently_recomputed_here
+source: uskutsav-cpu/selfdual-5form-invariants@stress-flow/classification-through-degree12@3ed32805b38ce34216b34888f6539e3538e90fb9
+degree  full  static  legacy-hull  legacy-codim  forcing
+     4     1       1          1         0        1
+     6     2       1          1         1        1
+     8     7       2          3         4        3
+    10    14       2         11         3        5
+    12    72       4         67         5       21
+CAUTION: legacy closure projections are not nonlinear orbit dimensions
+PASS: baseline is internally consistent (not an independent physics recomputation)
+python3 scripts/obstruction_module.py data/baseline/demo_reachable_rows.json
+{
+  "prime": 101,
+  "ambient_dim": 4,
+  "reachable_rank": 2,
+  "quotient_dim": 2,
+  "annihilators": [
+    [
+      100,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      100,
+      0,
+      1
+    ]
+  ],
+  "pivot_rows": [
+    0,
+    1
+  ],
+  "pivot_columns": [
+    0,
+    1
+  ],
+  "minor_determinant": 1,
+  "interpretation": "supplied_row_span_only"
+}
+python3 -m chiral4form verify-map8 verification/map8/map_certificate.json
+{
+  "verified": true,
+  "tensor_values_reevaluated": false,
+  "scope": "bounded arithmetic and stated external inputs; not all orders"
+}
