@@ -1,0 +1,479 @@
+{
+  "candidate_catalogue": [
+    "I6_2",
+    "I8_2",
+    "I8_3",
+    "I8_4",
+    "I8_5",
+    "I8_6"
+  ],
+  "five_extra_model_lie_rank": 9,
+  "five_extra_model_missing_constraint": "c_I8_2 + 16*c_I4_1^3 = 0",
+  "full_rank_control_minor": "-256/3",
+  "global_minimum_over_all_possible_F5_structures": "NOT_CLAIMED",
+  "local_orbit_dimension": 10,
+  "necessary_catalogue_cardinality": 6,
+  "not_established": [
+    "degree-ten/twelve completion",
+    "minimality outside this catalogue",
+    "nonanalytic or physically admissible completion"
+  ],
+  "removal_obstructions": [
+    {
+      "ideal_tangency": {
+        "all_tangent": true,
+        "domain": "QQ",
+        "groebner_basis": [
+          "c2"
+        ],
+        "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ",
+        "not_an_all_orders_field_theory_theorem": true,
+        "remainders": {
+          "S:I8_2": [
+            "0"
+          ],
+          "S:I8_3": [
+            "0"
+          ],
+          "S:I8_4": [
+            "0"
+          ],
+          "S:I8_5": [
+            "0"
+          ],
+          "S:I8_6": [
+            "0"
+          ],
+          "tr1": [
+            "0"
+          ],
+          "tr1*tr1": [
+            "0"
+          ],
+          "tr1*tr2": [
+            "0"
+          ],
+          "tr2": [
+            "0"
+          ],
+          "tr2*tr2": [
+            "0"
+          ],
+          "tr3": [
+            "0"
+          ],
+          "tr4": [
+            "0"
+          ]
+        },
+        "status": "exact_finite_model_ideal_tangency"
+      },
+      "nonzero_obstruction": true,
+      "omitted": "I6_2",
+      "surviving_obstruction": {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ideal_tangency": {
+        "all_tangent": true,
+        "domain": "QQ",
+        "groebner_basis": [
+          "c0**3 + c4/16"
+        ],
+        "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ",
+        "not_an_all_orders_field_theory_theorem": true,
+        "remainders": {
+          "S:I6_2": [
+            "0"
+          ],
+          "S:I8_3": [
+            "0"
+          ],
+          "S:I8_4": [
+            "0"
+          ],
+          "S:I8_5": [
+            "0"
+          ],
+          "S:I8_6": [
+            "0"
+          ],
+          "tr1": [
+            "0"
+          ],
+          "tr1*tr1": [
+            "0"
+          ],
+          "tr1*tr2": [
+            "0"
+          ],
+          "tr2": [
+            "0"
+          ],
+          "tr2*tr2": [
+            "0"
+          ],
+          "tr3": [
+            "0"
+          ],
+          "tr4": [
+            "0"
+          ]
+        },
+        "status": "exact_finite_model_ideal_tangency"
+      },
+      "nonzero_obstruction": true,
+      "omitted": "I8_2",
+      "surviving_obstruction": {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "16",
+            "powers": [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ideal_tangency": {
+        "all_tangent": true,
+        "domain": "QQ",
+        "groebner_basis": [
+          "c5"
+        ],
+        "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ",
+        "not_an_all_orders_field_theory_theorem": true,
+        "remainders": {
+          "S:I6_2": [
+            "0"
+          ],
+          "S:I8_2": [
+            "0"
+          ],
+          "S:I8_4": [
+            "0"
+          ],
+          "S:I8_5": [
+            "0"
+          ],
+          "S:I8_6": [
+            "0"
+          ],
+          "tr1": [
+            "0"
+          ],
+          "tr1*tr1": [
+            "0"
+          ],
+          "tr1*tr2": [
+            "0"
+          ],
+          "tr2": [
+            "0"
+          ],
+          "tr2*tr2": [
+            "0"
+          ],
+          "tr3": [
+            "0"
+          ],
+          "tr4": [
+            "0"
+          ]
+        },
+        "status": "exact_finite_model_ideal_tangency"
+      },
+      "nonzero_obstruction": true,
+      "omitted": "I8_3",
+      "surviving_obstruction": {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ideal_tangency": {
+        "all_tangent": true,
+        "domain": "QQ",
+        "groebner_basis": [
+          "c6"
+        ],
+        "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ",
+        "not_an_all_orders_field_theory_theorem": true,
+        "remainders": {
+          "S:I6_2": [
+            "0"
+          ],
+          "S:I8_2": [
+            "0"
+          ],
+          "S:I8_3": [
+            "0"
+          ],
+          "S:I8_5": [
+            "0"
+          ],
+          "S:I8_6": [
+            "0"
+          ],
+          "tr1": [
+            "0"
+          ],
+          "tr1*tr1": [
+            "0"
+          ],
+          "tr1*tr2": [
+            "0"
+          ],
+          "tr2": [
+            "0"
+          ],
+          "tr2*tr2": [
+            "0"
+          ],
+          "tr3": [
+            "0"
+          ],
+          "tr4": [
+            "0"
+          ]
+        },
+        "status": "exact_finite_model_ideal_tangency"
+      },
+      "nonzero_obstruction": true,
+      "omitted": "I8_4",
+      "surviving_obstruction": {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ideal_tangency": {
+        "all_tangent": true,
+        "domain": "QQ",
+        "groebner_basis": [
+          "c7"
+        ],
+        "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ",
+        "not_an_all_orders_field_theory_theorem": true,
+        "remainders": {
+          "S:I6_2": [
+            "0"
+          ],
+          "S:I8_2": [
+            "0"
+          ],
+          "S:I8_3": [
+            "0"
+          ],
+          "S:I8_4": [
+            "0"
+          ],
+          "S:I8_6": [
+            "0"
+          ],
+          "tr1": [
+            "0"
+          ],
+          "tr1*tr1": [
+            "0"
+          ],
+          "tr1*tr2": [
+            "0"
+          ],
+          "tr2": [
+            "0"
+          ],
+          "tr2*tr2": [
+            "0"
+          ],
+          "tr3": [
+            "0"
+          ],
+          "tr4": [
+            "0"
+          ]
+        },
+        "status": "exact_finite_model_ideal_tangency"
+      },
+      "nonzero_obstruction": true,
+      "omitted": "I8_5",
+      "surviving_obstruction": {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ideal_tangency": {
+        "all_tangent": true,
+        "domain": "QQ",
+        "groebner_basis": [
+          "c8"
+        ],
+        "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ",
+        "not_an_all_orders_field_theory_theorem": true,
+        "remainders": {
+          "S:I6_2": [
+            "0"
+          ],
+          "S:I8_2": [
+            "0"
+          ],
+          "S:I8_3": [
+            "0"
+          ],
+          "S:I8_4": [
+            "0"
+          ],
+          "S:I8_5": [
+            "0"
+          ],
+          "tr1": [
+            "0"
+          ],
+          "tr1*tr1": [
+            "0"
+          ],
+          "tr1*tr2": [
+            "0"
+          ],
+          "tr2": [
+            "0"
+          ],
+          "tr2*tr2": [
+            "0"
+          ],
+          "tr3": [
+            "0"
+          ],
+          "tr4": [
+            "0"
+          ]
+        },
+        "status": "exact_finite_model_ideal_tangency"
+      },
+      "nonzero_obstruction": true,
+      "omitted": "I8_6",
+      "surviving_obstruction": {
+        "nvars": 10,
+        "prime": null,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "degree-eight finite coefficient model; homogeneous extras and signed controls; free seed",
+  "status": "exact_QQ_completion_in_declared_six_element_catalogue_conditional_on_degree8_map",
+  "why_no_mixed_generators_missing": "min extra degree 6 plus min stress degree 4 exceeds cutoff 8"
+}

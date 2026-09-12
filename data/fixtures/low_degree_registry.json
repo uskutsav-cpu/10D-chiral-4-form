@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "metadata": {
+    "status": "curated_source_excerpt_not_recomputed_claim",
+    "source_repository": "uskutsav-cpu/selfdual-5form-invariants",
+    "source_commit": "3ed32805b38ce34216b34888f6539e3538e90fb9",
+    "source_path": "results/10d_order8.json",
+    "source_git_blob": "9ecc3d3a61722eadd31fcfb272e46b5f4969426f",
+    "comment": "The nine graph definitions were read directly through the GitHub connector; this is a curated extract, not the complete upstream file."
+  },
+  "items": [
+    {
+      "id": "I4_1",
+      "degree": 4,
+      "graph": "n4[02^3,03^2,12^2,13^3]"
+    },
+    {
+      "id": "I6_1",
+      "degree": 6,
+      "graph": "n6[03^3,04^2,13^2,15^3,24^3,25^2]"
+    },
+    {
+      "id": "I6_2",
+      "degree": 6,
+      "graph": "n6[02^2,03^2,05^1,13^2,14^2,15^1,24^2,25^1,35^1,45^1]"
+    },
+    {
+      "id": "I8_1",
+      "degree": 8,
+      "graph": "n8[04^4,05^1,14^1,16^4,25^4,27^1,36^1,37^4]"
+    },
+    {
+      "id": "I8_2",
+      "degree": 8,
+      "graph": "n8[03^4,06^1,14^4,16^1,25^4,26^1,37^1,47^1,57^1,67^2]"
+    },
+    {
+      "id": "I8_3",
+      "degree": 8,
+      "graph": "n8[03^4,04^1,14^1,15^1,16^2,17^1,25^4,26^1,37^1,46^1,47^2,67^1]"
+    },
+    {
+      "id": "I8_4",
+      "degree": 8,
+      "graph": "n8[03^2,06^2,07^1,14^4,16^1,25^4,26^1,36^1,37^2,47^1,57^1]"
+    },
+    {
+      "id": "I8_5",
+      "degree": 8,
+      "graph": "n8[03^2,04^1,06^2,14^2,15^1,17^2,25^4,26^1,36^2,37^1,47^2]"
+    },
+    {
+      "id": "I8_6",
+      "degree": 8,
+      "graph": "n8[03^2,06^2,07^1,14^2,15^1,16^2,24^1,25^2,27^2,36^1,37^2,45^2]"
+    },
+    {
+      "id": "I4_1^2",
+      "degree": 8,
+      "factors": [
+        "I4_1",
+        "I4_1"
+      ]
+    }
+  ],
+  "degree_bases": {
+    "4": [
+      "I4_1"
+    ],
+    "6": [
+      "I6_1",
+      "I6_2"
+    ],
+    "8": [
+      "I8_1",
+      "I8_2",
+      "I8_3",
+      "I8_4",
+      "I8_5",
+      "I8_6",
+      "I4_1^2"
+    ]
+  }
+}

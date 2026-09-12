@@ -1,0 +1,26 @@
+{
+  "exact_blas": true,
+  "extras": [
+    "I6_2",
+    "I8_2",
+    "I8_3",
+    "I8_4",
+    "I8_5",
+    "I8_6"
+  ],
+  "fit_margin": 2,
+  "flow_analysis": true,
+  "holdouts": 2,
+  "lie_depth": 3,
+  "max_bytes": 536870912,
+  "max_degree": 8,
+  "max_multiply_adds": 5000000000,
+  "primes": [
+    30011,
+    30013,
+    30029
+  ],
+  "registry": "data/fixtures/low_degree_registry.json",
+  "schema": 1,
+  "seed_start": 2026091201
+}

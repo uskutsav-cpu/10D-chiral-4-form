@@ -1,0 +1,97 @@
+{
+  "all_graphs_within_budget": true,
+  "graphs": [
+    {
+      "degree": 4,
+      "gradient_needed": true,
+      "invariant": "I4_1",
+      "multiply_adds": 20010000,
+      "reserved_bytes": 13120016,
+      "within_budget": true
+    },
+    {
+      "degree": 6,
+      "gradient_needed": false,
+      "invariant": "I6_1",
+      "multiply_adds": 31010000,
+      "reserved_bytes": 11760000,
+      "within_budget": true
+    },
+    {
+      "degree": 6,
+      "gradient_needed": false,
+      "invariant": "I6_2",
+      "multiply_adds": 2200100000,
+      "reserved_bytes": 448000000,
+      "within_budget": true
+    },
+    {
+      "degree": 8,
+      "gradient_needed": false,
+      "invariant": "I8_1",
+      "multiply_adds": 4002100,
+      "reserved_bytes": 12807200,
+      "within_budget": true
+    },
+    {
+      "degree": 8,
+      "gradient_needed": false,
+      "invariant": "I8_2",
+      "multiply_adds": 6000100,
+      "reserved_bytes": 14405600,
+      "within_budget": true
+    },
+    {
+      "degree": 8,
+      "gradient_needed": false,
+      "invariant": "I8_3",
+      "multiply_adds": 24000100,
+      "reserved_bytes": 14484800,
+      "within_budget": true
+    },
+    {
+      "degree": 8,
+      "gradient_needed": false,
+      "invariant": "I8_4",
+      "multiply_adds": 204000100,
+      "reserved_bytes": 52800000,
+      "within_budget": true
+    },
+    {
+      "degree": 8,
+      "gradient_needed": false,
+      "invariant": "I8_5",
+      "multiply_adds": 221010100,
+      "reserved_bytes": 57640000,
+      "within_budget": true
+    },
+    {
+      "degree": 8,
+      "gradient_needed": false,
+      "invariant": "I8_6",
+      "multiply_adds": 420010000,
+      "reserved_bytes": 61680000,
+      "within_budget": true
+    }
+  ],
+  "primes": [
+    30011,
+    30013,
+    30029
+  ],
+  "registry_fingerprint": "9d8c48f654131ecfbffdd7fcde940917bcb49fa5a7a91292f9a41efbad05a8bb",
+  "sample_count_per_prime": 11,
+  "source": {
+    "fixture_sha256": "e79a015fd02618b2de35343f8d3eb9c41fe8186a708fd3f6e7035f0bef8bf4d0",
+    "metadata": {
+      "comment": "The nine graph definitions were read directly through the GitHub connector; this is a curated extract, not the complete upstream file.",
+      "source_commit": "3ed32805b38ce34216b34888f6539e3538e90fb9",
+      "source_git_blob": "9ecc3d3a61722eadd31fcfb272e46b5f4969426f",
+      "source_path": "results/10d_order8.json",
+      "source_repository": "uskutsav-cpu/selfdual-5form-invariants",
+      "status": "curated_source_excerpt_not_recomputed_claim"
+    },
+    "status": "bundled_curated_excerpt_not_full_upstream_snapshot"
+  },
+  "status": "execution_plan_only"
+}

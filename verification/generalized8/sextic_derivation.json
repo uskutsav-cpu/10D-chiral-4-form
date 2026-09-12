@@ -1,0 +1,43 @@
+{
+  "basis_relation": "K6 = -I6_1/1125 + 3*I6_2/125",
+  "checks": {
+    "tr1": true,
+    "tr2": true,
+    "tr3": true
+  },
+  "coordinate_ids": [
+    "I4_1",
+    "I6_1",
+    "I6_2"
+  ],
+  "does_not_prove": [
+    "full orbit reachability",
+    "minimal generalized completion",
+    "nonanalytic ModMax classification"
+  ],
+  "equation": "dq6/dlambda = 40 * u_tr1(lambda) * q6",
+  "external_inputs": [
+    "HLS arXiv:2509.14351v2 eq. (2.33)",
+    "predecessor sextic normalization; tensor smoke tests cross-check Tr(M^3)"
+  ],
+  "generator_catalogue": [
+    "tr1",
+    "tr2",
+    "tr3"
+  ],
+  "higher_field_degrees": "cannot feed degree six under positive-degree analytic polynomial grading",
+  "mentor_review_required": [
+    "conventions",
+    "flow-law class",
+    "intrinsic K6 identification"
+  ],
+  "proof_steps": [
+    "All polynomial stress monomials eligible through degree six are tr1,tr2,tr3.",
+    "Equation (2.33) and anti-self-duality imply Tr(tau)=sum_d 10(d-2)V_d.",
+    "The degree-six term of Tr(tau^2) is proportional to Tr(M) and vanishes.",
+    "The degree-six part of Tr(tau^3) is Tr(M^3)=(32/3)I6_1.",
+    "Consequently only tr1 acts on q6, and acts homogeneously by 40q6."
+  ],
+  "q6": "(125/3) * c_I6_2; this is a coupling-space coordinate, not K6(F)=0",
+  "status": "analytic_derivation_under_explicit_physics_hypotheses"
+}

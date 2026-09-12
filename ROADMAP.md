@@ -1,179 +1,58 @@
-# Research Roadmap
+# Revised research roadmap
 
-## Objective
+This replaces the earlier plan's unproved identification of a linear closure
+with a reachable orbit. The executable degree-eight result gives a smaller,
+more precise first paper target.
 
-Build a theory of stress-flow orbits, intrinsic obstruction classes, and minimal generalized-flow generators for nonlinear ten-dimensional chiral four-form theories, with a conformal/ModMax endpoint.
+## A. Independently certified degree-eight foundation
 
-The roadmap is ordered by **scientific risk**, not by aesthetic preference. Every ambitious phase has a publishable fallback.
+Complete the fresh tensor fits, constrained-gradient/Lorentz checks, explicit
+coefficient map, and bounded integer-residual certificate. Review the external
+Hilbert upper bounds and HLS conventions with the mentor. Infrastructure is
+implemented; see `verification/` for the actual release runs.
 
----
+## B. Exact finite-order orbit and nonlinear obstruction
 
-## Phase 0 — Freeze the foundation
+Use the full coupled vector fields, not separate coefficient rows. Prove the
+free-seed orbit graph, homogeneous transport of `k` and `Omega8=b2+16a^3`,
+and sufficiency through explicit control segments. This is implemented over
+QQ, conditional on the physics map. Review basis covariance and novelty.
 
-**Goal:** make the Paper-2 starting state immutable and independently auditable.
+## C. Genuine generalized-flow completion
 
-### Deliverables
-- Import/freeze hashes for the verified degree-12 invariant atlas and the interacting-flow artifacts from the predecessor repository.
-- Record source repository commit SHA, file hashes, primes, seeds, conventions, and basis fingerprints.
-- Re-run all predecessor tests from a clean checkout when the source repository is locally available.
-- Recompute baseline ranks on fresh primes/seeds where the source scripts permit it.
+The old five-extra generator proposal misses Omega8. The six-extra finite
+catalogue now has a full-rank control minor and exact omission obstructions.
+Next compare other homogeneous catalogues, including lower-degree scalars;
+do not claim a global minimum from the present catalogue minimum.
 
-### Required certificate
-`data/baseline/paper2_baseline.json` plus a generated provenance manifest.
+## D. Degree-ten and degree-twelve extension
 
-### Kill test
-If the reported reachable dimensions `(1,1,3,11,67)` fail on unrelated primes/seeds or depend on an undocumented convention, stop all higher phases and repair the foundation.
+Freeze the real predecessor source and import the actual bases. Preflight
+memory/work before a larger run. Use multiple primes and separate holdouts,
+then reconstruct candidate rational vector fields. Build a characteristic-zero
+identity argument before claiming exact physics maps. Analyze nonlinear orbit
+ideals, not only hull dimensions. The run/worker/analysis interfaces are
+implemented; these larger results remain open.
 
----
+## E. Conformal sector
 
-## Phase 1 — Make the sextic obstruction analytic
+The exact `r^2=I4` algebra and known ModMax identity are implemented. Determining
+whether a different pure-stress law reaches the ModMax family is a separate
+research problem. Polynomial obstruction equations cannot simply be evaluated
+on a square-root family and declared decisive.
 
-**Goal:** turn \(K_6\) from a computational direction into a theorem.
+## F. All orders, only with a structural argument
 
-### Tasks
-1. Pin the tensor definition of the intrinsic sextic basis, including the \(1050\)-sector structure.
-2. Derive the exact change of basis between the graph/registry sextics and `(Tr(M^3), K6)`.
-3. Enumerate every scalar stress generator that can contribute through degree six.
-4. Project the full formal flow onto the \(K_6\) coordinate symbolically.
-5. Prove
-   \[
-   \dot q_6=C[\mathcal V_4,\lambda]q_6,
-   \]
-   with `C = 40 a(lambda)` in the pinned normalization.
-6. Verify the analytic result against exact finite-field evaluation.
+Use preserved coupling-space ideals and weight selection to look for an
+all-orders obstruction. Keep linear algebra in tensor-invariant space distinct
+from nonlinear geometry in coupling space. More degrees alone do not prove
+finite generation or an if-and-only-if reachability theorem.
 
-### Headline theorem target
-The hypersurface `q6 = 0` is invariant under the declared class of pure scalar stress flows.
+## Publication gate
 
-### Kill test
-If a legitimate scalar stress generator produces an inhomogeneous \(K_6\) forcing term, the proposed obstruction theorem is false; reframe around the corrected generator class rather than hiding the counterexample.
-
----
-
-## Phase 2 — Intrinsic obstruction spaces through degree 12
-
-**Goal:** replace arbitrary graph complements by basis-independent quotient data.
-
-### Tasks
-- Construct reachable subspaces \(R_d\subset A_d\) for `d=4,6,8,10,12`.
-- Compute annihilator bases
-  \[
-  R_d^\perp\subset A_d^*,
-  \]
-  exactly.
-- Verify invariance under random basis changes.
-- Search for low-complexity tensor expressions representing the dual obstruction functionals.
-- Prioritize intrinsic characterization of \(Q_8\) before the larger spaces.
-
-### Success criterion
-Every quoted quotient dimension has an exact certificate and at least one basis-independent representation.
-
-### Kill test
-If the quotient dimension is stable but no compact tensorial representatives emerge, publish the annihilator formulation; do not force a misleading “canonical graph obstruction.”
-
----
-
-## Phase 3 — Genuine minimal generalized flows
-
-**Goal:** answer the constructive question: what extra structures must the **flow law** depend on to become complete?
-
-### Essential distinction
-Adding \(S\) to the initial seed is not the same as allowing
-\[
-f(T,S;\lambda)
-\]
-as a flow generator.
-
-### Tasks
-- Implement candidate generalized generators \(S_i(F_5)\) as independent inputs to the flow law.
-- Compute new forcing rows generated by varying each \(S_i\), including interaction feedback.
-- Define
-  \[
-  \Delta_d(S)=\dim R_d(T,S)-\dim R_d(T).
-  \]
-- Search for the smallest intrinsic generator set completing each degree.
-- Prove nonredundancy by removal tests.
-
-### Success criterion
-A certificate-backed minimality statement in the declared generator class, at least through degree 10 and preferably through 12.
-
-### Kill test
-If minimality depends strongly on the chosen coordinate basis, weaken the claim to a dimension lower bound plus an explicit constructive generating set.
-
----
-
-## Phase 4 — Conformal/nonanalytic localization
-
-**Goal:** extend beyond polynomial interactions without introducing floating-point branch ambiguity.
-
-### Tasks
-- Work on a generic patch such as `I4 != 0`.
-- Adjoin algebraic variables (for example `r^2 = I4`) or homogeneous invariant ratios.
-- Derive the conformal homogeneity equation in the chosen formalism.
-- Ensure the polynomial limit reproduces Phases 1–3.
-
-### Kill test
-If branch/singularity structure prevents a global statement, formulate a local theorem on a precisely stated generic patch.
-
----
-
-## Phase 5 — 10D ModMax-like reachability
-
-**Goal:** produce a decisive physics application.
-
-### Test
-Project the ModMax-like trajectory onto the intrinsic obstruction coordinates.
-
-### Two publishable outcomes
-- **Obstructed:** exhibit an explicit nonzero obstruction certificate and find the smallest generalized-flow completion.
-- **Reachable:** reconstruct an explicit pure stress-flow generator producing the trajectory.
-
-No outcome is pre-assumed.
-
----
-
-## Phase 6 — Degree-14 probe, not full atlas
-
-**Goal:** test whether the low-degree quotient pattern reflects a finite obstruction structure.
-
-### Strategy
-1. obtain/verify the degree-14 ambient invariant count;
-2. generate enough invariant evaluations to certify generic rank;
-3. compute projected stress-flow closure;
-4. estimate/certify \(\dim Q_{14}\) without first constructing a heroic complete canonical atlas.
-
-### Decision rule
-Only build the full degree-14 atlas if the probe reveals a pattern that materially strengthens the all-orders theory.
-
----
-
-## Phase 7 — All-orders obstruction module
-
-**Goal:** explain the finite-degree data conceptually.
-
-### Candidate structures
-- graded differential module generated by metric variation of stress scalars;
-- invariant ideal/submodule closed under the interacting stress derivations;
-- representation-theoretic selection rules for reachable singlets.
-
-### Stretch theorem
-There exists a finite intrinsic obstruction module \(\mathcal I_{obs}\) such that formal pure-stress reachability is equivalent to vanishing/compatibility of its generators.
-
-### Important rule
-Failure to prove this theorem does **not** block the core paper.
-
----
-
-## Phase 8 — Manuscript and independent review
-
-### Submission gate
-The core paper may be frozen once Phases 0–5 are complete, even if Phases 6–7 remain conjectural.
-
-### Mandatory adversarial checks
-- invariant theorist review;
-- chiral-form/stress-tensor convention review;
-- exact-computation/provenance review;
-- explicit comparison against all closest literature claims.
-
-### Recommended manuscript title
-**Stress-Flow Orbits and Obstructions for Ten-Dimensional Chiral Four-Forms**
+A focused paper can center on the exact degree-eight orbit, the nonlinear
+obstruction missed by linear closure, and constructive catalogue completion,
+with a reproducible map certificate. Do not make a finished ModMax/all-orders
+result a hidden requirement. Decide with the mentor whether this scope is
+sufficiently important and distinct from Paper 1. Use the claim ledger rather
+than the earlier optimistic novelty scores or abstract drafts.

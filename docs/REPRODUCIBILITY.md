@@ -1,59 +1,46 @@
-# Reproducibility Policy
+# Reproducibility and proof policy
 
-## Provenance
+## Distinct evidence levels
 
-Every generated research artifact must record:
-- source commit SHA(s);
-- basis/invariant-registry fingerprint;
-- conventions identifier;
-- prime(s);
-- random seed(s);
-- sample count;
-- exact script/CLI version;
-- hashes of imported input artifacts.
+- A nonzero exact modular minor certifies a characteristic-zero **lower** bound
+  for an integral/rational matrix with invertible denominators.
+- A matching analytic upper bound can turn that lower bound into an equality.
+- Agreement across finite samples/primes alone is not a polynomial identity.
+- Bounded CRT reconstruction with a held-out prime produces a validated
+  **candidate** unless a bound or independent identity argument closes the gap.
+- `map_proof.py` instead bounds cleared integer residuals at fixed bounded
+  tensors and uses a modulus larger than twice the bound. The external Hilbert
+  upper bounds make the evaluation map injective; its exactness argument is in
+  `DEGREE8_MAP_CERTIFICATE.md`.
+- Linear invariant hull rank, Lie-rank lower bound, and nonlinear orbit dimension
+  are different quantities. Only the explicit degree-eight construction closes
+  both orbit bounds here.
 
-## Finite-field policy
+## Actual released inputs
 
-A rank seen at one prime or one random point is never enough for a headline equality.
+The tensor runs use primes 30011, 30013, 30029, fit and holdout seeds specified
+in each configuration, and exact modular arithmetic. The bounded-residual proof
+uses seven primes and nine fixed ternary electric tensors (63 tensor evaluations),
+with all electric vectors stored in the certificate.
 
-Use two separate roles:
-1. **reproduction primes** matching historical artifacts;
-2. **fresh audit primes/seeds** chosen independently from development runs.
+The NumPy tensor backend accepts primes at most 65521 and rejects incompatible
+memory/work requests before executing contractions. Do **not** send arbitrary
+large primes to it. The independent Python-integer linear algebra supports a
+larger validated domain; this does not widen the tensor backend's safe range.
 
-When rational reconstruction is required, record:
-- CRT modulus;
-- uniqueness/height bound;
-- reconstructed fractions;
-- at least one held-out prime not used for fitting.
+The optional float64 BLAS fast path is used only when all integer products and
+sums are below its exact-integer limit. It does not compute floating-rank/SVD
+certificates. Tests compare it with the integer path.
 
-## Baseline historical fields
+## Provenance and resume
 
-The predecessor interacting-flow assembly reports fit primes
-`32749, 32719, 32693, 32771, 32713`
-and holdout `32717`.
+Each run records configuration, basis fingerprint, engine hash, environment,
+primes, sample counts, and reports. Source import pins a Git commit and hashes
+actual files. The bundled low-degree registry is attributed as an excerpt.
+Checkpoint keys include engine/configuration/registry state. Atomic writes and
+exclusive locks prevent incomplete success records. Changed data/code invalidates
+resume keys. Never delete a lock before verifying its process is gone.
 
-These should be preserved as historical reproduction inputs, not used as the only evidence in this repository.
-
-## Fresh audit inputs
-
-Large-prime audit runs may use fields such as
-`998244353`, `1000000007`, `1000000009`, or other backend-supported primes **only after checking every fixed denominator is invertible and arithmetic remains exact in the implementation**.
-
-Do not blindly copy these values into a backend with a restricted integer range.
-
-## Holdout discipline
-
-Maintain at least one seed/prime set that is not used while developing a claimed identity. Open it only after the derivation/code has been frozen.
-
-## Negative controls
-
-Every central pipeline should include at least one mutation that must fail, for example:
-- remove a required generalized generator;
-- inject an invalid quotient direction;
-- flip a convention sign;
-- perturb a claimed rational coefficient;
-- replace a self-dual sample with an unprojected control where appropriate.
-
-## No floating-rank claims
-
-Floating-point SVD may be used for debugging or visualization, but not for certificate-grade rank claims where exact modular/rational arithmetic is available.
+`verification/` contains only results actually computed for this release. Runtime
+outputs go under ignored `runs/`; they are not silently committed. The configured
+GitHub CI matrix has not been executed remotely by this packaging session.

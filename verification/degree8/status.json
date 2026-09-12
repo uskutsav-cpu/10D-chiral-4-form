@@ -1,0 +1,15 @@
+{
+  "current_prime": 30029,
+  "degree": 8,
+  "primes_finished": [
+    30011,
+    30013,
+    30029
+  ],
+  "run_fingerprint": "8d4fb5e7cbb833d3e84dea4a345f448e47bb3f9f1b889c835b21536d61354c51",
+  "sample_finished": 11,
+  "samples_per_prime": 11,
+  "schema": 1,
+  "scientific_status": "computing_samples_not_verifying_imported_orbit_claims",
+  "state": "completed_declared_computations"
+}

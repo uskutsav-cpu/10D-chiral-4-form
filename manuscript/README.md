@@ -1,12 +1,6 @@
 # Manuscript workspace
 
-The manuscript should not begin as a polished narrative before the scientific gates are closed.
-
-Recommended order:
-1. freeze `results`/certificate tables;
-2. write theorem statements and limitations;
-3. write methods/reproducibility appendices;
-4. write physics interpretation;
-5. write introduction/abstract last.
-
-The current outline is in `docs/PAPER_PLAN.md`.
+The paper is not finished. `outline.md` and `degree8_results.md` are scoped
+writing inputs, not a submission or a claim of accepted novelty. Populate
+figures/tables only from verified artifacts, and obtain mentor review of the
+physics map and attribution before freezing an abstract.

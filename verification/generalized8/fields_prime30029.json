@@ -1,0 +1,1206 @@
+{
+  "coefficient_status": "finite_field_samples_and_disjoint_holdouts; not a symbolic identity proof",
+  "coordinate_ids": [
+    "I4_1",
+    "I6_1",
+    "I6_2",
+    "I8_1",
+    "I8_2",
+    "I8_3",
+    "I8_4",
+    "I8_5",
+    "I8_6",
+    "I4_1^2"
+  ],
+  "fields": {
+    "S:I6_2": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      }
+    ],
+    "S:I8_2": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      }
+    ],
+    "S:I8_3": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      }
+    ],
+    "S:I8_4": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      }
+    ],
+    "S:I8_5": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      }
+    ],
+    "S:I8_6": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      }
+    ],
+    "tr1": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "20",
+            "powers": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "60",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tr1*tr1": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "400",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr1*tr2": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr2": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "2",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "16",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "29933",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "30021",
+            "powers": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr2*tr2": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "4",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr3": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "20030",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "12",
+            "powers": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "tr4": [
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 10,
+        "prime": 30029,
+        "terms": []
+      }
+    ]
+  },
+  "generator_catalogue": [
+    {
+      "factors": [
+        "tr1"
+      ],
+      "id": "tr1",
+      "leading_degree": 4
+    },
+    {
+      "factors": [
+        "tr2"
+      ],
+      "id": "tr2",
+      "leading_degree": 4
+    },
+    {
+      "factors": [
+        "S:I6_2"
+      ],
+      "id": "S:I6_2",
+      "leading_degree": 6
+    },
+    {
+      "factors": [
+        "tr3"
+      ],
+      "id": "tr3",
+      "leading_degree": 6
+    },
+    {
+      "factors": [
+        "S:I8_2"
+      ],
+      "id": "S:I8_2",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "S:I8_3"
+      ],
+      "id": "S:I8_3",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "S:I8_4"
+      ],
+      "id": "S:I8_4",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "S:I8_5"
+      ],
+      "id": "S:I8_5",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "S:I8_6"
+      ],
+      "id": "S:I8_6",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "tr4"
+      ],
+      "id": "tr4",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "tr1",
+        "tr1"
+      ],
+      "id": "tr1*tr1",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "tr1",
+        "tr2"
+      ],
+      "id": "tr1*tr2",
+      "leading_degree": 8
+    },
+    {
+      "factors": [
+        "tr2",
+        "tr2"
+      ],
+      "id": "tr2*tr2",
+      "leading_degree": 8
+    }
+  ],
+  "schema": 1
+}

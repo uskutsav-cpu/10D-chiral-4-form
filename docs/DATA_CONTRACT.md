@@ -1,47 +1,26 @@
-# Data Contract with the Invariant-Atlas Repository
+# Data contract with the predecessor atlas
 
-This repository should consume verified artifacts from `selfdual-5form-invariants` without mutating the atlas engine.
-
-## Required imported objects
-
-At minimum, a frozen source snapshot should identify:
-- degree-4,6,8,10,12 invariant bases;
-- basis ordering/fingerprint;
-- exact evaluation interface on a self-dual five-form sample;
-- interacting stress-flow coefficient artifact;
-- static stress rows;
-- intrinsic sextic change-of-basis artifact;
-- source conventions.
-
-## Recommended local layout
-
-When both repositories are checked out side by side:
-
-```text
-workspace/
-  selfdual-5form-invariants/
-  10D-chiral-4-form/
-```
-
-Run:
+The engine consumes graph/product definitions as data, not executable upstream
+code. The target checkout is never substituted for the original atlas repository.
 
 ```bash
-python scripts/freeze_source_snapshot.py ../selfdual-5form-invariants
+python -m chiral4form source --fetch --checkout .cache/upstream --output data/imported
+python -m chiral4form plan --source .cache/upstream --config configs/degree12.json
 ```
 
-The command writes only hashes/metadata into this repository by default; it does not silently copy large generated catalogs.
+The importer pins `3ed32805b38ce34216b34888f6539e3538e90fb9`, checks Git objects and
+SHA-256 content, rejects dirty/wrong-commit existing checkouts, and exports an
+explicit registry with ordered homogeneous bases through twelve. It never resets
+an existing checkout. Network access is necessary for an absent source checkout.
+The older wrapper `scripts/freeze_source_snapshot.py` delegates to this importer;
+use `--help` for its current arguments rather than the old scaffold invocation.
 
-## Imported claim rule
+The bundled fixture contains nine primitive graph formulas through degree eight
+plus the quartic-square product and source attribution. It is intentionally not a
+full predecessor snapshot. Full degree-ten/twelve computation requires the pinned
+source import; missing formulas cause an error, never a fabricated slot.
 
-An imported numerical table is a **provenance pointer**, not an independent reproduction. `data/baseline/paper2_baseline.json` therefore carries `status = imported` until the relevant source pipeline has been rerun and a new certificate is generated here.
-
-## Future API
-
-The desired stable upstream interface is a small export containing:
-- ordered basis labels and graph/tensor records;
-- exact evaluation callable or serialized evaluation recipe;
-- degree metadata;
-- convention ID;
-- semantic fingerprint.
-
-Paper 2 should not depend on private paths or ephemeral caches in the predecessor repository.
+Imported counts and source hashes only prove provenance. Reproduction requires a
+new evaluator run; orbit classification additionally requires nonlinear control
+analysis. `data/baseline/paper2_baseline.json` retains historical numbers with that
+warning, while `verification/` contains this release's actual calculations.

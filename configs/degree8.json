@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "max_degree": 8,
+  "primes": [
+    30011,
+    30013,
+    30029
+  ],
+  "seed_start": 2026091201,
+  "fit_margin": 2,
+  "holdouts": 2,
+  "registry": "data/fixtures/low_degree_registry.json",
+  "extras": [],
+  "max_bytes": 536870912,
+  "max_multiply_adds": 5000000000,
+  "exact_blas": true,
+  "lie_depth": 3,
+  "flow_analysis": true
+}

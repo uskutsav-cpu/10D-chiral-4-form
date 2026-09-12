@@ -1,11 +1,19 @@
-# Mentor Review Checklist
+# Mentor review priorities
 
-Questions that should be settled with a domain expert before freezing claims:
+1. Confirm the general HLS stress formula, constrained derivative, `tau=48T`,
+   and the sign obtained by tracing equation (2.33).
+2. Confirm the scalar-control class: analytic at zero field, derivative-free,
+   no negative powers, signed independent controls, interaction starts at degree four.
+3. Review the invariant-count upper bounds and bounded-residual map proof.
+4. Attack the distinction between linear hull, projected spans, and actual
+   reachable orbit. Check the explicit four-stage sufficiency construction.
+5. Review `Omega8=b2+16a^3` as a coupling-space equation; it is not a condition
+   imposed on field configurations.
+6. Check the six-extra catalogue proof and the explicit refusal to claim a
+   minimum over arbitrary additional scalars.
+7. Review the exact finite-order result against closest prior literature.
+8. Decide which results belong in this paper versus the invariant atlas paper.
 
-1. Is the declared stress tensor and normalization the intended formulation of the free/interacting chiral four-form theory?
-2. Can the recorded source sign/convention discrepancy be resolved from first principles or author clarification?
-3. Is the intrinsic sextic `K6` precisely identifiable with a published `1050`-sector invariant, and is the change of basis already known somewhere?
-4. Are the allowed scalar flow generators defined broadly enough to support a meaningful universality/obstruction statement?
-5. Does the proposed generalized-generator class have a natural physical interpretation rather than being an arbitrary algebraic completion?
-6. Does the conformal localization capture the HLS ModMax-like theory without excluding relevant branches?
-7. Are there adjacent invariant-theory or chiral-form papers that pre-empt any claimed novelty?
+Unresolved: full higher-degree orbit classification, intrinsic tensorial
+reformulation of the nonlinear condition, physically admissible control
+families, ModMax reachability, all-orders completion, novelty/venue judgement.

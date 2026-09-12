@@ -1,0 +1,186 @@
+{
+  "basis_ranks": {
+    "4": 1,
+    "6": 2,
+    "8": 7
+  },
+  "cross_checks": {
+    "independent_analytic_degree8_map": true
+  },
+  "finite_depth_lie_rank": {
+    "completed_depth": 3,
+    "history": [
+      {
+        "depth": 1,
+        "fields_visited": 7,
+        "rank": 4
+      },
+      {
+        "depth": 2,
+        "fields_visited": 23,
+        "rank": 4
+      },
+      {
+        "depth": 3,
+        "fields_visited": 49,
+        "rank": 4
+      }
+    ],
+    "interpretation": "finite_depth_lie_rank_lower_bound",
+    "not_a_global_orbit_classification": true,
+    "rank": 4,
+    "terminated": "depth_or_bracket_exhaustion",
+    "witnesses": [
+      {
+        "value": [
+          "2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "word": "3"
+      },
+      {
+        "value": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "4"
+        ],
+        "word": "4"
+      },
+      {
+        "value": [
+          "0",
+          "10015",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "word": "5"
+      },
+      {
+        "value": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "word": "6"
+      }
+    ]
+  },
+  "fit_count": 9,
+  "holdouts": 2,
+  "hull_projection_ranks": {
+    "4": 1,
+    "6": 1,
+    "8": 3
+  },
+  "linear_invariant_hull": {
+    "basis": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "domain": "GF(30013)",
+    "history": [
+      {
+        "iteration": 0,
+        "rank": 4
+      },
+      {
+        "iteration": 1,
+        "rank": 5
+      },
+      {
+        "iteration": 2,
+        "rank": 5
+      }
+    ],
+    "interpretation": "minimal_linear_flow_invariant_hull_not_orbit",
+    "rank": 5,
+    "stabilized": true
+  },
+  "prime": 30013
+}

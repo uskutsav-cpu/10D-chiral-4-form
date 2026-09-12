@@ -1,0 +1,130 @@
+{
+  "coefficient_status": "finite_field_samples_and_disjoint_holdouts; not a symbolic identity proof",
+  "coordinate_ids": [
+    "I4_1",
+    "I6_1",
+    "I6_2"
+  ],
+  "fields": {
+    "tr1": [
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "20",
+            "powers": [
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "40",
+            "powers": [
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tr2": [
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "2",
+            "powers": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": []
+      }
+    ],
+    "tr3": [
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": []
+      },
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": [
+          {
+            "coefficient": "20030",
+            "powers": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "nvars": 3,
+        "prime": 30029,
+        "terms": []
+      }
+    ]
+  },
+  "generator_catalogue": [
+    {
+      "factors": [
+        "tr1"
+      ],
+      "id": "tr1",
+      "leading_degree": 4
+    },
+    {
+      "factors": [
+        "tr2"
+      ],
+      "id": "tr2",
+      "leading_degree": 4
+    },
+    {
+      "factors": [
+        "tr3"
+      ],
+      "id": "tr3",
+      "leading_degree": 6
+    }
+  ],
+  "schema": 1
+}

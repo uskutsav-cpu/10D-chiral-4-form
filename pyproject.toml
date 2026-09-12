@@ -4,17 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chiral4form"
-version = "0.1.0"
-description = "Exact certificate infrastructure for stress-flow reachability of 10D chiral 4-form theories"
+version = "0.2.0"
+description = "Exact tensor maps and nonlinear orbit infrastructure for 10D chiral four-form stress flows"
+readme = "README.md"
 requires-python = ">=3.10"
-authors = [{name = "Utsav"}]
-dependencies = []
+authors = [{name = "Utsav Sunil Kumar"}]
+dependencies = ["numpy>=1.24,<3", "sympy>=1.12,<2"]
 
 [project.optional-dependencies]
-dev = [
-  "pytest>=8",
-  "ruff>=0.6",
-]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+chiral4form = "chiral4form.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -22,7 +23,4 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra"
-
-[tool.ruff]
-line-length = 100
-target-version = "py310"
+markers = ["integration: tensor/pipeline integration tests", "slow: optional larger tensor recomputations"]

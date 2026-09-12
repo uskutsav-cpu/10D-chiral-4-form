@@ -1,56 +1,41 @@
-# Immediate Execution Checklist
+# Execution checklist for the implemented engine
 
-This is the shortest route from repository setup to the first genuinely new Paper-2 result.
+This supersedes the original foundation-only checklist. Do not promote the
+imported degree-ten/twelve linear closure counts into orbit dimensions.
 
-## Week 1: foundation freeze
+## Run the delivered degree-eight program
 
-- [ ] Clone/check out the predecessor repository beside this one.
-- [ ] Pin its exact commit and branch.
-- [ ] Run `python scripts/freeze_source_snapshot.py ../selfdual-5form-invariants`.
-- [ ] Re-run predecessor tests and the interacting-flow closure artifact.
-- [ ] Add a new certificate here for `(1,1,3,11,67)` using fresh primes/seeds.
-- [ ] Update C01–C04 from `IMPORTED` to `REPRODUCED` only after the new artifacts exist.
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[dev]'
+make verify
+bash scripts/run_research.sh core
+```
 
-## Weeks 1–3: K6 theorem
+`verify` checks tests and packaged certificate arithmetic. `core` additionally
+recomputes real tensors, fits, holdouts, generalized generators, the bounded map
+certificate, rational candidate lifting, and symbolic orbit/completion results.
+Check `runs/*/summary.json` and the output status; a successful fit is not an
+all-orders theorem. No Git write or remote push is performed by these commands.
 
-- [ ] Reproduce the exact `(Tr(M^3), K6)` change of basis.
-- [ ] Write the degree-6 generator-exhaustion table.
-- [ ] Derive the `K6` projection of each eligible generator analytically.
-- [ ] Produce a symbolic derivation of `q6_dot = C q6`.
-- [ ] Check the coefficient `40` against the pinned normalization.
-- [ ] Add a negative-control test showing a deliberately illegal generator can create an inhomogeneous `K6` term.
+## Next research milestones
 
-**First paper-grade milestone:** C05 and C06 become `ESTABLISHED`.
-
-## Weeks 3–6: higher obstruction certificates
-
-- [ ] Export exact reachable-row coordinates for degrees 8, 10, 12.
-- [ ] Run the annihilator pipeline.
-- [ ] Verify quotient dimensions under unrelated basis changes.
-- [ ] Search for intrinsic tensor representatives of `Q8` first.
-- [ ] Record any failure to find compact representatives rather than overclaiming graph labels.
-
-## Weeks 5–8: true generalized-flow completion
-
-- [ ] Implement the metric/stress variation induced by a candidate `S_i` inside the flow law.
-- [ ] Compare generator augmentation against seed augmentation explicitly.
-- [ ] Compute `Delta_d(S)`.
-- [ ] Run removal and smaller-cardinality searches.
-
-**Second paper-grade milestone:** C08 becomes either `ESTABLISHED` in a declared class or is replaced by a weaker, correct theorem.
-
-## Weeks 7–10: conformal / ModMax
-
-- [ ] Introduce algebraic localization (`r^2=I4` or equivalent homogeneous coordinates).
-- [ ] Verify the polynomial limit reproduces known closure.
-- [ ] Encode the HLS ModMax-like trajectory.
-- [ ] Project onto intrinsic obstruction coordinates.
-- [ ] Decide C11 versus C12 with a certificate.
-
-## Weeks 10–12: freeze core paper
-
-- [ ] Repeat novelty search.
-- [ ] Ask mentor to resolve convention/sign questions.
-- [ ] Run untouched holdout inputs.
-- [ ] Freeze machine artifacts and manuscript tables.
-- [ ] Attempt degree-14 probe only after the core result is safe.
+1. Have the mentor review the HLS normalization, constrained derivative, and
+   identification of the auxiliary-interaction flow with the intended physical
+   flow. Review `THEORY.md` and `docs/DEGREE8_MAP_CERTIFICATE.md`.
+2. Independently verify the explicit four-segment orbit construction and the
+   nonlinear obstruction `b2 + 16*a^3`. Test genuine generator additions, not
+   altered seeds. The earlier five-extra claim is refuted in this model.
+3. Import the pinned full atlas using `python -m chiral4form source --fetch
+   --checkout .cache/upstream --output data/imported`, then inspect the degree-12
+   preflight before choosing a compute budget. A source import is not a rerun.
+4. Extend the full coupling-space vector fields and orbit constraints through
+   degrees ten/twelve. Do not substitute coefficient-support activation for a
+   nonlinear orbit computation.
+5. Treat conformal/ModMax reachability and all-orders statements as separate
+   unresolved research. The delivered localization algebra only reproduces the
+   published ModMax stress-square identity.
+6. Freeze paper claims only after source/convention review, independent result
+   reproduction, and a fresh novelty review. Code completeness is not paper
+   completeness.
