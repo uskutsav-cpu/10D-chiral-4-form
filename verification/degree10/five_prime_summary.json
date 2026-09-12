@@ -1,0 +1,87 @@
+{
+  "degree": 10,
+  "environment": {
+    "numpy": "2.5.3",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.13",
+    "sympy": "1.14.0"
+  },
+  "higher_degree_imported_dimensions_reproved": false,
+  "prime_reports": [
+    {
+      "basis_ranks": {
+        "10": 14,
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {},
+      "fit_count": 18,
+      "flow_analysis": "not_run; coefficient fits are not a reachability classification",
+      "holdouts": 4,
+      "prime": 30139
+    },
+    {
+      "basis_ranks": {
+        "10": 14,
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {},
+      "fit_count": 18,
+      "flow_analysis": "not_run; coefficient fits are not a reachability classification",
+      "holdouts": 4,
+      "prime": 30161
+    },
+    {
+      "basis_ranks": {
+        "10": 14,
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {},
+      "fit_count": 18,
+      "flow_analysis": "not_run; coefficient fits are not a reachability classification",
+      "holdouts": 4,
+      "prime": 30169
+    },
+    {
+      "basis_ranks": {
+        "10": 14,
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {},
+      "fit_count": 18,
+      "flow_analysis": "not_run; coefficient fits are not a reachability classification",
+      "holdouts": 4,
+      "prime": 30181
+    },
+    {
+      "basis_ranks": {
+        "10": 14,
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {},
+      "fit_count": 18,
+      "flow_analysis": "not_run; coefficient fits are not a reachability classification",
+      "holdouts": 4,
+      "prime": 30187
+    }
+  ],
+  "run_fingerprint": "db4c35a51ca509d04f8351de241be2e7b1571a043fabfe57b516ffc9b3cce5c0",
+  "schema": 1,
+  "source_status": "hash_verified_not_physics_verified",
+  "state": "completed_declared_computations",
+  "warnings": [
+    "Linear invariant hull is not the nonlinear reachable set.",
+    "Finite-field fits and held-out samples are not symbolic identities over QQ.",
+    "The degree-eight analytic orbit report is conditional on its physics-to-basis map.",
+    "ModMax output reproduces published algebra; alternative pure-stress reachability remains open."
+  ]
+}

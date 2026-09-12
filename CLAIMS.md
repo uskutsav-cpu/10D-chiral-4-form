@@ -18,10 +18,12 @@ independently derived, nor that novelty was established.
 | C10 | Degree-eight free-seed orbit is four-dimensional, its linear hull five-dimensional | EXACT CONDITIONAL | Six invariant constraints plus four explicit control segments |
 | C11 | Six named homogeneous extras complete degree eight and are necessary within that catalogue | EXACT CONDITIONAL | Nonzero ten-control minor; one surviving obstruction for each omission |
 | C12 | Six is the minimum over arbitrary additional scalars | OPEN / NOT CLAIMED | Different homogeneous or inhomogeneous catalogues require new analysis |
-| C13 | Degree-ten/twelve nonlinear orbit and completion classification | OPEN | Importer, evaluator, fitting and analysis interfaces exist; full computation not claimed |
-| C14 | Pure-stress ModMax reachability or obstruction | OPEN | Only published square-root/stress identities are reproduced |
-| C15 | Finite all-orders obstruction ideal | CONJECTURAL PROGRAM | No all-orders equivalence is asserted |
-| C16 | Priority/novelty of the new finite-model results | UNREVIEWED | Requires targeted literature and mentor review |
+| C13 | Degree-ten free-seed pure-stress orbit has dimension 6 in the declared polynomial truncation | EXACT CONDITIONAL | Twelve exact independent obstruction relations plus matching rank-6 accessibility bound |
+| C14 | The degree-ten obstruction component is globally reachable by an explicit six-stage signed control law | EXACT CONDITIONAL | Global six-parameter graph; `tr2*tr3` and `tr5` span the final two directions |
+| C15 | Degree-twelve nonlinear orbit and completion classification | OPEN | Tensor/fitting infrastructure exists; nonlinear orbit classification not yet established |
+| C16 | Pure-stress ModMax reachability or obstruction | OPEN | Only published square-root/stress identities are reproduced |
+| C17 | Finite all-orders obstruction ideal | CONJECTURAL PROGRAM | No all-orders equivalence is asserted |
+| C18 | Priority/novelty of the new finite-model results | UNREVIEWED | Requires targeted literature and mentor review |
 
 ## No shortcuts
 
