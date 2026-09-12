@@ -33,6 +33,9 @@ def main(argv=None):
     p.add_argument('--target-rank',type=int,required=True);p.add_argument('--metric',choices=['lie_rank','linear_hull'],default='lie_rank')
     p.add_argument('--depth',type=int,default=3);p.add_argument('--max-subsets',type=int,default=1024)
     p.add_argument('--output',type=Path,required=True)
+    p=sub.add_parser('degree12-certify');p.add_argument('--models',type=Path,required=True)
+    p.add_argument('--holdout-prime',type=int);p.add_argument('--max-bad-primes',type=int,default=0)
+    p.add_argument('--output',type=Path,required=True)
     p=sub.add_parser('prove-map8');p.add_argument('--output',type=Path,default=Path('results/degree8-map-proof'));p.add_argument('--prime-index',type=int)
     p=sub.add_parser('verify-map8');p.add_argument('certificate',type=Path);p.add_argument('--reevaluate-tensors',action='store_true')
     args=parser.parse_args(argv)
@@ -76,6 +79,9 @@ def main(argv=None):
         elif args.command=='complete':
             from .completion import search
             result=search(_json(args.model),args.candidates,args.target_rank,args.metric,args.depth,args.max_subsets)
+        elif args.command=='degree12-certify':
+            from .degree12_certificate import certify_directory
+            result=certify_directory(args.models,holdout_prime=args.holdout_prime,max_bad_primes=args.max_bad_primes)
         elif args.command=='prove-map8':
             from .map_proof import run as prove_map8
             certificate=prove_map8(args.output,args.root,prime_index=args.prime_index)
