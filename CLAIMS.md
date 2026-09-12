@@ -20,7 +20,7 @@ independently derived, nor that novelty was established.
 | C12 | Six is the minimum over arbitrary additional scalars | OPEN / NOT CLAIMED | Different homogeneous or inhomogeneous catalogues require new analysis |
 | C13 | Degree-ten free-seed pure-stress orbit has dimension 6 in the declared polynomial truncation | EXACT CONDITIONAL | Twelve exact independent obstruction relations plus matching rank-6 accessibility bound |
 | C14 | The degree-ten obstruction component is globally reachable by an explicit six-stage signed control law | EXACT CONDITIONAL | Global six-parameter graph; `tr2*tr3` and `tr5` span the final two directions |
-| C15 | Degree-twelve nonlinear orbit and completion classification | OPEN | Tensor/fitting infrastructure exists; nonlinear orbit classification not yet established |
+| C15 | Degree-twelve obstruction structure is stable across eight independent finite fields, with 68 independent leading constraints and modular orbit dimension 10 | EXACT OVER TESTED PRIME FIELDS; QQ LIFT OPEN | Same equation rank, nullity, leading rank, control rank, pivot columns and closed 10-dimensional sandwich at all eight primes; characteristic-zero reconstruction is not yet certified |
 | C16 | Pure-stress ModMax reachability or obstruction | OPEN | Only published square-root/stress identities are reproduced |
 | C17 | Finite all-orders obstruction ideal | CONJECTURAL PROGRAM | No all-orders equivalence is asserted |
 | C18 | Priority/novelty of the new finite-model results | UNREVIEWED | Requires targeted literature and mentor review |

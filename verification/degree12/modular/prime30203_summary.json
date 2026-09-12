@@ -1,0 +1,36 @@
+{
+  "degree": 12,
+  "environment": {
+    "numpy": "2.5.3",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.13",
+    "sympy": "1.14.0"
+  },
+  "higher_degree_imported_dimensions_reproved": false,
+  "prime_reports": [
+    {
+      "basis_ranks": {
+        "10": 14,
+        "12": 72,
+        "4": 1,
+        "6": 2,
+        "8": 7
+      },
+      "cross_checks": {},
+      "fit_count": 76,
+      "flow_analysis": "not_run; coefficient fits are not a reachability classification",
+      "holdouts": 4,
+      "prime": 30203
+    }
+  ],
+  "run_fingerprint": "7260231d3d8019c6198334dcc2f652a9f76dc8b4a67d5b873b9ff620a40093d6",
+  "schema": 1,
+  "source_status": "hash_verified_not_physics_verified",
+  "state": "completed_declared_computations",
+  "warnings": [
+    "Linear invariant hull is not the nonlinear reachable set.",
+    "Finite-field fits and held-out samples are not symbolic identities over QQ.",
+    "The degree-eight analytic orbit report is conditional on its physics-to-basis map.",
+    "ModMax output reproduces published algebra; alternative pure-stress reachability remains open."
+  ]
+}
