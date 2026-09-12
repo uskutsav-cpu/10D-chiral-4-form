@@ -1,0 +1,56 @@
+{
+  "commit": "3ed32805b38ce34216b34888f6539e3538e90fb9",
+  "files": [
+    {
+      "bytes": 7538,
+      "git_blob": "9ecc3d3a61722eadd31fcfb272e46b5f4969426f",
+      "path": "results/10d_order8.json",
+      "sha256": "e780f0972fb8bfcfbed0dcda89361fe9810763549bc6f2ac9bf0833585e7f16c"
+    },
+    {
+      "bytes": 15684,
+      "git_blob": "c13fac53d25b7ea13e5c4aab2fff6447de5f7b0b",
+      "path": "results/10d_order10.json",
+      "sha256": "92b02433d82e641cce0d2dbb5f1bec9878c191ccbda7e906f27ef1f555b0fee5"
+    },
+    {
+      "bytes": 134920,
+      "git_blob": "e74da796f0504b78f5fae1b1199992ff1f27f95d",
+      "path": "results/10d_order12.json",
+      "sha256": "9a784dc56a2bc8186a4abb59e9177051be05640e95b4d7d24a4538bb45335113"
+    },
+    {
+      "bytes": 20489,
+      "git_blob": "0e29ef578bc07c675c254b607e1171b22b80e3c2",
+      "path": "src/sdinv/stress.py",
+      "sha256": "1d46450aa5832195143ab53ebacdc945cbfe9d589a49b7a779128813fe9e74df"
+    },
+    {
+      "bytes": 10809,
+      "git_blob": "094de6e6dca8f5c59b404d51f3010f8ced47b916",
+      "path": "src/sdinv/interaction.py",
+      "sha256": "906c88b0622dbfe0cf2e91a94521b5a394c4b11148b307c1925743ca5819bc46"
+    },
+    {
+      "bytes": 13008,
+      "git_blob": "be932f65888b37c5547f9f5318b941bfc65d455b",
+      "path": "src/sdinv/invariant_registry.py",
+      "sha256": "3c42297dd4c4b5390909f15c5ea3a06bf06e0e2d66204e291a7b88b84f1775b2"
+    },
+    {
+      "bytes": 3993,
+      "git_blob": "c788327ce4b814c8a829d3ec14014faa24769fe9",
+      "path": "docs/interacting_stress_tensor.md",
+      "sha256": "e51710e46f17db24d80623cff4012cb89445d7591c7da907ae6148c563a89a03"
+    },
+    {
+      "bytes": 5473,
+      "git_blob": "6a4bb2162a087d92e3bb2778344250a6494b2279",
+      "path": "docs/assumptions_limitations_and_open_questions.md",
+      "sha256": "3d92d09068053e9650a720e7768dda20e0b59863509e1983271b6c7baf88917f"
+    }
+  ],
+  "fingerprint": "6b84f8649056a616cef75150968881cbf8152cbdb866279c176907d5a9bd55f1",
+  "schema": 1,
+  "status": "hash_verified_not_physics_verified"
+}

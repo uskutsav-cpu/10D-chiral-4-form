@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "status": "global_constructive_reachability_in_degree10_truncation",
+  "source_model": "runs/degree10-fresh-rational-v2.json",
+  "source_obstructions": "runs/degree10-obstruction-discovery.json",
+  "free_parameters": [
+    "A=c_I4_1",
+    "B=c_I6_1",
+    "C=c_I8_1",
+    "D=c_I4_1^2",
+    "U=c_I10_1",
+    "V=c_I4_1*I6_1"
+  ],
+  "dependent_degree10_coordinates": [
+    "I10_2",
+    "I10_3",
+    "I10_4",
+    "I10_5",
+    "I10_6",
+    "I10_7",
+    "I10_8",
+    "I10_9",
+    "I10_10",
+    "I10_11",
+    "I10_12",
+    "I4_1*I6_2"
+  ],
+  "translation_controls": [
+    "tr2*tr3",
+    "tr5"
+  ],
+  "translation_matrix": [
+    [
+      "0",
+      "289944576/27097"
+    ],
+    [
+      "64/3",
+      "1124000/27097"
+    ]
+  ],
+  "translation_determinant": "-6185484288/27097",
+  "pretranslation_u": "-326187648*A**2*B/27097",
+  "pretranslation_v": "-(443957248*A**4 - 26015040*A**2*B - 166483968*A*C - 2194857*B**2)/1950984",
+  "stage_amounts": {
+    "tr2": "A/2",
+    "tr3": "3*B/32",
+    "tr4": "-(8*A**3 - 3*C)/3",
+    "tr2*tr2": "(32*A**3 - 27*A*B + 24*D)/96",
+    "tr2*tr3": "(2061828096*A**4 - 543646080*A**2*B - 773185536*A*C - 10193364*B**2 - 35125*U + 9060768*V)/193296384",
+    "tr5": "(326187648*A**2*B + 27097*U)/289944576"
+  },
+  "global_parameterization_verified": true,
+  "all_vector_fields_tangent": true,
+  "lower_triangular_control_system_verified": true,
+  "degree10_translation_rank": 2,
+  "orbit_dimension": 6,
+  "scope": "finite degree-10 polynomial truncation, free seed, piecewise signed independent scalar stress controls",
+  "exclusions": [
+    "nonanalytic generators",
+    "positivity restrictions on controls",
+    "causality/unitarity constraints",
+    "degree-12 or all-orders classification"
+  ]
+}

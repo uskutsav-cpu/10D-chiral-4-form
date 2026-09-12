@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "status": "frozen_degree10_certificate_set",
+  "files_sha256": {
+    "five_prime_summary.json": "655f5938488b2bd5affb4478224f6812737801666f0a7da52c700ff5cd9e4f4e",
+    "global_reachability.json": "2ed7739258a61035c6270e9d782044638db87748771725acd7cab7aafd6a2f92",
+    "obstruction_certificate.json": "153a7a6d7b00c724ecf6f47eb254ae89f206a00530ea4b904db9574968454b74",
+    "rational_model.json": "bd58cf08d9621d43e6802045a68bba0d9838d87b662c1d64c2face35d46523cd",
+    "reachability_analysis.json": "5c32a3ef1b9d29d5100377204ad5d76a5d72b537c3a989e8df0c00848ee3e1fe",
+    "source_manifest.json": "21711f289b2bef4d1d1b5f61573e1bb750cc09f84040eb20aa3bbbd93a6c3673",
+    "unused_prime_model_30197.json": "df9fca24730ffc3c84021e663a6c64ea14edc8700889b1214f20744fbcf97420",
+    "unused_prime_summary.json": "8db391ed28aead328d9bb65ea5ede21a7766963b607e83a1ccb2c6466ddefef6"
+  },
+  "result": {
+    "cumulative_coordinate_dimension": 24,
+    "degree8_reduced_dimension": 4,
+    "degree10_reduced_ambient_dimension": 18,
+    "degree10_independent_obstructions": 12,
+    "degree10_orbit_dimension": 6,
+    "linear_hull_dimension": 8,
+    "translation_rank": 2
+  },
+  "scope": "finite degree-10 polynomial truncation; free seed; piecewise signed independent scalar stress controls"
+}
