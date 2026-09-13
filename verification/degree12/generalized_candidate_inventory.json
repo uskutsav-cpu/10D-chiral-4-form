@@ -1,0 +1,436 @@
+{
+  "schema": 1,
+  "status": "universal_generalized_candidate_catalogue",
+  "candidate_class": "explicit homogeneous primitive graph invariants from the frozen degree<=12 registry, used as genuine independent S factors in f(tau,S)",
+  "product_invariants_as_independent_extras": false,
+  "candidate_count": 83,
+  "candidates": [
+    {
+      "id": "I4_1",
+      "degree": 4,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I6_1",
+      "degree": 6,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I6_2",
+      "degree": 6,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I8_1",
+      "degree": 8,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I8_2",
+      "degree": 8,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I8_3",
+      "degree": 8,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I8_4",
+      "degree": 8,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I8_5",
+      "degree": 8,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I8_6",
+      "degree": 8,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_1",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_10",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_11",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_12",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_2",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_3",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_4",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_5",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_6",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_7",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_8",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I10_9",
+      "degree": 10,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_1",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_10",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_11",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_12",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_13",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_14",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_15",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_16",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_17",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_18",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_19",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_2",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_20",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_21",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_22",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_23",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_24",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_25",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_26",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_27",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_28",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_29",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_3",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_30",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_31",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_32",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_33",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_34",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_35",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_36",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_37",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_38",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_39",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_4",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_40",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_41",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_42",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_43",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_44",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_45",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_46",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_47",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_48",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_49",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_5",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_50",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_51",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_52",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_53",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_54",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_55",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_56",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_57",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_58",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_59",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_6",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_60",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_61",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_62",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_7",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_8",
+      "degree": 12,
+      "kind": "primitive_graph"
+    },
+    {
+      "id": "I12_9",
+      "degree": 12,
+      "kind": "primitive_graph"
+    }
+  ],
+  "counts_by_degree": {
+    "4": 1,
+    "6": 2,
+    "8": 6,
+    "10": 12,
+    "12": 62
+  },
+  "not_claimed": [
+    "minimality over arbitrary linear combinations of scalars",
+    "minimality if product invariants are independently admitted as S generators",
+    "all-orders completion"
+  ]
+}
