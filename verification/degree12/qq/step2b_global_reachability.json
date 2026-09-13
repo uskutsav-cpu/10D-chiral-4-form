@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "status": "global_constructive_reachability_through_degree12",
+  "degree10_global_theorem": true,
+  "degree12_characteristic_zero_local_theorem": true,
+  "base_dimension": 6,
+  "degree12_coordinate_dimension": 72,
+  "leading_obstruction_rank": 68,
+  "fiber_dimension": 4,
+  "total_orbit_dimension": 10,
+  "affine_fiber_argument": {
+    "obstruction_equations_affine_linear_in_degree12_coordinates": true,
+    "leading_rank": 68,
+    "ambient_degree12_dimension": 72,
+    "fiber_dimension": 4
+  },
+  "vertical_translation_argument": {
+    "controls": [
+      "tr2*tr2*tr2",
+      "tr2*tr4",
+      "tr3*tr3",
+      "tr6"
+    ],
+    "preserve_base": true,
+    "constant_action": true,
+    "rank_over_Q": 4,
+    "transitive_on_each_affine_fiber": true,
+    "explicit_QQ_matrix_needed": false
+  },
+  "constructive_algorithm": {
+    "stage_1": {
+      "description": "use the frozen six-stage degree-10 global construction to reach the target base coordinates A,B,C,D,U,V",
+      "controls": [
+        "tr2",
+        "tr3",
+        "tr4",
+        "tr2*tr2",
+        "tr2*tr3",
+        "tr5"
+      ],
+      "amounts": {
+        "tr2": "A/2",
+        "tr3": "3*B/32",
+        "tr4": "-(8*A**3 - 3*C)/3",
+        "tr2*tr2": "(32*A**3 - 27*A*B + 24*D)/96",
+        "tr2*tr3": "(2061828096*A**4 - 543646080*A**2*B - 773185536*A*C - 10193364*B**2 - 35125*U + 9060768*V)/193296384",
+        "tr5": "(326187648*A**2*B + 27097*U)/289944576"
+      }
+    },
+    "stage_2": {
+      "description": "solve the exact 4x4 vertical linear system defined by the four selected degree-12 controls for the displacement from the current fiber point to the target fiber point",
+      "controls": [
+        "tr2*tr2*tr2",
+        "tr2*tr4",
+        "tr3*tr3",
+        "tr6"
+      ],
+      "fiber_coordinates": [
+        "I4_1^3",
+        "I6_1^2",
+        "I6_1*I6_2",
+        "I4_1*I8_1"
+      ],
+      "existence_and_uniqueness": "guaranteed by the characteristic-zero nonzero 4x4 minor"
+    }
+  },
+  "global_parameterization_verified": true,
+  "orbit_dimension": 10,
+  "scope": "finite degree-12 polynomial truncation, free seed, arbitrary signed piecewise independent scalar stress controls",
+  "exclusions": [
+    "explicit closed-form rational tr6 translation coefficients",
+    "nonanalytic generators",
+    "positivity restrictions on control amplitudes",
+    "causality/unitarity restrictions",
+    "degree-14 or all-orders classification",
+    "generalized non-stress completion"
+  ]
+}

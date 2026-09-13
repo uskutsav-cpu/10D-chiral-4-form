@@ -1,0 +1,256 @@
+{
+  "schema": 4,
+  "status": "degree12_vertical_rank_theorem_without_rational_tr6_coordinates",
+  "normalization_audit": {
+    "status": "normalization_audit_passed",
+    "reference_prime": 30203,
+    "primes": [
+      30203,
+      30211,
+      30223,
+      30241,
+      30253,
+      30259,
+      30269,
+      30271,
+      30293,
+      32693,
+      32713,
+      32717,
+      32719,
+      32749,
+      32771
+    ],
+    "coordinate_count": 78,
+    "generator_count": 18,
+    "comparisons": {
+      "30203": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30211": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30223": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30241": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30253": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30259": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30269": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30271": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30293": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32693": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32713": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32717": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32719": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32749": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32771": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      }
+    }
+  },
+  "selected_vertical_controls": [
+    "tr2*tr2*tr2",
+    "tr2*tr4",
+    "tr3*tr3",
+    "tr6"
+  ],
+  "base_dimension": 6,
+  "fiber_dimension": 4,
+  "selected_fiber_coordinates": [
+    "I4_1^3",
+    "I6_1^2",
+    "I6_1*I6_2",
+    "I4_1*I8_1"
+  ],
+  "selected_degree12_columns": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "all_selected_controls_zero_on_lower_coordinates": true,
+  "all_selected_controls_constant_on_degree12_layer": true,
+  "current_model_primes": [
+    30203,
+    30211,
+    30223,
+    30241,
+    30253,
+    30259,
+    30269,
+    30271,
+    30293,
+    32693,
+    32713,
+    32717,
+    32719,
+    32749,
+    32771
+  ],
+  "current_minor_residues": {
+    "30203": 16778,
+    "30211": 18362,
+    "30223": 12096,
+    "30241": 15522,
+    "30253": 25989,
+    "30259": 22383,
+    "30269": 9808,
+    "30271": 8363,
+    "30293": 14126,
+    "32693": 26532,
+    "32713": 30215,
+    "32717": 30640,
+    "32719": 20210,
+    "32749": 25508,
+    "32771": 14817
+  },
+  "independent_static_certificate_primes": [
+    32603,
+    32609,
+    32611
+  ],
+  "static_minor_residues": {
+    "32603": 25586,
+    "32609": 21225,
+    "32611": 15031
+  },
+  "static_crosschecks": {
+    "32603": {
+      "basis_rank": 72,
+      "stress_rank": 4,
+      "selected_columns": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "minor_residue": 25586
+    },
+    "32609": {
+      "basis_rank": 72,
+      "stress_rank": 4,
+      "selected_columns": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "minor_residue": 21225
+    },
+    "32611": {
+      "basis_rank": 72,
+      "stress_rank": 4,
+      "selected_columns": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "minor_residue": 15031
+    }
+  },
+  "formal_map_scope": "leading degree-12 free-stress map in tau=48*T normalization; integer/rational characteristic-zero map reduced modulo the listed primes",
+  "characteristic_zero_rank_argument": "the selected 4x4 minor is nonzero modulo good primes; therefore the exact characteristic-zero 4x4 minor is nonzero, so the four selected vertical controls have rank exactly 4",
+  "vertical_rank_over_Q": 4,
+  "explicit_QQ_translation_matrix_reconstructed": false,
+  "explicit_tr6_QQ_coordinates_required_for_rank_theorem": false,
+  "conclusion": "the selected four controls define a constant rank-4 translation action on each degree-12 fiber while preserving the six lower coordinates"
+}

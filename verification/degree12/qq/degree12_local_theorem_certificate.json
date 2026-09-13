@@ -1,0 +1,868 @@
+{
+  "schema": 1,
+  "status": "characteristic_zero_degree12_local_orbit_theorem_certificate",
+  "normalization_audit": {
+    "status": "normalization_audit_passed",
+    "reference_prime": 30203,
+    "primes": [
+      30203,
+      30211,
+      30223,
+      30241,
+      30253,
+      30259,
+      30269,
+      30271,
+      30293,
+      32693,
+      32713,
+      32717,
+      32719,
+      32749,
+      32771
+    ],
+    "coordinate_count": 78,
+    "generator_count": 18,
+    "comparisons": {
+      "30203": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30211": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30223": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30241": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30253": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30259": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30269": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30271": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "30293": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32693": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32713": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32717": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32719": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32749": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      },
+      "32771": {
+        "coordinate_ids": true,
+        "generators": true,
+        "generator_catalogue": true,
+        "restriction_metadata_consistent": true,
+        "term_support_same": true,
+        "declared_prime_matches": true
+      }
+    }
+  },
+  "primes": [
+    30203,
+    30211,
+    30223,
+    30241,
+    30253,
+    30259,
+    30269,
+    30271,
+    30293,
+    32693,
+    32713,
+    32717,
+    32719,
+    32749,
+    32771
+  ],
+  "modulus_product": "26036069907103112235091094520859743493470688480994840327355262304023",
+  "formal_integrality_basis": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+  "source_identity_modular_checks": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    18,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "source_identity_height_bounds": [
+    {
+      "source_row": 5,
+      "generator": "tr1*tr1*tr1",
+      "output_monomial": "A^3",
+      "clearing_denominator": 3,
+      "lhs_target_bound": 96000000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 10,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 576000000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 6,
+      "generator": "tr1*tr1*tr2",
+      "output_monomial": "A^2",
+      "clearing_denominator": 3,
+      "lhs_target_bound": 4800000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 1,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 43200000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 7,
+      "generator": "tr1*tr2",
+      "output_monomial": "D",
+      "clearing_denominator": 20,
+      "lhs_target_bound": 720000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 1,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 43200000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 8,
+      "generator": "tr1*tr2",
+      "output_monomial": "C",
+      "clearing_denominator": 20,
+      "lhs_target_bound": 720000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 1,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 43200000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 10,
+      "generator": "tr1*tr2",
+      "output_monomial": "A^3",
+      "clearing_denominator": 30,
+      "lhs_target_bound": 1920000000096000000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": -2,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 4,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B5",
+          "integer_coefficient": 3,
+          "target_bound": 0
+        }
+      ],
+      "residual_coefficient_bound": 57600000003052800000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 11,
+      "generator": "tr1*tr2*tr2",
+      "output_monomial": "A",
+      "clearing_denominator": 30,
+      "lhs_target_bound": 240000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 1,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 36000000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 12,
+      "generator": "tr1*tr3",
+      "output_monomial": "B",
+      "clearing_denominator": 15,
+      "lhs_target_bound": 480000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B1",
+          "integer_coefficient": 4,
+          "target_bound": 19200000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 84000000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 13,
+      "generator": "tr1*tr3",
+      "output_monomial": "A^2",
+      "clearing_denominator": 30,
+      "lhs_target_bound": 14400000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 3,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B4",
+          "integer_coefficient": 8,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": -80,
+          "target_bound": 38400000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 3590400000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 14,
+      "generator": "tr1*tr4",
+      "output_monomial": "A",
+      "clearing_denominator": 120,
+      "lhs_target_bound": 240000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 1,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 57600000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 15,
+      "generator": "tr2",
+      "output_monomial": "V",
+      "clearing_denominator": 400,
+      "lhs_target_bound": 0,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B4",
+          "integer_coefficient": 1,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": -10,
+          "target_bound": 38400000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 384000000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 18,
+      "generator": "tr2",
+      "output_monomial": "A*D",
+      "clearing_denominator": 300,
+      "lhs_target_bound": 384000000028800000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 6,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 8,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B5",
+          "integer_coefficient": 3,
+          "target_bound": 0
+        }
+      ],
+      "residual_coefficient_bound": 115200000009043200000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 22,
+      "generator": "tr2*tr2",
+      "output_monomial": "B",
+      "clearing_denominator": 100,
+      "lhs_target_bound": 1920000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B4",
+          "integer_coefficient": -1,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": 20,
+          "target_bound": 38400000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 960000000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 23,
+      "generator": "tr2*tr2",
+      "output_monomial": "A^2",
+      "clearing_denominator": 300,
+      "lhs_target_bound": 192000000028800000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": -4,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 8,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B5",
+          "integer_coefficient": 3,
+          "target_bound": 0
+        }
+      ],
+      "residual_coefficient_bound": 57600000008985600000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 24,
+      "generator": "tr2*tr2*tr2",
+      "output_monomial": "1",
+      "clearing_denominator": 300,
+      "lhs_target_bound": 12000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 1,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 32400000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 25,
+      "generator": "tr2*tr3",
+      "output_monomial": "A",
+      "clearing_denominator": 300,
+      "lhs_target_bound": 1200000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 3,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B4",
+          "integer_coefficient": 8,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": -80,
+          "target_bound": 38400000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 3518400000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 26,
+      "generator": "tr2*tr4",
+      "output_monomial": "1",
+      "clearing_denominator": 1200,
+      "lhs_target_bound": 12000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 1,
+          "target_bound": 28800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 43200000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 27,
+      "generator": "tr3",
+      "output_monomial": "D",
+      "clearing_denominator": 600,
+      "lhs_target_bound": 2160000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 9,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B4",
+          "integer_coefficient": -16,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": 320,
+          "target_bound": 38400000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 13843200000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 29,
+      "generator": "tr3",
+      "output_monomial": "A*B",
+      "clearing_denominator": 30,
+      "lhs_target_bound": 432000000057600000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B1",
+          "integer_coefficient": -32,
+          "target_bound": 19200000000000000000000000000000000
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": 9,
+          "target_bound": 38400000000000000000000000000000000
+        },
+        {
+          "basis_id": "B8",
+          "integer_coefficient": 320,
+          "target_bound": 216000000019200000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 82080000008832000000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 30,
+      "generator": "tr3",
+      "output_monomial": "A^3",
+      "clearing_denominator": 24387300,
+      "lhs_target_bound": 5760000000096000000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": -2113566,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 1950984,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B4",
+          "integer_coefficient": -8092864,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B5",
+          "integer_coefficient": 731619,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": 89599680,
+          "target_bound": 38400000000000000000000000000000000
+        },
+        {
+          "basis_id": "B7",
+          "integer_coefficient": -521900236800,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B10",
+          "integer_coefficient": 43355200,
+          "target_bound": 9600000000000000000000000000000000000000000000
+        },
+        {
+          "basis_id": "B12",
+          "integer_coefficient": -65032800,
+          "target_bound": 2160000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 556680768006039338400000000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 31,
+      "generator": "tr3*tr3",
+      "output_monomial": "1",
+      "clearing_denominator": 225,
+      "lhs_target_bound": 12000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B1",
+          "integer_coefficient": 16,
+          "target_bound": 19200000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 309900000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 32,
+      "generator": "tr4",
+      "output_monomial": "B",
+      "clearing_denominator": 19200,
+      "lhs_target_bound": 1920000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B1",
+          "integer_coefficient": 2048,
+          "target_bound": 19200000000000000000000000000000000
+        },
+        {
+          "basis_id": "B3",
+          "integer_coefficient": -27,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B12",
+          "integer_coefficient": 1800,
+          "target_bound": 2160000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 80851200000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 33,
+      "generator": "tr4",
+      "output_monomial": "A^2",
+      "clearing_denominator": 600,
+      "lhs_target_bound": 192000000028800000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B2",
+          "integer_coefficient": 12,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B3",
+          "integer_coefficient": -15,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B4",
+          "integer_coefficient": 64,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": -640,
+          "target_bound": 38400000000000000000000000000000000
+        },
+        {
+          "basis_id": "B9",
+          "integer_coefficient": 150,
+          "target_bound": 384000000028800000000000000000000000000000000
+        }
+      ],
+      "residual_coefficient_bound": 172800000046953600000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    },
+    {
+      "source_row": 34,
+      "generator": "tr5",
+      "output_monomial": "A",
+      "clearing_denominator": 6503280,
+      "lhs_target_bound": 1200000000000000000000000000000000,
+      "integer_rhs_terms": [
+        {
+          "basis_id": "B3",
+          "integer_coefficient": 27097,
+          "target_bound": 28800000000000000000000000000000000
+        },
+        {
+          "basis_id": "B4",
+          "integer_coefficient": 337200,
+          "target_bound": 0
+        },
+        {
+          "basis_id": "B6",
+          "integer_coefficient": -3372000,
+          "target_bound": 38400000000000000000000000000000000
+        },
+        {
+          "basis_id": "B7",
+          "integer_coefficient": 34793349120,
+          "target_bound": 0
+        }
+      ],
+      "residual_coefficient_bound": 138069129600000000000000000000000000000000,
+      "modulus_product": 26036069907103112235091094520859743493470688480994840327355262304023,
+      "proved_by_height": true
+    }
+  ],
+  "exact_QQ_tail_checks": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    18,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "equation_rank": {
+    "lower_bound": 13,
+    "upper_bound": 13,
+    "reason_lower": "nonzero 13x13 minor modulo good primes",
+    "reason_upper": "23 characteristic-zero dependency identities span all 36 rows from 13 basis rows",
+    "minor_residues": {
+      "30203": 17409,
+      "30211": 19051,
+      "30223": 1177,
+      "30241": 19320,
+      "30253": 16598,
+      "30259": 20006,
+      "30269": 26437,
+      "30271": 6501,
+      "30293": 25934,
+      "32693": 21719,
+      "32713": 6387,
+      "32717": 11304,
+      "32719": 13732,
+      "32749": 18808,
+      "32771": 10949
+    }
+  },
+  "tail_rank": {
+    "rank": 9,
+    "reason": "9 columns and nonzero 9x9 minor",
+    "minor_residues": {
+      "30203": 19506,
+      "30211": 24683,
+      "30223": 13090,
+      "30241": 24009,
+      "30253": 30090,
+      "30259": 2530,
+      "30269": 4291,
+      "30271": 7263,
+      "30293": 25037,
+      "32693": 23661,
+      "32713": 27638,
+      "32717": 23212,
+      "32719": 19529,
+      "32749": 10429,
+      "32771": 5814
+    }
+  },
+  "control_rank": {
+    "rank": 10,
+    "upper_bound_reason": "exactly eight of 18 scalar stress generators contain tr1 and vanish at the free seed",
+    "lower_bound_reason": "nonzero 10x10 minor modulo good primes",
+    "basis_names": [
+      "tr2",
+      "tr2*tr2",
+      "tr2*tr2*tr2",
+      "tr2*tr3",
+      "tr2*tr4",
+      "tr3",
+      "tr3*tr3",
+      "tr4",
+      "tr5",
+      "tr6"
+    ],
+    "minor_residues": {
+      "30203": 13256,
+      "30211": 21912,
+      "30223": 6222,
+      "30241": 11944,
+      "30253": 16818,
+      "30259": 5941,
+      "30269": 995,
+      "30271": 25921,
+      "30293": 28334,
+      "32693": 31353,
+      "32713": 16108,
+      "32717": 22204,
+      "32719": 25812,
+      "32749": 12378,
+      "32771": 28583
+    }
+  },
+  "obstruction_nullity": 68,
+  "degree12_leading_obstruction_rank": 68,
+  "reduced_ambient_dimension": 78,
+  "local_orbit_dimension": 10,
+  "dimension_argument": {
+    "equation_kernel_dimension": "81 - 13 = 68",
+    "tail_full_column_rank": 9,
+    "kernel_projection_to_degree12_is_injective": true,
+    "upper_orbit_dimension": "78 - 68 = 10",
+    "free_seed_control_lower_dimension": 10
+  },
+  "qq_theorem": true,
+  "scope": "finite polynomial pure-stress model through field degree 12, restricted to the previously certified degree-10 orbit",
+  "not_claimed": [
+    "global degree-12 constructive reachability",
+    "degree-12 generalized-flow completion",
+    "all-orders theorem",
+    "nonanalytic ModMax universality"
+  ]
+}
