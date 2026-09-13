@@ -1,0 +1,883 @@
+{
+  "schema": 2,
+  "status": "step1c_source_identity_targets_corrected",
+  "source_of_equation_row_labels": "runs/degree12-structural-rank-diagnostic.json",
+  "note": "Step1B basis_labels were obstruction-column labels, not equation-row labels. Numerical minor/rank data remain valid.",
+  "equation": {
+    "basis": [
+      {
+        "basis_id": "B1",
+        "source_row": 0,
+        "generator": "tr1*tr1",
+        "output_monomial": [
+          {
+            "variable": "B",
+            "power": 2
+          }
+        ],
+        "output_monomial_text": "B^2"
+      },
+      {
+        "basis_id": "B2",
+        "source_row": 1,
+        "generator": "tr1*tr1",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          },
+          {
+            "variable": "D",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A*D"
+      },
+      {
+        "basis_id": "B3",
+        "source_row": 2,
+        "generator": "tr1*tr1",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          },
+          {
+            "variable": "C",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A*C"
+      },
+      {
+        "basis_id": "B4",
+        "source_row": 3,
+        "generator": "tr1*tr1",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 2
+          },
+          {
+            "variable": "B",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A^2*B"
+      },
+      {
+        "basis_id": "B5",
+        "source_row": 4,
+        "generator": "tr1*tr1",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 4
+          }
+        ],
+        "output_monomial_text": "A^4"
+      },
+      {
+        "basis_id": "B6",
+        "source_row": 9,
+        "generator": "tr1*tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          },
+          {
+            "variable": "B",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A*B"
+      },
+      {
+        "basis_id": "B7",
+        "source_row": 16,
+        "generator": "tr2",
+        "output_monomial": [
+          {
+            "variable": "U",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "U"
+      },
+      {
+        "basis_id": "B8",
+        "source_row": 17,
+        "generator": "tr2",
+        "output_monomial": [
+          {
+            "variable": "B",
+            "power": 2
+          }
+        ],
+        "output_monomial_text": "B^2"
+      },
+      {
+        "basis_id": "B9",
+        "source_row": 19,
+        "generator": "tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          },
+          {
+            "variable": "C",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A*C"
+      },
+      {
+        "basis_id": "B10",
+        "source_row": 20,
+        "generator": "tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 2
+          },
+          {
+            "variable": "B",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A^2*B"
+      },
+      {
+        "basis_id": "B11",
+        "source_row": 21,
+        "generator": "tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 4
+          }
+        ],
+        "output_monomial_text": "A^4"
+      },
+      {
+        "basis_id": "B12",
+        "source_row": 28,
+        "generator": "tr3",
+        "output_monomial": [
+          {
+            "variable": "C",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "C"
+      },
+      {
+        "basis_id": "B13",
+        "source_row": 35,
+        "generator": "tr6",
+        "output_monomial": [],
+        "output_monomial_text": "1"
+      }
+    ],
+    "dependencies": [
+      {
+        "source_row": 5,
+        "generator": "tr1*tr1*tr1",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 3
+          }
+        ],
+        "output_monomial_text": "A^3",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "10/3"
+          }
+        ]
+      },
+      {
+        "source_row": 6,
+        "generator": "tr1*tr1*tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 2
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/3"
+          }
+        ]
+      },
+      {
+        "source_row": 7,
+        "generator": "tr1*tr2",
+        "output_monomial": [
+          {
+            "variable": "D",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "D",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/20"
+          }
+        ]
+      },
+      {
+        "source_row": 8,
+        "generator": "tr1*tr2",
+        "output_monomial": [
+          {
+            "variable": "C",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "C",
+        "terms": [
+          {
+            "basis_id": "B3",
+            "coefficient": "1/20"
+          }
+        ]
+      },
+      {
+        "source_row": 10,
+        "generator": "tr1*tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 3
+          }
+        ],
+        "output_monomial_text": "A^3",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "-1/15"
+          },
+          {
+            "basis_id": "B3",
+            "coefficient": "2/15"
+          },
+          {
+            "basis_id": "B5",
+            "coefficient": "1/10"
+          }
+        ]
+      },
+      {
+        "source_row": 11,
+        "generator": "tr1*tr2*tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/30"
+          }
+        ]
+      },
+      {
+        "source_row": 12,
+        "generator": "tr1*tr3",
+        "output_monomial": [
+          {
+            "variable": "B",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "B",
+        "terms": [
+          {
+            "basis_id": "B1",
+            "coefficient": "4/15"
+          }
+        ]
+      },
+      {
+        "source_row": 13,
+        "generator": "tr1*tr3",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 2
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/10"
+          },
+          {
+            "basis_id": "B4",
+            "coefficient": "4/15"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "-8/3"
+          }
+        ]
+      },
+      {
+        "source_row": 14,
+        "generator": "tr1*tr4",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A",
+        "terms": [
+          {
+            "basis_id": "B3",
+            "coefficient": "1/120"
+          }
+        ]
+      },
+      {
+        "source_row": 15,
+        "generator": "tr2",
+        "output_monomial": [
+          {
+            "variable": "V",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "V",
+        "terms": [
+          {
+            "basis_id": "B4",
+            "coefficient": "1/400"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "-1/40"
+          }
+        ]
+      },
+      {
+        "source_row": 18,
+        "generator": "tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          },
+          {
+            "variable": "D",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A*D",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/50"
+          },
+          {
+            "basis_id": "B3",
+            "coefficient": "2/75"
+          },
+          {
+            "basis_id": "B5",
+            "coefficient": "1/100"
+          }
+        ]
+      },
+      {
+        "source_row": 22,
+        "generator": "tr2*tr2",
+        "output_monomial": [
+          {
+            "variable": "B",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "B",
+        "terms": [
+          {
+            "basis_id": "B4",
+            "coefficient": "-1/100"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "1/5"
+          }
+        ]
+      },
+      {
+        "source_row": 23,
+        "generator": "tr2*tr2",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 2
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "-1/75"
+          },
+          {
+            "basis_id": "B3",
+            "coefficient": "2/75"
+          },
+          {
+            "basis_id": "B5",
+            "coefficient": "1/100"
+          }
+        ]
+      },
+      {
+        "source_row": 24,
+        "generator": "tr2*tr2*tr2",
+        "output_monomial": [],
+        "output_monomial_text": "1",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/300"
+          }
+        ]
+      },
+      {
+        "source_row": 25,
+        "generator": "tr2*tr3",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/100"
+          },
+          {
+            "basis_id": "B4",
+            "coefficient": "2/75"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "-4/15"
+          }
+        ]
+      },
+      {
+        "source_row": 26,
+        "generator": "tr2*tr4",
+        "output_monomial": [],
+        "output_monomial_text": "1",
+        "terms": [
+          {
+            "basis_id": "B3",
+            "coefficient": "1/1200"
+          }
+        ]
+      },
+      {
+        "source_row": 27,
+        "generator": "tr3",
+        "output_monomial": [
+          {
+            "variable": "D",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "D",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "3/200"
+          },
+          {
+            "basis_id": "B4",
+            "coefficient": "-2/75"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "8/15"
+          }
+        ]
+      },
+      {
+        "source_row": 29,
+        "generator": "tr3",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          },
+          {
+            "variable": "B",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A*B",
+        "terms": [
+          {
+            "basis_id": "B1",
+            "coefficient": "-16/15"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "3/10"
+          },
+          {
+            "basis_id": "B8",
+            "coefficient": "32/3"
+          }
+        ]
+      },
+      {
+        "source_row": 30,
+        "generator": "tr3",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 3
+          }
+        ],
+        "output_monomial_text": "A^3",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "-13/150"
+          },
+          {
+            "basis_id": "B3",
+            "coefficient": "2/25"
+          },
+          {
+            "basis_id": "B4",
+            "coefficient": "-2023216/6096825"
+          },
+          {
+            "basis_id": "B5",
+            "coefficient": "3/100"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "497776/135485"
+          },
+          {
+            "basis_id": "B7",
+            "coefficient": "-579889152/27097"
+          },
+          {
+            "basis_id": "B10",
+            "coefficient": "16/9"
+          },
+          {
+            "basis_id": "B12",
+            "coefficient": "-8/3"
+          }
+        ]
+      },
+      {
+        "source_row": 31,
+        "generator": "tr3*tr3",
+        "output_monomial": [],
+        "output_monomial_text": "1",
+        "terms": [
+          {
+            "basis_id": "B1",
+            "coefficient": "16/225"
+          }
+        ]
+      },
+      {
+        "source_row": 32,
+        "generator": "tr4",
+        "output_monomial": [
+          {
+            "variable": "B",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "B",
+        "terms": [
+          {
+            "basis_id": "B1",
+            "coefficient": "8/75"
+          },
+          {
+            "basis_id": "B3",
+            "coefficient": "-9/6400"
+          },
+          {
+            "basis_id": "B12",
+            "coefficient": "3/32"
+          }
+        ]
+      },
+      {
+        "source_row": 33,
+        "generator": "tr4",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 2
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "terms": [
+          {
+            "basis_id": "B2",
+            "coefficient": "1/50"
+          },
+          {
+            "basis_id": "B3",
+            "coefficient": "-1/40"
+          },
+          {
+            "basis_id": "B4",
+            "coefficient": "8/75"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "-16/15"
+          },
+          {
+            "basis_id": "B9",
+            "coefficient": "1/4"
+          }
+        ]
+      },
+      {
+        "source_row": 34,
+        "generator": "tr5",
+        "output_monomial": [
+          {
+            "variable": "A",
+            "power": 1
+          }
+        ],
+        "output_monomial_text": "A",
+        "terms": [
+          {
+            "basis_id": "B3",
+            "coefficient": "1/240"
+          },
+          {
+            "basis_id": "B4",
+            "coefficient": "1405/27097"
+          },
+          {
+            "basis_id": "B6",
+            "coefficient": "-14050/27097"
+          },
+          {
+            "basis_id": "B7",
+            "coefficient": "144972288/27097"
+          }
+        ]
+      }
+    ],
+    "dependency_max_numerator": "579889152",
+    "dependency_max_denominator": "6096825",
+    "max_nonzero_terms_per_relation": 8,
+    "minor_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      9,
+      16,
+      17,
+      19,
+      20,
+      21,
+      28,
+      35
+    ],
+    "minor_columns": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      73,
+      77,
+      78,
+      79,
+      80
+    ],
+    "minor_residues": {
+      "30203": 17409,
+      "30211": 19051,
+      "30223": 1177,
+      "30241": 19320,
+      "30253": 16598,
+      "30259": 20006,
+      "30269": 26437,
+      "30271": 6501,
+      "30293": 25934,
+      "32693": 21719,
+      "32713": 6387,
+      "32717": 11304,
+      "32719": 13732,
+      "32749": 18808,
+      "32771": 10949
+    }
+  },
+  "tail": {
+    "column_count": 9,
+    "modular_rank": 9,
+    "basis_rows": [
+      3,
+      4,
+      9,
+      16,
+      17,
+      19,
+      20,
+      21,
+      28
+    ],
+    "minor_residues": {
+      "30203": 19506,
+      "30211": 24683,
+      "30223": 13090,
+      "30241": 24009,
+      "30253": 30090,
+      "30259": 2530,
+      "30269": 4291,
+      "30271": 7263,
+      "30293": 25037,
+      "32693": 23661,
+      "32713": 27638,
+      "32717": 23212,
+      "32719": 19529,
+      "32749": 10429,
+      "32771": 5814
+    }
+  },
+  "control": {
+    "basis_rows": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "basis_names": [
+      "tr2",
+      "tr2*tr2",
+      "tr2*tr2*tr2",
+      "tr2*tr3",
+      "tr2*tr4",
+      "tr3",
+      "tr3*tr3",
+      "tr4",
+      "tr5",
+      "tr6"
+    ],
+    "dependencies": [
+      {
+        "control_index": 0,
+        "control_name": "tr1",
+        "terms": []
+      },
+      {
+        "control_index": 1,
+        "control_name": "tr1*tr1",
+        "terms": []
+      },
+      {
+        "control_index": 2,
+        "control_name": "tr1*tr1*tr1",
+        "terms": []
+      },
+      {
+        "control_index": 3,
+        "control_name": "tr1*tr1*tr2",
+        "terms": []
+      },
+      {
+        "control_index": 4,
+        "control_name": "tr1*tr2",
+        "terms": []
+      },
+      {
+        "control_index": 5,
+        "control_name": "tr1*tr2*tr2",
+        "terms": []
+      },
+      {
+        "control_index": 6,
+        "control_name": "tr1*tr3",
+        "terms": []
+      },
+      {
+        "control_index": 7,
+        "control_name": "tr1*tr4",
+        "terms": []
+      }
+    ],
+    "dependency_max_numerator": "0",
+    "dependency_max_denominator": "1",
+    "max_nonzero_terms_per_relation": 0,
+    "minor_columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "minor_residues": {
+      "30203": 13256,
+      "30211": 21912,
+      "30223": 6222,
+      "30241": 11944,
+      "30253": 16818,
+      "30259": 5941,
+      "30269": 995,
+      "30271": 25921,
+      "30293": 28334,
+      "32693": 31353,
+      "32713": 16108,
+      "32717": 22204,
+      "32719": 25812,
+      "32749": 12378,
+      "32771": 28583
+    }
+  },
+  "qq_theorem": false,
+  "remaining_gate": "verify the 23 equation dependency identities directly from the characteristic-zero formal stress-flow construction"
+}
