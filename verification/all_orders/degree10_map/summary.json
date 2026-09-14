@@ -1,0 +1,14 @@
+{
+  "certificate_hash": "05e7d5f2ede1ed022a2b59340bfd4c4e98996d4ab73d775ee3b43fdf5e45f36e",
+  "evaluation_injective": {
+    "10": true,
+    "4": true,
+    "6": true,
+    "8": true
+  },
+  "modulus_product": 404010672448719557416200339613327320612736748275397466524603177,
+  "point_count": 14,
+  "prime_count": 13,
+  "status": "bounded_integer_residual_degree10_physics_map_certificate",
+  "worst_integer_residual_bound": 5480019915420804002611200000000000000000000000000000000000
+}
