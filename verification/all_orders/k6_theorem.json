@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "status": "all_orders_K6_obstruction_theorem",
+  "coordinate": "c_I6_2",
+  "transport_equation": "dq6/dlambda = 40*u_tr1(lambda)*q6",
+  "exact_transport": {
+    "status": "exact_relative_transport",
+    "all_verified": true,
+    "per_generator": {
+      "tr1": {
+        "verified": true
+      },
+      "tr1*tr1": {
+        "verified": true
+      },
+      "tr1*tr2": {
+        "verified": true
+      },
+      "tr2": {
+        "verified": true
+      },
+      "tr2*tr2": {
+        "verified": true
+      },
+      "tr3": {
+        "verified": true
+      },
+      "tr4": {
+        "verified": true
+      }
+    },
+    "zero_set_preserved": true
+  },
+  "finite_jet_lift": {
+    "cutoff": 6,
+    "label": "<K6>",
+    "finite_tangent": true,
+    "filtration_verified": true,
+    "all_orders_cylinder_invariant": true,
+    "finite_report": {
+      "status": "exact_finite_model_ideal_tangency",
+      "domain": "QQ",
+      "all_tangent": true,
+      "groebner_basis": [
+        "c2"
+      ],
+      "remainders": {
+        "tr1": [
+          "0"
+        ],
+        "tr1*tr1": [
+          "0"
+        ],
+        "tr1*tr2": [
+          "0"
+        ],
+        "tr2": [
+          "0"
+        ],
+        "tr2*tr2": [
+          "0"
+        ],
+        "tr3": [
+          "0"
+        ],
+        "tr4": [
+          "0"
+        ]
+      },
+      "not_an_all_orders_field_theory_theorem": true,
+      "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ"
+    },
+    "lifting_argument": "pi_<=N X=X_N pi_<=N and X_N(J_N) subset J_N imply X(pi^*J_N) subset pi^*J_N. Time-dependent signed controls preserve tangency by linearity."
+  },
+  "all_orders_zero_set_preserved": true,
+  "free_seed_has_q6_zero": true,
+  "conclusion": "Every formal analytic pure-stress trajectory from the free seed remains on K6=0 to all orders.",
+  "nonuniversality_consequence": "Any admissible analytic interaction with nonzero K6 is outside the free-seed pure-stress orbit.",
+  "scope": "declared derivative-free analytic/polynomial pure-stress flow class"
+}
