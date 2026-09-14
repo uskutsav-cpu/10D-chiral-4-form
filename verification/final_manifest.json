@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "status": "final_project_artifact_manifest",
+  "checks": {
+    "local_QQ": true,
+    "local_dim10": true,
+    "pure_global": true,
+    "generalized_global": true,
+    "generalized_freeze": true
+  },
+  "files_sha256": {
+    "verification/degree12/qq/degree12_local_theorem_certificate.json": "26eb5802fe247aaf9b48021c607cc26aefdc96496258a214fe8cd8a13cff1237",
+    "verification/degree12/global_reachability_manifest.json": "45949ee96f9f3c943d8c70e81333f10b2d5283b4165dbe03e705d5e659b75576",
+    "verification/degree12/generalized_discovery.json": "91fe4159c75dfc941383b7beaf97d95498e76083b1a1071ecae1c52857a715a3",
+    "verification/degree12/generalized_completion_theorem.json": "162634c67a328fbc1b9cbab1b1895416afbae6a02eeb8a2264242fa63eaa053d",
+    "verification/degree12/generalized_removal_minimality.json": "71b59c8ffaaacffc7d72f1f568bfc6ee71981353523285756bbd26056b882a89",
+    "verification/degree12/generalized_completion_manifest.json": "f73cd1feca6e27f8c864ac947f1ac74091c339038b825a05c6718322f076856c",
+    "verification/degree12/conformal_scope_report.json": "db1518bf0078d4e12e219d59060c78a2ffd8da01e40d8977d57e1bff549a4d1c",
+    "verification/final_claims.json": "90c03a00f7d51d831a4eb0947cd32eda0f772ec0698aca7102468ddb92f173ba",
+    "docs/FINAL_RESULTS_FREEZE.md": "5d5452fd9dab12aa4dde13556c7fc816cbc6de2e8c5ed8b348f234075ed77840",
+    "docs/CONFORMAL_SCOPE_REPORT.md": "58eee8fe9d87bd36b9daece5ffb898337ff950e249c02f98439a8008b6ac6ce6",
+    "manuscript/generated_results.tex": "f76d8274a71d65b72bcb03a332c2a631432a81e952b608f48771063621f255e0"
+  },
+  "headline": {
+    "pure_stress_orbit_dimensions": [
+      4,
+      6,
+      10
+    ],
+    "degree12_pure_stress_global": true,
+    "generalized_full_polynomial_completion_through_degree12": true,
+    "selected_primitive_extras": 78
+  },
+  "remaining_optional_research": [
+    "all-orders theorem",
+    "degree-14 extension",
+    "nonanalytic ModMax classification",
+    "global arbitrary-scalar minimality"
+  ]
+}

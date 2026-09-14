@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "status": "physical_and_conformal_scope_report",
+  "pure_stress_orbit_dimensions": [
+    4,
+    6,
+    10
+  ],
+  "generalized_selected_count": 78,
+  "selected_counts_by_degree": {
+    "4": 0,
+    "6": 1,
+    "8": 5,
+    "10": 11,
+    "12": 61
+  },
+  "omitted_primitive_candidates": [
+    "I4_1",
+    "I6_1",
+    "I8_1",
+    "I10_9",
+    "I12_9"
+  ],
+  "modmax_prior_work_reproduction": {
+    "status": "published_identity_reproduction_not_new_reachability_result",
+    "patch": "I4 != 0; r^2=I4",
+    "conformal_homogeneity_verified": true,
+    "stress_square_identity_verified": true,
+    "stress_square": "I12*b**4/(144*I4**2) + I4*b**4/196 - I4*b**2/336 + I4/2304 - I8*b**4/(84*I4) + I8*b**2/(288*I4)",
+    "correction": "I12*b**4/(144*I4**2) + I8*b**2*(1 - 24*b**2/7)/(288*I4)",
+    "source": "arXiv:2509.14351v2 equations (3.12)-(3.16)",
+    "alternative_pure_stress_flow": "UNRESOLVED; reproduction does not exclude another generator",
+    "real_branch": "not selected; algebraic calculation only"
+  },
+  "scope_conclusion": "Finite polynomial theorems are analytic at the zero-field point through degree 12. The ModMax-like b*sqrt(I4) sector is nonanalytic at I4=0 and lies outside that theorem class.",
+  "paper_safe_interpretation": "The computation gives a finite-degree constructive realization of the D=10 need for additional F5-dependent scalar structures beyond stress invariants; it does not settle nonanalytic ModMax reachability."
+}
