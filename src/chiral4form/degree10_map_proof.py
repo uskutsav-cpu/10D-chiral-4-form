@@ -11,6 +11,7 @@ from .fitting import fields_from_json
 from .forms import dense,hodge_compact,layout
 from .provenance import atomic_json,semantic_hash
 from .registry import Registry
+from .registry_resolution import resolve_registry
 from .stress import evaluate_generators
 from .tensors import TensorBudget
 from .weighted import stress_generators
@@ -151,11 +152,18 @@ def choose_points(reg,prime,max_points=40):
             return selected
     raise RuntimeError("failed to find injective fixed evaluation points")
 
-def run(output,registry_path="data/fixtures/low_degree_registry.json",model_path="verification/degree10/rational_model.json",progress=print):
+def run(output,registry_path=None,source_root=".cache/upstream-degree12-fresh-20260911-223942",
+        model_path="verification/degree10/rational_model.json",progress=print):
     output=Path(output);output.mkdir(parents=True,exist_ok=True)
-    reg=Registry.load(registry_path);model=json.loads(Path(model_path).read_text())
+    reg,registry_provenance=resolve_registry(
+        10, explicit_path=registry_path, source_root=source_root
+    )
+    model=json.loads(Path(model_path).read_text())
     if any(len(reg.degree_bases.get(d,()))!=n for d,n in UPPER.items()):
-        raise ValueError("registry dimensions are not 1,2,7,14")
+        raise ValueError(
+            "resolved registry dimensions are not 1,2,7,14: "
+            + str({d:len(reg.degree_bases.get(d,())) for d in UPPER})
+        )
     _,_,candidate=model_coefficients(reg,model);bounds=residual_bound_report(reg,model);B=bounds["worst_integer_residual_bound"]
     denominator_lcm=1
     for row in candidate.values():
@@ -195,7 +203,8 @@ def run(output,registry_path="data/fixtures/low_degree_registry.json",model_path
     record={"schema":1,"status":"bounded_integer_residual_degree10_physics_map_certificate",
         "external_upper_bounds":{str(k):v for k,v in UPPER.items()},
         "external_source":"Cederwall et al., J. Phys. A 59 (2026) 065203",
-        "registry_fingerprint":reg.fingerprint,"model_path":str(model_path),
+        "registry_fingerprint":reg.fingerprint,"registry_provenance":registry_provenance,
+        "model_path":str(model_path),
         "model_original_status":model.get("coefficient_status"),"bounds":bounds,
         "primes":primes,"modulus_product":M,"electric_points":points,
         "evaluation_injective":injective,"sample_count":len(samples),
