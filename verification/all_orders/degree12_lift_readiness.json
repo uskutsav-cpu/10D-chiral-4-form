@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "status": "blocked_missing_explicit_degree12_ideal_tangency",
+  "finite_characteristic_zero_local_theorem": true,
+  "finite_global_reachability_theorem": true,
+  "explicit_exact_QQ_orbit_ideal_present": false,
+  "exact_finite_ideal_tangency_present": false,
+  "all_orders_lift_ready": false,
+  "required_next_input": "A compact exact QQ generating set for the degree-12 orbit ideal and an exact finite-model proof X_g(I_12) subset I_12. The rank/nullity certificate alone is not an ideal-tangency proof.",
+  "do_not_use_as_ideal_generators": [
+    "the 13 source-equation basis rows from the PDE classification",
+    "RREF rows from modular reconstruction",
+    "raw annihilator vectors without orbit-ideal interpretation"
+  ]
+}
