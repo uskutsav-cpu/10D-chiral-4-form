@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "status": "formal_field_degree_filtration_theorem",
+  "theorem": "For every even N>=4 and allowed polynomial pure-stress generator g, pi_<=N X_g(V)=X_g^(<=N)(pi_<=N V).",
+  "proof_obligations": {
+    "derivative": "deg(D V_d)=d-1",
+    "bilinear": "deg B(D V_r,D V_s)=r+s-2",
+    "identity": "deg((d-2)V_d)=d",
+    "products": "matrix/scalar multiplication adds field degrees",
+    "minimum_interaction_degree": 4
+  },
+  "finite_regression_checks": {
+    "4": {
+      "cutoff": 4,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "6": {
+      "cutoff": 6,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "8": {
+      "cutoff": 8,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "10": {
+      "cutoff": 10,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "12": {
+      "cutoff": 12,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "14": {
+      "cutoff": 14,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "16": {
+      "cutoff": 16,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "18": {
+      "cutoff": 18,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    },
+    "20": {
+      "cutoff": 20,
+      "identity_no_downfeed": true,
+      "gradient_no_downfeed": true,
+      "trace_products_no_downfeed": true,
+      "generator_catalogue_consistent": true,
+      "all_checks": true
+    }
+  },
+  "claim_scope": "formal analytic/polynomial derivative-free interactions in the declared pure-stress flow class"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "status": "all_orders_project_status",
+  "phase1_complete": true,
+  "proven_results": [
+    "formal field-degree filtration theorem",
+    "all-orders K6=0 obstruction",
+    "all-orders lifted degree-8 obstruction ideal",
+    "existence of a finite all-orders polynomial generalized completion under a Hilbert-basis generalized flow class"
+  ],
+  "conditional_results": [
+    "degree-10 all-orders ideal lift is exact for the frozen QQ model but conditional on the degree-10 physics/basis map",
+    "degree-12 all-orders lift blocked until explicit exact QQ ideal generators and finite ideal tangency are supplied"
+  ],
+  "degree14_status": "blocked_missing_degree14_invariant_basis",
+  "major_open_theorem": "find a finitely generated stress-invariant obstruction ideal I_infinity and prove the formal pure-stress orbit equals the local component Z(I_infinity)_0",
+  "next_hard_math": [
+    "unconditional degree-10 physics/basis-map proof",
+    "compact exact degree-12 orbit ideal and tangency proof",
+    "explicit degree-14 invariant basis/map",
+    "degree-14 quotient modulo prolongations",
+    "structural induction proving stabilization/finite generation",
+    "sufficiency/orbit-equality theorem"
+  ]
+}

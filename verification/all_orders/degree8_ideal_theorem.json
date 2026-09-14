@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "status": "all_orders_degree8_obstruction_ideal_theorem",
+  "coordinate_ids": [
+    "I4_1",
+    "I6_1",
+    "I6_2",
+    "I8_1",
+    "I8_2",
+    "I8_3",
+    "I8_4",
+    "I8_5",
+    "I8_6",
+    "I4_1^2"
+  ],
+  "finite_generators": [
+    "c_I6_2",
+    "c_I8_3",
+    "c_I8_4",
+    "c_I8_5",
+    "c_I8_6",
+    "Omega8 = c_I8_2 + 16*c_I4_1^3"
+  ],
+  "omega8_transport": {
+    "status": "exact_relative_transport",
+    "all_verified": true,
+    "per_generator": {
+      "tr1": {
+        "verified": true
+      },
+      "tr1*tr1": {
+        "verified": true
+      },
+      "tr1*tr2": {
+        "verified": true
+      },
+      "tr2": {
+        "verified": true
+      },
+      "tr2*tr2": {
+        "verified": true
+      },
+      "tr3": {
+        "verified": true
+      },
+      "tr4": {
+        "verified": true
+      }
+    },
+    "zero_set_preserved": true
+  },
+  "finite_jet_lift": {
+    "cutoff": 8,
+    "label": "degree-8 pure-stress obstruction ideal",
+    "finite_tangent": true,
+    "filtration_verified": true,
+    "all_orders_cylinder_invariant": true,
+    "finite_report": {
+      "status": "exact_finite_model_ideal_tangency",
+      "domain": "QQ",
+      "all_tangent": true,
+      "groebner_basis": [
+        "c0**3 + c4/16",
+        "c2",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "remainders": {
+        "tr1": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "tr1*tr1": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "tr1*tr2": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "tr2": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "tr2*tr2": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "tr3": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "tr4": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "not_an_all_orders_field_theory_theorem": true,
+      "logical_scope": "X(I) subset I is sufficient for preservation under a locally unique smooth real ODE when coefficients are over QQ"
+    },
+    "lifting_argument": "pi_<=N X=X_N pi_<=N and X_N(J_N) subset J_N imply X(pi^*J_N) subset pi^*J_N. Time-dependent signed controls preserve tangency by linearity."
+  },
+  "all_orders_cylinder_invariant": true,
+  "conclusion": "The certified degree-8 obstruction variety lifts to an invariant cylinder in the full formal interaction space.",
+  "claim_boundary": "This does not prove that the lifted degree-8 ideal defines the entire all-orders orbit."
+}

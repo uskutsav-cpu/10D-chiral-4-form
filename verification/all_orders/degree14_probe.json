@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "status": "blocked_missing_degree14_invariant_basis",
+  "degree14_registry_items_present": false,
+  "degree14_basis_present": false,
+  "required_next_input": "explicit degree-14 invariant basis or justified evaluation representation plus degree-14 stress map",
+  "scientific_question": "Do degree-14 obstruction candidates reduce to zero modulo prolongation of the lifted lower ideal?",
+  "do_not_claim": [
+    "degree-14 stabilization",
+    "finite generation of the all-orders obstruction ideal"
+  ]
+}
