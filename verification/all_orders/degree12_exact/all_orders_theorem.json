@@ -1,0 +1,37 @@
+{
+  "all_orders_cylinder_invariant": true,
+  "base_dimension": 6,
+  "claim": "For the declared formal analytic derivative-free pure-stress class, pi_<=12^*(I12) is invariant under every full formal pure-stress flow. At finite cutoff 12, the free-seed zero set equals the globally reachable 10-dimensional pure-stress orbit.",
+  "constraint_count_relative_degree12": 68,
+  "cutoff": 12,
+  "fiber_dimension": 4,
+  "filtration_certificate": {
+    "all_checks": true,
+    "cutoff": 12,
+    "generator_catalogue_consistent": true,
+    "gradient_no_downfeed": true,
+    "identity_no_downfeed": true,
+    "trace_products_no_downfeed": true
+  },
+  "filtration_verified": true,
+  "finite_full_ideal_definition": "I12 = I10 + preimage(<Q1,...,Q68>)",
+  "finite_full_ideal_tangent": true,
+  "finite_orbit_dimension": 10,
+  "gates": {
+    "all_36_targets_verified_on_all_theorem_primes": true,
+    "degree10_unconditional": true,
+    "exact_kernel_68": true,
+    "exact_relative_ideal_68": true,
+    "exact_source_rows": true,
+    "finite_full_ideal_tangency": true,
+    "finite_global_orbit_equality": true
+  },
+  "not_claimed": [
+    "degree-14 obstruction stabilization",
+    "finite generation or stabilization of the complete all-orders obstruction tower",
+    "formal orbit equality beyond the degree-12 cylinder",
+    "nonanalytic ModMax sector"
+  ],
+  "schema": 3,
+  "status": "unconditional_all_orders_degree12_obstruction_ideal_theorem"
+}

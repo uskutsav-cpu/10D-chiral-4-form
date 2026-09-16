@@ -1,0 +1,11 @@
+{
+  "all_36_exact_source_residuals_zero": true,
+  "argument": "All 36 reduced pure-stress source equations were reconstructed directly over QQ. The 68 constraints are the exact QQ nullspace of that rank-13 equation space, so every one of the 36 physical sources annihilates every relative constraint. Unconditional invariance of I10 therefore gives tangency of the full preimage I12.",
+  "constraint_count": 68,
+  "finite_quotient_ideal_tangent": true,
+  "independent_source_equation_count": 13,
+  "relative_full_ideal_tangent": true,
+  "schema": 4,
+  "source_equation_count": 36,
+  "status": "exact_characteristic_zero_degree12_ideal_tangency"
+}
