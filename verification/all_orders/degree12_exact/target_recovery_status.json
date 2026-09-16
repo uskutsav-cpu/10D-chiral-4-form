@@ -1,0 +1,7 @@
+{
+  "certificate": "verification/all_orders/degree12_exact/exact_source_targets.json",
+  "crt_prime_policy": "direct_physics_only_theorem_primes_verification_only",
+  "schema": 4,
+  "status": "all_36_exact_source_targets_verified",
+  "theorem_model_primes_used_in_bounded_CRT": []
+}

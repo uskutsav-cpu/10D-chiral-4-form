@@ -1,0 +1,25 @@
+{
+  "base_dimension": 6,
+  "checks": {
+    "affine_fiber_linear": true,
+    "base_dimension_6": true,
+    "constraint_count_68": true,
+    "explicit_ideal_exact": true,
+    "frozen_fiber_dimension_4": true,
+    "frozen_global_status": true,
+    "global_parameterization_verified": true,
+    "ideal_fiber_dimension_4": true,
+    "leading_rank_68": true,
+    "total_orbit_dimension_10": true,
+    "vertical_constant_action": true,
+    "vertical_preserves_base": true,
+    "vertical_rank_4": true,
+    "vertical_transitive": true
+  },
+  "fiber_dimension": 4,
+  "finite_statement": "At the free-seed polynomial truncation through field degree 12, the zero set of I10 plus the 68 exact relative degree-12 constraints is the globally reachable 10-dimensional pure-stress orbit.",
+  "global_consistency": true,
+  "orbit_dimension": 10,
+  "schema": 3,
+  "status": "exact_degree12_ideal_global_orbit_equality_through_degree12"
+}
