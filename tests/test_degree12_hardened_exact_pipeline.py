@@ -38,30 +38,122 @@ def test_legacy_missing_target_entrypoint_routes_to_hardened_code():
 
 
 def test_b11_uses_orbit_restriction_not_raw_gradient_square_guess():
-    source = inspect.getsource(targets)
-    assert "_degree10_orbit_substitution_qq" in source
-    assert "_degree10_orbit_substitution_mod_p" in source
-    assert "tau_terms" in source
-    assert "matrix_series_product" in source
-    assert "tr2_degree12_A4_after_certified_degree10_orbit_restriction" in source
-    # Two superseded bugs must never return.
-    assert 'reg.evaluate("I4_1",form,p,gradient=True' not in source.replace(" ", "")
-    assert "240**4" not in source.replace(" ", "")
+    from chiral4form import degree12_exact_targets as targets
+
+    reg = targets.Registry.load(targets.REGISTRY_PATH)
+    traces = targets._trace_bound_series(reg)
+    substitution = targets._degree10_orbit_substitution_qq(reg)
+
+    assert substitution
+    assert all(q.n == 6 for q in substitution.values())
+
+    candidates = [
+        meta
+        for meta in targets._all_source_descriptors()
+        if meta.get("basis_id") == "B11"
+    ]
+
+    assert len(candidates) == 1
+    b11 = candidates[0]
+
+    assert b11.get("generator") == "tr2"
+    assert b11.get("output_monomial_text") == "A^4"
+
+    denominator, cleared, proof = targets._target_bound(
+        reg,
+        b11,
+        traces=traces,
+        substitution=substitution,
+    )
+
+    assert denominator >= 1
+    assert cleared > 0
+    assert int(proof["cleared_integer_bound"]) == cleared
 
 
 def test_characteristic_zero_target_proof_has_height_gate():
-    source = inspect.getsource(targets)
-    assert "_b11_characteristic_zero_bound" in source
-    assert "modulus <= 2 * b11_cleared_bound" in source
-    assert "_centered_integer" in source
-    assert "all_theorem_prime_crosschecks" in source
+    import json
+    import math
+    from pathlib import Path
+    from chiral4form import degree12_exact_targets as targets
+
+    reg = targets.Registry.load(targets.REGISTRY_PATH)
+    traces = targets._trace_bound_series(reg)
+    substitution = targets._degree10_orbit_substitution_qq(reg)
+
+    bounds = []
+    for meta in targets._all_source_descriptors():
+        _, cleared, proof = targets._target_bound(
+            reg,
+            meta,
+            traces=traces,
+            substitution=substitution,
+        )
+        assert int(proof["cleared_integer_bound"]) == cleared
+
+        if proof.get("structural_zero_leading_target"):
+            assert cleared == 0
+            zero = proof["zero_certificate"]
+            assert zero["all_theorem_primes_leading_zero"] is True
+        else:
+            assert cleared > 0
+            bounds.append(cleared)
+
+    assert bounds
+    max_bound = max(bounds)
+
+    cert = Path(targets.CERT_PATH)
+    assert cert.exists(), cert
+    payload = json.loads(cert.read_text())
+
+    direct_prime_lists = []
+
+    def walk(obj, path=()):
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                p = path + (str(key),)
+                joined = ".".join(p).lower()
+
+                if (
+                    isinstance(value, list)
+                    and "direct" in joined
+                    and "prime" in joined
+                    and value
+                    and all(isinstance(x, int) for x in value)
+                ):
+                    direct_prime_lists.append(value)
+
+                walk(value, p)
+
+        elif isinstance(obj, list):
+            for i, value in enumerate(obj):
+                walk(value, path + (str(i),))
+
+    walk(payload)
+
+    assert direct_prime_lists, (
+        "exact target certificate must record the direct physics primes "
+        "used for bounded CRT"
+    )
+
+    # Use the largest recovered direct-prime set.
+    direct_primes = max(direct_prime_lists, key=len)
+    modulus = math.prod(int(p) for p in direct_primes)
+
+    # Characteristic-zero uniqueness gate.
+    assert modulus > 2 * max_bound
 
 
 def test_source_rows_consume_QQ_targets_without_integer_cast():
-    source = inspect.getsource(source_rows)
-    assert '[Fraction(x) for x in targets["B11"]["coordinates"]]' in source
-    assert '[Fraction(x) for x in targets["B13"]["coordinates"]]' in source
-    assert '[int(x) for x in targets["B11"]["coordinates"]]' not in source
+    from chiral4form.degree12_exact_source_rows import reconstruct_source_rows
+
+    source, kernel = reconstruct_source_rows()
+
+    # Successful exact reconstruction is the semantic regression:
+    # the QQ source coordinates survive into the exact 81D equations.
+    assert int(source["equation_rank"]) == 13
+    assert int(kernel["kernel_dimension"]) == 68
+    assert int(kernel["leading_rank"]) == 68
 
 
 def test_b11_height_bound_is_derived_from_registry_and_closes_under_envelope():
@@ -77,12 +169,26 @@ def test_b11_height_bound_is_derived_from_registry_and_closes_under_envelope():
 
 
 def test_b11_crt_uses_direct_physics_and_theorem_primes_are_verification_only():
-    source = inspect.getsource(targets.recover_exact_targets)
-    assert '"B11_theorem_model_primes_used_in_bounded_CRT": []' in source
-    assert '"B11_theorem_primes_verification_only": list(theorem_primes)' in source
-    # Regression against the circular experimental path that converted theorem
-    # rows into CRT sample values and then reused the same rows as holdouts.
-    assert 'modular_values[p] = [' not in source or 'equations[p][21][:72]' not in source
+    import json
+    from pathlib import Path
+    from chiral4form import degree12_exact_targets as targets
+
+    cert = Path(targets.CERT_PATH)
+    assert cert.exists(), cert
+
+    payload = json.loads(cert.read_text())
+
+    direct = payload["direct_physical_primes"]
+    used_for_reconstruction = payload["theorem_primes_used_in_reconstruction"]
+    verification_only = payload["theorem_primes_verification_only"]
+
+    assert isinstance(direct, list)
+    assert direct
+    assert used_for_reconstruction == []
+    assert verification_only
+
+    assert payload["all_36_direct_physical_crosschecks"]
+    assert payload["all_36_theorem_prime_crosschecks"]
 
 
 def test_compatibility_constant_aliases_are_consistent():

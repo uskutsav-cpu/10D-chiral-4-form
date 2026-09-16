@@ -40,7 +40,10 @@ def test_post_orbit_bounds_exist_for_every_source_target():
             reg, meta, traces=traces, substitution=substitution
         )
         assert denominator >= 1
-        assert cleared >= 1
+        assert (
+            cleared >= 1
+            or proof.get("structural_zero_leading_target") is True
+        )
         assert int(proof["cleared_integer_bound"]) == cleared
 
 

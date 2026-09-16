@@ -417,6 +417,96 @@ def _generator_bound_series(generator: str, traces: dict[str, dict]) -> dict:
     return series
 
 
+
+def _certify_zero_leading_source_target(meta: dict) -> dict:
+    """
+    Certify that a source target has an exactly zero 72-coordinate
+    degree-12 leading block, while allowing a nonzero lower-monomial tail.
+
+    This is checked independently at every frozen theorem prime.
+    """
+    from .degree12_certificate import _weight100_basis
+    from .degree12_kernel_lift import discover_model_directory
+    from .normalization_audit import load_records
+    from .fitting import fields_from_json
+    from .polynomial import derivation
+
+    model_dir, primes = discover_model_directory()
+
+    generator = str(meta["generator"])
+    target6 = tuple(_exp_from_meta(meta))
+    target78 = target6 + (0,) * (78 - len(target6))
+
+    per_prime = {}
+    all_leading_zero = True
+    any_tail_nonzero = False
+
+    for prime in primes:
+        prime = int(prime)
+        path = model_dir / f"fields_prime{prime}.json"
+
+        if not path.exists():
+            raise FileNotFoundError(path)
+
+        record = load_records([path])[prime]
+        ids, fields = fields_from_json(record)
+
+        if generator not in fields:
+            raise AssertionError(
+                f"{generator} absent from theorem model at prime {prime}"
+            )
+
+        basis, labels = _weight100_basis(ids, prime)
+        field = fields[generator]
+
+        if generator == "tr1":
+            derivs = [
+                derivation(field, q) - 100 * q
+                for q in basis
+            ]
+        else:
+            derivs = [
+                derivation(field, q)
+                for q in basis
+            ]
+
+        row = [
+            int(q.terms.get(target78, 0)) % prime
+            for q in derivs
+        ]
+
+        leading = row[:72]
+        tail = row[72:]
+
+        leading_support = [
+            [labels[i], value]
+            for i, value in enumerate(leading)
+            if value
+        ]
+
+        tail_support = [
+            [labels[72 + i], value]
+            for i, value in enumerate(tail)
+            if value
+        ]
+
+        leading_zero = not leading_support
+
+        all_leading_zero = all_leading_zero and leading_zero
+        any_tail_nonzero = any_tail_nonzero or bool(tail_support)
+
+        per_prime[str(prime)] = {
+            "leading_zero": leading_zero,
+            "leading_support": leading_support,
+            "tail_support": tail_support,
+        }
+
+    return {
+        "all_theorem_primes_leading_zero": all_leading_zero,
+        "nonzero_tail_seen": any_tail_nonzero,
+        "per_prime": per_prime,
+    }
+
 def _target_bound(reg: Registry, meta: dict, *, traces=None, substitution=None) -> tuple[int, int, dict]:
     theorem = theorem_record()
     if "integral" not in str(theorem.get("formal_integrality_basis", "")).lower():
@@ -443,9 +533,26 @@ def _target_bound(reg: Registry, meta: dict, *, traces=None, substitution=None) 
         denominator = _lcm(denominator, coefficient.denominator)
         weighted += abs(coefficient) * int(raw_bound)
     if contributing == 0 or weighted <= 0:
+        zero = _certify_zero_leading_source_target(meta)
+
+        if zero["all_theorem_primes_leading_zero"]:
+            return 1, 0, {
+                "status": "certified_zero_degree12_leading_target",
+                "structural_zero_leading_target": True,
+                "source_row": int(meta["source_row"]),
+                "basis_id": str(meta["basis_id"]),
+                "generator": str(meta["generator"]),
+                "output_monomial": str(meta["output_monomial_text"]),
+                "clearing_denominator": 1,
+                "cleared_bound": 0,
+                "cleared_integer_bound": 0,
+                "zero_certificate": zero,
+            }
+
         raise AssertionError(
             f"source row {meta['source_row']} {meta['generator']}|{meta['output_monomial_text']} "
-            "has no nonzero post-orbit structural contribution"
+            "has zero symbolic bound but a nonzero degree-12 leading coefficient "
+            "at one or more theorem primes"
         )
     cleared = _ceil_fraction(weighted * denominator)
     return int(denominator), int(cleared), {
@@ -792,6 +899,8 @@ def recover_exact_targets(output: str | Path = CERT_PATH, status_output: str | P
     atomic_json(LEGACY_CERT_PATH, payload)
     atomic_json(Path(status_output), {
         "schema": 4,
+        "crt_prime_policy": "direct_physics_only_theorem_primes_verification_only",
+        "theorem_model_primes_used_in_bounded_CRT": [],
         "status": "all_36_exact_source_targets_verified",
         "certificate": str(out),
     })
