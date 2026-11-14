@@ -105,3 +105,25 @@ def test_degree12_raw_checkpoint_rejects_prime_relabeling_and_noncanonical_value
             validate_checkpoint(record,101,'unit-test')
     finally:
         sys.path.pop(0)
+
+
+def test_classifier_rejects_explicit_octic_obstruction():
+    result=checker.classify(ROOT,{'I8_2':'1'})
+    assert result['classification']=='unreachable'
+    assert result['Omega8']=='1'
+    assert result['violated_coefficient_graph_relations_through_degree10']['I8_2']=='1'
+    with pytest.raises(ValueError,match='rational strings'):
+        checker.classify(ROOT,{'I4_1':0.1})
+    with pytest.raises(ValueError,match='unknown coefficient'):
+        checker.classify(ROOT,{'not_an_invariant':'1'})
+
+
+def test_classifier_constructs_every_coefficient_of_reachable_interaction(model):
+    _, _, base, graph10, reduced=model
+    _, variables, fields, constraints, free, matrix, _=checker.degree12(ROOT,base,reduced)
+    report=checker.attach_full_coefficients(checker.endpoint(variables,fields,constraints,free,matrix,['1','0','0','0','0','0','0','0','0','0']),ROOT,base,graph10)
+    classified=checker.classify(ROOT,report['coefficients'])
+    assert classified['classification']=='reachable'
+    assert len(classified['coefficients'])==96
+    assert classified['coefficients']==report['coefficients']
+    assert classified['all_68_constraints_zero']

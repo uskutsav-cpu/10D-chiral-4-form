@@ -46,6 +46,18 @@ arrays; they do not enforce an OS-wide memory quota. Checkpoint namespaces bind
 code, the invariant registry, source coordinates, points, bounds, and primes.
 Never delete checkpoints to hide a failed result.
 
+## Generate and classify interactions
+
+```sh
+python independent/verify.py --target '1,0,0,0,0,0,0,0,0,0' --output reports/reachable-example.json
+python independent/verify.py --classify reports/reachable-example.json --output reports/reachable-classification.json
+python independent/verify.py --classify examples/combined/unreachable-octic.json --output reports/unreachable-example.json
+```
+
+The endpoint contains all 96 exact interaction coefficients. Classification
+returns either signed controls or nonzero obstruction residuals in the declared
+finite model. Use exact invariant IDs and rational strings or integers.
+
 ## Scientific components
 
 - `foundation/`: canonical scientific files plus a complete pinned source archive of `selfdual-5form-invariants`, with

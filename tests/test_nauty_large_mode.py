@@ -16,7 +16,9 @@ def test_degree16_incidence_size():
     A=_construct_known_incidence(16)
     assert len(A)==56
 
-def test_large_commands_prefer_genbgL_when_available():
+def test_large_commands_prefer_genbgL_when_available(monkeypatch):
+    # Command selection is a unit contract, independent of host installation.
+    monkeypatch.setattr("shutil.which", lambda name: "/test/bin/"+name if name in ("genbg", "genbgL") else None)
     cmd=genbg_command(14)
     assert cmd[0].endswith("genbgL")
     assert cmd[-3:]==["14","35","70:70"]

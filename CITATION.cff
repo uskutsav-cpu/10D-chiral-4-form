@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this research code, please cite the resulting paper/repository release."
-title: "Stress-Flow Orbits and Obstructions for 10D Chiral 4-Forms"
+title: "Constructive Invariants and Nonlinear Chiral Four-Form Stress Flows"
 type: software
 authors:
   - family-names: "Kumar"
     given-names: "Utsav Sunil"
 repository-code: "https://github.com/uskutsav-cpu/10D-chiral-4-form"
 license: "NOASSERTION"
-version: 0.2.0
+version: 0.3.0

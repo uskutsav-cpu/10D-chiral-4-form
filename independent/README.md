@@ -25,3 +25,18 @@ This verifies reduced-model algebra, not its tensor-physics derivation. Fresh
 bounded physics-map evaluation is a separate command. The regression suite
 contains sign, omitted-generator, source-tail and kernel corruption cases. No
 formal proof-assistant verification is claimed.
+
+Classify an arbitrary coefficient dictionary (unlisted coefficients are zero):
+
+```sh
+python independent/verify.py --classify examples/combined/unreachable-octic.json --output reports/unreachable-example.json
+python independent/verify.py --target '1,0,0,0,0,0,0,0,0,0' --output reports/reachable-example.json
+python independent/verify.py --classify reports/reachable-example.json --output reports/reachable-classification.json
+```
+
+Inputs use exact invariant IDs and rational strings or integers. Floating JSON
+numbers are rejected. An unreachable interaction reports nonzero obstruction
+residuals; a reachable interaction returns ten signed control segments and its
+complete 96-coordinate polynomial. The classification is for the declared
+finite reduced model; its tensor-physics interpretation has the separate map
+proof obligations described in the science status.

@@ -20,7 +20,9 @@ Review in this order:
    clearing, absolute bounds, fresh tensor points, bounded CRT and injectivity.
    It does not depend on the ignored historical interpolation runs.
 5. `scripts/verify_combined.py`: quick/fresh/full command scope and stage logs.
-6. `manuscript/unified/main.tex`, `SCIENCE_STATUS.md`, and `CLAIMS.md`: mathematical
+6. `docs/PHYSICS_CONVENTION_AUDIT.md`: auxiliary versus physical fields,
+   quartic normalization and the trace sign fixed by HLS (2.33).
+7. `manuscript/unified/main.tex`, `SCIENCE_STATUS.md`, and `CLAIMS.md`: mathematical
    narrative, exact evidence levels and unresolved research boundaries.
 
 The source-map proof workers are checkpointed and may take substantial time.

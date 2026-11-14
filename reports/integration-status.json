@@ -1,16 +1,16 @@
 {
   "schema": 1,
   "status": "integrated_draft_degree12_physics_proof_in_progress",
-  "regression_tests_passed": 216,
+  "regression_tests_passed": 218,
   "evidence": {
     "reports/fresh-rank81.json": "b36d8e74565390528d86a29eea513e11e59894c5a667b2be8892edbe54064c50",
     "reports/fresh-d5.json": "f9715d75ec14d3fdc642d5091cb00c8ce5edbf2634a5cc2d1ef19ac80add90b5",
     "reports/character-check/python-check.json": "96e5da687fbb934706d83062f11a80ed8126601e18437e57016383b0f16a1af3",
     "reports/tensor-bridge.json": "ed3ce26264cdcf84ddaf9cfcfc35d13333bf4ad0a6c9481830f7f4cee82bcb83",
-    "reports/independent-algebra.json": "7ee4d126c66fb91da3ae94c4fa593c68d26c9d6d3f5193aa64a031eab4e47c7a",
+    "reports/independent-algebra.json": "8049f981a8bf645684c640c55746deeaa0ec38455190409bc1adb76e79e8559b",
     "reports/generalized-completion-exact.json": "29d2f4f423acdddacbcb475e719e3a75a1793cd78c11eb810db9d113f14240ae",
     "reports/degree10-map/map_certificate.json": "15b29d8f1005f59c7435edf307e7d3f59ac847faf27e9aa708c188e1d6994327",
-    "reports/manuscript/main.pdf": "7ce8293086b51cd403c0d6c31897d8b645c37a60a09b1b66747727c11d9fa727"
+    "reports/manuscript/main.pdf": "b6ef52d927a1f8a1404db9dbc7d1555996da9418641e14bdb4f8f9d544614d90"
   },
   "remaining_required_work": [
     "complete fresh degree12 bounded-CRT physics-map proof",

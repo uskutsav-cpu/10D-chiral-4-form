@@ -46,6 +46,8 @@ def degree10(root):
     obs = read(root, 'verification/degree10/obstruction_certificate.json')
     require(model['coordinate_ids'] == obs['coordinate_ids'], 'degree-ten coordinate mismatch')
     require(len(model['coordinate_ids']) == 24, 'degree-ten ambient dimension mismatch')
+    registry = read(root, 'data/combined/registry.json')
+    require(model['coordinate_ids'] == [i for d in (4, 6, 8, 10) for i in registry['degree_bases'][str(d)]], 'degree-ten registry ordering differs')
     x = s.symbols('x0:24')
     fields = {name: [polynomial(q, x) for q in field] for name, field in model['fields'].items()}
     A, B, C, D, U, V = base = s.symbols('A B C D U V')
@@ -105,6 +107,8 @@ def degree12(root, base, reduced, source_override=None):
     target = read(root, 'verification/all_orders/degree12_exact/exact_source_targets.json')
     kernel = read(root, 'verification/all_orders/degree12_exact/kernel_lift.json')
     ideal = read(root, 'verification/all_orders/degree12_exact/ideal.json')
+    registry = read(root, 'data/combined/registry.json')
+    require(kernel['ansatz_labels'][:72] == registry['degree_bases']['12'], 'degree-twelve registry ordering differs')
     rows = source['all_source_rows']
     require(len(rows) == 36 and [r['source_row'] for r in rows] == list(range(36)), '36 ordered source rows required')
     targets = {r['source_row']: r for r in target['rows']}
@@ -243,6 +247,50 @@ def endpoint(variables, fields, constraints, free, translation, target):
             'endpoint_reduced_78': list(map(str, point)), 'all_68_constraints_zero': True}
 
 
+def attach_full_coefficients(result, root, base, graph10):
+    model = read(root, 'verification/degree10/rational_model.json')
+    registry = read(root, 'data/combined/registry.json')
+    point = list(map(s.Rational, result['endpoint_reduced_78']))
+    first = [s.expand(s.sympify(q).subs(dict(zip(base, point[:6])), simultaneous=True)) for q in graph10]
+    ids = model['coordinate_ids'] + registry['degree_bases']['12']
+    values = first + point[6:]
+    require(len(ids) == len(set(ids)) == len(values) == 96, 'full coefficient atlas mismatch')
+    result['coefficients'] = {name: str(q) for name, q in zip(ids, values)}
+    return result
+
+
+def classify(root, coefficients):
+    """Exact membership in the declared finite degree-12 pure-stress model."""
+    registry = read(root, 'data/combined/registry.json')
+    ids = [name for d in (4, 6, 8, 10, 12) for name in registry['degree_bases'][str(d)]]
+    require(isinstance(coefficients, dict) and set(coefficients) <= set(ids), 'unknown coefficient names or invalid coefficient object')
+    require(all(type(q) in (str, int) for q in coefficients.values()), 'coefficients must be rational strings or integers')
+    actual = {name: s.Rational(coefficients.get(name, 0)) for name in ids}
+    _, _, base, graph10, reduced = degree10(root)
+    base_values = [actual[ids[j]] for j in (0, 1, 3, 9, 10, 22)]
+    substitutions = dict(zip(base, base_values))
+    mismatches = {name: str(s.expand(actual[name]-s.sympify(q).subs(substitutions, simultaneous=True))) for name, q in zip(ids[:24], graph10)
+                  if s.expand(actual[name]-s.sympify(q).subs(substitutions, simultaneous=True)) != 0}
+    scope = 'membership in the declared finite degree-12 pure-stress reduced model; signed controls, free seed'
+    if mismatches:
+        return {'classification': 'unreachable', 'scope': scope, 'cutoff': 12,
+                'violated_coefficient_graph_relations_through_degree10': mismatches,
+                'Omega8': str(actual['I8_2']+16*actual['I4_1']**3)}
+    _, variables, fields, constraints, free, matrix, _ = degree12(root, base, reduced)
+    point = base_values + [actual[name] for name in ids[24:]]
+    substitution = dict(zip(variables, point))
+    failures = {str(i): str(s.expand(q.subs(substitution, simultaneous=True))) for i, q in enumerate(constraints)
+                if s.expand(q.subs(substitution, simultaneous=True)) != 0}
+    if failures:
+        return {'classification': 'unreachable', 'scope': scope, 'cutoff': 12,
+                'violated_degree12_constraints': failures}
+    target = base_values + [point[6+j] for j in free]
+    result = attach_full_coefficients(endpoint(variables, fields, constraints, free, matrix, target), root, base, graph10)
+    require(result['coefficients'] == {name: str(actual[name]) for name in ids}, 'constructed full interaction differs from classified input')
+    result.update(classification='reachable', cutoff=12, scope=scope)
+    return result
+
+
 def verify(root):
     lock = read(root, 'data/combined/source-lock.json')
     for path, digest in lock['foundation_files'].items():
@@ -262,7 +310,7 @@ def verify(root):
     eight = check8(fields10, x)
     twelve, variables, fields, qs, free, matrix, graph12 = degree12(root, base, reduced)
     structure = constructive_structure(base, variables, fields)
-    demo = endpoint(variables, fields, qs, free, matrix, ['2', '-3/7', '5', '-11/13', '1/3', '-2/5', '7/11', '-1', '4/9', '2/3'])
+    demo = attach_full_coefficients(endpoint(variables, fields, qs, free, matrix, ['2', '-3/7', '5', '-11/13', '1/3', '-2/5', '7/11', '-1', '4/9', '2/3']), root, base, graph10)
     report = {'schema': 1, 'passed': True, 'verification_level': 'independent exact reduced-model algebra and saved source evidence; no tensor-map recomputation',
               'homogeneous_dimensions': dimensions, 'degree8': eight,
               'degree10': {'orbit_dimension': 6, 'ambient_dimension': 24, 'constraints': 18, 'all_generators_tangent': True},
@@ -275,19 +323,29 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--output', type=Path)
-    parser.add_argument('--target', help='six rational base targets then four rational fiber targets, comma separated')
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--target', help='six rational base targets then four rational fiber targets, comma separated')
+    mode.add_argument('--classify', type=Path, help='JSON coefficient dictionary, or a prior endpoint report containing coefficients')
     args = parser.parse_args()
-    if args.target:
-        _, _, base, _, reduced = degree10(args.root)
+    if args.classify:
+        data = json.loads(args.classify.read_text())
+        report = classify(args.root, data.get('coefficients', data))
+    elif args.target:
+        _, _, base, graph10, reduced = degree10(args.root)
         _, variables, fields, qs, free, matrix, _ = degree12(args.root, base, reduced)
-        report = endpoint(variables, fields, qs, free, matrix, args.target.split(','))
+        report = attach_full_coefficients(endpoint(variables, fields, qs, free, matrix, args.target.split(',')), args.root, base, graph10)
     else:
         report = verify(args.root)
     data = json.dumps(report, indent=2)+'\n'
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(data)
-    print(json.dumps({'passed': report.get('passed', report.get('all_68_constraints_zero')), 'output': str(args.output), 'scope': report.get('verification_level', report.get('scope'))}))
+    summary = {'output': str(args.output), 'scope': report.get('verification_level', report.get('scope'))}
+    if 'classification' in report:
+        summary.update(completed=True, classification=report['classification'])
+    else:
+        summary['passed'] = report.get('passed', report.get('all_68_constraints_zero'))
+    print(json.dumps(summary))
 
 
 if __name__ == '__main__':

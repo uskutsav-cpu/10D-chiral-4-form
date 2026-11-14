@@ -1,3 +1,4 @@
 foundation/** linguist-vendored
 foundation/science/character/*-weights.tsv linguist-generated
 *.tar.gz binary
+reports/** linguist-generated
