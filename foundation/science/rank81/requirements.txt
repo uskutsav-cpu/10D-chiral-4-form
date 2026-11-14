@@ -1,0 +1,2 @@
+numpy==2.5.1
+opt_einsum==3.4.0

@@ -42,3 +42,16 @@ symbolic:
 	$(PYTHON) -m chiral4form degree8 --output runs/degree8-orbit-exact.json
 	$(PYTHON) -m chiral4form completion8 --output runs/completion8-exact.json
 	$(PYTHON) -m chiral4form modmax --output runs/modmax-known-identity.json
+
+.PHONY: combined-verify combined-fresh combined-full combined-endpoint
+combined-verify:
+	$(PYTHON) scripts/verify_combined.py --level quick
+
+combined-fresh:
+	$(PYTHON) scripts/verify_combined.py --level fresh
+
+combined-full:
+	$(PYTHON) scripts/verify_combined.py --level full
+
+combined-endpoint:
+	$(PYTHON) independent/verify.py --target '2,-3/7,5,-11/13,1/3,-2/5,7/11,-1,4/9,2/3' --output reports/endpoint-example.json

@@ -1,0 +1,145 @@
+{
+ "schema": 2,
+ "method": "re-analysis of the archived float64 finite-difference Jacobians",
+ "why_not_recomputed": "a single finite-difference Jacobian over these 83 candidates takes more than ten minutes even with parallel evaluation, so a full seed x scale x step matrix was not run here. The archived matrices are the data those runs actually produced and are analysed directly.",
+ "noise_floor_relative": 1e-12,
+ "normalisation_rule": "rows at or below the noise floor are never normalised",
+ "environment": {
+  "python": "3.13.5",
+  "numpy": "2.5.1"
+ },
+ "runs": [
+  {
+   "label": "tensor-words run",
+   "source": "run_4_12_tensor_words_s96_jacobian/jacobian.npy",
+   "shape": [
+    83,
+    126
+   ],
+   "sha256": "c14fdfae20c2074d6ab4ffd3c510cb6f37c31c1f3f46802a5f785da9de8bb09d",
+   "row_norm_min": 138.80221379734607,
+   "row_norm_max": 66309182064630.91,
+   "row_norm_median": 631.2775719321069,
+   "noise_floor_relative": 1e-12,
+   "noise_floor_absolute": 66.3091820646309,
+   "n_zero_rows": 0,
+   "row_normalisation": "applied: no row sits at the noise floor",
+   "singular_values_used_around_target": [
+    0.0017821628719572823,
+    0.0014512084947662235,
+    0.0005941544212694708,
+    2.9133905369598223e-11,
+    2.4613698811968543e-11
+   ],
+   "singular_values_used_head": [
+    3.6959165455239886,
+    3.23556644504026,
+    2.911562815413223,
+    2.4691990576385683,
+    2.2131463412689065
+   ],
+   "singular_values_used_tail": [
+    0.0017821628719572823,
+    0.0014512084947662235,
+    0.0005941544212694708,
+    2.9133905369598223e-11,
+    2.4613698811968543e-11
+   ],
+   "tolerance_sweep": {
+    "1e-06": 81,
+    "1e-07": 81,
+    "1e-08": 81,
+    "1e-09": 81,
+    "1e-10": 81,
+    "1e-11": 81,
+    "1e-12": 81
+   },
+   "distinct_ranks_over_sweep": [
+    81
+   ],
+   "rank_is_tolerance_stable": true,
+   "observed_rank": 81,
+   "gap_at_target": 20393916.082719278,
+   "target": 81,
+   "if_normalisation_rule_is_broken": null,
+   "classification": "nondegenerate generic",
+   "seed": 20260627,
+   "scale": 0.25,
+   "step": 1e-05,
+   "candidate_ordering": "as archived"
+  },
+  {
+   "label": "full-dense-safe run",
+   "source": "run_4_12_full_dense_safe_s96_jacobian/jacobian.npy",
+   "shape": [
+    83,
+    126
+   ],
+   "sha256": "fbcfc1e91e348420a4a0042f7f95612cb8b85968c09a22f79f2de87d3ef0980c",
+   "row_norm_min": 8.141811386138389e-10,
+   "row_norm_max": 29524.283722713208,
+   "row_norm_median": 6.266431170862469e-09,
+   "noise_floor_relative": 1e-12,
+   "noise_floor_absolute": 2.9524283722713208e-08,
+   "n_zero_rows": 48,
+   "row_normalisation": "WITHHELD: 48 rows at or below the noise floor; normalising them would rescale rounding noise into unit vectors and manufacture rank",
+   "singular_values_used_around_target": [
+    1.8212500250886409e-13,
+    1.2451376892894818e-13,
+    1.0710497702118055e-13,
+    8.452468180711503e-14,
+    7.589689453775482e-14
+   ],
+   "singular_values_used_head": [
+    50892.268704676935,
+    21063.50157584093,
+    17198.484627183774,
+    16078.993732454872,
+    13561.876912082356
+   ],
+   "singular_values_used_tail": [
+    1.8212500250886409e-13,
+    1.2451376892894818e-13,
+    1.0710497702118055e-13,
+    8.452468180711503e-14,
+    7.589689453775482e-14
+   ],
+   "tolerance_sweep": {
+    "1e-06": 35,
+    "1e-07": 35,
+    "1e-08": 35,
+    "1e-09": 35,
+    "1e-10": 35,
+    "1e-11": 35,
+    "1e-12": 35
+   },
+   "distinct_ranks_over_sweep": [
+    35
+   ],
+   "rank_is_tolerance_stable": true,
+   "observed_rank": 35,
+   "gap_at_target": 1.2671443977227108,
+   "target": 81,
+   "if_normalisation_rule_is_broken": {
+    "rank_if_rule_broken": 83,
+    "comment": "this is the number row normalisation fabricates"
+   },
+   "classification": "degenerate sample",
+   "seed": 20260626,
+   "scale": 0.35,
+   "step": 1e-05,
+   "candidate_ordering": "as archived"
+  }
+ ],
+ "summary": {
+  "n_runs": 2,
+  "by_classification": {
+   "nondegenerate generic": 1,
+   "degenerate sample": 1
+  },
+  "nondegenerate_ranks": [
+   81
+  ],
+  "scope": "two archived samples, not a seed/scale/step matrix; the exact modular Jacobian supersedes this as evidence and this analysis is retained to document the failure mode"
+ }
+}

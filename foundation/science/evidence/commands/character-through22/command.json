@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "./d5_character",
+    "22",
+    "independent-d5"
+  ],
+  "cwd": "/Users/swethasunilkumar/Documents/Codex/2026-09-07/here/work/science-completion-20260907",
+  "environment_overrides": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPYCACHEPREFIX": "/Users/swethasunilkumar/Documents/Codex/2026-09-07/here/work/science-completion-20260907/pycache",
+    "XDG_CACHE_HOME": "/Users/swethasunilkumar/Documents/Codex/2026-09-07/here/work/science-completion-20260907/cache",
+    "PIP_NO_CACHE_DIR": "1",
+    "PIP_CONFIG_FILE": "/dev/null",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "started_unix": 1788837277.927708,
+  "status": "completed",
+  "pid": 18291,
+  "exit_code": 0,
+  "seconds": 5.014161583967507,
+  "finished_unix": 1788837282.942112,
+  "logs": {
+    "stdout.log": {
+      "sha256": "88facbecad93b77eba78687cead143653bf0456755b2bfc8738e09bd08ab56b1",
+      "bytes": 1223
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

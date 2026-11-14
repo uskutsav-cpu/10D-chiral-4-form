@@ -53,7 +53,15 @@ def test_bad_run_config(change):
 
 def test_fixture_does_not_pretend_degree12_is_available():
     c=json.loads((ROOT/'configs/degree12.json').read_text())
+    c['registry']='data/fixtures/low_degree_registry.json'
     with pytest.raises(ValueError):execution_plan(c,ROOT)
+
+def test_combined_degree12_config_uses_actual_complete_registry():
+    c=json.loads((ROOT/'configs/degree12.json').read_text())
+    assert c['registry']=='data/combined/registry.json'
+    plan=execution_plan(c,ROOT)
+    assert plan['sample_count_per_prime']==76
+    assert plan['all_graphs_within_budget']
 
 def test_cli_plan_and_error_codes(capsys):
     assert main(['--root',str(ROOT),'plan'])==0

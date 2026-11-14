@@ -1,0 +1,9 @@
+numpy>=1.24
+pynauty>=2.8.8
+pytest>=7.0
+# Required, not optional. opt_einsum chooses the contraction order and supplies
+# the intermediate-size and flop estimates that sdbridge enforces as a budget;
+# without it the modular contractor has no memory guard at all and the degree-8
+# evaluator is killed by the kernel instead of raising. See
+# spinor_trace_bridge/src/sdbridge/spinor_invariants.py.
+opt_einsum>=3.3

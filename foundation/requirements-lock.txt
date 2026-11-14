@@ -1,0 +1,4 @@
+numpy==2.5.1
+pynauty==2.8.8.1
+pytest==9.1.1
+opt_einsum==3.4.0

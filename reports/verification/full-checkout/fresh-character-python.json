@@ -1,0 +1,169 @@
+{
+  "passed": true,
+  "weight_derivation": "exterior basis enumeration and chiral splitting",
+  "denominator_derivation": "product over20positive D5roots",
+  "signed128_conservative_bound": "434416360153166034956736626442240",
+  "degrees": [
+    {
+      "degree": 0,
+      "invariants": 1,
+      "recurrence_entries_checked": 0,
+      "recurrence_check_exhaustive": true,
+      "seconds": 4.436300000065785e-05
+    },
+    {
+      "degree": 1,
+      "invariants": 0,
+      "recurrence_entries_checked": 4,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.00035513000000264583
+    },
+    {
+      "degree": 2,
+      "invariants": 0,
+      "recurrence_entries_checked": 15,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.002345114999997122
+    },
+    {
+      "degree": 3,
+      "invariants": 0,
+      "recurrence_entries_checked": 40,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.00934061600000291
+    },
+    {
+      "degree": 4,
+      "invariants": 1,
+      "recurrence_entries_checked": 94,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.029863037000012582
+    },
+    {
+      "degree": 5,
+      "invariants": 0,
+      "recurrence_entries_checked": 192,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.07651047999999605
+    },
+    {
+      "degree": 6,
+      "invariants": 2,
+      "recurrence_entries_checked": 362,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.17643872600001487
+    },
+    {
+      "degree": 7,
+      "invariants": 0,
+      "recurrence_entries_checked": 632,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.36506372799999554
+    },
+    {
+      "degree": 8,
+      "invariants": 7,
+      "recurrence_entries_checked": 1047,
+      "recurrence_check_exhaustive": true,
+      "seconds": 0.700209123999997
+    },
+    {
+      "degree": 9,
+      "invariants": 0,
+      "recurrence_entries_checked": 1652,
+      "recurrence_check_exhaustive": true,
+      "seconds": 1.2540676369999915
+    },
+    {
+      "degree": 10,
+      "invariants": 14,
+      "recurrence_entries_checked": 2513,
+      "recurrence_check_exhaustive": true,
+      "seconds": 2.14440460900002
+    },
+    {
+      "degree": 11,
+      "invariants": 0,
+      "recurrence_entries_checked": 3696,
+      "recurrence_check_exhaustive": true,
+      "seconds": 3.4799670090000063
+    },
+    {
+      "degree": 12,
+      "invariants": 72,
+      "recurrence_entries_checked": 5292,
+      "recurrence_check_exhaustive": true,
+      "seconds": 5.475024676999993
+    },
+    {
+      "degree": 13,
+      "invariants": 0,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.15856813700000316
+    },
+    {
+      "degree": 14,
+      "invariants": 247,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.17364297099999249
+    },
+    {
+      "degree": 15,
+      "invariants": 0,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.1910749760000101
+    },
+    {
+      "degree": 16,
+      "invariants": 1364,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.2135218299999906
+    },
+    {
+      "degree": 17,
+      "invariants": 0,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.23334207299998866
+    },
+    {
+      "degree": 18,
+      "invariants": 6851,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.2587933719999853
+    },
+    {
+      "degree": 19,
+      "invariants": 0,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.28197699199998283
+    },
+    {
+      "degree": 20,
+      "invariants": 40170,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.310462106000017
+    },
+    {
+      "degree": 21,
+      "invariants": 0,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.3453977860000066
+    },
+    {
+      "degree": 22,
+      "invariants": 227979,
+      "recurrence_entries_checked": 128,
+      "recurrence_check_exhaustive": false,
+      "seconds": 0.3828487030000076
+    }
+  ]
+}

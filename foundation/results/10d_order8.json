@@ -1,0 +1,291 @@
+{
+  "schema": 1,
+  "claim": "Complete through order 8: 1 quartic, 2 sextic, and 6 new octic generators; cumulative functional rank 9.",
+  "literature": {
+    "source": "https://arxiv.org/abs/2509.14350v2",
+    "partition_function_through_order_8": "1 + t^4 + 2 t^6 + 7 t^8",
+    "new_generators": {
+      "4": 1,
+      "6": 2,
+      "8": 6
+    },
+    "note": "The seventh degree-8 scalar is the product I4^2."
+  },
+  "catalog": "results/10d_graph_catalog.json",
+  "catalog_sha256": "a9ecaf225b2dac4c67d62abf848ae8b427f1d16242ca7672240797127321788c",
+  "generators": [
+    {
+      "id": "I4_1",
+      "order": 4,
+      "catalog_index": 0,
+      "graph": "n4[02^3,03^2,12^2,13^3]"
+    },
+    {
+      "id": "I6_1",
+      "order": 6,
+      "catalog_index": 0,
+      "graph": "n6[03^3,04^2,13^2,15^3,24^3,25^2]"
+    },
+    {
+      "id": "I6_2",
+      "order": 6,
+      "catalog_index": 28,
+      "graph": "n6[02^2,03^2,05^1,13^2,14^2,15^1,24^2,25^1,35^1,45^1]"
+    },
+    {
+      "id": "I8_1",
+      "order": 8,
+      "catalog_index": 1,
+      "graph": "n8[04^4,05^1,14^1,16^4,25^4,27^1,36^1,37^4]"
+    },
+    {
+      "id": "I8_2",
+      "order": 8,
+      "catalog_index": 73,
+      "graph": "n8[03^4,06^1,14^4,16^1,25^4,26^1,37^1,47^1,57^1,67^2]"
+    },
+    {
+      "id": "I8_3",
+      "order": 8,
+      "catalog_index": 444,
+      "graph": "n8[03^4,04^1,14^1,15^1,16^2,17^1,25^4,26^1,37^1,46^1,47^2,67^1]"
+    },
+    {
+      "id": "I8_4",
+      "order": 8,
+      "catalog_index": 84,
+      "graph": "n8[03^2,06^2,07^1,14^4,16^1,25^4,26^1,36^1,37^2,47^1,57^1]"
+    },
+    {
+      "id": "I8_5",
+      "order": 8,
+      "catalog_index": 324,
+      "graph": "n8[03^2,04^1,06^2,14^2,15^1,17^2,25^4,26^1,36^2,37^1,47^2]"
+    },
+    {
+      "id": "I8_6",
+      "order": 8,
+      "catalog_index": 971,
+      "graph": "n8[03^2,06^2,07^1,14^2,15^1,16^2,24^1,25^2,27^2,36^1,37^2,45^2]"
+    }
+  ],
+  "degree8_basis": [
+    {
+      "id": "I8_1",
+      "kind": "connected_generator",
+      "graph": "n8[04^4,05^1,14^1,16^4,25^4,27^1,36^1,37^4]"
+    },
+    {
+      "id": "I8_2",
+      "kind": "connected_generator",
+      "graph": "n8[03^4,06^1,14^4,16^1,25^4,26^1,37^1,47^1,57^1,67^2]"
+    },
+    {
+      "id": "I8_3",
+      "kind": "connected_generator",
+      "graph": "n8[03^4,04^1,14^1,15^1,16^2,17^1,25^4,26^1,37^1,46^1,47^2,67^1]"
+    },
+    {
+      "id": "I8_4",
+      "kind": "connected_generator",
+      "graph": "n8[03^2,06^2,07^1,14^4,16^1,25^4,26^1,36^1,37^2,47^1,57^1]"
+    },
+    {
+      "id": "I8_5",
+      "kind": "connected_generator",
+      "graph": "n8[03^2,04^1,06^2,14^2,15^1,17^2,25^4,26^1,36^2,37^1,47^2]"
+    },
+    {
+      "id": "I8_6",
+      "kind": "connected_generator",
+      "graph": "n8[03^2,06^2,07^1,14^2,15^1,16^2,24^1,25^2,27^2,36^1,37^2,45^2]"
+    },
+    {
+      "id": "I4_1^2",
+      "kind": "composite",
+      "expression": "I4_1^2"
+    }
+  ],
+  "runs": {
+    "32749": {
+      "prime": 32749,
+      "seed": 20260727,
+      "catalog": "results/10d_graph_catalog.json",
+      "orders": {
+        "4": {
+          "catalog_graphs": 4,
+          "evaluated": 1,
+          "expected_new": 1,
+          "new": 1,
+          "rank": 1,
+          "complete": true,
+          "seconds": 0.1
+        },
+        "6": {
+          "catalog_graphs": 49,
+          "evaluated": 29,
+          "expected_new": 2,
+          "new": 2,
+          "rank": 3,
+          "complete": true,
+          "seconds": 4.2
+        },
+        "8": {
+          "catalog_graphs": 1689,
+          "evaluated": 877,
+          "expected_new": 6,
+          "new": 6,
+          "rank": 9,
+          "complete": true,
+          "seconds": 144.5
+        }
+      },
+      "generators": [
+        {
+          "id": "I4_1",
+          "order": 4,
+          "catalog_index": 0,
+          "graph": "n4[02^3,03^2,12^2,13^3]"
+        },
+        {
+          "id": "I6_1",
+          "order": 6,
+          "catalog_index": 0,
+          "graph": "n6[03^3,04^2,13^2,15^3,24^3,25^2]"
+        },
+        {
+          "id": "I6_2",
+          "order": 6,
+          "catalog_index": 28,
+          "graph": "n6[02^2,03^2,05^1,13^2,14^2,15^1,24^2,25^1,35^1,45^1]"
+        },
+        {
+          "id": "I8_1",
+          "order": 8,
+          "catalog_index": 1,
+          "graph": "n8[04^4,05^1,14^1,16^4,25^4,27^1,36^1,37^4]"
+        },
+        {
+          "id": "I8_2",
+          "order": 8,
+          "catalog_index": 73,
+          "graph": "n8[03^4,06^1,14^4,16^1,25^4,26^1,37^1,47^1,57^1,67^2]"
+        },
+        {
+          "id": "I8_3",
+          "order": 8,
+          "catalog_index": 444,
+          "graph": "n8[03^4,04^1,14^1,15^1,16^2,17^1,25^4,26^1,37^1,46^1,47^2,67^1]"
+        },
+        {
+          "id": "I8_4",
+          "order": 8,
+          "catalog_index": 84,
+          "graph": "n8[03^2,06^2,07^1,14^4,16^1,25^4,26^1,36^1,37^2,47^1,57^1]"
+        },
+        {
+          "id": "I8_5",
+          "order": 8,
+          "catalog_index": 324,
+          "graph": "n8[03^2,04^1,06^2,14^2,15^1,17^2,25^4,26^1,36^2,37^1,47^2]"
+        },
+        {
+          "id": "I8_6",
+          "order": 8,
+          "catalog_index": 971,
+          "graph": "n8[03^2,06^2,07^1,14^2,15^1,16^2,24^1,25^2,27^2,36^1,37^2,45^2]"
+        }
+      ]
+    },
+    "32719": {
+      "prime": 32719,
+      "seed": 20260727,
+      "catalog": "results/10d_graph_catalog.json",
+      "orders": {
+        "4": {
+          "catalog_graphs": 4,
+          "evaluated": 1,
+          "expected_new": 1,
+          "new": 1,
+          "rank": 1,
+          "complete": true,
+          "seconds": 0.1
+        },
+        "6": {
+          "catalog_graphs": 49,
+          "evaluated": 29,
+          "expected_new": 2,
+          "new": 2,
+          "rank": 3,
+          "complete": true,
+          "seconds": 3.8
+        },
+        "8": {
+          "catalog_graphs": 1689,
+          "evaluated": 877,
+          "expected_new": 6,
+          "new": 6,
+          "rank": 9,
+          "complete": true,
+          "seconds": 149.0
+        }
+      },
+      "generators": [
+        {
+          "id": "I4_1",
+          "order": 4,
+          "catalog_index": 0,
+          "graph": "n4[02^3,03^2,12^2,13^3]"
+        },
+        {
+          "id": "I6_1",
+          "order": 6,
+          "catalog_index": 0,
+          "graph": "n6[03^3,04^2,13^2,15^3,24^3,25^2]"
+        },
+        {
+          "id": "I6_2",
+          "order": 6,
+          "catalog_index": 28,
+          "graph": "n6[02^2,03^2,05^1,13^2,14^2,15^1,24^2,25^1,35^1,45^1]"
+        },
+        {
+          "id": "I8_1",
+          "order": 8,
+          "catalog_index": 1,
+          "graph": "n8[04^4,05^1,14^1,16^4,25^4,27^1,36^1,37^4]"
+        },
+        {
+          "id": "I8_2",
+          "order": 8,
+          "catalog_index": 73,
+          "graph": "n8[03^4,06^1,14^4,16^1,25^4,26^1,37^1,47^1,57^1,67^2]"
+        },
+        {
+          "id": "I8_3",
+          "order": 8,
+          "catalog_index": 444,
+          "graph": "n8[03^4,04^1,14^1,15^1,16^2,17^1,25^4,26^1,37^1,46^1,47^2,67^1]"
+        },
+        {
+          "id": "I8_4",
+          "order": 8,
+          "catalog_index": 84,
+          "graph": "n8[03^2,06^2,07^1,14^4,16^1,25^4,26^1,36^1,37^2,47^1,57^1]"
+        },
+        {
+          "id": "I8_5",
+          "order": 8,
+          "catalog_index": 324,
+          "graph": "n8[03^2,04^1,06^2,14^2,15^1,17^2,25^4,26^1,36^2,37^1,47^2]"
+        },
+        {
+          "id": "I8_6",
+          "order": 8,
+          "catalog_index": 971,
+          "graph": "n8[03^2,06^2,07^1,14^2,15^1,16^2,24^1,25^2,27^2,36^1,37^2,45^2]"
+        }
+      ]
+    }
+  }
+}

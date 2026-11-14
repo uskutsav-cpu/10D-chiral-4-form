@@ -11,3 +11,17 @@ commit recorded in the fixture. The upstream Python implementation is not
 vendored or silently executed. HLS stress formulas and invariant-theory inputs
 are cited in docs/LITERATURE.md. Existing mathematical constructions are not
 claimed as inventions of this implementation.
+
+Unified release integration (November 2026)
+------------------------------------------
+The foundation/ directory preserves the tracked-file snapshot of
+uskutsav-cpu/selfdual-5form-invariants at the exact commit named in
+ data/combined/source-lock.json. Original license, attribution, source notes,
+and historical evidence are retained. Regular file hashes and symlink targets
+are recorded in that lock. Python cache files and local build products are not
+part of the source snapshot.
+
+The new independent orbit checker was written for this integration. It does
+not import either research engine and does not reuse the LawWorld or LawLang
+code. Generalized completion is scoped to the selected homogeneous catalogue;
+no arbitrary-scalar minimum is asserted.

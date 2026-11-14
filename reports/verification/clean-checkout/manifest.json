@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "level": "quick",
+  "status": "passed",
+  "stages": [
+    {
+      "name": "regression",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "seconds": 216.3386344999999,
+      "log": "reports/verification/clean-checkout/regression.log",
+      "log_sha256": "dc51128d2e005defe405c999d7744b9a1ac70c4edfc3a2088ad90a29bec22623"
+    },
+    {
+      "name": "foundation-arithmetic",
+      "command": [
+        "python",
+        "foundation/science/verify_science.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6309048329994766,
+      "log": "reports/verification/clean-checkout/foundation-arithmetic.log",
+      "log_sha256": "d11fdf4a358e828fbf6ac286cc02d405dcb014041f443cdb94c87c130b4afdc7"
+    },
+    {
+      "name": "independent-orbits",
+      "command": [
+        "python",
+        "independent/verify.py",
+        "--output",
+        "reports/independent-algebra.json"
+      ],
+      "exit_code": 0,
+      "seconds": 38.32918929200059,
+      "log": "reports/verification/clean-checkout/independent-orbits.log",
+      "log_sha256": "76f38fc6ddc56843dc5d9839d247bb2fa000b4447a592c02598479c5bf8bbcaa"
+    },
+    {
+      "name": "generalized-completion",
+      "command": [
+        "python",
+        "independent/completion.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.559988209000039,
+      "log": "reports/verification/clean-checkout/generalized-completion.log",
+      "log_sha256": "4e49cac241626952d8d3a341f333e5657399d1c959060a8de1dcba992cc89d5a"
+    },
+    {
+      "name": "map8-arithmetic",
+      "command": [
+        "python",
+        "-m",
+        "chiral4form",
+        "verify-map8",
+        "verification/map8/map_certificate.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7599734169998555,
+      "log": "reports/verification/clean-checkout/map8-arithmetic.log",
+      "log_sha256": "c257335de50feef3810943ac3c4bcd1d2a7b5e73f95cf011aad2223efbabf509"
+    }
+  ],
+  "scope": "regression and saved exact arithmetic; no fresh physics",
+  "source_commit": "a47841606b2d96618b7dd2810297d84462b0f0db",
+  "checkout": "clean git archive export; command cwd and imported package both inside export",
+  "regression_tests_passed": 222,
+  "command_note": "Absolute interpreter path normalized to python; raw stage output preserved"
+}

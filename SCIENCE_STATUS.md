@@ -1,0 +1,44 @@
+# Unified science status
+
+This is the current entry point for the combined project. Frozen source
+certificates and historical notes are preserved; older status labels do not
+constitute new verification. Read the scope of each check below.
+
+| Requirement | Current evidence | Verification level |
+|---|---|---|
+| Complete invariant/flow integration | `data/combined/source-lock.json`, complete 96-coordinate registry | Pinned source snapshot and hash-bound import |
+| Independent invariant dimensions | `reports/fresh-d5.json`; Python recurrence check under `reports/character-check/` | Fresh character generation through 22; independent recurrence exhaustive through 12 and sampled above |
+| Explicit rank 81 and Lorentz orbit 45 | `reports/fresh-rank81.json` | Fresh tensor values, full Jacobian, integer minors and Lorentz tangent directions |
+| Common conventions between engines | `reports/tensor-bridge.json` | Fresh agreement for all 81 values at the rank-certificate point, including metric, Hodge, coordinates, graph slots |
+| Degree-eight physics map | packaged certificate, fresh reevaluation command | Bounded map arithmetic and fresh tensor replay; dimension input discharged by the bundled character derivation after convention checks |
+| Degree-ten physics map | `reports/degree10-map/map_certificate.json` and checkpoints | Fresh 13-prime, 14-point bounded-residual map calculation |
+| Degree-twelve physics map | `reports/degree12-map/` | Completed 13-prime, 72-point bounded-CRT proof of all 36 source identities; strict and engine-free arithmetic replays passed on Linux and locally |
+| Independent degree 8/10/12 model algebra | `reports/independent-algebra.json` | Exact QQ model replay, 68 degree-twelve constraints and explicit vertical matrix |
+| Constructive endpoint | endpoint in independent algebra report; `make combined-endpoint` | Exact ten-stage signed-control integration and constraint evaluation |
+| Generalized degree-twelve completion | `reports/generalized-completion-exact.json` | Exact homogeneous leading-block calculation for the selected 78 extras; physics input and filtration hypotheses remain explicit |
+| Regression and falsification checks | `reports/verification/clean-checkout/manifest.json` and raw stage logs | 222 tests; complete quick verification from a clean committed-source export |
+| Full integrated verification | `reports/verification/full-checkout/manifest.json` and raw logs | All 16 stages passed from clean Linux checkout; 222 tests, fresh character/rank/bridge/map8/holdout calculations, complete map replays |
+| Unified manuscript | `manuscript/unified/main.tex`, compiled PDF in `reports/manuscript/` | Research draft; author/expert and novelty review remain necessary |
+
+The new degree-twelve proof explicitly clears the derivative denominator
+`2*5!=240` and the resulting stress-product denominators. It does not use the
+historical assertion that full stress-map coefficients are integral. Each
+source identity is checked exactly on an injective evaluation set after bounded
+CRT reconstruction. A saved partial checkpoint or a passed finite holdout does
+not establish the identity theorem.
+
+Five fresh physical holdout cases at primes 50021, 50023 and 50033 independently
+passed all 36 source equations. These are empirical cross-checks, not a substitute
+for the full proof run.
+
+Unresolved research questions are complete all-orders orbit equality, finite
+generation/stabilization of the obstruction tower, a global invariant-ring
+presentation, nonanalytic sectors and physical admissibility. They are not
+silently declared solved by the finite-order calculations.
+
+The requirement-by-requirement repository audit is `reports/release-audit.json`.
+The complete bounded degree-twelve result uses six committed local batches and
+seven Linux shards; both full replay paths also passed locally. Two additional
+Mac batches agree with Linux on every saved basis and target vector, recorded
+in `reports/degree12-crosshost/comparison.json`. This cross-host agreement uses
+the same engine and is distinct from the independent tensor implementation.

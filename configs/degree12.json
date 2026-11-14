@@ -9,7 +9,7 @@
   "seed_start": 2026091201,
   "fit_margin": 2,
   "holdouts": 2,
-  "registry": "data/fixtures/low_degree_registry.json",
+  "registry": "data/combined/registry.json",
   "extras": [],
   "max_bytes": 2147483648,
   "max_multiply_adds": 100000000000,

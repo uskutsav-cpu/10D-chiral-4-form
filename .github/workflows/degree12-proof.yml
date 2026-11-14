@@ -1,0 +1,50 @@
+name: degree12-physics-proof
+on:
+  push:
+    branches: [codex/unified-invariants-stress-flows]
+    paths:
+      - .github/workflows/degree12-proof.yml
+      - scripts/prove_combined_degree12_map.py
+      - scripts/resume_degree12_proof.py
+      - scripts/verify_degree12_checkpoint_inputs.py
+      - src/chiral4form/**
+      - data/combined/registry.json
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: degree12-physics-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  physical-identities:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      VECLIB_MAXIMUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install exact computation dependencies
+        run: python -m pip install -e '.[dev]'
+      - name: Record execution environment
+        run: |
+          mkdir -p reports/degree12-map
+          python --version > reports/degree12-map/environment.txt
+          python -m pip freeze >> reports/degree12-map/environment.txt
+          git rev-parse HEAD > reports/degree12-map/source-commit.txt
+      - name: Prove all 36 physical source identities
+        run: python -u scripts/resume_degree12_proof.py --workers 2
+      - name: Strictly replay raw inputs and bounded arithmetic
+        run: python scripts/verify_degree12_checkpoint_inputs.py
+      - name: Upload exact evidence and checkpoints
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: degree12-proof-${{ github.sha }}
+          path: reports/degree12-map/
+          if-no-files-found: error
+          retention-days: 30

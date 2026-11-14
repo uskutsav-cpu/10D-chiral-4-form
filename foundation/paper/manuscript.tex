@@ -1,0 +1,247 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,longtable,booktabs}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\title{Explicit graph invariants and exact Jacobian certificates\\
+for a self-dual five-form in ten dimensions}
+\author{\texttt{uskutsav-cpu}}
+\date{September 7, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give a reproducible certificate for 81 explicit contractions of a real
+self-dual five-form in signature $(1,9)$. The fixed selection consists of one
+quartic, two sextic, six octic, twelve degree-ten, and sixty degree-twelve
+polynomials. Their Jacobian has a nonzero $81\times81$ minor at four exact
+finite-field specializations, using the same ordered functions in every
+case. An integral coordinate convention makes each nonzero minor a
+characteristic-zero independence witness when its entries are verified as
+derivatives of the specified contractions. An independent implementation
+checks all Jacobian entries at two further points, and an integral orbit-action
+certificate supplies the matching upper bound. This gives a maximal generically independent
+family. It does not determine all polynomial generators or syzygies.
+\end{abstract}
+
+\section{Scope and conventions}
+Let $F$ be an alternating five-form, with metric
+$\eta=\operatorname{diag}(-1,1,\ldots,1)$ and Hodge convention
+$\star F=F$. The self-dual subspace has dimension 126.
+The literature supplies the generic quotient dimension 81 and the
+low-degree Hilbert coefficients \cite{cederwall,hutomo}. The present
+certificates check the orbit dimension and matching lower bound using explicit graph
+contractions. The contraction catalogs and previously discovered bases are
+inherited from the repository's research branches; the certificate reported
+here re-evaluates those functions at new points.
+Graph enumeration and tensor-network contraction followed by numerical linear
+algebra are established methods for tensor invariants: see
+Elamaran, Ferko and Scarlett \cite{elamaran}, whose six-dimensional three-form
+study leaves the ten-dimensional chiral five-form application for future work.
+We make no claim of priority for this method or for an 81-invariant family.
+
+A graph has one vertex per copy of $F$, no loops, and valence five.
+An edge of multiplicity $m$ contracts $m$ index pairs with inverse metrics.
+Vertices and edges are ordered; slot order is fixed by lexicographic edge
+order. Graph isomorphism alone does not fix the sign of an odd-form
+contraction, so the formula identifier hashes the ordered edge record.
+Disconnected contractions are products. The quadratic contraction vanishes
+on this self-dual space: $F\wedge\star F=F\wedge F=0$, since $F$ has odd
+degree, so its metric norm vanishes. Complete contraction with the invariant
+metric proves Lorentz invariance of each graph polynomial.
+
+For each increasing five-tuple $I$ containing 0, define
+$A_I=F_I$ and let $e_I$ denote its compact alternating component vector.
+The integral parametrization is
+\[
+ F(A)=\sum_{I\ni0} A_I(e_I+\star e_I).
+\]
+The 126 columns contain only $0,1,-1$; their components indexed by $I\ni0$
+form an identity matrix. Every graph polynomial therefore has integer
+coefficients in $A$, with no projector denominators.
+
+\section{Fixed selection and exact witness}
+The nine low-degree functions are those in
+\path{results/10d_order8.json}; the next twelve come from
+\path{results/10d_order10.json}. The first sixty selected functional
+directions in \path{results/10d_order12.json} complete the list.
+The inherited inventory labels two further degree-twelve directions as
+primitive polynomial directions; they are not included in the 81-function
+Jacobian. That label requires the separate homogeneous-space evidence below. A dependent Jacobian row does not identify a polynomial syzygy.
+
+\begin{center}
+\begin{tabular}{rrr}
+\toprule
+Field degree & New functional directions & Cumulative rank\\
+\midrule
+4 & 1 & 1\\
+6 & 2 & 3\\
+8 & 6 & 9\\
+10 & 12 & 21\\
+12 & 60 & 81\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Write $J_{aI}=\partial G_a/\partial A_I$. Each certificate cell records
+the prime, all 126 coordinates, all 252 self-dual compact components,
+the same ordered 81 graph identifiers, all entries of the $81\times126$
+Jacobian, 81 pivot columns, and the determinant of that minor.
+\input{tables/certificate_cells.tex}
+The determinant is recomputed by Python-integer elimination independently
+of the streaming rank sieve. Euler's identity
+$\sum_I A_I J_{aI}=\deg(G_a)G_a$ is checked for every row.
+
+Suppose the recorded entries have been verified as the Jacobian of the
+specified integral graph polynomials at the recorded point. A nonzero minor
+modulo $p$ then proves that the corresponding integer determinant polynomial
+is not identically zero. In characteristic zero the Jacobian criterion gives
+algebraic independence of these 81 polynomials, and their differentials are
+independent on the nonempty Zariski-open locus where that minor is nonzero.
+Invariance and the generic orbit dimension supply the matching upper bound.
+The independent audit companion
+\path{results/audit/root-review/orbit_tangent_certificate.json} records the 45 infinitesimal
+Lorentz generators acting on the 126 integral self-dual coordinates, using a
+separate signed-component implementation. Its $45\times45$ minors are nonzero
+at primes 50021 and 32749, with residues 5222 and 10852, respectively. The
+orbit-action entries are integral linear polynomials in $A$, so the same
+nonzero-minor lifting argument proves generic orbit dimension at least 45 in
+characteristic zero. There are only 45 generators, hence the generic dimension
+is exactly 45. Every invariant differential annihilates this tangent space,
+giving the upper bound $126-45=81$. The companion additionally checks that all
+81 computed Jacobian rows annihilate all 45 action rows at both points. This
+supplies a direct witness for the generic dimension also cited in the literature.
+At two additional points generated after the freeze, the same ordered graph
+family has nonzero $81\times81$ minor residues 35642 modulo 50021 and 22345
+modulo 32749. An independently authored forward-dual and reverse-adjoint
+implementation checks all 162 values and all $162\cdot126=20{,}412$ Jacobian
+entries. Integer Bareiss elimination independently verifies both minors.
+These implementations share NumPy arithmetic primitives but import no
+production contraction, Hodge, projection, rank-sieve or verifier code.
+On a regular local quotient the selected invariants give local coordinates.
+Neither global orbit separation, generation of the invariant field by rational
+functions in this list, nor polynomial generation of the entire ring follows.
+
+\section{Polynomial spaces and literature comparison}
+The homogeneous-space dimensions reported in equation (4.2) of
+\cite{cederwall} through degree twelve are $1,2,7,14,72$.
+These representation-theoretic counts are an external input here. Products must be included in value-space comparisons.
+At degree twelve the ten product monomials are $I_4^3$, the three symmetric
+products of sextics, and the six products $I_4 I_{8,j}$. The independent audit
+recomputes this list and the 62 connected graph directions. Concatenating
+their gradients at two fresh points within each field gives a $72\times252$
+matrix, with nonzero $72\times72$ minor residues 43334 modulo 50021 and 12699
+modulo 32749. The integer-minor lifting argument proves linear independence
+of the 72 homogeneous polynomials in characteristic zero. The matching
+published Hilbert coefficient supplies completeness. The ten independent
+products therefore leave 62 primitive quotient directions. This does not
+assert algebraic independence of the degree-twelve list. Polynomial-space
+evidence uses gradients concatenated at several points; the functional
+Jacobian uses one point. These are separate sieves. The prose of section 4.1.4 of
+\cite{cederwall} says 64 new degree-twelve directions, inconsistent with its
+equation (4.2), which has exponent 62. The inventory here uses the latter;
+we do not treat the inconsistent prose as an additional verified count.
+Factor exponents in a Hilbert product are not automatically generator counts
+at higher degrees when generators and relations may coexist.
+
+The octic comparison uses a selection of six displayed literature
+contractions: the first five expressions from equations (4.12)--(4.15) of
+\cite{cederwall}, together with the hatted expression (4.18). The
+machine-readable matrix has exact rational entries and includes
+the quartic-square product explicitly. The fresh source certificate described
+below recovers the same matrix as the archived octic map.
+The $6\times6$ block compares primitive classes modulo products; any product
+correction is retained in the full $7\times7$ matrix.
+
+A source audit found that the antisymmetrizers in the archived implementations
+of candidates $J_{10}$--$J_{12}$ differ from the primary PDF and TeX source.
+The corrected implementation applies a red antisymmetrization of the trailing
+pair in the first factor of $J_{10}$, and of the trailing triple in each of
+the final three factors of $J_{11}$ and $J_{12}$. These act after the black
+stage and before index raising. The archived readings and atlas remain
+separately identified; the source audit failure is preserved.
+
+An independent source evaluator computes the corrected twelve decics and
+all twelve displayed octics. The exact certificate uses 14 common binary
+self-dual coordinate points under seven primes. Proven denominator and
+absolute-value bounds make signed Chinese remaindering uniquely recover
+the integer numerator of each rational evaluation; the combined modulus
+exceeds twice every bound. Exact graph evaluation matrices have ranks 7 and
+14 in degrees eight and ten. Since these equal the published homogeneous
+space dimensions, evaluation is injective on those invariant spaces.
+Exact rational solving thus determines polynomial coordinates, conditional
+on those published upper bounds and analytic tensor invariance. A second
+integer/Fraction verifier checks every residue, bound, minor and map; 83
+dense finite-field points provide further implementation checks. This
+argument uses injectivity and integer bounds, not finite holdouts alone.
+The complete evidence is in
+\path{results/audit/source-review/exact-source-evaluation-certificate.json}.
+
+The corrected decic $12\times14$ map has rank twelve. Its union with the two
+product directions has rank thirteen, so the intersection dimension is one
+and its primitive quotient image has dimension eleven. In the recorded
+graph normalization, an exact witness is
+\[
+ J_6+\frac56J_5-\frac1{20}J_2-\frac{11}{1008}J_1
+ =-\frac{13}{63}I_{4,1}I_{6,1}.
+\]
+Consequently these twelve source expressions do not supply an invertible
+$12\times12$ map to the twelve graph primitive classes. This corrected
+conclusion has fresh evidence; it does not validate the archived J10--J12
+transcription. The graph-only nonzero-minor proof has separate inputs.
+
+\section{Reproduction and validation}
+Use the declared dependencies and run the regression suite before evaluating
+certificates. The original low-degree commit is preserved by
+\texttt{v0.1-low-degree-complete}. The release commands are:
+\begin{verbatim}
+python scripts/graph_to_latex.py
+python scripts/search_rank81.py
+python scripts/verify_rank81.py
+python scripts/verify_rank81.py --recompute
+python scripts/verify_independent_audit.py
+python scripts/validate_rank81_lorentz.py
+python scripts/map_literature_basis.py --degree 8
+python scripts/map_literature_basis.py --degree 10
+\end{verbatim}
+The default verifier checks the saved matrix and metadata; the explicit
+\texttt{--recompute} mode repeats the graph evaluations with the production
+evaluator. The separate independent audit checker verifies saved integer
+minors and source CRT certificates without recomputing tensor contractions.
+The source-map commands verify the corrected certificate by default;
+historical fitting requires an explicit legacy option and a separate output.
+These modes are reported separately. The search stage checkpoints each raw row and its
+pivot, checks run identity on resume, and bounds worker submissions.
+Degree-specific discovery remains available through the existing nauty
+pipelines. \texttt{run\_degree.py} accepts additional edge-list JSONL streams
+and separates polynomial completeness from functional rank.
+
+Regression tests cover the 6D reproduction, self-duality,
+the zero quadratic contraction, exact integer arithmetic, reverse
+Jacobians against an independent oracle, graph parsing beyond ten vertices,
+and genuine Lorentz boosts. The independent audit additionally checks every
+selected graph under four new spatial rotations and four genuine boosts,
+across two primes and fresh points. These checks use exact reduced arithmetic
+without floating-point tolerances. They are implementation checks at specified inputs,
+while invariance itself follows from the complete-contraction definition.
+
+\begin{thebibliography}{9}
+\bibitem{cederwall} M. Cederwall, J. Hutomo, S. M. Kuzenko, K. Lechner,
+and D. P. Sorokin, \emph{Some remarks on invariants},
+\href{https://arxiv.org/abs/2509.14350v2}{arXiv:2509.14350v2}.
+\bibitem{hutomo} J. Hutomo, K. Lechner, and D. P. Sorokin,
+\emph{On non-linear chiral 4-form theories in D=10},
+\href{https://arxiv.org/abs/2509.14351}{arXiv:2509.14351}.
+\bibitem{elamaran} A. Elamaran, C. Ferko and S. Scarlett,
+\emph{Machine Learning Invariants of Tensors}, Phys. Rev. D 114 (2026) 026016,
+\href{https://doi.org/10.1103/ny3m-drnj}{doi:10.1103/ny3m-drnj},
+\href{https://arxiv.org/abs/2512.23750}{arXiv:2512.23750}.
+\end{thebibliography}
+
+\clearpage\appendix
+\section{Ordered Einstein-index formulas}
+Each repeated index labels exactly one graph edge; its upper and lower
+occurrences supply one inverse metric. The machine-readable companion
+\texttt{results/rank81\_basis.json} gives the edge lists, adjacency matrices,
+formula hashes, and contraction costs.
+\small
+\input{tables/rank81_formulas.tex}
+\end{document}

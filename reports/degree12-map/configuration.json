@@ -1,0 +1,1105 @@
+{
+  "configuration": {
+    "algorithm": "fresh_d12_direct_physics_explicit_derivative_denominators_v1",
+    "basis_bound": 1000000000000000000000000000000,
+    "engine_sha256": "41bfb362a1bdcf66a8e957932d2366e39fc5bed7226a5899c0a9f63cd7577077",
+    "primes": [
+      65521,
+      65519,
+      65497,
+      65479,
+      65449,
+      65447,
+      65437,
+      65423,
+      65419,
+      65413,
+      65407,
+      65393,
+      65381
+    ],
+    "registry_sha256": "af49a4f92e4ce01a88abffb2c67f343783ed950e43989773fef8027df28b058c",
+    "rows": [
+      {
+        "basis_id": "B1",
+        "bound_proof": {
+          "cleared_integer_bound": "1600000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr1",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "B^2",
+          "post_orbit_l1_bound": "1600000000000000000000000000000000",
+          "source_row": 0
+        },
+        "denominator": 3317760000,
+        "generator": "tr1*tr1",
+        "integer_bound": 5308416000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "B^2",
+        "source_row": 0,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 1600000000000000000000000000000000
+      },
+      {
+        "basis_id": "B2",
+        "bound_proof": {
+          "cleared_integer_bound": "2400000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr1",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A*D",
+          "post_orbit_l1_bound": "2400000000000000000000000000000000",
+          "source_row": 1
+        },
+        "denominator": 3317760000,
+        "generator": "tr1*tr1",
+        "integer_bound": 7962624000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "D"
+          }
+        ],
+        "output_monomial_text": "A*D",
+        "source_row": 1,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 2400000000000000000000000000000000
+      },
+      {
+        "basis_id": "B3",
+        "bound_proof": {
+          "cleared_integer_bound": "2400000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr1",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A*C",
+          "post_orbit_l1_bound": "2400000000000000000000000000000000",
+          "source_row": 2
+        },
+        "denominator": 3317760000,
+        "generator": "tr1*tr1",
+        "integer_bound": 7962624000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "C"
+          }
+        ],
+        "output_monomial_text": "A*C",
+        "source_row": 2,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 2400000000000000000000000000000000
+      },
+      {
+        "basis_id": "B4",
+        "bound_proof": {
+          "basis_id": "B4",
+          "cleared_bound": 0,
+          "cleared_integer_bound": 0,
+          "clearing_denominator": 1,
+          "generator": "tr1*tr1",
+          "output_monomial": "A^2*B",
+          "source_row": 3,
+          "status": "certified_zero_degree12_leading_target",
+          "structural_zero_leading_target": true,
+          "zero_certificate": {
+            "method": "nonnegative complete degree-12 bound envelope after exact orbit substitution",
+            "symbolic_envelope_zero": true,
+            "theorem_prime_recomputation": false
+          }
+        },
+        "denominator": 3317760000,
+        "generator": "tr1*tr1",
+        "integer_bound": 0,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "A^2*B",
+        "source_row": 3,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 0
+      },
+      {
+        "basis_id": "B5",
+        "bound_proof": {
+          "cleared_integer_bound": "38400000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr1",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^4",
+          "post_orbit_l1_bound": "38400000000000000000000000000000000",
+          "source_row": 4
+        },
+        "denominator": 3317760000,
+        "generator": "tr1*tr1",
+        "integer_bound": 127401984000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 4,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^4",
+        "source_row": 4,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 38400000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "8000000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr1*tr1",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^3",
+          "post_orbit_l1_bound": "8000000000000000000000000000000000",
+          "source_row": 5
+        },
+        "denominator": 191102976000000,
+        "generator": "tr1*tr1*tr1",
+        "integer_bound": 1528823808000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 3,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^3",
+        "source_row": 5,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 8000000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "400000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr1*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^2",
+          "post_orbit_l1_bound": "400000000000000000000000000000000",
+          "source_row": 6
+        },
+        "denominator": 11007531417600000000,
+        "generator": "tr1*tr1*tr2",
+        "integer_bound": 4403012567040000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "source_row": 6,
+        "stress_denominator": 11007531417600000000,
+        "target_absolute_bound_before_stress_clearer": 400000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "60000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "D",
+          "post_orbit_l1_bound": "60000000000000000000000000000000",
+          "source_row": 7
+        },
+        "denominator": 191102976000000,
+        "generator": "tr1*tr2",
+        "integer_bound": 11466178560000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "D"
+          }
+        ],
+        "output_monomial_text": "D",
+        "source_row": 7,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 60000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "60000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "C",
+          "post_orbit_l1_bound": "60000000000000000000000000000000",
+          "source_row": 8
+        },
+        "denominator": 191102976000000,
+        "generator": "tr1*tr2",
+        "integer_bound": 11466178560000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "C"
+          }
+        ],
+        "output_monomial_text": "C",
+        "source_row": 8,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 60000000000000000000000000000000
+      },
+      {
+        "basis_id": "B6",
+        "bound_proof": {
+          "cleared_integer_bound": "3200000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A*B",
+          "post_orbit_l1_bound": "3200000000000000000000000000000000",
+          "source_row": 9
+        },
+        "denominator": 191102976000000,
+        "generator": "tr1*tr2",
+        "integer_bound": 611529523200000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "A*B",
+        "source_row": 9,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 3200000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "24960000000000000000000000000000000",
+          "contributing_full_monomials": 2,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^3",
+          "post_orbit_l1_bound": "24960000000000000000000000000000000",
+          "source_row": 10
+        },
+        "denominator": 191102976000000,
+        "generator": "tr1*tr2",
+        "integer_bound": 4769930280960000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 3,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^3",
+        "source_row": 10,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 24960000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "20000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr2*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A",
+          "post_orbit_l1_bound": "20000000000000000000000000000000",
+          "source_row": 11
+        },
+        "denominator": 634033809653760000000000,
+        "generator": "tr1*tr2*tr2",
+        "integer_bound": 12680676193075200000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A",
+        "source_row": 11,
+        "stress_denominator": 634033809653760000000000,
+        "target_absolute_bound_before_stress_clearer": 20000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "40000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "B",
+          "post_orbit_l1_bound": "40000000000000000000000000000000",
+          "source_row": 12
+        },
+        "denominator": 11007531417600000000,
+        "generator": "tr1*tr3",
+        "integer_bound": 440301256704000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "B",
+        "source_row": 12,
+        "stress_denominator": 11007531417600000000,
+        "target_absolute_bound_before_stress_clearer": 40000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "1200000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^2",
+          "post_orbit_l1_bound": "1200000000000000000000000000000000",
+          "source_row": 13
+        },
+        "denominator": 11007531417600000000,
+        "generator": "tr1*tr3",
+        "integer_bound": 13209037701120000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "source_row": 13,
+        "stress_denominator": 11007531417600000000,
+        "target_absolute_bound_before_stress_clearer": 1200000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "20000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr1*tr4",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A",
+          "post_orbit_l1_bound": "20000000000000000000000000000000",
+          "source_row": 14
+        },
+        "denominator": 634033809653760000000000,
+        "generator": "tr1*tr4",
+        "integer_bound": 12680676193075200000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A",
+        "source_row": 14,
+        "stress_denominator": 634033809653760000000000,
+        "target_absolute_bound_before_stress_clearer": 20000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "160000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "V",
+          "post_orbit_l1_bound": "160000000000000000000000000000000",
+          "source_row": 15
+        },
+        "denominator": 3317760000,
+        "generator": "tr2",
+        "integer_bound": 530841600000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "V"
+          }
+        ],
+        "output_monomial_text": "V",
+        "source_row": 15,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 160000000000000000000000000000000
+      },
+      {
+        "basis_id": "B7",
+        "bound_proof": {
+          "cleared_integer_bound": "239698720000000000000000000000000000000",
+          "contributing_full_monomials": 10,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2",
+          "orbit_denominator_clearer": "503376",
+          "output_monomial": "U",
+          "post_orbit_l1_bound": "476182257398048377356091669050571",
+          "source_row": 16
+        },
+        "denominator": 1670080757760000,
+        "generator": "tr2",
+        "integer_bound": 795262825267200000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 503376,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "U"
+          }
+        ],
+        "output_monomial_text": "U",
+        "source_row": 16,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 239698720000000000000000000000000000000
+      },
+      {
+        "basis_id": "B8",
+        "bound_proof": {
+          "cleared_integer_bound": "3400000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "B^2",
+          "post_orbit_l1_bound": "3400000000000000000000000000000000",
+          "source_row": 17
+        },
+        "denominator": 3317760000,
+        "generator": "tr2",
+        "integer_bound": 11280384000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "B^2",
+        "source_row": 17,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 3400000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "5600000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A*D",
+          "post_orbit_l1_bound": "5600000000000000000000000000000000",
+          "source_row": 18
+        },
+        "denominator": 3317760000,
+        "generator": "tr2",
+        "integer_bound": 18579456000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "D"
+          }
+        ],
+        "output_monomial_text": "A*D",
+        "source_row": 18,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 5600000000000000000000000000000000
+      },
+      {
+        "basis_id": "B9",
+        "bound_proof": {
+          "cleared_integer_bound": "5600000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A*C",
+          "post_orbit_l1_bound": "5600000000000000000000000000000000",
+          "source_row": 19
+        },
+        "denominator": 3317760000,
+        "generator": "tr2",
+        "integer_bound": 18579456000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "C"
+          }
+        ],
+        "output_monomial_text": "A*C",
+        "source_row": 19,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 5600000000000000000000000000000000
+      },
+      {
+        "basis_id": "B10",
+        "bound_proof": {
+          "cleared_integer_bound": "218240000000000000000000000000000000",
+          "contributing_full_monomials": 2,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^2*B",
+          "post_orbit_l1_bound": "218240000000000000000000000000000000",
+          "source_row": 20
+        },
+        "denominator": 3317760000,
+        "generator": "tr2",
+        "integer_bound": 724067942400000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "A^2*B",
+        "source_row": 20,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 218240000000000000000000000000000000
+      },
+      {
+        "basis_id": "B11",
+        "bound_proof": {
+          "cleared_integer_bound": "249600000000000000000000000000000000",
+          "contributing_full_monomials": 2,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^4",
+          "post_orbit_l1_bound": "249600000000000000000000000000000000",
+          "source_row": 21
+        },
+        "denominator": 3317760000,
+        "generator": "tr2",
+        "integer_bound": 828112896000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 4,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^4",
+        "source_row": 21,
+        "stress_denominator": 3317760000,
+        "target_absolute_bound_before_stress_clearer": 249600000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "160000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "B",
+          "post_orbit_l1_bound": "160000000000000000000000000000000",
+          "source_row": 22
+        },
+        "denominator": 11007531417600000000,
+        "generator": "tr2*tr2",
+        "integer_bound": 1761205026816000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "B",
+        "source_row": 22,
+        "stress_denominator": 11007531417600000000,
+        "target_absolute_bound_before_stress_clearer": 160000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "4000000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^2",
+          "post_orbit_l1_bound": "4000000000000000000000000000000000",
+          "source_row": 23
+        },
+        "denominator": 11007531417600000000,
+        "generator": "tr2*tr2",
+        "integer_bound": 44030125670400000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "source_row": 23,
+        "stress_denominator": 11007531417600000000,
+        "target_absolute_bound_before_stress_clearer": 4000000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "1000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2*tr2*tr2",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "1",
+          "post_orbit_l1_bound": "1000000000000000000000000000000",
+          "source_row": 24
+        },
+        "denominator": 36520347436056576000000000000,
+        "generator": "tr2*tr2*tr2",
+        "integer_bound": 36520347436056576000000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [],
+        "output_monomial_text": "1",
+        "source_row": 24,
+        "stress_denominator": 36520347436056576000000000000,
+        "target_absolute_bound_before_stress_clearer": 1000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "100000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2*tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A",
+          "post_orbit_l1_bound": "100000000000000000000000000000000",
+          "source_row": 25
+        },
+        "denominator": 634033809653760000000000,
+        "generator": "tr2*tr3",
+        "integer_bound": 63403380965376000000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A",
+        "source_row": 25,
+        "stress_denominator": 634033809653760000000000,
+        "target_absolute_bound_before_stress_clearer": 100000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "1000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr2*tr4",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "1",
+          "post_orbit_l1_bound": "1000000000000000000000000000000",
+          "source_row": 26
+        },
+        "denominator": 36520347436056576000000000000,
+        "generator": "tr2*tr4",
+        "integer_bound": 36520347436056576000000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [],
+        "output_monomial_text": "1",
+        "source_row": 26,
+        "stress_denominator": 36520347436056576000000000000,
+        "target_absolute_bound_before_stress_clearer": 1000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "180000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "D",
+          "post_orbit_l1_bound": "180000000000000000000000000000000",
+          "source_row": 27
+        },
+        "denominator": 191102976000000,
+        "generator": "tr3",
+        "integer_bound": 34398535680000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "D"
+          }
+        ],
+        "output_monomial_text": "D",
+        "source_row": 27,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 180000000000000000000000000000000
+      },
+      {
+        "basis_id": "B12",
+        "bound_proof": {
+          "cleared_integer_bound": "180000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "C",
+          "post_orbit_l1_bound": "180000000000000000000000000000000",
+          "source_row": 28
+        },
+        "denominator": 191102976000000,
+        "generator": "tr3",
+        "integer_bound": 34398535680000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "C"
+          }
+        ],
+        "output_monomial_text": "C",
+        "source_row": 28,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 180000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "8400000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A*B",
+          "post_orbit_l1_bound": "8400000000000000000000000000000000",
+          "source_row": 29
+        },
+        "denominator": 191102976000000,
+        "generator": "tr3",
+        "integer_bound": 1605264998400000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          },
+          {
+            "power": 1,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "A*B",
+        "source_row": 29,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 8400000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "58880000000000000000000000000000000",
+          "contributing_full_monomials": 2,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^3",
+          "post_orbit_l1_bound": "58880000000000000000000000000000000",
+          "source_row": 30
+        },
+        "denominator": 191102976000000,
+        "generator": "tr3",
+        "integer_bound": 11252143226880000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 3,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^3",
+        "source_row": 30,
+        "stress_denominator": 191102976000000,
+        "target_absolute_bound_before_stress_clearer": 58880000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "1000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr3*tr3",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "1",
+          "post_orbit_l1_bound": "1000000000000000000000000000000",
+          "source_row": 31
+        },
+        "denominator": 36520347436056576000000000000,
+        "generator": "tr3*tr3",
+        "integer_bound": 36520347436056576000000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [],
+        "output_monomial_text": "1",
+        "source_row": 31,
+        "stress_denominator": 36520347436056576000000000000,
+        "target_absolute_bound_before_stress_clearer": 1000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "160000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr4",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "B",
+          "post_orbit_l1_bound": "160000000000000000000000000000000",
+          "source_row": 32
+        },
+        "denominator": 11007531417600000000,
+        "generator": "tr4",
+        "integer_bound": 1761205026816000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "B"
+          }
+        ],
+        "output_monomial_text": "B",
+        "source_row": 32,
+        "stress_denominator": 11007531417600000000,
+        "target_absolute_bound_before_stress_clearer": 160000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "4000000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr4",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A^2",
+          "post_orbit_l1_bound": "4000000000000000000000000000000000",
+          "source_row": 33
+        },
+        "denominator": 11007531417600000000,
+        "generator": "tr4",
+        "integer_bound": 44030125670400000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 2,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A^2",
+        "source_row": 33,
+        "stress_denominator": 11007531417600000000,
+        "target_absolute_bound_before_stress_clearer": 4000000000000000000000000000000000
+      },
+      {
+        "bound_proof": {
+          "cleared_integer_bound": "100000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr5",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "A",
+          "post_orbit_l1_bound": "100000000000000000000000000000000",
+          "source_row": 34
+        },
+        "denominator": 634033809653760000000000,
+        "generator": "tr5",
+        "integer_bound": 63403380965376000000000000000000000000000000000000000000,
+        "kind": "dependent",
+        "orbit_denominator": 1,
+        "output_monomial": [
+          {
+            "power": 1,
+            "variable": "A"
+          }
+        ],
+        "output_monomial_text": "A",
+        "source_row": 34,
+        "stress_denominator": 634033809653760000000000,
+        "target_absolute_bound_before_stress_clearer": 100000000000000000000000000000000
+      },
+      {
+        "basis_id": "B13",
+        "bound_proof": {
+          "cleared_integer_bound": "1000000000000000000000000000000",
+          "contributing_full_monomials": 1,
+          "full_map_integrality_input": "tau=48*T normalization; predecessor formal_flow declares formal coefficient maps integral",
+          "generator": "tr6",
+          "orbit_denominator_clearer": "1",
+          "output_monomial": "1",
+          "post_orbit_l1_bound": "1000000000000000000000000000000",
+          "source_row": 35
+        },
+        "denominator": 36520347436056576000000000000,
+        "generator": "tr6",
+        "integer_bound": 36520347436056576000000000000000000000000000000000000000000,
+        "kind": "basis",
+        "orbit_denominator": 1,
+        "output_monomial": [],
+        "output_monomial_text": "1",
+        "source_row": 35,
+        "stress_denominator": 36520347436056576000000000000,
+        "target_absolute_bound_before_stress_clearer": 1000000000000000000000000000000
+      }
+    ],
+    "schema": 1,
+    "seeds": [
+      202611130000,
+      202611130001,
+      202611130002,
+      202611130003,
+      202611130004,
+      202611130005,
+      202611130006,
+      202611130007,
+      202611130008,
+      202611130009,
+      202611130010,
+      202611130011,
+      202611130012,
+      202611130013,
+      202611130014,
+      202611130015,
+      202611130016,
+      202611130017,
+      202611130018,
+      202611130019,
+      202611130020,
+      202611130021,
+      202611130022,
+      202611130023,
+      202611130024,
+      202611130025,
+      202611130026,
+      202611130027,
+      202611130028,
+      202611130029,
+      202611130030,
+      202611130031,
+      202611130032,
+      202611130033,
+      202611130034,
+      202611130035,
+      202611130036,
+      202611130037,
+      202611130038,
+      202611130039,
+      202611130040,
+      202611130041,
+      202611130042,
+      202611130043,
+      202611130044,
+      202611130045,
+      202611130046,
+      202611130047,
+      202611130048,
+      202611130049,
+      202611130050,
+      202611130051,
+      202611130052,
+      202611130053,
+      202611130054,
+      202611130055,
+      202611130056,
+      202611130057,
+      202611130058,
+      202611130059,
+      202611130060,
+      202611130061,
+      202611130062,
+      202611130063,
+      202611130064,
+      202611130065,
+      202611130066,
+      202611130067,
+      202611130068,
+      202611130069,
+      202611130070,
+      202611130071
+    ],
+    "target_sha256": "ee73111acf84520d335505f49eb6f2832093a0d82bdfdc2f01e0adb6ecabf11f"
+  },
+  "namespace_sha256": "fee17c07f6c643faf693c706e90aea07caa0075443080d54500e5c1adc7d6365"
+}

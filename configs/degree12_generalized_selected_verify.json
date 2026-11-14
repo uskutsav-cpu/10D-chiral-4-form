@@ -9,7 +9,7 @@
   "seed_start": 2026092501,
   "fit_margin": 4,
   "holdouts": 4,
-  "registry": "data/fixtures/low_degree_registry.json",
+  "registry": "data/combined/registry.json",
   "extras": [
     "I10_1",
     "I10_10",
@@ -90,7 +90,7 @@
     "I8_5",
     "I8_6"
   ],
-  "max_bytes": 5583457484,
+  "max_bytes": 2147483648,
   "max_multiply_adds": 200000000000,
   "exact_blas": true,
   "lie_depth": 3,

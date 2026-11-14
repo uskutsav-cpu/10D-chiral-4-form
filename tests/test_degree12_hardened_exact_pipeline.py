@@ -94,7 +94,7 @@ def test_characteristic_zero_target_proof_has_height_gate():
         if proof.get("structural_zero_leading_target"):
             assert cleared == 0
             zero = proof["zero_certificate"]
-            assert zero["all_theorem_primes_leading_zero"] is True
+            assert zero["symbolic_envelope_zero"] is True
         else:
             assert cleared > 0
             bounds.append(cleared)
@@ -144,10 +144,13 @@ def test_characteristic_zero_target_proof_has_height_gate():
     assert modulus > 2 * max_bound
 
 
-def test_source_rows_consume_QQ_targets_without_integer_cast():
+def test_source_rows_consume_QQ_targets_without_integer_cast(tmp_path):
     from chiral4form.degree12_exact_source_rows import reconstruct_source_rows
 
-    source, kernel = reconstruct_source_rows()
+    source, kernel = reconstruct_source_rows(
+        output=tmp_path / "source.json", kernel_output=tmp_path / "kernel.json",
+        model_crosscheck="saved_evidence",
+    )
 
     # Successful exact reconstruction is the semantic regression:
     # the QQ source coordinates survive into the exact 81D equations.

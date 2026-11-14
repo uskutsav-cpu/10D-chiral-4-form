@@ -208,6 +208,7 @@ def run(output,registry_path=None,source_root=".cache/upstream-degree12-fresh-20
         "model_original_status":model.get("coefficient_status"),"bounds":bounds,
         "primes":primes,"modulus_product":M,"electric_points":points,
         "evaluation_injective":injective,"sample_count":len(samples),
+        "samples":samples,
         "all_integer_residuals_zero":True,
         "claim":"All declared degree-10 polynomial stress-generator basis identities hold over QQ.",
         "limitations":["external invariant-space dimensions are theorem inputs","declared HLS conventions are assumed"]}
