@@ -33,3 +33,17 @@ def test_configuration_mutation_is_rejected_before_success_flags(tmp_path):
     (directory/'configuration.json').write_text(json.dumps({'configuration':{'schema':1,'passed':True},'namespace_sha256':'forged'}))
     with pytest.raises(ValueError,match='configuration digest mismatch'):
         checker.verify(ROOT,directory)
+
+
+def test_prime_launcher_resumes_json_configuration_without_recomputing(tmp_path):
+    import hashlib
+    import shutil
+    import subprocess
+    import sys
+    source=ROOT/'reports/degree12-map'
+    for name in ['configuration.json','prime65521.json']:
+        shutil.copyfile(source/name,tmp_path/name)
+    checkpoint=tmp_path/'prime65521.json'
+    original=hashlib.sha256(checkpoint.read_bytes()).hexdigest()
+    subprocess.run([sys.executable,'scripts/run_degree12_prime.py','--prime','65521','--output',str(tmp_path)],cwd=ROOT,check=True,capture_output=True,text=True)
+    assert hashlib.sha256(checkpoint.read_bytes()).hexdigest()==original

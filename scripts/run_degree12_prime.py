@@ -32,9 +32,10 @@ def main():
     args.output.mkdir(parents=True,exist_ok=True)
     path=args.output/'configuration.json'
     expected={'namespace_sha256':digest,'configuration':config}
-    if path.exists() and json.loads(path.read_text())!=expected:
+    if path.exists() and json.loads(path.read_text())!=json.loads(json.dumps(expected)):
         raise ValueError('incompatible proof configuration')
-    path.write_text(json.dumps(expected,indent=2)+'\n')
+    if not path.exists():
+        path.write_text(json.dumps(expected,indent=2,sort_keys=True)+'\n')
     worker(args.output,args.prime,digest)
     validate_checkpoint(json.loads((args.output/f'prime{args.prime}.json').read_text()),args.prime,digest)
 
