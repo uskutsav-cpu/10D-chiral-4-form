@@ -1,0 +1,97 @@
+name: degree12-sharded-proof
+on:
+  push:
+    branches: [codex/unified-invariants-stress-flows]
+    paths:
+      - .github/workflows/degree12-shards.yml
+      - scripts/run_degree12_prime.py
+      - scripts/prove_combined_degree12_map.py
+      - src/chiral4form/**
+      - data/combined/registry.json
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: degree12-shards-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  VECLIB_MAXIMUM_THREADS: '1'
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      primes: ${{ steps.plan.outputs.primes }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[dev]'
+      - id: plan
+        run: echo "primes=$(python scripts/run_degree12_prime.py --plan)" >> "$GITHUB_OUTPUT"
+  prime:
+    needs: plan
+    if: needs.plan.outputs.primes != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        prime: ${{ fromJSON(needs.plan.outputs.primes) }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[dev]'
+      - name: Evaluate and validate one prime shard
+        env:
+          PROOF_PRIME: ${{ matrix.prime }}
+        run: python -u scripts/run_degree12_prime.py --prime "$PROOF_PRIME"
+      - name: Retain complete or interrupted physical evaluations
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: degree12-prime-${{ matrix.prime }}-${{ github.sha }}
+          path: reports/degree12-map/prime${{ matrix.prime }}.json
+          if-no-files-found: error
+          retention-days: 14
+  aggregate:
+    needs: [plan, prime]
+    if: ${{ always() && needs.plan.result == 'success' && (needs.prime.result == 'success' || needs.prime.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[dev]'
+      - uses: actions/download-artifact@v4
+        if: needs.prime.result == 'success'
+        with:
+          pattern: degree12-prime-*-${{ github.sha }}
+          path: reports/degree12-map/
+          merge-multiple: true
+      - name: Record aggregate provenance
+        run: |
+          python --version > reports/degree12-map/environment.txt
+          python -m pip freeze >> reports/degree12-map/environment.txt
+          git rev-parse HEAD > reports/degree12-map/source-commit.txt
+      - name: Reconstruct and verify the complete physical map
+        run: python scripts/prove_combined_degree12_map.py --verify-only
+      - name: Validate every raw checkpoint input
+        run: python scripts/verify_degree12_checkpoint_inputs.py
+      - name: Independently replay CRT and rational source arithmetic
+        run: python independent/map12_arithmetic.py
+      - name: Retain complete proof evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: degree12-complete-${{ github.sha }}
+          path: reports/degree12-map/
+          if-no-files-found: error
+          retention-days: 30
