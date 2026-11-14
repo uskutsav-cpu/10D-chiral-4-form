@@ -1,0 +1,94 @@
+bridge prime=50021 invariant=1/81 I4_1
+bridge prime=50021 invariant=2/81 I6_1
+bridge prime=50021 invariant=3/81 I6_2
+bridge prime=50021 invariant=4/81 I8_1
+bridge prime=50021 invariant=5/81 I8_2
+bridge prime=50021 invariant=6/81 I8_3
+bridge prime=50021 invariant=7/81 I8_4
+bridge prime=50021 invariant=8/81 I8_5
+bridge prime=50021 invariant=9/81 I8_6
+bridge prime=50021 invariant=10/81 I10_1
+bridge prime=50021 invariant=11/81 I10_2
+bridge prime=50021 invariant=12/81 I10_3
+bridge prime=50021 invariant=13/81 I10_4
+bridge prime=50021 invariant=14/81 I10_5
+bridge prime=50021 invariant=15/81 I10_6
+bridge prime=50021 invariant=16/81 I10_7
+bridge prime=50021 invariant=17/81 I10_8
+bridge prime=50021 invariant=18/81 I10_9
+bridge prime=50021 invariant=19/81 I10_10
+bridge prime=50021 invariant=20/81 I10_11
+bridge prime=50021 invariant=21/81 I10_12
+bridge prime=50021 invariant=22/81 I12_1
+bridge prime=50021 invariant=23/81 I12_2
+bridge prime=50021 invariant=24/81 I12_3
+bridge prime=50021 invariant=25/81 I12_4
+bridge prime=50021 invariant=26/81 I12_5
+bridge prime=50021 invariant=27/81 I12_6
+bridge prime=50021 invariant=28/81 I12_7
+bridge prime=50021 invariant=29/81 I12_8
+bridge prime=50021 invariant=30/81 I12_9
+bridge prime=50021 invariant=31/81 I12_10
+bridge prime=50021 invariant=32/81 I12_11
+bridge prime=50021 invariant=33/81 I12_12
+bridge prime=50021 invariant=34/81 I12_13
+bridge prime=50021 invariant=35/81 I12_14
+bridge prime=50021 invariant=36/81 I12_15
+bridge prime=50021 invariant=37/81 I12_16
+bridge prime=50021 invariant=38/81 I12_17
+bridge prime=50021 invariant=39/81 I12_18
+bridge prime=50021 invariant=40/81 I12_19
+bridge prime=50021 invariant=41/81 I12_20
+bridge prime=50021 invariant=42/81 I12_21
+bridge prime=50021 invariant=43/81 I12_22
+bridge prime=50021 invariant=44/81 I12_23
+bridge prime=50021 invariant=45/81 I12_24
+bridge prime=50021 invariant=46/81 I12_25
+bridge prime=50021 invariant=47/81 I12_26
+bridge prime=50021 invariant=48/81 I12_27
+bridge prime=50021 invariant=49/81 I12_28
+bridge prime=50021 invariant=50/81 I12_29
+bridge prime=50021 invariant=51/81 I12_30
+bridge prime=50021 invariant=52/81 I12_31
+bridge prime=50021 invariant=53/81 I12_32
+bridge prime=50021 invariant=54/81 I12_33
+bridge prime=50021 invariant=55/81 I12_34
+bridge prime=50021 invariant=56/81 I12_35
+bridge prime=50021 invariant=57/81 I12_36
+bridge prime=50021 invariant=58/81 I12_37
+bridge prime=50021 invariant=59/81 I12_38
+bridge prime=50021 invariant=60/81 I12_39
+bridge prime=50021 invariant=61/81 I12_40
+bridge prime=50021 invariant=62/81 I12_41
+bridge prime=50021 invariant=63/81 I12_42
+bridge prime=50021 invariant=64/81 I12_43
+bridge prime=50021 invariant=65/81 I12_44
+bridge prime=50021 invariant=66/81 I12_45
+bridge prime=50021 invariant=67/81 I12_46
+bridge prime=50021 invariant=68/81 I12_47
+bridge prime=50021 invariant=69/81 I12_48
+bridge prime=50021 invariant=70/81 I12_49
+bridge prime=50021 invariant=71/81 I12_50
+bridge prime=50021 invariant=72/81 I12_51
+bridge prime=50021 invariant=73/81 I12_52
+bridge prime=50021 invariant=74/81 I12_53
+bridge prime=50021 invariant=75/81 I12_54
+bridge prime=50021 invariant=76/81 I12_55
+bridge prime=50021 invariant=77/81 I12_56
+bridge prime=50021 invariant=78/81 I12_57
+bridge prime=50021 invariant=79/81 I12_58
+bridge prime=50021 invariant=80/81 I12_59
+bridge prime=50021 invariant=81/81 I12_60
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "fresh flow-engine values compared to separately recomputed foundation certificate; same graph, metric, Hodge and electric coordinates",
+  "rank_certificate_sha256": "36979bbbc3aa550f919af2efdc4666556267f6bc5e15e94142b4c303ba083a25",
+  "points": [
+    {
+      "prime": 50021,
+      "independent_invariants_compared": 81,
+      "dense_tensor_and_graph_definitions_equal": true
+    }
+  ]
+}

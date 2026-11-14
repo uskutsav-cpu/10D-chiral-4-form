@@ -17,6 +17,7 @@ constitute new verification. Read the scope of each check below.
 | Constructive endpoint | endpoint in independent algebra report; `make combined-endpoint` | Exact ten-stage signed-control integration and constraint evaluation |
 | Generalized degree-twelve completion | `reports/generalized-completion-exact.json` | Exact homogeneous leading-block calculation for the selected 78 extras; physics input and filtration hypotheses remain explicit |
 | Regression and falsification checks | `reports/verification/clean-checkout/manifest.json` and raw stage logs | 222 tests; complete quick verification from a clean committed-source export |
+| Full integrated verification | `reports/verification/full-checkout/manifest.json` and raw logs | All 16 stages passed from clean Linux checkout; 222 tests, fresh character/rank/bridge/map8/holdout calculations, complete map replays |
 | Unified manuscript | `manuscript/unified/main.tex`, compiled PDF in `reports/manuscript/` | Research draft; author/expert and novelty review remain necessary |
 
 The new degree-twelve proof explicitly clears the derivative denominator
@@ -34,3 +35,10 @@ Unresolved research questions are complete all-orders orbit equality, finite
 generation/stabilization of the obstruction tower, a global invariant-ring
 presentation, nonanalytic sectors and physical admissibility. They are not
 silently declared solved by the finite-order calculations.
+
+The requirement-by-requirement repository audit is `reports/release-audit.json`.
+The complete bounded degree-twelve result uses six committed local batches and
+seven Linux shards; both full replay paths also passed locally. Two additional
+Mac batches agree with Linux on every saved basis and target vector, recorded
+in `reports/degree12-crosshost/comparison.json`. This cross-host agreement uses
+the same engine and is distinct from the independent tensor implementation.

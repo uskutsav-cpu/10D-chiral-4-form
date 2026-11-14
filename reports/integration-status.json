@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "degree12_physics_proof_verified_integrated_release_audit_pending",
+  "status": "verified_finite_degree12_repository",
   "regression_tests_passed": 222,
   "evidence": {
     "reports/fresh-rank81.json": "b36d8e74565390528d86a29eea513e11e59894c5a667b2be8892edbe54064c50",
@@ -16,10 +16,10 @@
     "reports/degree12-map/strict-input-verification.json": "d2196580cfc92618f39e686e4af94649585dbcf3edd96fe050cf64342cd3cc98",
     "reports/degree12-map/independent-arithmetic.json": "9162a6e84bf744eb30ddcd3679a2a9c49d6a7014888ec0e3fa5d38c42368bee1",
     "reports/degree12-map/provenance.json": "4491303890e4443186153853249d75b44890a54c8d88b645274e91680187d02c",
-    "reports/degree12-crosshost/comparison.json": "bbf87eaccf01b23889bf49d0df1db33f3edc836ad4ea6e3fcca4af60b1a73017"
+    "reports/degree12-crosshost/comparison.json": "bbf87eaccf01b23889bf49d0df1db33f3edc836ad4ea6e3fcca4af60b1a73017",
+    "reports/verification/full-checkout/manifest.json": "02d748fe981cca591cec02d9d17432d891392fe2d754ba296a173b8c64b651e3",
+    "reports/release-audit.json": "1f40e8e55bb0074627957cc16cd4ea9c95a80aad75d541dace9149e16145c671"
   },
-  "remaining_required_work": [
-    "full integrated command from clean checkout",
-    "final manuscript/status and deliverable audit"
-  ]
+  "remaining_required_work": [],
+  "export_boundary": "Final source ZIP/PDF exports and their commit/hash binding are audited separately in the delivered verification summary."
 }

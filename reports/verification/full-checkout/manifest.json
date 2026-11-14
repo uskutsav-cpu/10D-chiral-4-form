@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "level": "full",
+  "status": "passed",
+  "stages": [
+    {
+      "name": "regression",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "seconds": 72.53861658,
+      "log": "reports/verification/full-checkout/regression.log",
+      "log_sha256": "9c7641ab03e6de531a275e1a97615ee0a96d10b2c8688e1e0f505c006c7bdd8d"
+    },
+    {
+      "name": "foundation-arithmetic",
+      "command": [
+        "python",
+        "foundation/science/verify_science.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.16487248900000395,
+      "log": "reports/verification/full-checkout/foundation-arithmetic.log",
+      "log_sha256": "d11fdf4a358e828fbf6ac286cc02d405dcb014041f443cdb94c87c130b4afdc7"
+    },
+    {
+      "name": "independent-orbits",
+      "command": [
+        "python",
+        "independent/verify.py",
+        "--output",
+        "reports/independent-algebra.json"
+      ],
+      "exit_code": 0,
+      "seconds": 13.218196243999998,
+      "log": "reports/verification/full-checkout/independent-orbits.log",
+      "log_sha256": "76f38fc6ddc56843dc5d9839d247bb2fa000b4447a592c02598479c5bf8bbcaa"
+    },
+    {
+      "name": "generalized-completion",
+      "command": [
+        "python",
+        "independent/completion.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8013266339999916,
+      "log": "reports/verification/full-checkout/generalized-completion.log",
+      "log_sha256": "4e49cac241626952d8d3a341f333e5657399d1c959060a8de1dcba992cc89d5a"
+    },
+    {
+      "name": "map8-arithmetic",
+      "command": [
+        "python",
+        "-m",
+        "chiral4form",
+        "verify-map8",
+        "verification/map8/map_certificate.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5121177290000105,
+      "log": "reports/verification/full-checkout/map8-arithmetic.log",
+      "log_sha256": "c257335de50feef3810943ac3c4bcd1d2a7b5e73f95cf011aad2223efbabf509"
+    },
+    {
+      "name": "compile-character",
+      "command": [
+        "clang++",
+        "-std=c++17",
+        "-O3",
+        "foundation/science/character/d5_symmetric_character.cpp",
+        "-o",
+        "build/combined/d5-character"
+      ],
+      "exit_code": 0,
+      "seconds": 6.0566611309999985,
+      "log": "reports/verification/full-checkout/compile-character.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "fresh-character",
+      "command": [
+        "build/combined/d5-character",
+        "22",
+        "reports/fresh-d5"
+      ],
+      "exit_code": 0,
+      "seconds": 3.5489135960000056,
+      "log": "reports/verification/full-checkout/fresh-character.log",
+      "log_sha256": "29db569b8e26ac5e64255ca8c13e59de004f9e54425cfd1abe512cb8a2ae8e77"
+    },
+    {
+      "name": "python-character",
+      "command": [
+        "python",
+        "foundation/science/character/check_character.py",
+        "reports/fresh-d5",
+        "--full-through",
+        "12",
+        "--output",
+        "reports/fresh-character-python.json"
+      ],
+      "exit_code": 0,
+      "seconds": 16.901487218,
+      "log": "reports/verification/full-checkout/python-character.log",
+      "log_sha256": "21081088a0187c5398cb7743a7ce188ff05ee5daf6b4258776ecf6994bda7b7f"
+    },
+    {
+      "name": "rank81",
+      "command": [
+        "python",
+        "foundation/science/rank81/verify.py",
+        "foundation/science/rank81/input.json",
+        "--output",
+        "reports/fresh-rank81.json"
+      ],
+      "exit_code": 0,
+      "seconds": 33.304127058000006,
+      "log": "reports/verification/full-checkout/rank81.log",
+      "log_sha256": "15569bc9b843385621910cebbf2beee743556d5ca881d6f52c13b44a5d91f041"
+    },
+    {
+      "name": "tensor-bridge",
+      "command": [
+        "python",
+        "scripts/verify_combined_tensor_bridge.py"
+      ],
+      "exit_code": 0,
+      "seconds": 37.97276374499998,
+      "log": "reports/verification/full-checkout/tensor-bridge.log",
+      "log_sha256": "5c485cfc93bcb9aa51dc0a3ace1e7105c45104f9c549679fe34198567da13d57"
+    },
+    {
+      "name": "map8-fresh",
+      "command": [
+        "python",
+        "-m",
+        "chiral4form",
+        "verify-map8",
+        "verification/map8/map_certificate.json",
+        "--reevaluate-tensors"
+      ],
+      "exit_code": 0,
+      "seconds": 29.238308743999994,
+      "log": "reports/verification/full-checkout/map8-fresh.log",
+      "log_sha256": "54d58f42e7f60472e82a974b474640a849f8229518ea0b0eb84d3e7797aab8d3"
+    },
+    {
+      "name": "map12-holdouts",
+      "command": [
+        "python",
+        "scripts/check_degree12_physics_holdouts.py"
+      ],
+      "exit_code": 0,
+      "seconds": 81.03205130000003,
+      "log": "reports/verification/full-checkout/map12-holdouts.log",
+      "log_sha256": "9b558c7a288d78708bcd9d965e7c68f3d6f2654e93844201305f376ab1b457b0"
+    },
+    {
+      "name": "map10-full",
+      "command": [
+        "python",
+        "-c",
+        "from chiral4form.degree10_map_proof import run; run('reports/degree10-map', registry_path='data/combined/registry.json')"
+      ],
+      "exit_code": 0,
+      "seconds": 15.470134497999993,
+      "log": "reports/verification/full-checkout/map10-full.log",
+      "log_sha256": "d4779f9ce427fea201b34f24721324d8eaadc07945e6ba4ef98a0a7b5efdcacc"
+    },
+    {
+      "name": "map12-full",
+      "command": [
+        "python",
+        "scripts/resume_degree12_proof.py",
+        "--workers",
+        "2"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7550331199999505,
+      "log": "reports/verification/full-checkout/map12-full.log",
+      "log_sha256": "9a83215457ddeb47a8d9b32acc52412b47a379d2e8f327705a9201f88739d28e"
+    },
+    {
+      "name": "map12-strict-replay",
+      "command": [
+        "python",
+        "scripts/verify_degree12_checkpoint_inputs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7475294019999978,
+      "log": "reports/verification/full-checkout/map12-strict-replay.log",
+      "log_sha256": "9c466f7346e6040748dc407089fdac1afe246caa972d3c03faaf948fc0f3a472"
+    },
+    {
+      "name": "map12-independent-arithmetic",
+      "command": [
+        "python",
+        "independent/map12_arithmetic.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5980124609999962,
+      "log": "reports/verification/full-checkout/map12-independent-arithmetic.log",
+      "log_sha256": "a770035e5a302ea29a79b7a423d63417da1f23b60ea50092dbd7225eb71ae340"
+    }
+  ],
+  "scope": "fresh verification plus bounded arithmetic tensor map proofs through degree12",
+  "source_commit": "66de36fc7731c6fea0c0b9c97027a0a36c0b6354",
+  "workflow_run": "https://github.com/uskutsav-cpu/10D-chiral-4-form/actions/runs/43545082038",
+  "checkout": "clean actions/checkout of the committed source and raw proof data; no development-only ignored files",
+  "regression_tests_passed": 222,
+  "stage_count": 16,
+  "outputs_sha256": {
+    "reports/verification/full-checkout/fresh-d5.json": "80878953f32a62cd7c5650a89e10acd24deb21eec633f96ffc4129b89bffe2db",
+    "reports/verification/full-checkout/fresh-character-python.json": "c8e1b7622d1b3a71dc882550d25cd2d7a742cf2a593028c30c4115f8364735db",
+    "reports/verification/full-checkout/fresh-rank81.json": "36979bbbc3aa550f919af2efdc4666556267f6bc5e15e94142b4c303ba083a25",
+    "reports/verification/full-checkout/tensor-bridge.json": "c79038ebc2181d7f7a96561660992821f72cf321dc21ce3dba5e18a67dfd2496",
+    "reports/independent-algebra.json": "8049f981a8bf645684c640c55746deeaa0ec38455190409bc1adb76e79e8559b",
+    "reports/generalized-completion-exact.json": "f9a517763fefb79739a378e1ca4de6576892bb0ab1d5eeb6fe536ef59ef12996",
+    "reports/degree12-physical-holdouts.json": "2fb30958ea37f62cd4a79ce8c67cd7a8eab03102a33a9f42ab2f08779412fa0b",
+    "reports/degree10-map/map_certificate.json": "15b29d8f1005f59c7435edf307e7d3f59ac847faf27e9aa708c188e1d6994327",
+    "reports/degree12-map/map_certificate.json": "a8f6b951e3fd7f0e89b3fd4af6a7e39a1311794d45d3872d6e9b59246baa7727",
+    "reports/degree12-map/strict-input-verification.json": "d2196580cfc92618f39e686e4af94649585dbcf3edd96fe050cf64342cd3cc98",
+    "reports/degree12-map/independent-arithmetic.json": "9162a6e84bf744eb30ddcd3679a2a9c49d6a7014888ec0e3fa5d38c42368bee1",
+    "foundation/science/character/independent-d5-weights.tsv": "c14f8e239a757fc5deba58d4ad5695edf2913c1a12c8c96d515b305c2f3ee0bf"
+  },
+  "command_note": "Absolute executables normalized to basenames and retained raw logs relocated; commands otherwise preserve the executed arguments",
+  "map_replay_scope": "degree10/degree12 use their complete compatible physical checkpoints; fresh character/rank/bridge/map8/holdout stages actually recompute"
+}

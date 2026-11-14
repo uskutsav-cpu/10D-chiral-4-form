@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "status": "repository_requirements_verified",
+  "finite_field_degree_cutoff": 12,
+  "full_verification_source_commit": "66de36fc7731c6fea0c0b9c97027a0a36c0b6354",
+  "full_verification_run": "https://github.com/uskutsav-cpu/10D-chiral-4-form/actions/runs/43545082038",
+  "requirements": [
+    {
+      "id": 1,
+      "requirement": "Preserve and hash-bind both source projects and the complete invariant registry",
+      "status": "verified",
+      "materialized_foundation_files": 270,
+      "coefficient_slots": 96,
+      "homogeneous_dimensions": {
+        "4": 1,
+        "6": 2,
+        "8": 7,
+        "10": 14,
+        "12": 72
+      },
+      "complete_archive_reproduced_from_pinned_git_commit": true,
+      "foundation_commit": "ac4faac39a3a0728d8148e8e1cbb6b0be4bb366d",
+      "flow_base_commit": "bb5fd8cbceb9c25a1970498ab0ec938cc3300493"
+    },
+    {
+      "id": 2,
+      "requirement": "Fresh independent character, rank/orbit certificate and tensor-engine bridge",
+      "status": "verified",
+      "jacobian_rank": 81,
+      "lorentz_orbit_rank": 45,
+      "bridge_values": 81,
+      "character_recurrence_exhaustive_through": 12
+    },
+    {
+      "id": 3,
+      "requirement": "Certify tensor-to-polynomial maps through the chosen cutoff",
+      "status": "verified_under_declared_physics_and_bound_assumptions",
+      "degree10": {
+        "primes": 13,
+        "points": 14
+      },
+      "degree12": {
+        "primes": 13,
+        "points": 72,
+        "sources": 36,
+        "exact_comparisons": 2592
+      },
+      "strict_and_engine_free_replay": true
+    },
+    {
+      "id": 4,
+      "requirement": "Independent nonlinear ideals, tangency, constructive endpoints and corruption tests",
+      "status": "verified",
+      "orbit_dimensions": [
+        4,
+        6,
+        10
+      ],
+      "degree12_constraints": 68,
+      "endpoint_controls": 10,
+      "regression_tests": 222,
+      "corruption_cases": [
+        "octic sign",
+        "omitted generator",
+        "source tail",
+        "kernel with success flags",
+        "prime relabeling",
+        "noncanonical vector",
+        "forged configuration"
+      ]
+    },
+    {
+      "id": 5,
+      "requirement": "Exact generalized completion without unsupported minimality claims",
+      "status": "verified_under_declared_degree_filtration",
+      "selected_extras": 78,
+      "nonsingular_block_dimensions": [
+        1,
+        2,
+        7,
+        14,
+        72
+      ],
+      "arbitrary_scalar_or_nonlinear_control_minimum_claimed": false
+    },
+    {
+      "id": 6,
+      "requirement": "Coherent manuscript, source locks, raw logs, runnable commands and clean-checkout verification",
+      "status": "verified",
+      "full_stages": 16,
+      "manuscript_pages": 6,
+      "visual_inspection": "pages 1-4 unchanged from inspected draft; updated pages 5-6 inspected; no overfull boxes",
+      "review_branch": "codex/unified-invariants-stress-flows",
+      "draft_pr": "https://github.com/uskutsav-cpu/10D-chiral-4-form/pull/1",
+      "default_branches_unchanged": true
+    }
+  ],
+  "evidence_sha256": {
+    "data/combined/source-lock.json": "630c46a299c3ce36d930d00a2e44cb9e55dc6800c5e231436200a964af0440e2",
+    "data/combined/registry.json": "af49a4f92e4ce01a88abffb2c67f343783ed950e43989773fef8027df28b058c",
+    "reports/verification/full-checkout/manifest.json": "02d748fe981cca591cec02d9d17432d891392fe2d754ba296a173b8c64b651e3",
+    "reports/independent-algebra.json": "8049f981a8bf645684c640c55746deeaa0ec38455190409bc1adb76e79e8559b",
+    "reports/generalized-completion-exact.json": "f9a517763fefb79739a378e1ca4de6576892bb0ab1d5eeb6fe536ef59ef12996",
+    "reports/reachable-classification.json": "fd630b626f6175a7abfc97264ae119fb56d3d7097fda0e0bf915095142db2168",
+    "reports/unreachable-example.json": "05be001e36fcae57218321be6480a4b0a35e8da9f53b6c946093f1cef9806408",
+    "reports/degree10-map/map_certificate.json": "15b29d8f1005f59c7435edf307e7d3f59ac847faf27e9aa708c188e1d6994327",
+    "reports/degree12-map/map_certificate.json": "a8f6b951e3fd7f0e89b3fd4af6a7e39a1311794d45d3872d6e9b59246baa7727",
+    "reports/degree12-map/strict-input-verification.json": "d2196580cfc92618f39e686e4af94649585dbcf3edd96fe050cf64342cd3cc98",
+    "reports/degree12-map/independent-arithmetic.json": "9162a6e84bf744eb30ddcd3679a2a9c49d6a7014888ec0e3fa5d38c42368bee1",
+    "reports/manuscript/main.pdf": "a9fdd5d90a84426cd8b4b12a253ad4d565cb8ce1d48cde78c544e9deb6ff8a5e",
+    "manuscript/unified/main.tex": "1a7b9cf0f362cb249ed16e7b8f795f786b56e62c7e9f99f2f82efc39b9161dd6",
+    "CLAIMS.md": "27d3196ab4e9e0704306eb2eda64d03cd48a7ddd8664fb893b69bafa0423b231",
+    "docs/PHYSICS_CONVENTION_AUDIT.md": "2a5aa0ff4ad1b4cc8a293eb9ee822d5295194b67ad2fe6127472916ca51fa2a6"
+  },
+  "research_boundaries": [
+    "all-orders orbit equality remains open",
+    "global polynomial invariant-ring presentation not established",
+    "physical causality/unitarity and nonanalytic ModMax sectors not classified",
+    "arbitrary-scalar minimality and novelty not established"
+  ],
+  "export_boundary": "Final ZIP/PDF hashes and release commit are recorded separately in the delivered verification summary after export."
+}

@@ -1,0 +1,2 @@
+{"status": "bounded_CRT_degree12_source_map_verified", "primes": 13, "points": 72, "sources": 36}
+{"schema": 1, "passed": true, "raw_checkpoint_schema_verified": true, "all_bounded_arithmetic_replayed": true, "map_namespace": "fee17c07f6c643faf693c706e90aea07caa0075443080d54500e5c1adc7d6365", "source_map_status": "bounded_CRT_degree12_source_map_verified", "validator_sha256": "9bc7cf3f17973a163099b5473bcd323f204ce78f4fc69629e07fbc849366c65b", "scope": "strict canonical prime/point/vector inputs plus complete bounded-CRT identity replay"}
