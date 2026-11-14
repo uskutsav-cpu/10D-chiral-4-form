@@ -1,0 +1,557 @@
+{
+  "catalog": {
+    "candidate_count": 187392,
+    "catalog_sha256": "17b112b6aa4e52ad9a2786802397d03675d9fd5910d59f21208aaa540b01d9e7",
+    "directory": "work/degree10-catalog",
+    "shards": 64,
+    "unique_canonical_ids": 187392
+  },
+  "claim": "Complete degree-10 trace basis: 12 connected primitive directions plus the two lower products I4_1*I6_1 and I4_1*I6_2. Exact value-space rank 14 and cumulative generic Jacobian rank 21 through degree 10.",
+  "degree10_basis": [
+    {
+      "graph": "n10[04^3,07^1,09^1,15^1,16^2,18^2,25^2,27^2,29^1,36^3,38^1,39^1,48^2,57^1,59^1,79^1]",
+      "graph_id": "0001495ef332979b1c6b18f5cef95e7882c450f067157cb0db2792b62acf7138",
+      "id": "I10_1",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[05^2,06^2,09^1,15^3,18^1,19^1,26^3,29^2,37^2,38^2,39^1,47^3,48^2]",
+      "graph_id": "000543fa35a4866efb15e3099e97f29be6b66fadb7c45af6a8fb7c3be5e1f227",
+      "id": "I10_2",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[04^3,07^2,15^1,16^3,19^1,25^2,28^2,29^1,36^1,37^2,38^1,39^1,48^1,49^1,57^1,58^1,69^1]",
+      "graph_id": "0005e83d3893c6d5f5354d5e18e60288fb8901b80408304784d6f56e2d0691e3",
+      "id": "I10_3",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[04^2,06^1,07^2,15^3,17^1,19^1,26^4,28^1,37^2,38^1,39^2,48^2,49^1,58^1,59^1]",
+      "graph_id": "0009b3984159022223d531732dc6c9817e1291223c77bc88f0f89914faa1b997",
+      "id": "I10_4",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[04^2,06^1,07^1,09^1,15^1,17^1,18^1,19^2,25^3,27^2,36^3,38^2,46^1,48^1,49^1,58^1,79^1]",
+      "graph_id": "000eceb8b90d808c71f50edd6b157808a7d1d7a8dbcf85110f435827b2599f6b",
+      "id": "I10_5",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[04^2,06^1,08^1,09^1,15^1,16^1,18^1,19^2,25^2,27^2,28^1,36^3,37^1,39^1,47^1,48^2,57^1,59^1]",
+      "graph_id": "00103114cb03bcbea333187e32481714e205eb9b2e5489d16ceb8a256f103e45",
+      "id": "I10_6",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[03^1,05^2,07^1,09^1,14^2,16^1,18^2,26^4,27^1,35^2,38^1,39^1,47^1,48^1,49^1,59^1,78^1,79^1]",
+      "graph_id": "00122feb3066882ae589c2d8af02d8759895349d80eed9f6c0730c35488b1cc0",
+      "id": "I10_7",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[04^2,07^1,09^2,15^4,18^1,26^2,27^1,28^2,36^2,37^3,48^2,49^1,59^1,69^1]",
+      "graph_id": "001400462ef08490abf854bb65f40854002ee8f427d940ea83d5dbd3304aafbb",
+      "id": "I10_8",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[04^3,07^1,09^1,15^2,16^3,25^2,27^1,28^1,29^1,36^1,37^2,38^2,48^1,49^1,59^1,69^1,78^1]",
+      "graph_id": "0014d08d6f6a62630c67345e18b672baee082f4b04f49d545bf961e5d20f20e5",
+      "id": "I10_9",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[04^2,05^2,08^1,15^3,17^1,19^1,26^1,27^1,28^2,29^1,36^3,38^1,39^1,47^2,49^1,68^1,79^1]",
+      "graph_id": "001805907b08b8b96da3dec6c81584b01238187cbb5c0239ca2afd50bbf22b56",
+      "id": "I10_10",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[03^1,06^2,07^1,09^1,14^1,16^2,17^2,25^4,28^1,36^1,38^2,39^1,47^2,48^1,49^1,59^1,89^1]",
+      "graph_id": "001830333528cc45180d48d83ea631213bead7fcfc6eca0cf5bc0204db06618d",
+      "id": "I10_11",
+      "kind": "connected_primitive"
+    },
+    {
+      "graph": "n10[03^1,05^2,08^1,09^1,14^2,16^1,17^1,19^1,26^2,27^1,28^2,35^2,38^1,39^1,46^1,47^2,58^1,69^1,79^1]",
+      "graph_id": "00ba5468baeda27ecc86a613bd2cb7b7459aa4f0a225cbbb7a75098af5e4249e",
+      "id": "I10_12",
+      "kind": "connected_primitive"
+    },
+    {
+      "expression": "I4_1*I6_1",
+      "id": "I4_1*I6_1",
+      "kind": "lower_product"
+    },
+    {
+      "expression": "I4_1*I6_2",
+      "id": "I4_1*I6_2",
+      "kind": "lower_product"
+    }
+  ],
+  "discovery": {
+    "cumulative_rank": 21,
+    "evaluated": 132,
+    "lower_rank": 9,
+    "max_greedy_peak": 100000000,
+    "new_degree10": 12,
+    "ordering": "hash-bounded",
+    "prime": 32749,
+    "seconds": 27.309557249987847,
+    "seed": 20260729
+  },
+  "generators": [
+    {
+      "discovery_rank": 10,
+      "discovery_value": 25995,
+      "evaluation_seconds": 0.110032,
+      "graph": "n10[04^3,07^1,09^1,15^1,16^2,18^2,25^2,27^2,29^1,36^3,38^1,39^1,48^2,57^1,59^1,79^1]",
+      "graph_id": "0001495ef332979b1c6b18f5cef95e7882c450f067157cb0db2792b62acf7138",
+      "greedy_plan_cost": [
+        100000000,
+        753300000
+      ],
+      "id": "I10_1",
+      "optimal_plan_cost": [
+        100000000,
+        753030000
+      ],
+      "order": 10,
+      "residue": 27,
+      "shard_index": 7053
+    },
+    {
+      "discovery_rank": 11,
+      "discovery_value": 23250,
+      "evaluation_seconds": 0.060182,
+      "graph": "n10[05^2,06^2,09^1,15^3,18^1,19^1,26^3,29^2,37^2,38^2,39^1,47^3,48^2]",
+      "graph_id": "000543fa35a4866efb15e3099e97f29be6b66fadb7c45af6a8fb7c3be5e1f227",
+      "greedy_plan_cost": [
+        10000000,
+        186030000
+      ],
+      "id": "I10_2",
+      "optimal_plan_cost": [
+        10000000,
+        183300300
+      ],
+      "order": 10,
+      "residue": 19,
+      "shard_index": 80
+    },
+    {
+      "discovery_rank": 12,
+      "discovery_value": 28214,
+      "evaluation_seconds": 0.203683,
+      "graph": "n10[04^3,07^2,15^1,16^3,19^1,25^2,28^2,29^1,36^1,37^2,38^1,39^1,48^1,49^1,57^1,58^1,69^1]",
+      "graph_id": "0005e83d3893c6d5f5354d5e18e60288fb8901b80408304784d6f56e2d0691e3",
+      "greedy_plan_cost": [
+        100000000,
+        1320300000
+      ],
+      "id": "I10_3",
+      "optimal_plan_cost": [
+        100000000,
+        1320030000
+      ],
+      "order": 10,
+      "residue": 27,
+      "shard_index": 8535
+    },
+    {
+      "discovery_rank": 13,
+      "discovery_value": 30240,
+      "evaluation_seconds": 0.136529,
+      "graph": "n10[04^2,06^1,07^2,15^3,17^1,19^1,26^4,28^1,37^2,38^1,39^2,48^2,49^1,58^1,59^1]",
+      "graph_id": "0009b3984159022223d531732dc6c9817e1291223c77bc88f0f89914faa1b997",
+      "greedy_plan_cost": [
+        100000000,
+        1266300000
+      ],
+      "id": "I10_4",
+      "optimal_plan_cost": [
+        100000000,
+        1266000300
+      ],
+      "order": 10,
+      "residue": 54,
+      "shard_index": 852
+    },
+    {
+      "discovery_rank": 14,
+      "discovery_value": 13864,
+      "evaluation_seconds": 0.177643,
+      "graph": "n10[04^2,06^1,07^1,09^1,15^1,17^1,18^1,19^2,25^3,27^2,36^3,38^2,46^1,48^1,49^1,58^1,79^1]",
+      "graph_id": "000eceb8b90d808c71f50edd6b157808a7d1d7a8dbcf85110f435827b2599f6b",
+      "greedy_plan_cost": [
+        100000000,
+        1320300000
+      ],
+      "id": "I10_5",
+      "optimal_plan_cost": [
+        100000000,
+        1320030000
+      ],
+      "order": 10,
+      "residue": 33,
+      "shard_index": 120
+    },
+    {
+      "discovery_rank": 15,
+      "discovery_value": 10670,
+      "evaluation_seconds": 0.450004,
+      "graph": "n10[04^2,06^1,08^1,09^1,15^1,16^1,18^1,19^2,25^2,27^2,28^1,36^3,37^1,39^1,47^1,48^2,57^1,59^1]",
+      "graph_id": "00103114cb03bcbea333187e32481714e205eb9b2e5489d16ceb8a256f103e45",
+      "greedy_plan_cost": [
+        100000000,
+        2130300000
+      ],
+      "id": "I10_6",
+      "optimal_plan_cost": [
+        100000000,
+        2130030000
+      ],
+      "order": 10,
+      "residue": 30,
+      "shard_index": 6797
+    },
+    {
+      "discovery_rank": 16,
+      "discovery_value": 19658,
+      "evaluation_seconds": 0.269397,
+      "graph": "n10[03^1,05^2,07^1,09^1,14^2,16^1,18^2,26^4,27^1,35^2,38^1,39^1,47^1,48^1,49^1,59^1,78^1,79^1]",
+      "graph_id": "00122feb3066882ae589c2d8af02d8759895349d80eed9f6c0730c35488b1cc0",
+      "greedy_plan_cost": [
+        100000000,
+        1266300000
+      ],
+      "id": "I10_7",
+      "optimal_plan_cost": [
+        100000000,
+        1266000300
+      ],
+      "order": 10,
+      "residue": 63,
+      "shard_index": 3208
+    },
+    {
+      "discovery_rank": 17,
+      "discovery_value": 3556,
+      "evaluation_seconds": 0.178545,
+      "graph": "n10[04^2,07^1,09^2,15^4,18^1,26^2,27^1,28^2,36^2,37^3,48^2,49^1,59^1,69^1]",
+      "graph_id": "001400462ef08490abf854bb65f40854002ee8f427d940ea83d5dbd3304aafbb",
+      "greedy_plan_cost": [
+        100000000,
+        726300000
+      ],
+      "id": "I10_8",
+      "optimal_plan_cost": [
+        100000000,
+        726000300
+      ],
+      "order": 10,
+      "residue": 55,
+      "shard_index": 589
+    },
+    {
+      "discovery_rank": 18,
+      "discovery_value": 26882,
+      "evaluation_seconds": 0.17947,
+      "graph": "n10[04^3,07^1,09^1,15^2,16^3,25^2,27^1,28^1,29^1,36^1,37^2,38^2,48^1,49^1,59^1,69^1,78^1]",
+      "graph_id": "0014d08d6f6a62630c67345e18b672baee082f4b04f49d545bf961e5d20f20e5",
+      "greedy_plan_cost": [
+        100000000,
+        1320300000
+      ],
+      "id": "I10_9",
+      "optimal_plan_cost": [
+        100000000,
+        1320030000
+      ],
+      "order": 10,
+      "residue": 27,
+      "shard_index": 2758
+    },
+    {
+      "discovery_rank": 19,
+      "discovery_value": 2247,
+      "evaluation_seconds": 0.122934,
+      "graph": "n10[04^2,05^2,08^1,15^3,17^1,19^1,26^1,27^1,28^2,29^1,36^3,38^1,39^1,47^2,49^1,68^1,79^1]",
+      "graph_id": "001805907b08b8b96da3dec6c81584b01238187cbb5c0239ca2afd50bbf22b56",
+      "greedy_plan_cost": [
+        100000000,
+        780300000
+      ],
+      "id": "I10_10",
+      "optimal_plan_cost": [
+        100000000,
+        780030000
+      ],
+      "order": 10,
+      "residue": 4,
+      "shard_index": 4040
+    },
+    {
+      "discovery_rank": 20,
+      "discovery_value": 2829,
+      "evaluation_seconds": 0.264412,
+      "graph": "n10[03^1,06^2,07^1,09^1,14^1,16^2,17^2,25^4,28^1,36^1,38^2,39^1,47^2,48^1,49^1,59^1,89^1]",
+      "graph_id": "001830333528cc45180d48d83ea631213bead7fcfc6eca0cf5bc0204db06618d",
+      "greedy_plan_cost": [
+        100000000,
+        1806300000
+      ],
+      "id": "I10_11",
+      "optimal_plan_cost": [
+        100000000,
+        1806000300
+      ],
+      "order": 10,
+      "residue": 38,
+      "shard_index": 6943
+    },
+    {
+      "discovery_rank": 21,
+      "discovery_value": 1716,
+      "evaluation_seconds": 0.275493,
+      "graph": "n10[03^1,05^2,08^1,09^1,14^2,16^1,17^1,19^1,26^2,27^1,28^2,35^2,38^1,39^1,46^1,47^2,58^1,69^1,79^1]",
+      "graph_id": "00ba5468baeda27ecc86a613bd2cb7b7459aa4f0a225cbbb7a75098af5e4249e",
+      "greedy_plan_cost": [
+        100000000,
+        1860300000
+      ],
+      "id": "I10_12",
+      "optimal_plan_cost": [
+        100000000,
+        1860030000
+      ],
+      "order": 10,
+      "residue": 5,
+      "shard_index": 419
+    }
+  ],
+  "literature_targets": {
+    "cumulative_jacobian_rank": 21,
+    "degree10_scalar_space_dimension": 14,
+    "lower_product_directions": 2,
+    "new_primitive_directions": 12
+  },
+  "peak_rss_bytes": 592052224,
+  "proof_scope": {
+    "arithmetic": "exact finite fields; no floating-point rank test",
+    "catalog_enumeration": "exhaustive connected graph catalog generated and verified; Hilbert-guided discovery stopped after rank target",
+    "not_claimed": "This is not a claim that all 81 invariants form a complete polynomial generating set.",
+    "primitive_completeness": "12 independent connected directions attain the published Hilbert-series upper bound of 12 new degree-10 primitives"
+  },
+  "schema": 1,
+  "validation": {
+    "32719": {
+      "jacobian_samples": [
+        {
+          "all_degree10_values_nonzero": true,
+          "cumulative_rank": 21,
+          "lower_rank_pattern": {
+            "4": 1,
+            "6": 3,
+            "8": 9
+          },
+          "new_degree10": 12,
+          "seconds": 3.545942,
+          "seed": 20260729
+        },
+        {
+          "all_degree10_values_nonzero": true,
+          "cumulative_rank": 21,
+          "lower_rank_pattern": {
+            "4": 1,
+            "6": 3,
+            "8": 9
+          },
+          "new_degree10": 12,
+          "seconds": 3.697768,
+          "seed": 20260730
+        },
+        {
+          "all_degree10_values_nonzero": true,
+          "cumulative_rank": 21,
+          "lower_rank_pattern": {
+            "4": 1,
+            "6": 3,
+            "8": 9
+          },
+          "new_degree10": 12,
+          "seconds": 3.301321,
+          "seed": 20260731
+        }
+      ],
+      "optimized_reference_matches": [],
+      "seconds": 22.69503,
+      "value_space": {
+        "basis": [
+          "I10_1",
+          "I10_2",
+          "I10_3",
+          "I10_4",
+          "I10_5",
+          "I10_6",
+          "I10_7",
+          "I10_8",
+          "I10_9",
+          "I10_10",
+          "I10_11",
+          "I10_12",
+          "I4_1*I6_1",
+          "I4_1*I6_2"
+        ],
+        "dimension": 14,
+        "pivot_seeds": [
+          20260801,
+          20260802,
+          20260803,
+          20260804,
+          20260805,
+          20260806,
+          20260807,
+          20260808,
+          20260809,
+          20260810,
+          20260811,
+          20260812,
+          20260813,
+          20260814
+        ],
+        "rank": 14,
+        "sample_seeds": [
+          20260801,
+          20260802,
+          20260803,
+          20260804,
+          20260805,
+          20260806,
+          20260807,
+          20260808,
+          20260809,
+          20260810,
+          20260811,
+          20260812,
+          20260813,
+          20260814,
+          20260815,
+          20260816
+        ]
+      }
+    },
+    "32749": {
+      "jacobian_samples": [
+        {
+          "all_degree10_values_nonzero": true,
+          "cumulative_rank": 21,
+          "lower_rank_pattern": {
+            "4": 1,
+            "6": 3,
+            "8": 9
+          },
+          "new_degree10": 12,
+          "seconds": 3.575091,
+          "seed": 20260729
+        },
+        {
+          "all_degree10_values_nonzero": true,
+          "cumulative_rank": 21,
+          "lower_rank_pattern": {
+            "4": 1,
+            "6": 3,
+            "8": 9
+          },
+          "new_degree10": 12,
+          "seconds": 3.284296,
+          "seed": 20260730
+        },
+        {
+          "all_degree10_values_nonzero": true,
+          "cumulative_rank": 21,
+          "lower_rank_pattern": {
+            "4": 1,
+            "6": 3,
+            "8": 9
+          },
+          "new_degree10": 12,
+          "seconds": 3.043449,
+          "seed": 20260731
+        }
+      ],
+      "optimized_reference_matches": [
+        "I10_1",
+        "I10_2",
+        "I10_3",
+        "I10_4",
+        "I10_5",
+        "I10_6",
+        "I10_7",
+        "I10_8",
+        "I10_9",
+        "I10_10",
+        "I10_11",
+        "I10_12"
+      ],
+      "seconds": 31.088914,
+      "value_space": {
+        "basis": [
+          "I10_1",
+          "I10_2",
+          "I10_3",
+          "I10_4",
+          "I10_5",
+          "I10_6",
+          "I10_7",
+          "I10_8",
+          "I10_9",
+          "I10_10",
+          "I10_11",
+          "I10_12",
+          "I4_1*I6_1",
+          "I4_1*I6_2"
+        ],
+        "dimension": 14,
+        "pivot_seeds": [
+          20260801,
+          20260802,
+          20260803,
+          20260804,
+          20260805,
+          20260806,
+          20260807,
+          20260808,
+          20260809,
+          20260810,
+          20260811,
+          20260812,
+          20260813,
+          20260814
+        ],
+        "rank": 14,
+        "sample_seeds": [
+          20260801,
+          20260802,
+          20260803,
+          20260804,
+          20260805,
+          20260806,
+          20260807,
+          20260808,
+          20260809,
+          20260810,
+          20260811,
+          20260812,
+          20260813,
+          20260814,
+          20260815,
+          20260816
+        ]
+      }
+    }
+  },
+  "validation_seconds": 53.786203
+}

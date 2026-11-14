@@ -1,0 +1,634 @@
+{
+  "key": "cbf4924747f659b0bf1cea219431a2a6a4966e5d0cf953b4e74853408add6f26",
+  "payload": {
+    "basis_values": {
+      "10": [
+        37335,
+        61146,
+        36106,
+        42014,
+        12108,
+        54272,
+        5447,
+        20161,
+        37509,
+        16834,
+        38948,
+        9013,
+        25480,
+        22697
+      ],
+      "4": [
+        44016
+      ],
+      "6": [
+        33043,
+        39578
+      ],
+      "8": [
+        39979,
+        31853,
+        29666,
+        20733,
+        2388,
+        7087,
+        24571
+      ]
+    },
+    "electric": [
+      0,
+      1,
+      -1,
+      0,
+      0,
+      -1,
+      -1,
+      0,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      -1,
+      1,
+      0,
+      -1,
+      0,
+      1,
+      -1,
+      1,
+      -1,
+      0,
+      -1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      0,
+      1,
+      -1,
+      -1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      -1,
+      0,
+      -1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      -1,
+      1,
+      0,
+      -1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      -1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      -1,
+      -1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      -1,
+      0,
+      1,
+      -1,
+      0,
+      0,
+      1,
+      0,
+      -1
+    ],
+    "prime": 65419,
+    "residuals": [
+      {
+        "cleared_residual": 0,
+        "degree": 4,
+        "generator": "tr1",
+        "monomial": [
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 6,
+        "generator": "tr1",
+        "monomial": [
+          "I6_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 6,
+        "generator": "tr1",
+        "monomial": [
+          "I6_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1",
+        "monomial": [
+          "I4_1^2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1",
+        "monomial": [
+          "I8_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1",
+        "monomial": [
+          "I8_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1",
+        "monomial": [
+          "I8_3"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1",
+        "monomial": [
+          "I8_4"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1",
+        "monomial": [
+          "I8_5"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1",
+        "monomial": [
+          "I8_6"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_10"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_11"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_12"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_3"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_4"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_5"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_6"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_7"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_8"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I10_9"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I4_1*I6_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1",
+        "monomial": [
+          "I4_1*I6_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1*tr1",
+        "monomial": [
+          "I4_1",
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1*tr1",
+        "monomial": [
+          "I4_1",
+          "I6_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1*tr1",
+        "monomial": [
+          "I4_1",
+          "I6_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr1*tr2",
+        "monomial": [
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1*tr2",
+        "monomial": [
+          "I4_1",
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1*tr2",
+        "monomial": [
+          "I6_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1*tr2",
+        "monomial": [
+          "I6_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr1*tr3",
+        "monomial": [
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 4,
+        "generator": "tr2",
+        "monomial": []
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 6,
+        "generator": "tr2",
+        "monomial": [
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr2",
+        "monomial": [
+          "I4_1",
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr2",
+        "monomial": [
+          "I6_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr2",
+        "monomial": [
+          "I6_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I4_1",
+          "I4_1",
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I4_1",
+          "I6_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I4_1",
+          "I6_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I4_1^2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I8_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I8_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I8_3"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I8_4"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I8_5"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2",
+        "monomial": [
+          "I8_6"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr2*tr2",
+        "monomial": []
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2*tr2",
+        "monomial": [
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr2*tr3",
+        "monomial": []
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 6,
+        "generator": "tr3",
+        "monomial": []
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr3",
+        "monomial": [
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr3",
+        "monomial": [
+          "I4_1",
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr3",
+        "monomial": [
+          "I6_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr3",
+        "monomial": [
+          "I6_2"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 8,
+        "generator": "tr4",
+        "monomial": []
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr4",
+        "monomial": [
+          "I4_1"
+        ]
+      },
+      {
+        "cleared_residual": 0,
+        "degree": 10,
+        "generator": "tr5",
+        "monomial": []
+      }
+    ]
+  },
+  "payload_sha256": "98629a032998370a0e87ba8c1c8a51bafcabf11bece84b73e203cfc4c23629be",
+  "stage": "map_sample"
+}

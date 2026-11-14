@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "status": "fresh_physical_holdouts_passed",
+  "scope": "finite-field physical evaluations at fresh primes and seeds; not a characteristic-zero identity proof",
+  "target_certificate_sha256": "ee73111acf84520d335505f49eb6f2832093a0d82bdfdc2f01e0adb6ecabf11f",
+  "reports": [
+    {
+      "prime": 50033,
+      "seed": 2026111303,
+      "source_residuals": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_36_zero": true
+    }
+  ]
+}

@@ -187,6 +187,7 @@ def _exact_linear_combination(rows: dict[int, list[Fraction]], dependency: dict)
 def reconstruct_source_rows(
     output: str | Path = "verification/all_orders/degree12_exact/source_equation_space.json",
     kernel_output: str | Path = "verification/all_orders/degree12_exact/kernel_lift.json",
+    *, model_crosscheck: str = "required",
 ):
     step1c = step1c_record()
     targets = json.loads(TARGET_CERT.read_text())
@@ -199,7 +200,16 @@ def reconstruct_source_rows(
     if sorted(target_rows) != list(range(36)):
         raise ValueError("source-target certificate does not contain exact rows 0..35")
 
-    model_dir, primes, equations, labels = load_theorem_equations()
+    if model_crosscheck == "required":
+        model_dir, primes, equations, labels = load_theorem_equations()
+    elif model_crosscheck == "saved_evidence":
+        # Offline arithmetic replay is explicit. Never invent missing model
+        # files or describe reductions of our own rows as independent inputs.
+        frozen = json.loads(Path("verification/all_orders/degree12_exact/kernel_lift.json").read_text())
+        labels = frozen["ansatz_labels"]
+        model_dir, primes, equations = "not_recomputed_saved_evidence_replay", (), {}
+    else:
+        raise ValueError("model_crosscheck must be required or saved_evidence")
     fields = _exact_reduced_degree10_fields()
     descriptors = _all_descriptors(step1c)
     full_rows: dict[int, list[Fraction]] = {}
@@ -222,6 +232,10 @@ def reconstruct_source_rows(
     all_rref, all_pivots = rref_q(ordered_all, ncols=81)
     if len(all_pivots) != 13:
         raise AssertionError(f"exact all-source row rank is {len(all_pivots)}, expected 13")
+
+    saved_checks = None
+    if model_crosscheck == "saved_evidence":
+        saved_checks = verify_saved_equation_evidence(ordered_all)
 
     basis_meta = step1c["equation"]["basis"]
     basis_rows = [full_rows[int(meta["source_row"])] for meta in basis_meta]
@@ -284,7 +298,9 @@ def reconstruct_source_rows(
             }
             for meta in basis_meta
         ],
-        "all_36_rows_verified_mod_every_theorem_prime": True,
+        "all_36_rows_verified_mod_every_theorem_prime": model_crosscheck == "required",
+        "crosscheck_mode": model_crosscheck,
+        "saved_evidence_checks": saved_checks,
         "all_23_step1c_dependencies_verified_exactly_over_QQ": True,
     }
     out = Path(output)
@@ -311,10 +327,47 @@ def reconstruct_source_rows(
             "rational_rows": [[str(q) for q in row] for row in kernel_rref[:68]],
             "qq_candidate": True,
             "qq_verified": True,
-            "all_theorem_primes_verified": True,
+            "all_theorem_primes_verified": model_crosscheck == "required",
+            "saved_evidence_verified": saved_checks is not None,
         },
     }
     kernel_path = Path(kernel_output)
     kernel_path.parent.mkdir(parents=True, exist_ok=True)
     atomic_json(kernel_path, kernel_payload)
     return source_payload, kernel_payload
+
+
+def verify_saved_equation_evidence(rows):
+    """Check saved modular kernels and minor residues against exact QQ rows.
+
+    This replays committed evidence; it does not rerun tensor evaluations.
+    The strict full-physics entry point continues to require the run models.
+    """
+    import sympy as sp
+    from .finite_field import matrix_rank
+
+    scan = json.loads(Path("verification/degree12/modular/obstruction_scan.json").read_text())
+    checked = []
+    for report in scan["reports"]:
+        p = int(report["prime"])
+        reduced = [[reduce_fraction(q, p) for q in row] for row in rows]
+        kernel = report["kernel"]
+        if len(kernel) != 68 or any(len(k) != 81 for k in kernel):
+            raise ValueError("saved modular kernel is not 68x81")
+        if matrix_rank(reduced, p, ncols=81) != 13 or matrix_rank(kernel, p, ncols=81) != 68:
+            raise AssertionError("saved equation/kernel ranks disagree")
+        if any(sum(a * b for a, b in zip(row, k)) % p for row in reduced for k in kernel):
+            raise AssertionError("saved modular kernel does not annihilate exact equations")
+        checked.append(p)
+    minor = json.loads(Path("verification/degree12/qq/step1b_rank_minor_certificate.json").read_text())["equation"]
+    selected_rows = minor["basis_rows"]
+    columns = minor["pivot_columns_for_nonzero_minor"]
+    det = sp.Matrix([[sp.Rational(str(rows[i][j])) for j in columns] for i in selected_rows]).det()
+    if not det:
+        raise AssertionError("saved equation minor is singular")
+    for p, expected in minor["minor_residues"].items():
+        if reduce_fraction(Fraction(str(det)), int(p)) != expected:
+            raise AssertionError(f"equation minor differs from frozen residue at {p}")
+    return {"scope": "saved modular kernel/minor arithmetic; tensor models not recomputed",
+            "kernel_primes": checked, "minor_primes": sorted(map(int, minor["minor_residues"])),
+            "exact_minor": str(det)}

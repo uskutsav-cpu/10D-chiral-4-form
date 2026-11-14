@@ -1,0 +1,94 @@
+point prime=50021 row=1/81 id=I4_1
+point prime=50021 row=2/81 id=I6_1
+point prime=50021 row=3/81 id=I6_2
+point prime=50021 row=4/81 id=I8_1
+point prime=50021 row=5/81 id=I8_2
+point prime=50021 row=6/81 id=I8_3
+point prime=50021 row=7/81 id=I8_4
+point prime=50021 row=8/81 id=I8_5
+point prime=50021 row=9/81 id=I8_6
+point prime=50021 row=10/81 id=I10_1
+point prime=50021 row=11/81 id=I10_2
+point prime=50021 row=12/81 id=I10_3
+point prime=50021 row=13/81 id=I10_4
+point prime=50021 row=14/81 id=I10_5
+point prime=50021 row=15/81 id=I10_6
+point prime=50021 row=16/81 id=I10_7
+point prime=50021 row=17/81 id=I10_8
+point prime=50021 row=18/81 id=I10_9
+point prime=50021 row=19/81 id=I10_10
+point prime=50021 row=20/81 id=I10_11
+point prime=50021 row=21/81 id=I10_12
+point prime=50021 row=22/81 id=I12_1
+point prime=50021 row=23/81 id=I12_2
+point prime=50021 row=24/81 id=I12_3
+point prime=50021 row=25/81 id=I12_4
+point prime=50021 row=26/81 id=I12_5
+point prime=50021 row=27/81 id=I12_6
+point prime=50021 row=28/81 id=I12_7
+point prime=50021 row=29/81 id=I12_8
+point prime=50021 row=30/81 id=I12_9
+point prime=50021 row=31/81 id=I12_10
+point prime=50021 row=32/81 id=I12_11
+point prime=50021 row=33/81 id=I12_12
+point prime=50021 row=34/81 id=I12_13
+point prime=50021 row=35/81 id=I12_14
+point prime=50021 row=36/81 id=I12_15
+point prime=50021 row=37/81 id=I12_16
+point prime=50021 row=38/81 id=I12_17
+point prime=50021 row=39/81 id=I12_18
+point prime=50021 row=40/81 id=I12_19
+point prime=50021 row=41/81 id=I12_20
+point prime=50021 row=42/81 id=I12_21
+point prime=50021 row=43/81 id=I12_22
+point prime=50021 row=44/81 id=I12_23
+point prime=50021 row=45/81 id=I12_24
+point prime=50021 row=46/81 id=I12_25
+point prime=50021 row=47/81 id=I12_26
+point prime=50021 row=48/81 id=I12_27
+point prime=50021 row=49/81 id=I12_28
+point prime=50021 row=50/81 id=I12_29
+point prime=50021 row=51/81 id=I12_30
+point prime=50021 row=52/81 id=I12_31
+point prime=50021 row=53/81 id=I12_32
+point prime=50021 row=54/81 id=I12_33
+point prime=50021 row=55/81 id=I12_34
+point prime=50021 row=56/81 id=I12_35
+point prime=50021 row=57/81 id=I12_36
+point prime=50021 row=58/81 id=I12_37
+point prime=50021 row=59/81 id=I12_38
+point prime=50021 row=60/81 id=I12_39
+point prime=50021 row=61/81 id=I12_40
+point prime=50021 row=62/81 id=I12_41
+point prime=50021 row=63/81 id=I12_42
+point prime=50021 row=64/81 id=I12_43
+point prime=50021 row=65/81 id=I12_44
+point prime=50021 row=66/81 id=I12_45
+point prime=50021 row=67/81 id=I12_46
+point prime=50021 row=68/81 id=I12_47
+point prime=50021 row=69/81 id=I12_48
+point prime=50021 row=70/81 id=I12_49
+point prime=50021 row=71/81 id=I12_50
+point prime=50021 row=72/81 id=I12_51
+point prime=50021 row=73/81 id=I12_52
+point prime=50021 row=74/81 id=I12_53
+point prime=50021 row=75/81 id=I12_54
+point prime=50021 row=76/81 id=I12_55
+point prime=50021 row=77/81 id=I12_56
+point prime=50021 row=78/81 id=I12_57
+point prime=50021 row=79/81 id=I12_58
+point prime=50021 row=80/81 id=I12_59
+point prime=50021 row=81/81 id=I12_60
+{
+  "passed": true,
+  "points": [
+    {
+      "prime": 50021,
+      "rank": 81,
+      "determinant_mod_p": 21539,
+      "orbit_rank": 45,
+      "orbit_determinant_mod_p": 10547,
+      "seconds": 55.87753433396574
+    }
+  ]
+}

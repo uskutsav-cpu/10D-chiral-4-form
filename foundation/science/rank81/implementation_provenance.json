@@ -1,0 +1,70 @@
+{
+  "reused": "Previously independently validated program bodies, copied exactly; no prior numerical arrays reused.",
+  "symbols": [
+    {
+      "source": "results/audit/math-review/independent_conventions.py",
+      "symbol": "parity",
+      "source_sha256": "7d2edd9f8a3ed06380493dadb2c1169db07d667f64b592934c3cd1e0a77cd37b"
+    },
+    {
+      "source": "results/audit/math-review/independent_conventions.py",
+      "symbol": "metric_product",
+      "source_sha256": "7455b2a764bd089c75e937713dafd9743c3fdcd425e337501bcc8baf5d5489a7"
+    },
+    {
+      "source": "results/audit/math-review/independent_conventions.py",
+      "symbol": "star_image",
+      "source_sha256": "d403a67c41b0658e2aaac6b2596d9f6d85371ab07204174c7d97a1d4d7ccdf5d"
+    },
+    {
+      "source": "results/audit/math-review/independent_conventions.py",
+      "symbol": "compact_form",
+      "source_sha256": "20dbb032df6043d49c847274b835dd43dbd4f3f307398e1f0e20ebcfee2c5bbd"
+    },
+    {
+      "source": "results/audit/math-review/independent_conventions.py",
+      "symbol": "slot_records",
+      "source_sha256": "908600ac9ac2f2695fd5a49e34a638d6f85ce06629081cc135b6b3c2edf07e69"
+    },
+    {
+      "source": "results/audit/math-review/independent_oracle.py",
+      "symbol": "dense_form",
+      "source_sha256": "0c6ea93591d65f53d28acc870476f7ac5fae58b5a2dff763c4196052f9b3f5b6"
+    },
+    {
+      "source": "results/audit/math-review/independent_oracle.py",
+      "symbol": "terms",
+      "source_sha256": "e72f5307fc0f586cf47ddc1ccb208564e03bf58de03c2b67ce62ed9829aeb72c"
+    },
+    {
+      "source": "results/audit/math-review/independent_oracle.py",
+      "symbol": "plan",
+      "source_sha256": "3fc7601c28937fe28e22fa3696e87c2d3ce3f5914cdb4b799ab60701dc14c89d"
+    },
+    {
+      "source": "results/audit/math-review/independent_oracle.py",
+      "symbol": "modular_dot",
+      "source_sha256": "d49633312dc7cfd89680d57abe4fb5046a46e7adefec8030c3cc6c360dc6c152"
+    },
+    {
+      "source": "results/audit/math-review/efficient_oracle.py",
+      "symbol": "PointEngine",
+      "source_sha256": "42000a7fdacbc53193bd79e550d99754a0d6385472aa0db70df14861b56ce0e5"
+    },
+    {
+      "source": "results/audit/math-review/independent_reverse.py",
+      "symbol": "sparse_coordinate_pullback",
+      "source_sha256": "6572b45672931046b60e2272543660539b5af216b1e43b517bea6e93d615da03"
+    },
+    {
+      "source": "results/audit/math-review/independent_reverse.py",
+      "symbol": "reverse_gradient",
+      "source_sha256": "4b5731268696d009277f25a0408b7047da1cb582420c01f8e059835f06a28fd7"
+    },
+    {
+      "source": "results/audit/math-review/bareiss_minors.py",
+      "symbol": "bareiss",
+      "source_sha256": "29785fabd972284537dd513749cf750f9c68546b9be66e550d62c269516a6b50"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+ "schema": 1,
+ "candidate_source": "selected_graphs.json",
+ "n_candidates_total": 83,
+ "n_port_graphs_used": 70,
+ "n_structured_not_reimplemented": 13,
+ "structured_names": [
+  "sd5_tensor_word_AAAA",
+  "sd5_tensor_word_AAAB",
+  "sd5_spinor_degree8_2",
+  "sd5_spinor_degree8_3",
+  "sd5_spinor_degree8_4",
+  "sd5_spinor_degree8_5",
+  "sd5_tensor_word_AAAAAA",
+  "sd5_tensor_word_AAAAAB",
+  "sd5_tensor_word_AAAABB",
+  "sd5_tensor_word_AAABAB",
+  "sd5_tensor_word_AAABBB",
+  "sd5_tensor_word_AABAAB",
+  "sd5_tensor_word_ABABAB"
+ ],
+ "port_graphs_by_degree": {
+  "4": 1,
+  "6": 2,
+  "10": 12,
+  "12": 55
+ },
+ "method": "analytic amputated derivative, exact over F_p, integral basis",
+ "why_the_bound_is_rigorous": "The gamma-traceless basis is integral and the point is an integer combination of it, so the Jacobian is the reduction of a genuine integer matrix. rank_{F_p}(J mod p) <= rank_Q(J) then holds unconditionally: reduction can only drop rank.",
+ "analytic_upper_bound": 81,
+ "analytic_upper_bound_source": "126 - dim so(10) = 126 - 45; literature",
+ "runs": [
+  {
+   "prime": 32749,
+   "point_seed": 11,
+   "rows_evaluated": 59,
+   "rows_skipped_too_expensive": 11,
+   "skipped_detail": [
+    {
+     "degree": 12,
+     "reason": "largest intermediate 65,536,000 elements exceeds the budget of 50,000,000"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.43e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.47e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 2.14e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.36e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 9.21e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "largest intermediate 65,536,000 elements exceeds the budget of 50,000,000"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.55e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.37e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.56e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.55e+09 flops exceeds the budget of 5.00e+09"
+    }
+   ],
+   "identically_zero_rows": 0,
+   "exact_modular_rank_of_port_graph_subset": 59,
+   "wall_seconds": 701.3
+  },
+  {
+   "prime": 32749,
+   "point_seed": 22,
+   "rows_evaluated": 59,
+   "rows_skipped_too_expensive": 11,
+   "skipped_detail": [
+    {
+     "degree": 12,
+     "reason": "largest intermediate 65,536,000 elements exceeds the budget of 50,000,000"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.43e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.47e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 2.14e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.36e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 9.21e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "largest intermediate 65,536,000 elements exceeds the budget of 50,000,000"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.55e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.37e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.56e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.55e+09 flops exceeds the budget of 5.00e+09"
+    }
+   ],
+   "identically_zero_rows": 0,
+   "exact_modular_rank_of_port_graph_subset": 59,
+   "wall_seconds": 570.3
+  },
+  {
+   "prime": 32749,
+   "point_seed": 33,
+   "rows_evaluated": 59,
+   "rows_skipped_too_expensive": 11,
+   "skipped_detail": [
+    {
+     "degree": 12,
+     "reason": "largest intermediate 65,536,000 elements exceeds the budget of 50,000,000"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.43e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.47e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 2.14e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.36e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 9.21e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "largest intermediate 65,536,000 elements exceeds the budget of 50,000,000"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.55e+09 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.37e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 1.56e+10 flops exceeds the budget of 5.00e+09"
+    },
+    {
+     "degree": 12,
+     "reason": "estimated cost 8.55e+09 flops exceeds the budget of 5.00e+09"
+    }
+   ],
+   "identically_zero_rows": 0,
+   "exact_modular_rank_of_port_graph_subset": 59,
+   "wall_seconds": 388.2
+  }
+ ]
+}

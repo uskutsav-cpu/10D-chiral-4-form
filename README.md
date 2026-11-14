@@ -1,129 +1,87 @@
-# 10D chiral four-form: stress-flow research engine
+# Constructive invariants and nonlinear chiral four-form stress flows
 
-Executable research infrastructure for nonlinear chiral four-forms in ten
-Lorentzian dimensions. It combines an independent five-form evaluator,
-constrained derivatives, the interacting stress tensor, exact polynomial
-control fields, and proof-scoped orbit/obstruction tools.
+A unified research project connecting explicit Lorentz invariants of a self-dual
+five-form in ten dimensions to the interactions reachable by stress-tensor flows.
 
-**Important correction:** a linear invariant hull is not a nonlinear reachable
-orbit. The predecessor's degree-wise closure numbers remain **imported claims**;
-degree-ten/twelve orbit dimensions are **not independently** established here.
+The scientific question is: **which analytic, derivative-free interactions can
+be generated from the free chiral four-form theory, and which additional
+invariant generators enlarge that reachable set?**
 
-## Start on your Mac
+Read [SCIENCE_STATUS.md](SCIENCE_STATUS.md) for current verification levels and
+[CLAIMS.md](CLAIMS.md) for the claim boundaries. The editable unified research
+draft is [manuscript/unified/main.tex](manuscript/unified/main.tex). Its compiled
+PDF and the computation evidence live under `reports/` in the release bundle.
 
-From the repository root:
+## Install and verify
 
-```bash
+Python 3.10+ is required for the flow package. Fresh foundation verification is
+exercised on Python 3.13; fresh character generation requires a C++17 compiler.
+
+```sh
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e '.[dev]'
-make verify
-make smoke
+pip install -e '.[dev]'
+make combined-verify
 ```
 
-`make verify` runs the regression suite, compilation checks, baseline schema
-checks, and arithmetic verification of the packaged degree-eight certificate.
-It does not rerun every expensive tensor computation. `make smoke` actually
-creates fresh 10D self-dual tensors and fits the degree-six stress generators
-at three primes, with separate fit and holdout points.
+Verification levels are explicit:
 
-For the complete implemented degree-eight experiment:
+| Command | Work performed |
+|---|---|
+| `make combined-verify` | Regression/adversarial suite, foundation saved arithmetic, independent exact orbit algebra, packaged degree-eight map arithmetic |
+| `make combined-fresh` | Above plus fresh character tables, independent rank/orbit tensors, cross-engine bridge, degree-eight tensor map, disjoint degree-twelve physical holdouts |
+| `make combined-full` | Above plus complete bounded degree-ten and degree-twelve physics-map calculations |
+| `make combined-endpoint` | Explicit ten-stage rational endpoint and all 68 degree-twelve constraints |
 
-```bash
-bash scripts/run_research.sh core
+The full degree-twelve calculation is expensive and saves each tensor evaluation.
+A partial run is not a proof. Resume the same compatible checkpoint directory:
+
+```sh
+python scripts/resume_degree12_proof.py --workers 2
+python scripts/prove_combined_degree12_map.py --verify-only
 ```
 
-This runs the tests, degree-six/degree-eight tensor fits, genuine generalized
-flow fits, bounded-residual map certificate, rational lifting, and the exact
-finite-model orbit/completion analyses. It executes in the foreground, prints
-progress, and resumes hash-valid checkpoints on rerun. The commands do not
-commit, push, delete, or overwrite another source checkout.
+Use one or two workers on an 8 GB machine. Work budgets bound planned tensor
+arrays; they do not enforce an OS-wide memory quota. Checkpoint namespaces bind
+code, the invariant registry, source coordinates, points, bounds, and primes.
+Never delete checkpoints to hide a failed result.
 
-## What is implemented
+## Scientific components
 
-| Layer | Executable capability | Boundary |
-|---|---|---|
-| Exact algebra | Prime validation, RREF, nullspaces, determinants, rank witnesses, rational reconstruction | A sampled rank is not automatically a characteristic-zero identity |
-| Tensor engine | 126 independent components, Lorentzian Hodge star, boosts, contraction graphs, reverse derivatives | Array/work budgets are estimates, not an operating-system RSS quota |
-| Physics | General HLS equation (2.33), anti-self-dual derivative projection, `tau=48T`, trace products | Analytic, derivative-free, classical interaction class |
-| Degree-wise maps | Explicit graph/product bases, multiple primes, disjoint holdouts, preserved coupling monomials | Finite fits are labelled as fits |
-| Flow geometry | Minimal linear invariant hulls, finite-depth Lie brackets, exact autonomous time jets | Hull rank and Lie lower bounds have different meanings |
-| Obstructions | Exact polynomial ideal tangency and homogeneous basis covariance | Ideals live in **coupling space**, not directly in field-component space |
-| Generalized flows | All eligible mixed monomials of `f(tau,S)` and finite-catalogue searches | Adding `S` is not changing the seed |
-| Degree-eight result | Explicit nonlinear obstruction, constructive four-dimensional orbit, six-extra catalogue completion | Conditional on the certified map's stated physics/Hilbert inputs |
-| Conformal tools | Exact quadratic extension `r^2=I4` and published ModMax stress-square reproduction | Alternative pure-stress ModMax reachability is unresolved |
-| Larger calculations | Automatic import of all predecessor degree-10/12 graph formulas, preflight, checkpointing, one-prime workers | Full degree-10/12 recomputation is not shipped as a finished result |
+- `foundation/`: canonical scientific files plus a complete pinned source archive of `selfdual-5form-invariants`, with
+  original attribution, graph formulas, character derivation, and standalone
+  rank/orbit verifier. The upstream repository remains separate and unchanged.
+- `data/combined/`: the actual complete 96-coordinate homogeneous registry through
+  degree twelve, with a source lock and hashes. No ignored local run is needed.
+- `src/chiral4form/`: tensor physics, projected derivatives, stress traces,
+  polynomial vector fields, exact orbit and obstruction infrastructure.
+- `independent/`: a separate SymPy implementation that imports neither research
+  engine. It checks exact orbit algebra and constructs explicit endpoints.
+- `scripts/`: fresh map proofs, cross-engine verification, resumable computation,
+  and the combined verification entry point.
+- `verification/`: preserved predecessor certificates and historical evidence.
+- `reports/`: new logs, manifests, fresh certificates, and independent results.
 
-## The degree-eight finding
+## Central distinctions
 
-Write the interaction coefficients as
+The atlas has 81 algebraically independent invariants. The complete homogeneous
+spaces through degrees 4, 6, 8, 10, 12 have dimensions 1, 2, 7, 14, 72, giving
+96 coefficient slots. These are different counts. No global polynomial-ring
+presentation or global real-orbit separation is claimed.
 
-```
-a, j, k, b1, b2, b3, b4, b5, b6, p
-```
+In the degree-eight reduced flow model, `Omega8=b2+16*a^3` is transported
+homogeneously. Its free-seed orbit has dimension four although its linear hull
+has dimension five. Six specified extra generators complete that truncated
+model, with necessity restricted to the stated catalogue.
 
-multiplying `I4_1, I6_1, I6_2, I8_1,...,I8_6,I4_1^2` respectively.
-For the declared polynomial stress-flow class, the exact reduced model has
+The independently checked reduced-model orbit dimensions are 4, 6, 10 through
+cutoffs 8, 10, 12. Relating those exact model calculations to tensor physics is
+handled by separate bounded map certificates. Signed-control reachability does
+not establish causality, unitarity, stability, nonanalytic ModMax reachability,
+Type-IIB completion, or an all-orders orbit classification.
 
-```
-Omega8 = b2 + 16*a^3
-Omega8_dot = 60*u_tr1(lambda)*Omega8
-```
-
-Its free-seed orbit is the smooth four-dimensional graph
-
-```
-k = b3 = b4 = b5 = b6 = 0,   b2 = -16*a^3.
-```
-
-Four explicit control segments reach any point on that graph. Its **linear
-hull has dimension five**, which is why the linear rank alone overcounts the
-orbit. The six extras `I6_2,I8_2,I8_3,I8_4,I8_5,I8_6` complete the ten-dimensional
-truncated coefficient model; each is necessary **within that catalogue**.
-This is not global minimality over every possible choice of additional scalars.
-
-Read [the derivation](docs/DEGREE8_RESULT.md) and
-[the map certificate argument](docs/DEGREE8_MAP_CERTIFICATE.md). Novelty and
-physical conventions still require mentor/literature review. No all-orders,
-Type-IIB completion, causality, or nonanalytic classification is claimed.
-
-## Commands
-
-```bash
-python -m chiral4form plan --config configs/degree8.json
-python -m chiral4form run --config configs/degree8.json --output runs/degree8
-python -m chiral4form status --output runs/degree8
-python -m chiral4form degree8 --output runs/degree8-orbit.json
-python -m chiral4form completion8 --output runs/degree8-completion.json
-python -m chiral4form prove-map8 --output runs/map8-proof
-python -m chiral4form verify-map8 verification/map8/map_certificate.json
-python -m chiral4form modmax --output runs/modmax.json
-```
-
-## Import the real degree-twelve atlas
-
-```bash
-python -m chiral4form source --fetch --checkout .cache/upstream --output data/imported
-python -m chiral4form plan --source .cache/upstream --config configs/degree12.json
-```
-
-The source command pins commit
-`3ed32805b38ce34216b34888f6539e3538e90fb9`, checks Git blobs and SHA-256 hashes,
-and translates actual JSON formulas without importing upstream Python.
-An existing dirty or wrong-commit checkout is refused, not reset. The bundled
-fixture is an explicitly attributed degree-eight excerpt, not a fabricated
-complete upstream snapshot. The larger job only runs when the real registry
-and resource preflight pass. See [execution instructions](docs/EXECUTION.md).
-
-## Where to look
-
-- `src/chiral4form/`: implementations, not generated result assertions.
-- `configs/`: explicit degree/prime/holdout/resource policies.
-- `verification/`: committed outputs of computations actually run for this release.
-- `CLAIMS.md`: imported, conditional, refuted, and unresolved statements.
-- `THEORY.md`: conventions and the precise flow class.
-- `docs/`: proof arguments, architecture, reproduction, and mentor review.
-- `manuscript/`: scope-controlled outline and a results draft, not a finished paper.
-
-Upstream formulas and published mathematics are attributed in
-[NOTICE](NOTICE) and [the source notes](docs/LITERATURE.md).
+The original entry points remain available in the [historical README](docs/history/pre-unified-readme.md).
+Legacy degree-wise closure numbers remain imported claims. Historical success
+labels are not independently verified merely by being imported. A linear invariant
+hull is not a nonlinear reachable orbit. Legacy documents and certificate status labels describe their own computation
+stages; they do not override the current unified science status.

@@ -1,0 +1,10 @@
+# Verification dependencies; install this project separately with pip install -e .
+iniconfig==2.3.1
+mpmath==1.3.0
+numpy==2.5.4
+opt_einsum==3.4.0
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.2.0
+sympy==1.14.0

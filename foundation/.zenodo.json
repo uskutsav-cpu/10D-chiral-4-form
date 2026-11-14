@@ -1,0 +1,36 @@
+{
+  "_comment": [
+    "Zenodo deposition metadata, PREPARED AND NOT SUBMITTED.",
+    "Every field marked HUMAN ACTION REQUIRED is a decision no automation may",
+    "make. Depositing this file as-is would publish placeholder authorship,",
+    "which is worse than not depositing at all.",
+    "Blocking: audit/AUTHOR_APPROVAL_CHECKLIST.md steps 1-3."
+  ],
+  "title": "Exact degree-ten invariants of the ten-dimensional self-dual five-form: code, certificates and reproduction",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "AUTHOR LIST -- HUMAN ACTION REQUIRED",
+      "affiliation": "AFFILIATION -- HUMAN ACTION REQUIRED"
+    }
+  ],
+  "description": "Exact computational certificates supporting the degree-ten classification of local Lorentz invariants of a self-dual five-form in ten dimensions. Includes the tensor-side atlas and subspace incidence, the exact characteristic-zero closure certificate for the stress-flow reachable subspace, the exact modular Jacobian certificate with an explicit non-vanishing minor, the convention-controlled spinor-tensor bridge, and the common-sample comparison. The third-party spinor enumeration archive is NOT included; a manifest with per-file hashes and adapter instructions is provided instead.",
+  "access_right": "open",
+  "license": "LICENCE NOT YET CHOSEN -- HUMAN ACTION REQUIRED",
+  "keywords": [
+    "chiral p-form theories",
+    "self-dual five-form",
+    "invariant theory",
+    "exact linear algebra over finite fields",
+    "reproducible computation"
+  ],
+  "related_identifiers": [
+    {
+      "_comment": "arXiv identifier is assigned at posting; not yet posted.",
+      "relation": "isSupplementTo",
+      "identifier": "ARXIV ID -- NOT YET POSTED",
+      "scheme": "arxiv"
+    }
+  ],
+  "notes": "Not deposited. Prepared under audit/AUTHOR_APPROVAL_CHECKLIST.md; deposition requires an authenticated human action and prior authorship, licence and release approval."
+}

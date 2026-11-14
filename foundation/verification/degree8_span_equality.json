@@ -1,0 +1,273 @@
+{
+ "schema": 1,
+ "degree": 8,
+ "arithmetic": "exact over F_p on both sides; no floating point",
+ "fitting_primes": [
+  32719,
+  32749
+ ],
+ "holdout_primes": [
+  32713,
+  32717
+ ],
+ "primes": {
+  "32749": {
+   "role": "fitting",
+   "n_samples": 78,
+   "registry_sha256": "30448b5021261f2c7b6ddf8e633d1e5c957cda2645698dee5ea195385a496e5c",
+   "all_samples_selfdual": true,
+   "trace_rank": 7,
+   "spinor_rank": 7,
+   "union_rank": 7,
+   "spinor_row_labels": [
+    "tensor_word/AAAA",
+    "tensor_word/AAAB",
+    "tensor_word/AABB",
+    "tensor_word/ABAB",
+    "tensor_word/ABBB",
+    "tensor_word/BBBB",
+    "structured/sd5_spinor_degree8_2",
+    "structured/sd5_spinor_degree8_3",
+    "structured/sd5_spinor_degree8_4",
+    "structured/sd5_spinor_degree8_5",
+    "port_graph/0",
+    "port_graph/1",
+    "port_graph/2",
+    "port_graph/3",
+    "port_graph/4",
+    "port_graph/5",
+    "port_graph/6",
+    "port_graph/7",
+    "port_graph/8",
+    "port_graph/9",
+    "port_graph/10",
+    "port_graph/11",
+    "product/I4_squared"
+   ],
+   "n_spinor_rows": 23,
+   "trace_in_spinor": true,
+   "spinor_in_trace": true,
+   "spans_equal": true,
+   "family_contribution": {
+    "port_graph": {
+     "rank_without_this_family": 7
+    },
+    "product": {
+     "rank_without_this_family": 7
+    },
+    "structured": {
+     "rank_without_this_family": 7
+    },
+    "tensor_word": {
+     "rank_without_this_family": 6
+    }
+   },
+   "wall_seconds": 198.4,
+   "span_equality_holds": true,
+   "change_of_basis": {
+    "shape": [
+     7,
+     23
+    ],
+    "fitted_on": "generic + sparse + structured samples",
+    "validated_on": "holdout samples only",
+    "sha256": "78c63ac0a3b122058c3917e544e37433"
+   },
+   "holdout_validated": true
+  },
+  "32719": {
+   "role": "fitting",
+   "n_samples": 78,
+   "registry_sha256": "ca97d98b493d20bf7d989eefca02737986f1dc42d44a5c7badc9be2a18fe9352",
+   "all_samples_selfdual": true,
+   "trace_rank": 7,
+   "spinor_rank": 7,
+   "union_rank": 7,
+   "spinor_row_labels": [
+    "tensor_word/AAAA",
+    "tensor_word/AAAB",
+    "tensor_word/AABB",
+    "tensor_word/ABAB",
+    "tensor_word/ABBB",
+    "tensor_word/BBBB",
+    "structured/sd5_spinor_degree8_2",
+    "structured/sd5_spinor_degree8_3",
+    "structured/sd5_spinor_degree8_4",
+    "structured/sd5_spinor_degree8_5",
+    "port_graph/0",
+    "port_graph/1",
+    "port_graph/2",
+    "port_graph/3",
+    "port_graph/4",
+    "port_graph/5",
+    "port_graph/6",
+    "port_graph/7",
+    "port_graph/8",
+    "port_graph/9",
+    "port_graph/10",
+    "port_graph/11",
+    "product/I4_squared"
+   ],
+   "n_spinor_rows": 23,
+   "trace_in_spinor": true,
+   "spinor_in_trace": true,
+   "spans_equal": true,
+   "family_contribution": {
+    "port_graph": {
+     "rank_without_this_family": 7
+    },
+    "product": {
+     "rank_without_this_family": 7
+    },
+    "structured": {
+     "rank_without_this_family": 7
+    },
+    "tensor_word": {
+     "rank_without_this_family": 6
+    }
+   },
+   "wall_seconds": 200.9,
+   "span_equality_holds": true,
+   "change_of_basis": {
+    "shape": [
+     7,
+     23
+    ],
+    "fitted_on": "generic + sparse + structured samples",
+    "validated_on": "holdout samples only",
+    "sha256": "d28b207f8ee20f5ab24b4474d7eddd1f"
+   },
+   "holdout_validated": true
+  },
+  "32717": {
+   "role": "holdout",
+   "n_samples": 78,
+   "registry_sha256": "0846fa7c3f6396b94b1a8a59ad8875229f537fe27aa600979991c1968a8a3166",
+   "all_samples_selfdual": true,
+   "trace_rank": 7,
+   "spinor_rank": 7,
+   "union_rank": 7,
+   "spinor_row_labels": [
+    "tensor_word/AAAA",
+    "tensor_word/AAAB",
+    "tensor_word/AABB",
+    "tensor_word/ABAB",
+    "tensor_word/ABBB",
+    "tensor_word/BBBB",
+    "structured/sd5_spinor_degree8_2",
+    "structured/sd5_spinor_degree8_3",
+    "structured/sd5_spinor_degree8_4",
+    "structured/sd5_spinor_degree8_5",
+    "port_graph/0",
+    "port_graph/1",
+    "port_graph/2",
+    "port_graph/3",
+    "port_graph/4",
+    "port_graph/5",
+    "port_graph/6",
+    "port_graph/7",
+    "port_graph/8",
+    "port_graph/9",
+    "product/I4_squared"
+   ],
+   "n_spinor_rows": 21,
+   "trace_in_spinor": true,
+   "spinor_in_trace": true,
+   "spans_equal": true,
+   "family_contribution": {
+    "port_graph": {
+     "rank_without_this_family": 7
+    },
+    "product": {
+     "rank_without_this_family": 7
+    },
+    "structured": {
+     "rank_without_this_family": 7
+    },
+    "tensor_word": {
+     "rank_without_this_family": 6
+    }
+   },
+   "wall_seconds": 186.1,
+   "span_equality_holds": true,
+   "change_of_basis": {
+    "shape": [
+     7,
+     21
+    ],
+    "fitted_on": "generic + sparse + structured samples",
+    "validated_on": "holdout samples only",
+    "sha256": "7694939eb7e694bf263a7468a79b409d"
+   },
+   "holdout_validated": true
+  },
+  "32713": {
+   "role": "holdout",
+   "n_samples": 78,
+   "registry_sha256": "3c2f4240d5b8d1b368210398a1fba77409c2aea7223397c5dbb84686e68a2395",
+   "all_samples_selfdual": true,
+   "trace_rank": 7,
+   "spinor_rank": 7,
+   "union_rank": 7,
+   "spinor_row_labels": [
+    "tensor_word/AAAA",
+    "tensor_word/AAAB",
+    "tensor_word/AABB",
+    "tensor_word/ABAB",
+    "tensor_word/ABBB",
+    "tensor_word/BBBB",
+    "structured/sd5_spinor_degree8_2",
+    "structured/sd5_spinor_degree8_3",
+    "structured/sd5_spinor_degree8_4",
+    "structured/sd5_spinor_degree8_5",
+    "port_graph/0",
+    "port_graph/1",
+    "port_graph/2",
+    "port_graph/3",
+    "port_graph/4",
+    "port_graph/5",
+    "port_graph/6",
+    "port_graph/7",
+    "port_graph/8",
+    "port_graph/9",
+    "product/I4_squared"
+   ],
+   "n_spinor_rows": 21,
+   "trace_in_spinor": true,
+   "spinor_in_trace": true,
+   "spans_equal": true,
+   "family_contribution": {
+    "port_graph": {
+     "rank_without_this_family": 7
+    },
+    "product": {
+     "rank_without_this_family": 7
+    },
+    "structured": {
+     "rank_without_this_family": 7
+    },
+    "tensor_word": {
+     "rank_without_this_family": 6
+    }
+   },
+   "wall_seconds": 189.4,
+   "span_equality_holds": true,
+   "change_of_basis": {
+    "shape": [
+     7,
+     21
+    ],
+    "fitted_on": "generic + sparse + structured samples",
+    "validated_on": "holdout samples only",
+    "sha256": "b39ea78c06d7043de6aeee6386b4c8ce"
+   },
+   "holdout_validated": true
+  }
+ },
+ "summary": {
+  "primes_tested": 4,
+  "primes_with_span_equality": 4,
+  "required": "trace = spinor = union = 7 with two-way containment",
+  "passes_stage9": true
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "schema": 1,
+ "run_directory": "nostop-deg10",
+ "stopping_rule": "Hilbert target DISABLED (--no-hilbert-stop)",
+ "why_that_matters": "Every archived scan stopped at the Hilbert target, which is supplied from outside the computation. A run that stops there demonstrates nothing about the ansatz. Disabling it is what makes the terminal status informative.",
+ "terminal_states": {
+  "candidate_exhaustion": "the declared ansatz was searched out",
+  "hilbert_target": "stopped at an externally supplied rank; uninformative",
+  "stagnation": "no rank gain within the configured patience",
+  "incomplete": "no terminal state reached on this machine"
+ },
+ "degrees": [
+  {
+   "degree": 4,
+   "hilbert_target": 1,
+   "primitive_target": 1,
+   "product_rank": 0,
+   "selected_new": 1,
+   "final_rank": 1,
+   "attempted_unique_graphs": 2,
+   "raw_batches": 1,
+   "stopped_by": "candidate_exhaustion"
+  },
+  {
+   "degree": 6,
+   "hilbert_target": 2,
+   "primitive_target": 2,
+   "product_rank": 0,
+   "selected_new": 2,
+   "final_rank": 2,
+   "attempted_unique_graphs": 5,
+   "raw_batches": 1,
+   "stopped_by": "candidate_exhaustion"
+  },
+  {
+   "degree": 8,
+   "hilbert_target": 7,
+   "primitive_target": 6,
+   "product_rank": 1,
+   "selected_new": 6,
+   "final_rank": 7,
+   "attempted_unique_graphs": 32,
+   "raw_batches": 1,
+   "stopped_by": "candidate_exhaustion"
+  },
+  {
+   "degree": 10,
+   "stopped_by": "killed",
+   "note": "The process was killed (SIGKILL) after roughly four hours of CPU time. It had reached rank 12 of the target 14 and had not left its first candidate batch. This is NOT a result: no terminal state was reached, so nothing is established about the ansatz at degree 10, in either direction.",
+   "partial_rank_reached": 12,
+   "target": 14,
+   "candidates_kept_before_kill": 10,
+   "product_rank_preloaded": 2,
+   "batch_state": "still inside the first batch of 64 unique candidates"
+  }
+ ],
+ "degrees_reaching_candidate_exhaustion": [
+  4,
+  6,
+  8
+ ],
+ "degree_ten_completed": false,
+ "independent_cross_check": "Independently of this scan, the exact modular enumeration in verification/spinor_trace_comparison.json reaches evaluation rank 14 at degree 10 by rank saturation, and its span equals the tensor-side span with holdout validation. That is a saturation observation, not an exhaustion proof, and is reported as such.",
+ "degree_ten_note": "Degree 10 was attempted and killed, not skipped. It reached rank 12 of 14. Whether the remaining two directions are reachable by port graphs is exactly the question the run would have answered, and it is left open. Note the suggestive parallel with degree 8, where the port-graph family fell short by one -- but a parallel is not evidence, and no claim is made."
+}

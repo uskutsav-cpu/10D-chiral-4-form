@@ -1,0 +1,86 @@
+{
+ "schema": 1,
+ "generated_by": "scripts/reproduce_all.py",
+ "commit": "bf7b9a2bd29bf43aad71c8d630e21bc2b8b14d66",
+ "working_tree_clean": true,
+ "when": "2026-08-01T20:36:18Z",
+ "environment": {
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5",
+  "interpreter": "ambient interpreter"
+ },
+ "not_regenerated": {
+  "results/rank81/certificate.json": "needs the third-party archive",
+  "results/rank81/minor81_certificate.json": "needs the third-party archive",
+  "verification/SPINOR_JACOBIAN_RUNS.json": "needs the third-party archive"
+ },
+ "steps": [
+  {
+   "step": "tensor test suite",
+   "passed": true,
+   "tests": 207,
+   "seconds": 0.0,
+   "resumed_from_log": true,
+   "note": null
+  },
+  {
+   "step": "bridge test suite",
+   "passed": true,
+   "tests": 72,
+   "seconds": 0.0,
+   "resumed_from_log": true,
+   "note": null
+  },
+  {
+   "step": "regenerate numbers",
+   "passed": true,
+   "seconds": 2.4,
+   "detail": {
+    "macros": 99,
+    "artifacts_missing": 0
+   }
+  },
+  {
+   "step": "regenerate tables",
+   "passed": true,
+   "seconds": 0.0,
+   "detail": null
+  },
+  {
+   "step": "regenerate figures",
+   "passed": true,
+   "seconds": 2.4,
+   "detail": null
+  },
+  {
+   "step": "isolated manuscript build",
+   "passed": true,
+   "seconds": 0.0,
+   "detail": {
+    "errors": 0,
+    "undefined_citations": 0,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "pdf_produced": true,
+    "pages": 23
+   },
+   "resumed_from_log": true
+  },
+  {
+   "step": "release policy check",
+   "passed": true,
+   "seconds": 0.1,
+   "note": null
+  },
+  {
+   "step": "manuscript gates",
+   "passed": true,
+   "seconds": 0.1,
+   "detail": {
+    "checks": 63
+   },
+   "note": null
+  }
+ ],
+ "all_steps_passed": true
+}

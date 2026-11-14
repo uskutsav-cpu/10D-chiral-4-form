@@ -17,6 +17,7 @@ EXPECTED_DIMS = {4: 1, 6: 2, 8: 7, 10: 14, 12: 72}
 DEFAULT_SOURCE_ROOT = Path(".cache/upstream-degree12-fresh-20260911-223942")
 
 CANDIDATE_REGISTRIES = (
+    Path("data/combined/registry.json"),
     Path("runs/degree12-generalized-selected-verify/registry.json"),
     Path("runs/degree12-generalized-universal/registry.json"),
     Path("runs/degree12-fresh/registry.json"),
@@ -52,7 +53,13 @@ def resolve_registry(
 
     candidates = []
     if explicit_path is not None:
-        candidates.append(Path(explicit_path))
+        path = Path(explicit_path)
+        reg = Registry.load(path)
+        if not registry_has_cutoff(reg, cutoff):
+            raise ValueError(f"explicit registry {path} is incomplete through degree {cutoff}")
+        return reg, {"status": "resolved_from_explicit_registry", "path": str(path),
+                     "cutoff": cutoff, "dimensions": {str(d): len(reg.degree_bases[d])
+                     for d in EXPECTED_DIMS if d <= cutoff}}
     candidates.extend(CANDIDATE_REGISTRIES)
 
     for path in candidates:

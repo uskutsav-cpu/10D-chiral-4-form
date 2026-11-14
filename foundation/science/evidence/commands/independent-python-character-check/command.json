@@ -1,0 +1,38 @@
+{
+  "argv": [
+    "../environment/bin/python",
+    "science/character/check_character.py",
+    "../../science-completion-20260907/independent-d5",
+    "--full-through",
+    "12",
+    "--output",
+    "../../science-completion-20260907/python-character-check.json"
+  ],
+  "cwd": "/Users/swethasunilkumar/Documents/Codex/2026-09-07/here/work/independent-audit-20260907-02/repair-checkout",
+  "environment_overrides": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPYCACHEPREFIX": "/Users/swethasunilkumar/Documents/Codex/2026-09-07/here/work/science-completion-20260907/pycache",
+    "XDG_CACHE_HOME": "/Users/swethasunilkumar/Documents/Codex/2026-09-07/here/work/science-completion-20260907/cache",
+    "PIP_NO_CACHE_DIR": "1",
+    "PIP_CONFIG_FILE": "/dev/null",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "started_unix": 1788837447.3204758,
+  "status": "completed",
+  "pid": 18431,
+  "exit_code": 0,
+  "seconds": 18.87683045794256,
+  "finished_unix": 1788837466.197778,
+  "logs": {
+    "stdout.log": {
+      "sha256": "a5112782a651fa1166d741cb83e4a19ddfb1190bd6d16c8d5770b9beff5f25e7",
+      "bytes": 3138
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

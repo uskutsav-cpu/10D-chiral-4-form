@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "fresh flow-engine values compared to separately recomputed foundation certificate; same graph, metric, Hodge and electric coordinates",
+  "rank_certificate_sha256": "b36d8e74565390528d86a29eea513e11e59894c5a667b2be8892edbe54064c50",
+  "points": [
+    {
+      "prime": 50021,
+      "independent_invariants_compared": 81,
+      "dense_tensor_and_graph_definitions_equal": true
+    }
+  ]
+}

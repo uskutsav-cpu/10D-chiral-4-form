@@ -1,0 +1,335 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in,top=0.9in,bottom=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,hyperref}
+\usepackage[T1]{fontenc}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Orb}{\mathcal O}
+\title{Constructive Invariants and Nonlinear Orbit Obstructions\\for Ten-Dimensional Chiral Four-Form Stress Flows}
+\author{Utsav Sunil Kumar}
+\date{Research draft --- November 13, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We organize an explicit Lorentz-invariant atlas for a real self-dual five-form
+and a finite-order classification of polynomial stress-tensor flows into a
+single reproducible research artifact. The atlas supplies 81 algebraically
+independent contractions, an exact Jacobian/orbit certificate, and homogeneous
+invariant dimensions $1,2,7,14,72$ at field degrees $4,6,8,10,12$.
+In the declared derivative-free analytic chiral four-form model, stress flows
+are polynomial vector fields on interaction coefficients. Their nonlinear
+reachable sets differ from their linear spans: the degree-eight free-seed orbit
+is four-dimensional inside a ten-dimensional interaction space and obeys the
+nonlinear constraint $b_2+16a^3=0$. Six specified additional homogeneous
+invariant generators complete that truncated model. Independent rational
+arithmetic checks extend the reduced-model orbit calculation through degrees
+ten and twelve, with dimensions six and ten, and construct explicit signed
+control sequences. Tensor-to-model certification, reduced-model algebra,
+and physical admissibility are separate obligations. This draft reports the
+first two only at the verification levels recorded with the executable artifact;
+it does not claim an all-orders orbit classification or new physical admissibility
+results. Priority and the relation to existing chiral-form work remain under review.
+\end{abstract}
+
+\section{Question and relation to existing work}
+A chiral four-form potential in ten dimensions has a five-form field strength.
+The associated auxiliary self-dual five-form permits derivative-free
+self-interactions expressed through Lorentz scalar contractions.
+The large invariant space makes a precise reachability question possible:
+\emph{which interactions are generated from the free seed by polynomial
+scalars of the interacting stress tensor, and which additional invariant
+controls enlarge that reachable set?}
+
+The existence of 81 functionally independent invariants and the need for
+structures beyond stress-tensor scalars in ten dimensions are prior results
+\cite{HLS,CHKL}. Graph-based discovery of tensor invariants is also established
+\cite{EFS}. The contribution investigated here is a constructive and certified
+connection between an explicit atlas, nonlinear coefficient-space obstructions,
+and signed-control reachability. Combining software alone is not a novelty
+claim. A publication requires comparison of the individual theorem statements
+with the cited literature and review of the stress convention.
+
+\section{Representation, invariant atlas, and evidence}
+Fix the Lorentz metric $\eta=\mathrm{diag}(-,+,\ldots,+)$ and an orientation for
+which the middle-form Hodge operator satisfies $*^2=1$. Let $F=*F$ be real.
+The self-dual subspace has $\binom{10}{5}/2=126$ independent components,
+parameterized by the increasing index tuples containing the time index.
+Each contraction graph has one five-valent vertex per copy of $F$; every edge
+contracts one pair of indices with the inverse metric. Slots follow increasing
+neighbor order. These choices are part of the formula, not implementation details
+to be changed without checking signs.
+
+\begin{proposition}[Independence certificate]
+Suppose 81 invariant contractions have an $81\times81$ Jacobian minor that
+is nonzero at an integral specialization modulo a good prime. If the generic
+Lorentz orbit has dimension 45, then those contractions are algebraically
+independent and the invariant rational-function field has transcendence degree
+$126-45=81$.
+\end{proposition}
+\begin{proof}
+A nonzero modular determinant is a nonzero specialization of the corresponding
+integer determinant polynomial. The characteristic-zero Jacobian criterion
+therefore gives algebraic independence. The generic orbit dimension supplies
+the matching upper bound on the quotient dimension.
+\end{proof}
+
+The bundled standalone verifier reconstructs the forms, all 81 values, the full
+$81\times126$ Jacobian, 45 infinitesimal Lorentz directions, and integer minors.
+The fresh run at $p=50021$ gives Jacobian minor residue 21539 and orbit minor
+residue 10547. It checks that the Jacobian annihilates the orbit directions.
+A separate tensor engine reproduces all 81 values with identical metric, Hodge,
+coordinate and graph conventions.
+
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+Field degree & Homogeneous dimension & New connected atlas slots & New functional directions\\
+\midrule
+4 & 1 & 1 & 1\\
+6 & 2 & 2 & 2\\
+8 & 7 & 6 & 6\\
+10 & 14 & 12 & 12\\
+12 & 72 & 62 & 60\\
+\bottomrule
+\end{tabular}
+\end{center}
+The 96 homogeneous coefficient slots through degree twelve include products
+of lower invariants. They do not imply 96 functionally independent invariants.
+Conversely, an algebraically independent set of 81 functions is not a proof
+that those functions generate the polynomial invariant ring or separate all
+global real Lorentz orbits.
+
+The independent character computation uses the $D_5$ module with Dynkin labels
+$(0,0,0,0,2)$. It derives its 126 weights, constructs symmetric-power characters
+by the Newton recurrence, and extracts singlet multiplicities with the Weyl
+denominator. Its input contains no graph-rank target. The complex-to-real
+identification and its scope are documented in the bundled derivation.
+
+\section{Interaction space and allowed controls}
+Write the auxiliary interaction as a polynomial jet
+\begin{equation}
+ V=\sum_{d\leq N}\sum_\alpha c_{d,\alpha}I_{d,\alpha}(F),\qquad d=4,6,8,\ldots,
+\end{equation}
+where each degree has a complete homogeneous basis, including lower products.
+The $c_{d,\alpha}$ are independent coefficients in this linear space of
+polynomial interactions. They are not values of the invariant functions at a
+particular field configuration.
+
+Use the declared HLS normalization $\tau=48T$ and projected auxiliary-field
+derivatives. For each allowed trace monomial $g(\tau)$, extracting coefficients
+in the invariant basis defines a vector field $X_g(c)$. A control path satisfies
+\begin{equation}
+ \dot c=\sum_g u_g(\lambda)X_g(c),\qquad c(0)=0.
+\end{equation}
+Controls are independent, piecewise signed scalar functions. This assumption
+is essential: reachability statements below do not impose positivity of
+amplitudes, causality, unitarity, or a physical experimental control mechanism.
+The free-seed orbit is the set of endpoints of these paths.
+
+If $q(c)=0$ defines an obstruction and $X_g(q)$ belongs to its defining ideal
+for every generator, that ideal is invariant. Finding linear spans of vector
+field coefficients alone does not identify the nonlinear orbit.
+
+\section{The explicit degree-eight obstruction}
+Let $(a,j,k,b_1,\ldots,b_6,p)$ multiply
+$(I_4,I_{6,1},I_{6,2},I_{8,1},\ldots,I_{8,6},I_4^2)$.
+The seven nonzero truncated control fields are specified by
+\begin{align*}
+ X_{\tr\tau}&=(20a,40j,40k,60b_1,\ldots,60b_6,60p),\\
+ X_{\tr\tau^2}&=2\partial_a+16a^2\partial_{b_1}-96a^2\partial_{b_2}-8a^2\partial_p,\\
+ X_{\tr\tau^3}&=\tfrac{32}{3}\partial_j+12a\partial_p,\qquad
+ X_{\tr\tau^4}=\partial_{b_1},\\
+ X_{(\tr\tau)^2}&=400a^2\partial_p,\qquad
+ X_{(\tr\tau)(\tr\tau^2)}=40a\partial_p,\qquad
+ X_{(\tr\tau^2)^2}=4\partial_p.
+\end{align*}
+
+\begin{theorem}[Degree-eight orbit in the declared reduced model]
+The free-seed orbit is the smooth four-dimensional graph
+\begin{equation}\label{eq:graph8}
+ k=b_3=b_4=b_5=b_6=0,\qquad b_2=-16a^3.
+\end{equation}
+Its minimal linear invariant hull is five-dimensional.
+\end{theorem}
+\begin{proof}
+For $\Omega_8=b_2+16a^3$, direct differentiation gives
+$X_{\tr\tau}\Omega_8=60\Omega_8$ and $X_g\Omega_8=0$ for the other six
+fields. The five remaining constraints are homogeneously transported.
+They vanish at the free seed, proving necessity.
+
+For arbitrary $(a,j,b_1,p)=(A,J,B,P)$, apply the four controls
+\begin{equation}
+ \tr\tau^2:\frac A2,\quad
+ \tr\tau^3:\frac{3J}{32},\quad
+ \tr\tau^4:B-\frac{8A^3}{3},\quad
+ (\tr\tau^2)^2:\frac{P+4A^3/3-9AJ/8}{4}.
+\end{equation}
+Exact integration gives the requested endpoint on \eqref{eq:graph8}, proving
+sufficiency. The nonlinear graph allows $b_2$ as an additional linear-span
+direction even though it is fixed by $a$ on the orbit.
+\end{proof}
+
+For a concrete excluded interaction, set $a=0$ and $b_2=1$, with every other
+coefficient zero. It violates $\Omega_8=0$ and is unreachable by pure-stress
+controls in this class. Adding the scalar generator $I_{8,2}$ translates $b_2$
+and reaches this target. This demonstrates the physical meaning of the
+obstruction within the auxiliary interaction model.
+
+\begin{proposition}[Catalogue-scoped completion]
+The six additional generators
+\[I_{6,2},I_{8,2},I_{8,3},I_{8,4},I_{8,5},I_{8,6}\]
+complete the degree-eight
+interaction space. Every one is necessary within this specified catalogue.
+\end{proposition}
+\begin{proof}
+Through degree eight their new actions are the six constant translations in
+those coefficient directions. Combining them with the four constructive
+stress controls gives a nonzero constant ten-control determinant, of magnitude
+$256/3$. Omitting each extra preserves its corresponding zero coefficient,
+or $\Omega_8=0$ when $I_{8,2}$ is omitted. No proper subset of this catalogue
+therefore fills the ten-dimensional space. This is not a global minimum over
+arbitrary homogeneous or inhomogeneous additional scalar generators.
+\end{proof}
+
+\section{Degree ten and degree twelve}
+The degree-ten space has 24 cumulative coefficients. The six degree-eight
+relations and twelve additional independent relations leave a six-parameter
+graph with free coordinates
+\begin{equation}
+ (A,B,C,D,U,V)=(c_{I_4},c_{I_{6,1}},c_{I_{8,1}},c_{I_4^2},c_{I_{10,1}},c_{I_4I_{6,1}}).
+\end{equation}
+The artifact gives the twelve relations and verifies exact tangency under every
+loaded rational vector field. Four sequential stress controls reach $A,B,C,D$;
+the independent constant actions of $\tr\tau^2\tr\tau^3$ and $\tr\tau^5$
+then set $U,V$. These calculations classify the declared finite model.
+Identifying that model with the tensor physics is a separate map proof.
+
+At degree twelve, restriction to the degree-ten orbit leaves six base and 72
+new coordinates. Use the 81-function obstruction ansatz comprising those
+72 coordinates and
+\begin{equation}
+ A^5,A^3B,A^2C,A^2D,AB^2,AU,AV,BC,BD.
+\end{equation}
+The 36 exact source equations form a matrix $E$ of rank 13. Its nullspace has
+dimension 68, with leading coordinate rank 68. The artifact checks $EK^t=0$
+exactly for the $68\times81$ constraint matrix $K$ and verifies the triangular
+polynomial ideal.
+
+\begin{theorem}[Degree-twelve reduced-model reachability]
+Assuming the declared degree-ten map and the 36 degree-twelve source identities,
+the free-seed component is a ten-dimensional graph with a six-dimensional base
+and four-dimensional affine fibers. Every rational point on that graph is
+reached by an explicit ten-stage signed-control sequence.
+\end{theorem}
+\begin{proof}
+The 68 independent affine constraints give fiber dimension $72-68=4$.
+The controls $(\tr\tau^2)^3$, $(\tr\tau^2)(\tr\tau^4)$,
+$(\tr\tau^3)^2$, and $\tr\tau^6$ preserve the base and act by constant
+translations on each fiber. On the four free fiber coordinates, the independent
+checker reconstructs the exact rational matrix
+\begin{equation}
+ \begin{pmatrix}
+ 8&0&0&r_0\\0&0&1024/9&r_1\\0&2&0&r_4\\0&0&0&r_{67}
+ \end{pmatrix},\qquad \det=-\frac{16384}{9}r_{67}\ne0.
+\end{equation}
+All four rational $r_i$, including the nonzero $r_{67}$, are explicitly
+recorded in the independent verification JSON. First reach the base with the
+six degree-ten stages, tracking the induced fiber displacement. Invert the
+four-by-four translation matrix to correct that displacement. Exact
+terminating Lie series compute each segment, and every endpoint is checked
+against all 68 constraints.
+\end{proof}
+
+\subsection{Generalized completion through degree twelve}
+For the frozen catalogue of 78 additional homogeneous primitive invariants,
+the independent checker constructs the leading constant blocks over $\QQ$.
+Their dimensions are $1,2,7,14,72$, and each square determinant is nonzero.
+The control family permits products $f(\tau,S)$, not merely independent linear
+translations by the extras. Set coefficients in increasing field degree:
+solve the constant block at the current degree, then proceed upward. A control
+whose leading field degree is larger preserves every coefficient already set.
+Under the declared analytic degree filtration, these triangular polynomial
+flows give a global finite-jet construction. The exact matrices and selected
+generators are included in the generalized-completion report. This establishes
+sufficiency for that catalogue; no minimum cardinality among arbitrary nonlinear
+controls or scalar choices is inferred.
+
+\section{Physics-map certification and reproducibility}
+An exact reduced-model calculation proves a statement about its input
+polynomials. It does not, by itself, prove that the polynomials were correctly
+derived from the stress tensor. The combined verification separates:
+\begin{enumerate}
+\item fresh character and tensor independence checks;
+\item equality of graph definitions, Hodge conventions and values between two engines;
+\item bounded-residual tensor-to-basis map checks;
+\item independent exact coefficient-space algebra and constructive endpoints;
+\item falsification tests that corrupt signs, generators, source tails and kernels.
+\end{enumerate}
+
+For the complete degree-twelve source-map proof, choose 72 fixed small integer
+self-dual tensors. Every basis contraction of degree twelve is bounded by
+$10^{30}$. A constrained derivative denominator divides $2\cdot5!=240$.
+A stress entry contains at most two such derivatives, so a product of $k$
+entries is cleared by $(240^2)^k$, together with the denominator of the exact
+lower-orbit substitution. This avoids assuming integrality of the full map.
+A nonnegative coefficient envelope bounds each cleared source value.
+Enough distinct good primes make each bounded integer lift unique.
+
+The run reconstructs the integer evaluation matrix and all 36 cleared source
+vectors at the same 72 tensors. A rank-72 minor and the independent homogeneous
+dimension bound make evaluation injective. Exact agreement of every candidate
+source with its reconstructed values then proves the identities in the declared
+invariant space. The computation is resumable and input-hash bound. A run that
+has not completed all gates supplies no affirmative map certificate.
+
+The primary commands are:
+\begin{quote}\ttfamily
+make combined-verify\\
+make combined-fresh\\
+make combined-full
+\end{quote}
+They distinguish saved arithmetic, fresh empirical checks, and complete bounded
+map computations. Raw logs, environments, source locks, and explicit verification
+levels accompany the outputs. Imported historical summaries remain identifiable;
+the unified science-status document is the entry point for current claims.
+
+\section{Scope, limitations, and next research questions}
+The invariant atlas supports local quotient coordinates and finite homogeneous
+bases; a global polynomial-ring presentation and complete syzygy ideal are not
+established. Finite-order reachability is distinct from formal orbit equality.
+A degree-filtration argument may lift a verified finite obstruction ideal to
+an invariant cylinder in the formal theory; it does not prove that all points
+of that infinite-dimensional cylinder are reachable.
+
+Nonanalytic interactions such as square-root ModMax potentials require a
+separate zero-field analysis. Signed-control reachability does not impose
+causality, stability, unitarity, or supersymmetric completion. The auxiliary
+interaction convention and its physical interpretation require specialist
+review. No inference about Type-IIB completion follows solely from the form
+field and spacetime dimension.
+
+The next research questions are an intrinsic formulation under homogeneous
+basis changes, minimality of generalized completion under broader scalar choices,
+and structural control of the higher-order obstruction tower. Merely adding
+higher-degree rank tables would not settle those questions. This draft is
+an editable research synthesis, not a claim of journal acceptance or novelty.
+AI assistance was used in integration, verification software, and preparation
+of this draft; the author must review the mathematical derivations and scientific
+interpretation before submission.
+
+\begin{thebibliography}{9}
+\bibitem{HLS} J. Hutomo, K. Lechner, and D. P. Sorokin,
+\emph{On non-linear chiral 4-form theories in D=10},
+\href{https://arxiv.org/abs/2509.14351}{arXiv:2509.14351}.
+\bibitem{CHKL} M. Cederwall, J. Hutomo, S. M. Kuzenko, K. Lechner, and D. P. Sorokin,
+\emph{Some remarks on invariants},
+\href{https://arxiv.org/abs/2509.14350}{arXiv:2509.14350}.
+\bibitem{EFS} A. Elamaran, C. Ferko, and S. Scarlett,
+\emph{Machine Learning Invariants of Tensors},
+\href{https://arxiv.org/abs/2512.23750}{arXiv:2512.23750}.
+\end{thebibliography}
+\end{document}

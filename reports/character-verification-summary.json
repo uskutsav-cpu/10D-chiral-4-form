@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "fresh_character_degrees": 22,
+  "fresh_weights_sha256": "c14f8e239a757fc5deba58d4ad5695edf2913c1a12c8c96d515b305c2f3ee0bf",
+  "bundled_weights_sha256": "c14f8e239a757fc5deba58d4ad5695edf2913c1a12c8c96d515b305c2f3ee0bf",
+  "identical_exact_weight_tables": true,
+  "python_check": "reports/character-check/python-check.json",
+  "scope": "fresh C++ character generation; independent Python recurrence exhaustive through degree12 and sampled thereafter"
+}

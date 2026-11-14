@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chiral4form"
-version = "0.2.0"
-description = "Exact tensor maps and nonlinear orbit infrastructure for 10D chiral four-form stress flows"
+version = "0.3.0"
+description = "Unified self-dual five-form invariant atlas and certified chiral four-form stress-flow research"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{name = "Utsav Sunil Kumar"}]
-dependencies = ["numpy>=1.24,<3", "sympy>=1.12,<2"]
+dependencies = ["numpy>=1.24,<3", "sympy>=1.12,<2", "opt_einsum>=3.4,<4"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]

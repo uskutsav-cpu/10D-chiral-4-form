@@ -1,0 +1,371 @@
+{
+ "arithmetic": "exact over F_p; no floating point on either side",
+ "degrees": [
+  4,
+  6,
+  8,
+  10
+ ],
+ "primes": {
+  "32719": {
+   "all_images_gamma_traceless": true,
+   "all_samples_selfdual": true,
+   "degrees": {
+    "4": {
+     "change_of_basis": {
+      "fitted_on": "generic + sparse + structured samples",
+      "shape": [
+       1,
+       1
+      ],
+      "validated_on": "holdout samples only"
+     },
+     "degree": 4,
+     "holdout_validated": true,
+     "n_fitting_samples": 58,
+     "n_holdout_samples": 20,
+     "n_samples": 78,
+     "spans_equal_all_samples": true,
+     "spans_equal_on_fitting_samples": true,
+     "spinor_contained_in_trace": true,
+     "spinor_enumeration": {
+      "degree": 4,
+      "duplicates_rejected": 376,
+      "evaluation_rank": 1,
+      "exhaustive": false,
+      "graphs_drawn": 400,
+      "graphs_kept": 1,
+      "identically_zero_on_samples": 0,
+      "locally_zero_rejected": 0,
+      "n_I_nodes": 2,
+      "patience": 60,
+      "skipped_intermediate_too_large": 0,
+      "stopping_reason": "draw budget exhausted",
+      "wall_seconds": 3.0
+     },
+     "spinor_evaluation_rank": 1,
+     "spinor_graphs_kept": 1,
+     "trace_contained_in_spinor": true,
+     "trace_evaluation_rank": 1,
+     "trace_items": [
+      "I4_1"
+     ]
+    },
+    "6": {
+     "change_of_basis": {
+      "fitted_on": "generic + sparse + structured samples",
+      "shape": [
+       2,
+       2
+      ],
+      "validated_on": "holdout samples only"
+     },
+     "degree": 6,
+     "holdout_validated": true,
+     "n_fitting_samples": 58,
+     "n_holdout_samples": 20,
+     "n_samples": 78,
+     "spans_equal_all_samples": true,
+     "spans_equal_on_fitting_samples": true,
+     "spinor_contained_in_trace": true,
+     "spinor_enumeration": {
+      "degree": 6,
+      "duplicates_rejected": 2,
+      "evaluation_rank": 2,
+      "exhaustive": false,
+      "graphs_drawn": 66,
+      "graphs_kept": 2,
+      "identically_zero_on_samples": 0,
+      "locally_zero_rejected": 0,
+      "n_I_nodes": 3,
+      "patience": 60,
+      "skipped_intermediate_too_large": 0,
+      "stopping_reason": "rank saturation (patience exhausted)",
+      "wall_seconds": 105.5
+     },
+     "spinor_evaluation_rank": 2,
+     "spinor_graphs_kept": 2,
+     "trace_contained_in_spinor": true,
+     "trace_evaluation_rank": 2,
+     "trace_items": [
+      "I6_1",
+      "I6_2"
+     ]
+    }
+   },
+   "grading": [
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 4,
+     "spinor_F_edges": 4,
+     "spinor_I_nodes": 2,
+     "trace_graph_items": 1,
+     "trace_product_items": 0,
+     "trace_registry_items": 1
+    },
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 6,
+     "spinor_F_edges": 6,
+     "spinor_I_nodes": 3,
+     "trace_graph_items": 2,
+     "trace_product_items": 0,
+     "trace_registry_items": 2
+    },
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 8,
+     "spinor_F_edges": 8,
+     "spinor_I_nodes": 4,
+     "trace_graph_items": 6,
+     "trace_product_items": 1,
+     "trace_registry_items": 7
+    },
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 10,
+     "spinor_F_edges": 10,
+     "spinor_I_nodes": 5,
+     "trace_graph_items": 12,
+     "trace_product_items": 2,
+     "trace_registry_items": 14
+    }
+   ],
+   "n_samples": 78,
+   "registry_sha256": "ca97d98b493d20bf7d989eefca02737986f1dc42d44a5c7badc9be2a18fe9352",
+   "sample_families": {
+    "generic": 40,
+    "holdout": 20,
+    "sparse": 10,
+    "structured": 8
+   }
+  },
+  "32749": {
+   "all_images_gamma_traceless": true,
+   "all_samples_selfdual": true,
+   "degrees": {
+    "10": {
+     "change_of_basis": {
+      "fitted_on": "generic + sparse + structured samples",
+      "shape": [
+       14,
+       14
+      ],
+      "validated_on": "holdout samples only"
+     },
+     "degree": 10,
+     "holdout_validated": true,
+     "n_fitting_samples": 58,
+     "n_holdout_samples": 20,
+     "n_samples": 78,
+     "spans_equal_all_samples": true,
+     "spans_equal_on_fitting_samples": true,
+     "spinor_contained_in_trace": true,
+     "spinor_enumeration": {
+      "degree": 10,
+      "duplicates_rejected": 0,
+      "evaluation_rank": 14,
+      "exhaustive": false,
+      "graphs_drawn": 89,
+      "graphs_kept": 14,
+      "identically_zero_on_samples": 0,
+      "locally_zero_rejected": 0,
+      "n_I_nodes": 5,
+      "patience": 60,
+      "skipped_intermediate_too_large": 0,
+      "stopping_reason": "rank saturation (patience exhausted)",
+      "wall_seconds": 2423.6
+     },
+     "spinor_evaluation_rank": 14,
+     "spinor_graphs_kept": 14,
+     "trace_contained_in_spinor": true,
+     "trace_evaluation_rank": 14,
+     "trace_items": [
+      "I10_1",
+      "I10_2",
+      "I10_3",
+      "I10_4",
+      "I10_5",
+      "I10_6",
+      "I10_7",
+      "I10_8",
+      "I10_9",
+      "I10_10",
+      "I10_11",
+      "I10_12",
+      "I4_1*I6_1",
+      "I4_1*I6_2"
+     ]
+    },
+    "4": {
+     "change_of_basis": {
+      "fitted_on": "generic + sparse + structured samples",
+      "shape": [
+       1,
+       1
+      ],
+      "validated_on": "holdout samples only"
+     },
+     "degree": 4,
+     "holdout_validated": true,
+     "n_fitting_samples": 58,
+     "n_holdout_samples": 20,
+     "n_samples": 78,
+     "spans_equal_all_samples": true,
+     "spans_equal_on_fitting_samples": true,
+     "spinor_contained_in_trace": true,
+     "spinor_enumeration": {
+      "degree": 4,
+      "duplicates_rejected": 376,
+      "evaluation_rank": 1,
+      "exhaustive": false,
+      "graphs_drawn": 400,
+      "graphs_kept": 1,
+      "identically_zero_on_samples": 0,
+      "locally_zero_rejected": 0,
+      "n_I_nodes": 2,
+      "patience": 60,
+      "skipped_intermediate_too_large": 0,
+      "stopping_reason": "draw budget exhausted",
+      "wall_seconds": 3.4
+     },
+     "spinor_evaluation_rank": 1,
+     "spinor_graphs_kept": 1,
+     "trace_contained_in_spinor": true,
+     "trace_evaluation_rank": 1,
+     "trace_items": [
+      "I4_1"
+     ]
+    },
+    "6": {
+     "change_of_basis": {
+      "fitted_on": "generic + sparse + structured samples",
+      "shape": [
+       2,
+       2
+      ],
+      "validated_on": "holdout samples only"
+     },
+     "degree": 6,
+     "holdout_validated": true,
+     "n_fitting_samples": 58,
+     "n_holdout_samples": 20,
+     "n_samples": 78,
+     "spans_equal_all_samples": true,
+     "spans_equal_on_fitting_samples": true,
+     "spinor_contained_in_trace": true,
+     "spinor_enumeration": {
+      "degree": 6,
+      "duplicates_rejected": 2,
+      "evaluation_rank": 2,
+      "exhaustive": false,
+      "graphs_drawn": 66,
+      "graphs_kept": 2,
+      "identically_zero_on_samples": 0,
+      "locally_zero_rejected": 0,
+      "n_I_nodes": 3,
+      "patience": 60,
+      "skipped_intermediate_too_large": 0,
+      "stopping_reason": "rank saturation (patience exhausted)",
+      "wall_seconds": 53.9
+     },
+     "spinor_evaluation_rank": 2,
+     "spinor_graphs_kept": 2,
+     "trace_contained_in_spinor": true,
+     "trace_evaluation_rank": 2,
+     "trace_items": [
+      "I6_1",
+      "I6_2"
+     ]
+    },
+    "8": {
+     "change_of_basis": null,
+     "degree": 8,
+     "holdout_validated": false,
+     "n_fitting_samples": 58,
+     "n_holdout_samples": 20,
+     "n_samples": 78,
+     "spans_equal_all_samples": false,
+     "spans_equal_on_fitting_samples": false,
+     "spinor_contained_in_trace": true,
+     "spinor_enumeration": {
+      "degree": 8,
+      "duplicates_rejected": 0,
+      "evaluation_rank": 6,
+      "exhaustive": false,
+      "graphs_drawn": 70,
+      "graphs_kept": 6,
+      "identically_zero_on_samples": 0,
+      "locally_zero_rejected": 0,
+      "n_I_nodes": 4,
+      "patience": 60,
+      "skipped_intermediate_too_large": 0,
+      "stopping_reason": "rank saturation (patience exhausted)",
+      "wall_seconds": 198.4
+     },
+     "spinor_evaluation_rank": 6,
+     "spinor_graphs_kept": 6,
+     "trace_contained_in_spinor": false,
+     "trace_evaluation_rank": 7,
+     "trace_items": [
+      "I8_1",
+      "I8_2",
+      "I8_3",
+      "I8_4",
+      "I8_5",
+      "I8_6",
+      "I4_1^2"
+     ]
+    }
+   },
+   "grading": [
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 4,
+     "spinor_F_edges": 4,
+     "spinor_I_nodes": 2,
+     "trace_graph_items": 1,
+     "trace_product_items": 0,
+     "trace_registry_items": 1
+    },
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 6,
+     "spinor_F_edges": 6,
+     "spinor_I_nodes": 3,
+     "trace_graph_items": 2,
+     "trace_product_items": 0,
+     "trace_registry_items": 2
+    },
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 8,
+     "spinor_F_edges": 8,
+     "spinor_I_nodes": 4,
+     "trace_graph_items": 6,
+     "trace_product_items": 1,
+     "trace_registry_items": 7
+    },
+    {
+     "note": "spinor port graphs are not split into product and primitive families; the comparison is against the whole degree-d space on both sides",
+     "physical_F_degree": 10,
+     "spinor_F_edges": 10,
+     "spinor_I_nodes": 5,
+     "trace_graph_items": 12,
+     "trace_product_items": 2,
+     "trace_registry_items": 14
+    }
+   ],
+   "n_samples": 78,
+   "registry_sha256": "30448b5021261f2c7b6ddf8e633d1e5c957cda2645698dee5ea195385a496e5c",
+   "sample_families": {
+    "generic": 40,
+    "holdout": 20,
+    "sparse": 10,
+    "structured": 8
+   },
+   "wall_seconds": 18.7
+  }
+ },
+ "schema": 1
+}
