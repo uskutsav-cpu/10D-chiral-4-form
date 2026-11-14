@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "integrated_draft_degree12_physics_proof_in_progress",
+  "status": "degree12_physics_proof_verified_integrated_release_audit_pending",
   "regression_tests_passed": 222,
   "evidence": {
     "reports/fresh-rank81.json": "b36d8e74565390528d86a29eea513e11e59894c5a667b2be8892edbe54064c50",
@@ -10,12 +10,16 @@
     "reports/independent-algebra.json": "8049f981a8bf645684c640c55746deeaa0ec38455190409bc1adb76e79e8559b",
     "reports/generalized-completion-exact.json": "f9a517763fefb79739a378e1ca4de6576892bb0ab1d5eeb6fe536ef59ef12996",
     "reports/degree10-map/map_certificate.json": "15b29d8f1005f59c7435edf307e7d3f59ac847faf27e9aa708c188e1d6994327",
-    "reports/manuscript/main.pdf": "b6ef52d927a1f8a1404db9dbc7d1555996da9418641e14bdb4f8f9d544614d90",
-    "reports/verification/clean-checkout/manifest.json": "981a67a415a378d9ca9fa1f44108dcc9f05bcddec0233bcee15cab233a154b39"
+    "reports/manuscript/main.pdf": "a9fdd5d90a84426cd8b4b12a253ad4d565cb8ce1d48cde78c544e9deb6ff8a5e",
+    "reports/verification/clean-checkout/manifest.json": "981a67a415a378d9ca9fa1f44108dcc9f05bcddec0233bcee15cab233a154b39",
+    "reports/degree12-map/map_certificate.json": "a8f6b951e3fd7f0e89b3fd4af6a7e39a1311794d45d3872d6e9b59246baa7727",
+    "reports/degree12-map/strict-input-verification.json": "d2196580cfc92618f39e686e4af94649585dbcf3edd96fe050cf64342cd3cc98",
+    "reports/degree12-map/independent-arithmetic.json": "9162a6e84bf744eb30ddcd3679a2a9c49d6a7014888ec0e3fa5d38c42368bee1",
+    "reports/degree12-map/provenance.json": "4491303890e4443186153853249d75b44890a54c8d88b645274e91680187d02c",
+    "reports/degree12-crosshost/comparison.json": "bbf87eaccf01b23889bf49d0df1db33f3edc836ad4ea6e3fcca4af60b1a73017"
   },
   "remaining_required_work": [
-    "complete fresh degree12 bounded-CRT physics-map proof",
-    "strict checkpoint and arithmetic replay",
+    "full integrated command from clean checkout",
     "final manuscript/status and deliverable audit"
   ]
 }

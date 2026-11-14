@@ -292,6 +292,13 @@ source with its reconstructed values then proves the identities in the declared
 invariant space. The computation is resumable and input-hash bound. A run that
 has not completed all gates supplies no affirmative map certificate.
 
+The completed run uses 13 primes and 72 tensors, with evaluation rank 72 and
+all 2,592 exact cleared source comparisons equal. Strict checkpoint validation
+and an engine-free CRT/rational-arithmetic replay pass; the latter was also
+reproduced locally from the Linux artifact. The replay retains the stress
+formula, absolute-bound derivation, and character dimension as stated inputs.
+It does not independently regenerate the tensor evaluations.
+
 The primary commands are:
 \begin{quote}\ttfamily
 make combined-verify\\

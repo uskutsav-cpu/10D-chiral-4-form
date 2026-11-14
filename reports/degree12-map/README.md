@@ -1,8 +1,8 @@
 # Degree-twelve physical map evidence
 
-This directory is incremental evidence, not a success claim. Each `prime*.json`
+This directory contains the completed bounded-CRT physical source-map evidence. Each `prime*.json`
 file contains 72 direct physical evaluations with a source namespace and fixed
-seeds. Completed local shards can be committed before the remaining jobs finish.
+seeds. The saved set has all 13 prime batches; its completed certificate and both replay reports are included.
 A complete physical identity certificate requires **all 13 declared primes**,
 `map_certificate.json`, `strict-input-verification.json`, and the separate
 `independent-arithmetic.json` replay. See `SCIENCE_STATUS.md` for current status.

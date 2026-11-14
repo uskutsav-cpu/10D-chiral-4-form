@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "passed": true,
+  "namespace_sha256": "fee17c07f6c643faf693c706e90aea07caa0075443080d54500e5c1adc7d6365",
+  "prime_count": 13,
+  "point_count": 72,
+  "source_count": 36,
+  "modulus_product": "404010672448719557416200339613327320612736748275397466524603177",
+  "independent_modular_rank": 72,
+  "exact_source_comparisons": 2592,
+  "checkpoint_sha256": {
+    "prime65521.json": "7d5be3e258af7915693e7daef5c175e8f246812d5d9231c99f0f9d08aca91250",
+    "prime65519.json": "a83e70ca4cfec0a3b6849124f113a5f9bca2df11fe8f2aeb7dc72919059cb9fb",
+    "prime65497.json": "22ba7adee120ef12f15cc2b7342851641868a80eb1e869a0602c807fcc7270cc",
+    "prime65479.json": "6281cdd13aea2d49b31c07c6ac733b8f7ca01fce3720d0ae893fc377cb8e2a4d",
+    "prime65449.json": "16b0f7fecc5722dfba49e133b224acf10d9f036aefeed7b365d5f6be76ab6595",
+    "prime65447.json": "7db802794d319a7f7c3831c993fe748c33eb8814a39d221858404f485251bc09",
+    "prime65437.json": "0b06c142ade86b12444551f1f46dfc507ebe9deba489c2c73c80c90f7cc57068",
+    "prime65423.json": "4b7c89a604261b67efd3c85119edc2a069c919eb0c5212d5830d9ddafcb32ee2",
+    "prime65419.json": "10c20f9183743b29925c82e81140b0de7c511b9aecfa5266604f46e0290583e7",
+    "prime65413.json": "18eabaf4bf12454fd8d35f6666703769650712a2e2c86fff3dd310b24bbacb8e",
+    "prime65407.json": "bab22a6c67909080fa17e1f541da75e2b455e82d125d10c11fa12b8b7912324a",
+    "prime65393.json": "8c5df3a0621d9d4f5e46aa3b5e765c31b8764a1d1fad70d6984a4291905b2145",
+    "prime65381.json": "561dad60842146f723d7be593c1a6e97b784ba7a1624ff7c49e13846973238fb"
+  },
+  "checker_sha256": "67a06fd3bd64c86fd4caef7fd7ff4e5cf7bcad29f571f6fabe1978f351874924",
+  "scope": "independent saved-evidence CRT, denominator scaling, rank and rational identity arithmetic; imports neither tensor engine",
+  "assumptions": [
+    "declared analytic stress formula and derived absolute bounds",
+    "saved tensor values faithfully produced by hash-bound engine",
+    "independent character bound applies to this representation"
+  ],
+  "not_established": [
+    "fresh tensor evaluation",
+    "independent derivation of absolute bounds",
+    "all-orders classification",
+    "physical admissibility",
+    "novelty"
+  ]
+}

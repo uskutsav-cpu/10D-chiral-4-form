@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "passed": true,
+  "namespace_sha256": "fee17c07f6c643faf693c706e90aea07caa0075443080d54500e5c1adc7d6365",
+  "scope": "identical saved basis/target vectors from separate Mac ARM and Linux executions of the same hash-bound engine; not an independent tensor implementation",
+  "checks": [
+    {
+      "prime": 65423,
+      "local_file": "reports/degree12-crosshost/prime65423.json",
+      "local_sha256": "854a0336419fb5245646cdccd7f6d0ba00a9f0e2ed5a9f0145d96d40059960c4",
+      "linux_file": "reports/degree12-map/prime65423.json",
+      "linux_sha256": "4b7c89a604261b67efd3c85119edc2a069c919eb0c5212d5830d9ddafcb32ee2",
+      "points": 72,
+      "basis_entries_compared": 5184,
+      "target_entries_compared": 2592
+    },
+    {
+      "prime": 65437,
+      "local_file": "reports/degree12-crosshost/prime65437.json",
+      "local_sha256": "290d68078f32d3a0b2ee9f3a2ec79588b526004d0c08f38c5808f3fbb180186f",
+      "linux_file": "reports/degree12-map/prime65437.json",
+      "linux_sha256": "0b06c142ade86b12444551f1f46dfc507ebe9deba489c2c73c80c90f7cc57068",
+      "points": 72,
+      "basis_entries_compared": 5184,
+      "target_entries_compared": 2592
+    }
+  ]
+}

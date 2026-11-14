@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "physics_namespace_sha256": "fee17c07f6c643faf693c706e90aea07caa0075443080d54500e5c1adc7d6365",
+  "workflow_run": "https://github.com/uskutsav-cpu/10D-chiral-4-form/actions/runs/43542704467",
+  "workflow_source_commit": "2ac70bee1630e027291707b033c148f3b22ada82",
+  "dataset_origin": "six complete local prime batches committed at the workflow source revision; seven complete Linux matrix shards",
+  "local_replays": [
+    "production bounded-CRT verifier",
+    "strict raw-input validator",
+    "engine-free arithmetic checker"
+  ],
+  "local_engine_free_report_identical_to_linux": true,
+  "additional_crosshost_evidence": "reports/degree12-crosshost/comparison.json",
+  "partial_local_continuation": "intentionally stopped and retained outside release; no partial evaluation substitutes for complete proof evidence"
+}

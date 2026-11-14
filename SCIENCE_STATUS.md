@@ -12,7 +12,7 @@ constitute new verification. Read the scope of each check below.
 | Common conventions between engines | `reports/tensor-bridge.json` | Fresh agreement for all 81 values at the rank-certificate point, including metric, Hodge, coordinates, graph slots |
 | Degree-eight physics map | packaged certificate, fresh reevaluation command | Bounded map arithmetic and fresh tensor replay; dimension input discharged by the bundled character derivation after convention checks |
 | Degree-ten physics map | `reports/degree10-map/map_certificate.json` and checkpoints | Fresh 13-prime, 14-point bounded-residual map calculation |
-| Degree-twelve physics map | `reports/degree12-map/` | Full 13-prime, 72-point bounded-CRT calculation in progress until `map_certificate.json` passes independent arithmetic verification |
+| Degree-twelve physics map | `reports/degree12-map/` | Completed 13-prime, 72-point bounded-CRT proof of all 36 source identities; strict and engine-free arithmetic replays passed on Linux and locally |
 | Independent degree 8/10/12 model algebra | `reports/independent-algebra.json` | Exact QQ model replay, 68 degree-twelve constraints and explicit vertical matrix |
 | Constructive endpoint | endpoint in independent algebra report; `make combined-endpoint` | Exact ten-stage signed-control integration and constraint evaluation |
 | Generalized degree-twelve completion | `reports/generalized-completion-exact.json` | Exact homogeneous leading-block calculation for the selected 78 extras; physics input and filtration hypotheses remain explicit |
