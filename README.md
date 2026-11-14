@@ -39,6 +39,8 @@ A partial run is not a proof. Resume the same compatible checkpoint directory:
 ```sh
 python scripts/resume_degree12_proof.py --workers 2
 python scripts/prove_combined_degree12_map.py --verify-only
+python scripts/verify_degree12_checkpoint_inputs.py
+python independent/map12_arithmetic.py
 ```
 
 Use one or two workers on an 8 GB machine. Work budgets bound planned tensor

@@ -64,7 +64,7 @@ def verify_completion(root):
             'exact_constant_leading_blocks':blocks,
             'construction':'set coefficients in increasing field degree using the inverse constant block; higher-leading-degree controls preserve all lower coefficients',
             'structural_hypothesis':'HLS analytic derivative-free field-degree filtration; selected controls exclude tr1 and strictly lower coupling weight',
-            'physics_inputs':'free stress trace coordinates through degree12; source identities independently certified by the full map runs',
+            'physics_inputs':'free stress trace coordinates through degree12; tensor-physics identification requires separately verified map certificates',
             'minimality':'not claimed for nonlinear reachability or arbitrary additional scalars',
             'scope':'exact rational leading blocks plus degree-triangular global construction in the declared generalized polynomial class'}
 
