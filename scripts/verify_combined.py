@@ -46,7 +46,8 @@ def main():
     if args.level=='full':
         stages += [('map10-full',[py,'-c',"from chiral4form.degree10_map_proof import run; run('reports/degree10-map', registry_path='data/combined/registry.json')"]),
                    ('map12-full',[py,'scripts/resume_degree12_proof.py','--workers',str(args.workers)]),
-                   ('map12-strict-replay',[py,'scripts/verify_degree12_checkpoint_inputs.py'])]
+                   ('map12-strict-replay',[py,'scripts/verify_degree12_checkpoint_inputs.py']),
+                   ('map12-independent-arithmetic',[py,'independent/map12_arithmetic.py'])]
     env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',VECLIB_MAXIMUM_THREADS='1')
     report={'schema':1,'level':args.level,'status':'running','stages':[],
             'scope':{'quick':'regression and saved exact arithmetic; no fresh physics','fresh':'fresh tensor/character checks and physical holdouts; not full degree12 identities','full':'fresh verification plus bounded arithmetic tensor map proofs through degree12'}[args.level]}

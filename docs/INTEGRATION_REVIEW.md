@@ -38,3 +38,8 @@ field for provenance. The new proof does not require that mathematical premise:
 it multiplies each target by an explicit stress/derivative denominator clearer
 before applying bounded integer CRT. Compatibility checks on old certificate
 labels are not promoted to a proof of coefficient integrality.
+
+The complete map has two replay paths: strict production input validation and
+`independent/map12_arithmetic.py`, which imports neither tensor engine. The latter
+checks all saved residues, CRT lifts, denominator scaling and source identities,
+while retaining the declared absolute-bound derivation as an assumption.

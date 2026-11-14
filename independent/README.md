@@ -40,3 +40,16 @@ residuals; a reachable interaction returns ten signed control segments and its
 complete 96-coordinate polynomial. The classification is for the declared
 finite reduced model; its tensor-physics interpretation has the separate map
 proof obligations described in the science status.
+
+After a complete physical map run, replay its arithmetic without importing either
+tensor engine:
+
+```sh
+python independent/map12_arithmetic.py
+```
+
+This recomputes centered CRT lifts, canonical prime/vector checks, denominator
+scaling, evaluation rank, and all 2,592 rational source comparisons directly from
+the raw checkpoints. It checks source hashes and does not trust saved success
+flags. The stress bounds and physical tensor evaluations remain explicitly
+identified inputs; this replay does not independently derive or regenerate them.

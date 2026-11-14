@@ -1,0 +1,9 @@
+{
+  "classification": "unreachable",
+  "scope": "membership in the declared finite degree-12 pure-stress reduced model; signed controls, free seed",
+  "cutoff": 12,
+  "violated_coefficient_graph_relations_through_degree10": {
+    "I8_2": "1"
+  },
+  "Omega8": "1"
+}
