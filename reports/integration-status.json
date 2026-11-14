@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "integrated_draft_degree12_physics_proof_in_progress",
-  "regression_tests_passed": 221,
+  "regression_tests_passed": 222,
   "evidence": {
     "reports/fresh-rank81.json": "b36d8e74565390528d86a29eea513e11e59894c5a667b2be8892edbe54064c50",
     "reports/fresh-d5.json": "f9715d75ec14d3fdc642d5091cb00c8ce5edbf2634a5cc2d1ef19ac80add90b5",
@@ -11,7 +11,7 @@
     "reports/generalized-completion-exact.json": "f9a517763fefb79739a378e1ca4de6576892bb0ab1d5eeb6fe536ef59ef12996",
     "reports/degree10-map/map_certificate.json": "15b29d8f1005f59c7435edf307e7d3f59ac847faf27e9aa708c188e1d6994327",
     "reports/manuscript/main.pdf": "b6ef52d927a1f8a1404db9dbc7d1555996da9418641e14bdb4f8f9d544614d90",
-    "reports/verification/clean-checkout/manifest.json": "dd5108d44a27539522a13c8288a370a65ec4eb9968199a9ef19208dd703769db"
+    "reports/verification/clean-checkout/manifest.json": "981a67a415a378d9ca9fa1f44108dcc9f05bcddec0233bcee15cab233a154b39"
   },
   "remaining_required_work": [
     "complete fresh degree12 bounded-CRT physics-map proof",

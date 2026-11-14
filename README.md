@@ -76,6 +76,24 @@ finite model. Use exact invariant IDs and rational strings or integers.
 - `verification/`: preserved predecessor certificates and historical evidence.
 - `reports/`: new logs, manifests, fresh certificates, and independent results.
 
+## How the calculation connects
+
+```mermaid
+flowchart LR
+    F[Auxiliary self-dual five-form: 126 components] --> I[Explicit invariant contractions]
+    H[Independent character counts] --> B[Complete homogeneous bases through degree 12]
+    I --> B
+    B --> V[Interaction polynomial: 96 coefficients]
+    V --> T[Interacting stress tensor]
+    T --> X[Trace controls give vector fields on coefficients]
+    X --> O[Obstruction equations and reachable interactions]
+    O --> C[Exact signed controls or exclusion residuals]
+```
+
+The 81-function Jacobian certificate concerns invariants as functions of the
+five-form. The orbit calculation concerns the 96 interaction coefficients.
+The tensor-map certificates connect these two spaces.
+
 ## Central distinctions
 
 The atlas has 81 algebraically independent invariants. The complete homogeneous
