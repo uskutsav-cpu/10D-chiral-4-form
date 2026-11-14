@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "dimensions": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 0,
+    "6": 2,
+    "7": 0,
+    "8": 7,
+    "9": 0,
+    "10": 14,
+    "11": 0,
+    "12": 72,
+    "13": 0,
+    "14": 247,
+    "15": 0,
+    "16": 1364,
+    "17": 0,
+    "18": 6851,
+    "19": 0,
+    "20": 40170,
+    "21": 0,
+    "22": 227979
+  },
+  "degree12_basis": 72,
+  "source10_ranks": [
+    12,
+    2,
+    13,
+    1
+  ],
+  "rank81": true,
+  "scope": "hash binding and saved arithmetic; full fresh tensor computation is rank81/verify.py"
+}

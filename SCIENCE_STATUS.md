@@ -16,7 +16,7 @@ constitute new verification. Read the scope of each check below.
 | Independent degree 8/10/12 model algebra | `reports/independent-algebra.json` | Exact QQ model replay, 68 degree-twelve constraints and explicit vertical matrix |
 | Constructive endpoint | endpoint in independent algebra report; `make combined-endpoint` | Exact ten-stage signed-control integration and constraint evaluation |
 | Generalized degree-twelve completion | `reports/generalized-completion-exact.json` | Exact homogeneous leading-block calculation for the selected 78 extras; physics input and filtration hypotheses remain explicit |
-| Regression and falsification checks | `reports/combined-run/quick-manifest.json` and regression log | 218 tests in the latest complete regression run |
+| Regression and falsification checks | `reports/verification/clean-checkout/manifest.json` and raw stage logs | 221 tests; complete quick verification from a clean committed-source export |
 | Unified manuscript | `manuscript/unified/main.tex`, compiled PDF in `reports/manuscript/` | Research draft; author/expert and novelty review remain necessary |
 
 The new degree-twelve proof explicitly clears the derivative denominator
